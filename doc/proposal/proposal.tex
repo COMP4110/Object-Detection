@@ -15,6 +15,9 @@
 \usepackage{amsmath}
 \usepackage{hyperref}
 
+\usepackage{natbib}
+% To cite, use \citet{} in text citation, or \citep{} (in parentheses).
+
 %%% Examples of Article customizations
 % These packages are optional, depending whether you want the features they provide.
 % See the LaTeX Companion or other references for full information.
@@ -91,7 +94,7 @@
 
 \begin{abstract}
     
-    
+    This is a cool test where we cite \citep{Yuan2015}.
     
 \end{abstract}
 
@@ -100,6 +103,24 @@
 % \newpage
 
 \section{Background}
+
+Keeping track of the ball is so natural and fundamental an aspect of playing soccer that many human players would hardly think it to be a skill in itself. Ball tracking is similarly important in robotic soccer, such as a Robocup game, however, fast and reliable ball tracking has presented a challenge that has attracted much research in the robot soccer community.
+
+This proposal outlines a project to develop methods to detect balls in a robocup environment with an emphasis on running time, due to the limited capabilities of the target platform.
+In particular, note that running time is currently largely governed by the number of pixel samples read from the image - so attempt to minimise this.
+To this end the project will focus on developing a novel, minimal, multi-stage scanning and ball-detection strategy that minimises the sampling effort while still correctly recognising all balls present in the image without false positives.
+
+An implementation of our developed approach will be created by extending the NUbots’ existing vision system, to minimise the effort required.
+Our results will be compared to the ball detection method used in the NUbots’ current vision system, and to competing ball detection techniques on the grounds of running time and accuracy.
+If a robust approach is found, we may attempt to generalise our method to recognise other shapes (e.g. robots, the centre circle, lines, goals, etc.).
+
+We expect to consider the following techniques in our research:
+Clustering algorithms (K-means, DBSCAN, OPTICS)
+Generic model fitting/improvement algorithms (Hough transform, least squares optimisation)
+Sample consensus techniques (RANSAC, M-SAC, etc.)
+Machine learning techniques (SVM, KNN, CNN, etc.) (e.g. learn classifiers, learn ball colour at runtime)
+Input preprocessing techniques (lookup tables, image derivatives, filtering/smoothing methods, scanning strategies)
+Using prior information from other frames, or from the robot platform itself (e.g. expected position, velocity, the kinematics horizon).
 
 
 \section{Project Description}
@@ -118,6 +139,8 @@
 
 \section{Summary}
 
+\bibliography{bibliography}
+\bibliographystyle{apalike}
 
 \end{document}
 

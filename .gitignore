@@ -1,10 +1,10 @@
-# IntelliJ
+# IntelliJ:
 .idea/
 
-# Sublime
+# Sublime:
 *.sublime-workspace
 
-# Build and CMake files
+# Build and CMake files:
 build/
 CMakeCache.txt
 Makefile
@@ -12,7 +12,7 @@ CMakeFiles/
 cmake_install.cmake
 install_manifest.txt
 
-# LaTeX
+# LaTeX:
 *.aux
 *.log
 *.out
@@ -21,9 +21,16 @@ install_manifest.txt
 *.nav
 *.snm
 *.toc
+*.synctex
 
-# Miscellaneous
+# BibTeX:
+*.bbl
+*.blg
+
+# Latexian:
+TSWLatexianTemp_*
+
+# Miscellaneous:
 *.swp
 *~
 .DS_Store
-
