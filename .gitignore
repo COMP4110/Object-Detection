@@ -1,0 +1,29 @@
+# IntelliJ
+.idea/
+
+# Sublime
+*.sublime-workspace
+
+# Build and CMake files
+build/
+CMakeCache.txt
+Makefile
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+
+# LaTeX
+*.aux
+*.log
+*.out
+*.pdf
+*.synctex.gz
+*.nav
+*.snm
+*.toc
+
+# Miscellaneous
+*.swp
+*~
+.DS_Store
+
