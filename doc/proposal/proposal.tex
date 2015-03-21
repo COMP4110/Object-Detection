@@ -15,6 +15,9 @@
 \usepackage{amsmath}
 \usepackage{hyperref}
 
+\usepackage{todonotes}
+\presetkeys{todonotes}{inline}{}
+
 \usepackage{natbib}
 % To cite, use \citet{} in text citation, or \citep{} (in parentheses).
 
@@ -98,69 +101,161 @@
 	\tableofcontents
 	\newpage
 
+
 	\section{Summary} {
 
-		This project aims to detect spheres within an image, based on the shading around its environment, and will have a heavy focus on performance and accuracy. The results of this project will be utilised by the Newcastle Robotics Laboratory and has the potential to impact their results at RoboCup, an international robotic soccer competition. This project is of significant interest to the robot soccer community as the results of this could yield a more efficient method of real-time ball detection, which is also beneficial to those who are interested in ball detection within a competitive sports environment such as basketball or tennis.
+        % This project aims to detect spheres within an image, based on the
+        % shading around its environment, and will have a heavy focus on
+        % performance and accuracy. The results of this project will be utilised
+        % by the Newcastle Robotics Laboratory and has the potential to impact
+        % their results at RoboCup, an international robotic soccer competition.
+        % This project is of significant interest to the robot soccer community
+        % as the results of this could yield a more efficient method of real-
+        % time ball detection, which is also beneficial to those who are
+        % interested in ball detection within a competitive sports environment
+        % such as basketball or tennis.
 		
 	}
 
-	\section{Background} {
+	\section{Background and aims} {
 
-		Keeping track of a ball is a natural and fundamental aspect of playing soccer, that many human players would not consider to be a skill in itself. Ball tracking is important in robotic soccer, where fast and reliable ball tracking is a challenge that has attracted research in the robot soccer community.
+  %       Keeping track of the ball is so natural and fundamental an aspect of
+  %       playing soccer that many human players would hardly think it to be a
+  %       skill in itself. Ball tracking is similarly important in robotic
+  %       soccer, such as a Robocup game, however, fast and reliable ball
+  %       tracking has presented a challenge that has attracted much research in
+  %       the robot soccer community.
 
-		This project aims to develop methods for sphere detection in a RoboCup environment, placing an emphasis on performance due to the limited capabilities of the target platform. In particular, the performance is significantly effected by the number of pixel samples read from a given image and will be minimised. The project will focus on developing a novel, minimal, multi-stage scanning and ball-detection strategy that minimises the sampling effort while still correctly recognising all balls that are present in the image without false positives.
+  %       This project aims to develop methods for sphere detection in a RoboCup
+  %       environment, placing an emphasis on performance due to the limited
+  %       capabilities of the target platform. In particular, the performance is
+  %       significantly effected by the number of pixel samples read from a
+  %       given image and will be minimised. The project will focus on
+  %       developing a novel, minimal, multi-stage scanning and ball-detection
+  %       strategy that minimises the sampling effort while still correctly
+  %       recognising all balls that are present in the image without false
+  %       positives.
 
-		An implementation of the developed approach will be created by extending the NUbots’ existing vision system, to minimise the effort required. The results will be compared to the ball detection method used in their current vision system and to other competing ball detection techniques, with a heavy focus on performance and accuracy. If a robust approach is found, it could be generalised to detect other shapes such as robots, lines and goals based on a set of features.
+  %       An implementation of the developed approach will be created by
+  %       extending the NUbots’ existing vision system, to minimise the effort
+  %       required. The results will be compared to the ball detection method
+  %       used in their current vision system and to other competing ball
+  %       detection techniques, with a heavy focus on performance and accuracy.
+  %       If a robust approach is found, it could be generalised to detect other
+  %       shapes such as robots, lines and goals based on a set of features.
 
-		The following techniques will be considered during research:
+  %       It is also possible to utilise the information gathered from previous
+  %       frames, or from the robot platform itself, including the expected
+  %       position, velocity and kinematics horizon.
 
-		\begin{itemize}
-			\item Clustering algorithms
-			\begin{itemize}
-				\item K-means
-				\item DBSCAN
-				\item OPTICS
-			\end{itemize}
-			\item Generic model fitting and improvement algorithms
-			\begin{itemize}
-				\item Hough transform
-				\item Least squares optimisation
-			\end{itemize}
-			\item Sample consensus techniques
-			\begin{itemize}
-				\item RANSAC
-				\item M-SAC
-			\end{itemize}
-			\item Machine learning techniques
-			\begin{itemize}
-				\item SVM
-				\item KNN
-				\item CNN
-			\end{itemize}
-			\item Input preprocessing techniques
-			\begin{itemize}
-				\item Lookup tables
-				\item Image derivatives
-				\item Filtering and smoothing methods
-				\item Scanning strategies
-			\end{itemize}
-		\end{itemize}
+        \todo {
+            Hypothesise that 3D features of a sphere should be enough to
+            distinguish them from other round objects.
+        }
 
-		It is also possible to utilise the information gathered from previous frames, or from the robot platform itself, including the expected position, velocity and kinematics horizon.
+        \todo { 
+            Hypothesise that spatial relationships between separate 3D features (e.g.
+            specular highlight, shadow, shading gradient, the projected ellipse)
+            should help to identify spheres, as they have helped in detecting faces.
+        }
+
+        \todo { 
+            Contrast the goal of our proposed project with the focus of most other
+            algorithms, which generally do not attempt to verify that they have not
+            erroneously detected disks.
+        }
+
+        \todo { 
+            Refer to the progression of ball detection techniques from colour based to
+            shape based and intensity based, and describe our approach as a natural
+            next step.
+        }
 
 	}
 
 	\section{Project plan} {
-		
+
+        \todo {
+            Outline the tendency of ball and face detection approaches to use a
+            coarse/cheap candidate detection pass and a more accurate/costly
+            verification/outlier rejection pass, and propose that we follow the
+            same approach and investigate one or two alternatives (Hough
+            transform, the fancy circle detection papers I found, a more ad-hoc
+            method?) and compare results - possibly by leveraging the NUbots'
+            existing system.
+        }
+
+        \todo {
+            Propose that we evaluate and compare a number of methods for the
+            verification stage (i.e. the stage that differentiates between spheres
+            and disks), and list at least two methods for doing so (SVMs, CNNs,
+            KNNs, Decision forests, Adaboost?). Indicate that we should
+            investigate simple input representations/transformations that might
+            help to make these methods more effective (e.g. Fourier transforms,
+            wavelets, local binary descriptors, patch descriptors, Haar-like
+            features).
+        }
+
+        \todo {
+            Outline how the methods proposed will be evaluated and compared, with
+            reference to any expected difficulties.
+        }
+
+
+        \subsection{Image dataset creation} {
+
+            \todo {
+                Propose that we build our own dataset of images of spheres
+                (and disks) in varied lighting conditions and environments (to
+                avoid having to purchase images or look into
+                copyright/reproduction concerns). Describe how we will obtain
+                a collection of spheres, what the collection might contain,
+                how we will select environments and lighting conditions, and
+                how we will take the photos.
+            }
+
+            \todo {
+                Indicate whether/how we will label the dataset
+            }
+
+            \todo {
+                Indicate how we might augment the dataset with transformed
+                images, etc.
+            }
+
+            \todo {
+                Indicate whether images of non spherical objects will appear
+                in the dataset, which objects will be selected for inclusion,
+                and how the images will be obtained.
+            }
+
+            \todo {
+                Use the robot soccer field as one of the environments
+            }
+
+            \todo {
+                Propose that (aspheric) deflated balls be imaged in addition
+                to (spherical) inflated balls
+            }
+        }
+
 	}
 
 
 	\section{Project schedule} {
 
+        \todo {
+            Propose a timeline containing presentation preparation, dataset
+            collection, candidate selection development, classifier development,
+            detection performance testing, analysis of results, report
+            preparation, and final presentation preparation.
+        }
+
 		\begin{figure}[H]
 	        \makebox[\textwidth][c]{\resizebox{0.95\paperwidth}{!}{\input{proposal_gantt.tex}}}
 			\caption[Project Schedule] {
-				A Gantt chart illustrating the planned project schedule. Patterned grey bars represent optional tasks.
+                A Gantt chart illustrating the planned project schedule.
+                Patterned grey bars represent optional tasks.
 			}
 			\label{gantt:proposal}
 		\end{figure}
@@ -168,9 +263,17 @@
 	}
 
 	\section{Roles} {
-		
+        \todo {
+            Propose that each team member works on a different candidate detection
+            method, and a different verification method, and that all combinations
+            are then tested on the dataset.
+        }
+    }
 
-	}
+    \section{Communication of results} {
+        
+
+    }
 
 	\bibliography{bibliography}
 	\bibliographystyle{apalike}
