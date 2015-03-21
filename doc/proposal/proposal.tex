@@ -93,7 +93,6 @@
 
 	\begin{abstract}
 		
-		This is a cool test where we cite \citep{Yuan2015}.
 		
 	\end{abstract}
 
@@ -147,6 +146,8 @@
         However, while it may come naturally to humans, fast and reliable ball
         tracking has presented a challenge that has attracted much research in
         the robot soccer community.
+        
+
 
         \todo { 
             Refer to the progression of ball detection techniques from colour based to
@@ -173,17 +174,41 @@
             sports footage, but indicate that this technique alone is not
             enough to filter out all (non-spherical) false positives (e.g. a
             stationary disk will follow a valid trajectory for a ball).
+
+			Indicate that we would like an algorithm that also works on single images.
+
+            Also note that some methods attempt to gain accuracy by attempting
+            only to recognise a specific ball (e.g. the paper that used patch
+            descriptors to try and match the pattern on a given soccer ball).
         }
+
+		In 
 
         \todo {
             Hypothesise that 3D features of a sphere should be enough to
             distinguish them from other round objects.
+
+            (for the common, but important case of spheres resting on a ground
+            plane, that are primarily lit from above.)
         }
+
+        To avoid the limitations 
+
+		For simplicity, the scope of the proposed project is limited
+        to the common and important case of detecting balls that are resting
+        on the ground
 
         \todo { 
             Hypothesise that spatial relationships between separate 3D features (e.g.
             specular highlight, shadow, shading gradient, the projected ellipse)
             should help to identify spheres, as they have helped in detecting faces.
+        }
+
+        \todo {
+
+            Hypothesise that local feature/patch descriptors should be enough
+            to identify the specular highlight and shadow cast by a sphere.
+
         }
 
         \todo { 
@@ -205,7 +230,7 @@
             coarse/cheap candidate detection pass and a more accurate/costly
             verification/outlier rejection pass, and propose that we follow the
             same approach and investigate one or two alternatives (Hough
-            transform, the fancy circle detection papers I found, a more ad-hoc
+            transform, \citet{Yuan2015} or \citet{Pan2011}, a more ad-hoc
             method?) and compare results - possibly by leveraging the NUbots'
             existing system.
         }
@@ -235,11 +260,16 @@
                 copyright/reproduction concerns). Describe how we will obtain
                 a collection of spheres, what the collection might contain,
                 how we will select environments and lighting conditions, and
-                how we will take the photos.
+                how we will take the photos (include a specification of the
+                camera + image quality that will be used).
             }
 
             \todo {
                 Indicate whether/how we will label the dataset
+            }
+
+            \todo {
+                Indicate whether the dataset will contain images of moving balls
             }
 
             \todo {
