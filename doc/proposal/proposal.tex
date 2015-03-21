@@ -119,13 +119,6 @@
 
 	\section{Background and aims} {
 
-  %       Keeping track of the ball is so natural and fundamental an aspect of
-  %       playing soccer that many human players would hardly think it to be a
-  %       skill in itself. Ball tracking is similarly important in robotic
-  %       soccer, such as a Robocup game, however, fast and reliable ball
-  %       tracking has presented a challenge that has attracted much research in
-  %       the robot soccer community.
-
   %       This project aims to develop methods for sphere detection in a RoboCup
   %       environment, placing an emphasis on performance due to the limited
   %       capabilities of the target platform. In particular, the performance is
@@ -148,6 +141,40 @@
   %       frames, or from the robot platform itself, including the expected
   %       position, velocity and kinematics horizon.
 
+        Keeping track of the ball is so natural and fundamental an aspect of
+        playing soccer that many human players would hardly think it to be a
+        skill in itself.
+        However, while it may come naturally to humans, fast and reliable ball
+        tracking has presented a challenge that has attracted much research in
+        the robot soccer community.
+
+        \todo { 
+            Refer to the progression of ball detection techniques from colour based to
+            shape based and intensity based, and describe our approach as a natural
+            next step.
+        }
+
+        \todo {
+            Indicate the downfalls of simple methods. Methods based on colour
+            classification/similarity can suffer from false positives due to
+            other objects of similar colours, and can suffer from both false
+            positives and false negatives due to unexpected changes in
+            lighting. Methods based on circle detection can suffer from false
+            positives due to the presence of disks in the environment, or due
+            to objects that appear circular when viewed from specific angles.
+
+            Posit the circular appearance of disk-like objects as the worst
+            case for current ball-detection methods.
+        }
+
+        \todo {
+            Note the success of trajectory estimation in helping rule out
+            false positives in ball detection for automated annotation of
+            sports footage, but indicate that this technique alone is not
+            enough to filter out all (non-spherical) false positives (e.g. a
+            stationary disk will follow a valid trajectory for a ball).
+        }
+
         \todo {
             Hypothesise that 3D features of a sphere should be enough to
             distinguish them from other round objects.
@@ -165,11 +192,9 @@
             erroneously detected disks.
         }
 
-        \todo { 
-            Refer to the progression of ball detection techniques from colour based to
-            shape based and intensity based, and describe our approach as a natural
-            next step.
-        }
+        As a result of targeting our approach toward the 3D features that
+        distinguish spheres from objects such as disks we expect our method
+        to be particularly robust to detecting false positives.
 
 	}
 
@@ -200,7 +225,6 @@
             Outline how the methods proposed will be evaluated and compared, with
             reference to any expected difficulties.
         }
-
 
         \subsection{Image dataset creation} {
 
@@ -241,7 +265,6 @@
 
 	}
 
-
 	\section{Project schedule} {
 
         \todo {
@@ -256,6 +279,9 @@
 			\caption[Project Schedule] {
                 A Gantt chart illustrating the planned project schedule.
                 Patterned grey bars represent optional tasks.
+                \todo {
+                    Fill in the Gantt chart
+                }
 			}
 			\label{gantt:proposal}
 		\end{figure}
@@ -271,8 +297,12 @@
     }
 
     \section{Communication of results} {
-        
-
+        \todo {
+            Indicate that the results of the project will be compiled into a
+            report (as outlined in the project schedule) that is intended to
+            be suitable for submission to a conference/journal. Indicate that
+            the dataset created for the project will also be made available.
+        }
     }
 
 	\bibliography{bibliography}
