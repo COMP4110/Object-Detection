@@ -245,11 +245,11 @@
         Regression Trees (CARTs) of Haar features instead of directly using
         Haar features as weak classifiers. Their system performed sufficiently
         well for ball tracking, but detected other round objects as false
-        positives. We consider it likely that their poor false positive rate
-        was a symptom of ignoring the shading information of the spheres by
-        using only an edge image.
-
-        \todo { Note that \citet{mitri2004fast} had better results when more complex training data was used. }
+        positives. It also performed significantly better when a more complex
+        training dataset was applied, which included images under different 
+        lighting conditions and environments. We consider it likely that their 
+        poor false positive rate was a symptom of ignoring the shading 
+        information of the spheres by using only an edge image.
 
         \citet{Treptow2004filter} achieved a much lower false positive rate
         using Haar features directly, but only trained and tested their
