@@ -255,16 +255,29 @@
         Hough transform, in the task of detecting uniformly yellow, green, and white
         balls.
 
-        A similar method was implemented by \citet{mitri2004fast}. This method
-        applied a Sobel filter and a threshold function to each image as
-        preprocessing steps, passing only the detected edge images to the
-        classifiers. The method learnt Classification and Regression Trees
-        (CARTs) of Haar features instead of directly using Haar features as
-        weak classifiers. Their system performed sufficiently well for ball
-        tracking, but detected other round objects as false positives. We
-        consider it likely that their poor false positive rate was a symptom
-        of ignoring the shading information of the spheres by using only an
-        edge image.
+        \citet{zhang2013novel} used a similar approach, but attempted to
+        detect a wide variety of generic FIFA-style balls. They used extended
+        Haar features \citep{Lienhart2002extended} as weak classifiers.
+        \citeauthor{zhang2013novel} reported improved performance when modified Haar
+        features that used a division operation between their area sums, instead of
+        the usual subtraction, were included. This suggests that exploring alternate
+        weak classifiers could lead to valuable performance improvements.
+
+        \citet{mitri2004fast} applied a Sobel filter and a threshold function
+        to each image as preprocessing steps, passing only the detected edge
+        images to the classifiers. The method learnt Classification and
+        Regression Trees (CARTs) of Haar features instead of directly using
+        Haar features as weak classifiers. Their system performed sufficiently
+        well for ball tracking, but detected other round objects as false
+        positives. We consider it likely that their poor false positive rate
+        was a symptom of ignoring the shading information of the spheres by
+        using only an edge image.
+
+        \todo { Note that \citet{mitri2004fast} had better results when more complex training data was used. }
+
+        \citet{Treptow2004filter} achieved a much lower false positive rate
+        using Haar features directly, but only trained and tested their
+        detector on a single ball.
 
         \todo{ Briefly mention the similar paper 
             % + http://www.ra.cs.uni-tuebingen.de/mitarb/treptow/publications/treptow03-ecmr.pdf ?
@@ -278,7 +291,7 @@
         %     to identify the specular highlight and shadow cast by a sphere.
         % }
 
-        \todo { 
+        \todo {
             Contrast the goal of our proposed project with the focus of most other
             algorithms, which generally do not attempt to verify that they have not
             erroneously detected disks.
