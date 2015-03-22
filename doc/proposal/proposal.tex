@@ -291,21 +291,26 @@
         	format so that they are easier to process than the original without
         	losing much, if any, information.
 
-        	Some images will also be duplicated and altered in a photo editing
-        	program. These modifications may change the quality of the image, its
-        	lighting environment or apply some transformation and will be used for
-        	the purpose of testing the same image under different conditions.
+        	Some images will be duplicated and altered in a photo editing program,
+        	for the sole purpose of testing the same image under different 
+        	conditions. These modifications may change the quality of the image or
+        	its lighting environment. A transformation to the image such as rotation
+        	or scaling may also be applied.
 
-        	The dataset will contain images of spheres and disks that are composed
-        	in different ways. To begin with, the images should contain an 
-        	individual ball or disk and then progress to having both or a
-        	combination of within the same image to test if our methods of detection
-        	are able to identify multiple spheres correctly. 
-
-        	More complex images may feature:
+        	The dataset will include a number of images that contain a variety of
+        	spheres and disks. There should be a balance of object sizes, patterns,
+        	colours and textures between the data and can include the use of a
+        	tennis, soccer, golf and cricket ball. The images should also be
+        	composed in different ways. To begin with, the images should contain an
+        	individual ball or disk and then progress to having both, or a 
+        	combination of, within the same image. This will test whether our
+        	methods of detection are able to identify multiple spheres correctly.
+			Some images may feature:
 
         	\begin{itemize}
-        		\item Objects that appear as spheres from different angles. 
+        		\item Objects that appear as spheres from different angles.
+        		\item Non-spherical objects.
+        		\item An aspheric (deflated) sphere.
         		\item Spheres that intersect with each other.
         		\item Disks that intersect with each other.
         		\item A sphere and disk that intersect with each other.
@@ -313,10 +318,11 @@
         		\item A sphere or disk that is partially cropped out.
         	\end{itemize}
 
-        	A robot soccer field will be the primary environment for the dataset,
-        	but will undergo several lighting conditions when compiling the
-        	images. This will enable the sphere detection methods to be tested with
-        	a diverse range of data. The proposed lighting environments include:
+        	A robot soccer field will be the primary environment for the dataset, as
+        	it is easily accessible to the team, and will undergo several lighting
+        	conditions when compiling the images. This will enable the sphere 
+        	detection methods to be tested with a broad range of data. The proposed
+        	lighting environments include:
 
         	\begin{itemize}
         		\item The lighting is under normal conditions.
@@ -324,8 +330,8 @@
         		\item The lighting has a primarily green hue.
         		\item The lighting has a primarily blue hue.
         		\item The lighting has a primarily yellow hue.
-        		\item The lighting has a primarily magenta hue.
         		\item The lighting has a primarily cyan hue.
+        		\item The lighting has a primarily magenta hue.
         		\item The lighting is dim.
         		\begin{itemize}
         			\item The shadow of the ball should blend with the environment.
@@ -336,12 +342,12 @@
         		\end{itemize}
         	\end{itemize}
 
-            \todo {
-                Describe how we will obtain a collection of spheres, what the 
-                collection might contain, how we will select environments and 
-                lighting conditions, and how we will take the photos 
-                (include a specification of the camera + image quality that will be used).
-            }
+        	The dataset should also include a good combination of features and
+        	environment configurations to test more complex cases. For example, two
+        	intersecting spheres of the same colour under dim lighting will be far 
+        	more difficult to identify than two individual spheres of differing
+        	colours in good lighting. The texture of the sphere should also be
+        	considered as it can effect the type of lighting that is emitted.
 
             \todo {
                 Indicate whether/how we will label the dataset
@@ -350,21 +356,6 @@
             To reduce the complexity of this project, the dataset will not contain
             images of moving balls.
 
-            \todo {
-                Indicate how we might augment the dataset with transformed
-                images, etc.
-            }
-
-            \todo {
-                Indicate whether images of non spherical objects will appear
-                in the dataset, which objects will be selected for inclusion,
-                and how the images will be obtained.
-            }
-
-            \todo {
-                Propose that (aspheric) deflated balls be imaged in addition
-                to (spherical) inflated balls
-            }
         }
 
 	}
