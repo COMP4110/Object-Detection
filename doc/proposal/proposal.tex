@@ -61,6 +61,12 @@
 \allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
 % (This matches ConTeXt defaults)
 
+%%% ABSTRACT APPEARANCE
+\usepackage{abstract}
+\renewcommand{\absnamepos}{flushleft}
+\setlength{\absleftindent}{0pt}
+\setlength{\absrightindent}{0pt}
+
 %%% TABLE OF CONTENTS APPEARANCE
  % Put the bibliography in the ToC
 \usepackage[nottoc,notlof,notlot]{tocbibind}
@@ -83,7 +89,7 @@
 \title{COMP4110 Project Proposal}
 \subtitle{Fast detection of arbitrary balls for robot soccer}
 % \subtitle{A 3D testing environment for an enhanced virtual reality system}
-\author{ Brendan Annable, Mitchell Metcalfe, Monica Olejniczak }
+\author{Brendan Annable, Mitchell Metcalfe, Monica Olejniczak}
 
 % Activate to display a given date or no date (if empty), otherwise the current date is printed
 \date{\today}
@@ -91,20 +97,22 @@
 \rhead{COMP4110, Project Proposal, \today}
 
 \begin{document}
-	% \newgeometry{top=2cm}
 	\maketitle
-	% \vspace{-1.5 cm}
-	% \restoregeometry
 
 	\begin{abstract}
-		
-		
+		This proposal researches current methods of sphere detection and proposes 
+		the \todo{some method name} based on these findings. This report 
+		describes this method in detail and how its development will be 
+		approached. The dataset will be created by the researchers and must 
+		include a broad range of image features, environments and lighting 
+		conditions to ensure that the results can be well tested. The timeline
+		of this proposal is detailed, as well as the roles and responsibilities
+		of the researchers and how the results will be communicated.
 	\end{abstract}
 
 	\newpage
 	\tableofcontents
 	\newpage
-
 
 	\section{Summary} {
 
