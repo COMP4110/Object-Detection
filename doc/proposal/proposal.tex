@@ -216,24 +216,31 @@
             plane, that are primarily lit from above.)
         }
 
-        To avoid the limitations 
-
-        \citet{nillius2008shading} perform shading based sphere detection
-        using PCA with a basis derived analytically from a given BRDF and assumptions
-        on scene illumination. Their method works well for untextured spheres, but is
-        not  designed to work on spheres with patterns printed on them, like many
-        soccer balls.
-
-		For simplicity, the scope of the proposed project is limited
-        to the common and important case of detecting balls that are resting
-        on the ground. It can also be assumed that lights are always above the ball
-        and results in a shadow being cast from the ball.
-
         \todo { 
             Hypothesise that spatial relationships between separate 3D features (e.g.
             specular highlight, shadow, shading gradient, the projected ellipse)
             should help to identify spheres, as they have helped in detecting faces.
         }
+
+        To avoid the limitations of methods based on assumptions such as
+        these, we propose the creation of a sphere detection method which uses
+        the shading patterns characteristic of spherical objects to classify
+        objects as spheres.
+
+        \citet{nillius2008shading} perform shading based sphere detection
+        using PCA with a basis derived analytically from a given BRDF and assumptions
+        on scene illumination. While their method works well for untextured spheres, it is
+        not designed to work on spheres with patterns printed on them, like many
+        soccer balls.
+
+        To build a detector that is more robust to differently textured spheres.
+
+
+
+		For simplicity, the scope of the proposed project is limited
+        to the common and important case of detecting balls that are resting
+        on the ground. It can also be assumed that lights are always above the ball
+        and results in a shadow being cast from the ball.
 
         % % Note: Let's not do this. It's a bit too strong/unlikely to work.
         % %       We should instead just mention patch descriptors as a possible
