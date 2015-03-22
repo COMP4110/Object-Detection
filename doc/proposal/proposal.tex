@@ -147,13 +147,27 @@
         tracking has presented a challenge that has attracted much research in
         the robot soccer community.
         
-
-
         \todo { 
             Refer to the progression of ball detection techniques from colour based to
-            shape based and intensity based, and describe our approach as a natural
+            shape based and intensity based.
+
+            Describe our approach as a natural
             next step.
+
+            Add references here.
         }
+
+        Early attempts at ball detection at Robocup simply used histogramming
+        techniques targeted at a specific range of colour intensities to find
+        the orange ball.  As the Robocup playing field became less structured,
+        teams have increasingly implemented methods that detect the shape of
+        the ball as well.
+        \citet{schulz2007ball} used a neural network on
+        subsampled luminance images of the ball to detect the ball's shape.
+        Recent approaches have focused on detecting the approximately
+        circular shape of the ball in typical images. These include
+        clustering, hough filters, and RANSAC.
+
 
         \todo {
             Indicate the downfalls of simple methods. Methods based on colour
