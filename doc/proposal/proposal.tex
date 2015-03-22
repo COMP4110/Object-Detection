@@ -4,9 +4,11 @@
 % This is a simple template for a LaTeX document using the "article" class.
 % See "book", "report", "letter" for other types of document.
 
-\documentclass[11pt]{scrartcl} % use larger type; default would be 10pt
+% use larger type; default would be 10pt
+\documentclass[11pt]{scrartcl}
 
-\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+% set input encoding (not needed with XeLaTeX)
+\usepackage[utf8]{inputenc}
 \usepackage[title,titletoc,header]{appendix}
 \usepackage{multicol}
 % \usepackage{titling}
@@ -140,10 +142,9 @@
   %       frames, or from the robot platform itself, including the expected
   %       position, velocity and kinematics horizon.
 
-        Keeping track of the ball is so natural and fundamental an aspect of
-        playing soccer that many human players would hardly think it to be a
-        skill in itself.
-        However, while it may come naturally to humans, fast and reliable ball
+  		Keeping track of a ball is a natural and fundamental aspect of playing 
+  		soccer, that many human players would not consider to be a skill in itself. 
+  		However, while it may come naturally to humans, fast and reliable ball
         tracking has presented a challenge that has attracted much research in
         the robot soccer community.
         
@@ -157,14 +158,14 @@
             Add references here.
         }
 
-        Early attempts at ball detection at Robocup simply used histogramming
+        Early attempts at ball detection at RoboCup simply used histogramming
         techniques targeted at a specific range of colour intensities to find
-        the orange ball.  As the Robocup playing field became less structured,
+        a coloured ball. As the RoboCup playing field became less structured,
         teams have increasingly implemented methods that detect the shape of
         the ball as well.
         \citet{schulz2007ball} used a neural network on
-        subsampled luminance images of the ball to detect the ball's shape.
-        Recent approaches have focused on detecting the approximately
+        subsampled luminance images of the ball to detect the shape of the 
+        ball. Recent approaches have focused on detecting the approximately
         circular shape of the ball in typical images. These include
         clustering, hough filters, and RANSAC.
 
@@ -179,9 +180,9 @@
         Many current ball detection methods make assumptions about the ball or
         the environment that limit their applicability elsewhere. Methods
         based on colour classification or similarity can suffer from false
-        positives due to other objects of similar colours, and can suffer from
-        both false positives and false negatives due to unexpected changes in
-        lighting. Methods based on circle or ellipse detection can suffer from
+        positives due to other objects having similar colours. These methods may 
+        also detect both false positives and false negatives due to unexpected changes
+        in lighting. Methods based on circle or ellipse detection can be effected by
         false positives due to the presence of disk-like objects in the
         environment, or due to objects that appear circular when viewed from
         specific angles.
@@ -219,7 +220,8 @@
 
 		For simplicity, the scope of the proposed project is limited
         to the common and important case of detecting balls that are resting
-        on the ground
+        on the ground. It can also be assumed that lights are always above the ball
+        and results in a shadow being cast from the ball.
 
         \todo { 
             Hypothesise that spatial relationships between separate 3D features (e.g.
@@ -241,8 +243,8 @@
         }
 
         As a result of targeting our approach toward the 3D features that
-        distinguish spheres from objects such as disks we expect our method
-        to be particularly robust to detecting false positives.
+        distinguish spheres from objects such as disks, we expect our method
+        to be particularly robust against detecting false positives.
 
 	}
 
@@ -342,19 +344,23 @@
 	}
 
 	\section{Roles} {
+
         \todo {
             Propose that each team member works on a different candidate detection
             method, and a different verification method, and that all combinations
             are then tested on the dataset.
         }
+
     }
 
     \section{Communication of results} {
-        The results of the project will be compiled into a report (as outlined
-        in the project schedule) that is intended to be suitable for
+
+        The results of the project will be compiled into a report, as outlined
+        in the project schedule, that is intended to be suitable for
         submission to a relevant conference or journal. In the case that the
         report is accepted for publication, the dataset created for the
         project will also be made available online.
+        
     }
 
 	\bibliography{bibliography}
