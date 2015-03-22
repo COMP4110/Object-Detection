@@ -248,6 +248,10 @@
         Hough transform, in the task of detecting uniformly yellow, green, and white
         balls.
 
+        \todo{ Briefly mention the similar paper \citet{mitri2004fast}
+            % + http://www.ra.cs.uni-tuebingen.de/mitarb/treptow/publications/treptow03-ecmr.pdf ?
+         }
+
         % % Note: Let's not do this. It's a bit too strong/unlikely to work.
         % %       We should instead just mention patch descriptors as a possible
         % %       technique in the project plan?
@@ -260,6 +264,8 @@
             Contrast the goal of our proposed project with the focus of most other
             algorithms, which generally do not attempt to verify that they have not
             erroneously detected disks.
+
+            The below sentence may be enough?
         }
 
         As a result of targeting our approach toward the 3D features that
@@ -282,20 +288,27 @@
         }
 
         \todo {
-            Propose that we evaluate and compare a number of methods for the
-            verification stage (i.e. the stage that differentiates between spheres
-            and disks), and list at least two methods for doing so (SVMs, CNNs,
-            KNNs, Decision forests, Adaboost?). Indicate that we should
-            investigate simple input representations/transformations that might
-            help to make these methods more effective (e.g. Fourier transforms,
-            wavelets, local binary descriptors, patch descriptors, Haar-like
-            features).
+            % Propose that we evaluate and compare a number of methods for the
+            % verification stage (i.e. the stage that differentiates between spheres
+            % and disks), and list at least two methods for doing so (SVMs, CNNs,
+            % KNNs, Decision forests, Adaboost?). Indicate that we should
+            % investigate simple input representations/transformations that might
+            % help to make these methods more effective (e.g. Fourier transforms,
+            % wavelets, local binary descriptors, patch descriptors, Haar-like
+            % features).
+
+            Propose that we develop a sphere detection system in the style of
+            \citet{masselli2013haar}, and \citet{mitri2004fast}. Propose that
+            we investigate a variety of weak classifiers and variants of
+            Adaboost.
         }
 
         \todo {
             Outline how the methods proposed will be evaluated and compared, with
             reference to any expected difficulties.
         }
+
+        We will train and test our sphere detector on a purpose built image database.
 
         \subsection{Image dataset creation} {
 
