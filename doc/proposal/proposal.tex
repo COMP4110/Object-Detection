@@ -168,21 +168,32 @@
         circular shape of the ball in typical images. These include
         clustering, hough filters, and RANSAC.
 
+        \todo {
+            Make a note about colour classification: 
+
+            "The preprocessing step of colour classification using a precalculated
+            lookup table has become standard in the Standard Platform and Kid Size
+            leagues."
+        }
+
+        Many current ball detection methods make assumptions about the ball or
+        the environment that limit their applicability elsewhere. Methods
+        based on colour classification or similarity can suffer from false
+        positives due to other objects of similar colours, and can suffer from
+        both false positives and false negatives due to unexpected changes in
+        lighting. Methods based on circle or ellipse detection can suffer from
+        false positives due to the presence of disk-like objects in the
+        environment, or due to objects that appear circular when viewed from
+        specific angles.
 
         \todo {
-            Indicate the downfalls of simple methods. Methods based on colour
-            classification/similarity can suffer from false positives due to
-            other objects of similar colours, and can suffer from both false
-            positives and false negatives due to unexpected changes in
-            lighting. Methods based on circle detection can suffer from false
-            positives due to the presence of disks in the environment, or due
-            to objects that appear circular when viewed from specific angles.
-
             Posit the circular appearance of disk-like objects as the worst
             case for current ball-detection methods.
         }
 
         \todo {
+            % This may be unrelated enough that we can just not mention it.
+
             Note the success of trajectory estimation in helping rule out
             false positives in ball detection for automated annotation of
             sports footage, but indicate that this technique alone is not
@@ -195,8 +206,6 @@
             only to recognise a specific ball (e.g. the paper that used patch
             descriptors to try and match the pattern on a given soccer ball).
         }
-
-		In 
 
         \todo {
             Hypothesise that 3D features of a sphere should be enough to
