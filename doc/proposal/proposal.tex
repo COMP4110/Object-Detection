@@ -131,28 +131,6 @@
 
 	\section{Background and aims} {
 
-  %       This project aims to develop methods for sphere detection in a RoboCup
-  %       environment, placing an emphasis on performance due to the limited
-  %       capabilities of the target platform. In particular, the performance is
-  %       significantly effected by the number of pixel samples read from a
-  %       given image and will be minimised. The project will focus on
-  %       developing a novel, minimal, multi-stage scanning and ball-detection
-  %       strategy that minimises the sampling effort while still correctly
-  %       recognising all balls that are present in the image without false
-  %       positives.
-
-  %       An implementation of the developed approach will be created by
-  %       extending the NUbots’ existing vision system, to minimise the effort
-  %       required. The results will be compared to the ball detection method
-  %       used in their current vision system and to other competing ball
-  %       detection techniques, with a heavy focus on performance and accuracy.
-  %       If a robust approach is found, it could be generalised to detect other
-  %       shapes such as robots, lines and goals based on a set of features.
-
-  %       It is also possible to utilise the information gathered from previous
-  %       frames, or from the robot platform itself, including the expected
-  %       position, velocity and kinematics horizon.
-
   		Keeping track of a ball is a natural and fundamental aspect of playing 
   		soccer, that many human players would not consider to be a skill in itself. 
   		However, while it may come naturally to humans, fast and reliable ball
@@ -165,8 +143,6 @@
 
             Describe our approach as a natural
             next step.
-
-            Add references here.
         }
 
         Early attempts at ball detection at RoboCup simply used histogramming
@@ -278,10 +254,6 @@
         \citet{Treptow2004filter} achieved a much lower false positive rate
         using Haar features directly, but only trained and tested their
         detector on a single ball.
-
-        \todo{ Briefly mention the similar paper 
-            % + http://www.ra.cs.uni-tuebingen.de/mitarb/treptow/publications/treptow03-ecmr.pdf ?
-         }
 
         % % Note: Let's not do this. It's a bit too strong/unlikely to work.
         % %       We should instead just mention patch descriptors as a possible
