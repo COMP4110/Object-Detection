@@ -227,12 +227,13 @@
             should help to identify spheres, as they have helped in detecting faces.
         }
 
-        \todo {
-
-            Hypothesise that local feature/patch descriptors should be enough
-            to identify the specular highlight and shadow cast by a sphere.
-
-        }
+        % % Note: Let's not do this. It's a bit too strong/unlikely to work.
+        % %       We should instead just mention patch descriptors as a possible
+        % %       technique in the project plan?
+        % \todo {
+        %     Hypothesise that local feature/patch descriptors should be enough
+        %     to identify the specular highlight and shadow cast by a sphere.
+        % }
 
         \todo { 
             Contrast the goal of our proposed project with the focus of most other
@@ -241,7 +242,7 @@
         }
 
         As a result of targeting our approach toward the 3D features that
-        distinguish spheres from objects such as disks we expect our method
+        distinguish spheres from objects, such as disks, we expect our method
         to be particularly robust to detecting false positives.
 
 	}
@@ -256,6 +257,8 @@
             transform, \citet{Yuan2015} or \citet{Pan2011}, a more ad-hoc
             method?) and compare results - possibly by leveraging the NUbots'
             existing system.
+
+            % Note: we could just use 'cascaded classifiers' 
         }
 
         \todo {
@@ -347,6 +350,9 @@
             method, and a different verification method, and that all combinations
             are then tested on the dataset.
         }
+
+
+
     }
 
     \section{Communication of results} {
