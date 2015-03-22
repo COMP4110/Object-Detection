@@ -337,20 +337,31 @@
         		\item A sphere or disk that is partially cropped out.
         	\end{itemize}
 
-        	A robot soccer field will be the primary environment for the dataset, as
-        	it is easily accessible to the team, and will undergo several lighting
-        	conditions when compiling the images. This will enable the sphere 
-        	detection methods to be tested with a broad range of data. The proposed
-        	lighting environments include:
+        	It is of significant importance to create a dataset that features an
+        	array of environments, to ensure that the sphere detection methods are
+        	robust and able to function in as many scenarios as possible. These
+        	environments have been grouped into four distinct categories:
+
+        	\begin{enumerate}
+        		\item \textbf{Soccer:} This is a standard indoor robot soccer 
+        		environment.
+        		\item \textbf{Uniform:} The environment is plain and largely the same
+        		colour.
+        		\item \textbf{Textured:} The environment contains textures and
+        		repeatable patterns.
+        		\item \textbf{Cluttered:} The environment contains many objects that
+        		may obscure the detection of spheres.
+        	\end{enumerate}
+        	
+        	And may exhibit the following range of lighting conditions:
 
         	\begin{itemize}
+        		\item The number of lights vary.
+        		\item The position of the lights vary.
+        		\item The scene is lit from a single light source.
+        		\item The scene is lit from multiple light sources in a similar direction.
+        		\item The scene is lit from multiple light sources from different directions.
         		\item The lighting is under normal conditions.
-        		\item The lighting has a primarily red hue.
-        		\item The lighting has a primarily green hue.
-        		\item The lighting has a primarily blue hue.
-        		\item The lighting has a primarily yellow hue.
-        		\item The lighting has a primarily cyan hue.
-        		\item The lighting has a primarily magenta hue.
         		\item The lighting is dim.
         		\begin{itemize}
         			\item The shadow of the ball should blend with the environment.
