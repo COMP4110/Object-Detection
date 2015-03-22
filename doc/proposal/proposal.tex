@@ -255,7 +255,18 @@
         Hough transform, in the task of detecting uniformly yellow, green, and white
         balls.
 
-        \todo{ Briefly mention the similar paper \citet{mitri2004fast}
+        A similar method was implemented by \citet{mitri2004fast}. This method
+        applied a Sobel filter and a threshold function to each image as
+        preprocessing steps, passing only the detected edge images to the
+        classifiers. The method learnt Classification and Regression Trees
+        (CARTs) of Haar features instead of directly using Haar features as
+        weak classifiers. Their system performed sufficiently well for ball
+        tracking, but detected other round objects as false positives. We
+        consider it likely that their poor false positive rate was a symptom
+        of ignoring the shading information of the spheres by using only an
+        edge image.
+
+        \todo{ Briefly mention the similar paper 
             % + http://www.ra.cs.uni-tuebingen.de/mitarb/treptow/publications/treptow03-ecmr.pdf ?
          }
 
@@ -308,7 +319,7 @@
             % features).
 
             Propose that we develop a sphere detection system in the style of
-            \citet{masselli2013haar}, and \citet{mitri2004fast}. Propose that
+            \citet{masselli2013haar}, and \citet{mitri2004fast}, and \citet{Treptow2004filter}. Propose that
             we investigate a variety of weak classifiers and variants of
             Adaboost.
         }
