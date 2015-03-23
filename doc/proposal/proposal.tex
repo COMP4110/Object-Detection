@@ -137,13 +137,14 @@
         tracking has presented a challenge that has attracted much research in
         the robot soccer community.
         
-        \todo { 
-            Refer to the progression of ball detection techniques from colour based to
-            shape based and intensity based.
+        % % Note: This is largely achieved by the remainder of this section.
+        % \todo { 
+        %     Refer to the progression of ball detection techniques from colour based to
+        %     shape based and intensity based.
 
-            Describe our approach as a natural
-            next step.
-        }
+        %     Describe our approach as a natural
+        %     next step.
+        % }
 
         Early attempts at ball detection at RoboCup simply used histogramming
         techniques targeted at a specific range of colour intensities to find
@@ -174,16 +175,16 @@
         environment, or due to objects that appear circular when viewed from
         specific angles.
 
-        \todo {
-            Posit the circular appearance of disk-like objects as the worst
-            case for current ball-detection methods.
-        }
-
-        \todo { 
-            Hypothesise that spatial relationships between separate 3D features (e.g.
-            specular highlight, shadow, shading gradient, the projected ellipse)
-            should help to identify spheres, as they have helped in detecting faces.
-        }
+        % % Note: These comments are probably unnecessary.
+        % \todo {
+        %     Posit the circular appearance of disk-like objects as the worst
+        %     case for current ball-detection methods.
+        % }
+        % \todo { 
+        %     Hypothesise that spatial relationships between separate 3D features (e.g.
+        %     specular highlight, shadow, shading gradient, the projected ellipse)
+        %     should help to identify spheres, as they have helped in detecting faces.
+        % }
 
         To avoid the limitations of methods based on assumptions such as
         these, we propose the creation of a sphere detection method which uses
