@@ -101,13 +101,13 @@
 
 	\begin{abstract}
 		This proposal researches current methods of sphere detection and proposes 
-		the \todo{some method name} based on these findings. This report 
-		describes this method in detail and how its development will be 
-		approached. The dataset will be created by the researchers and must 
-		include a broad range of image features, environments and lighting 
-		conditions to ensure that the results can be well tested. The timeline
-		of this proposal is detailed, as well as the roles and responsibilities
-		of the researchers and how the results will be communicated.
+		the use of boosted weak classifiers based on these findings. This report 
+		describes this method and how its development will be approached. The
+		dataset will be created by the researchers and must include a broad 
+		range of image features, environments and lighting conditions to ensure
+		that the results can be well tested. The timeline of this proposal is
+		detailed, as well as the roles and responsibilities of the researchers
+		and how the results will be communicated.
 	\end{abstract}
 
 	\newpage
@@ -324,12 +324,13 @@
         	The dataset will include a number of images that contain a variety of
         	spheres and disks. There should be a balance of object sizes, patterns,
         	colours and textures between the data and can include the use of a
-        	tennis, soccer, golf and cricket ball. The images should also be
-        	composed in different ways. To begin with, the images should contain an
-        	individual ball or disk and then progress to having both, or a 
-        	combination of, within the same image. This will test whether our
-        	methods of detection are able to identify multiple spheres correctly.
-			Some images may feature:
+        	tennis, soccer, golf and cricket ball. To reduce the complexity of this
+        	project, the images will not contain moving balls, but they should be
+        	composed in different ways to capture a range of data. To begin with,
+        	the images should contain an individual ball or disk and then progress
+        	to having both, or a combination of, within the same image. This will
+        	test whether our methods of detection are able to identify multiple 
+        	spheres correctly. Some images may feature:
 
         	\begin{itemize}
         		\item Objects that appear as spheres from different angles.
@@ -384,12 +385,9 @@
         	colours in good lighting. The texture of the sphere should also be
         	considered as it can effect the type of lighting that is emitted.
 
-            \todo {
-                Indicate whether/how we will label the dataset
-            }
-
-            To reduce the complexity of this project, the dataset will not contain
-            images of moving balls.
+        	The positions and sizes of the spheres within the dataset will be
+        	specified by drawing boxes around them, so these cropped images can be
+        	used to train the classifiers.
 
         }
 
