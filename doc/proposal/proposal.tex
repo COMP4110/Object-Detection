@@ -277,21 +277,22 @@
         %     existing system.
         % }
 
-        \todo {
-            % Propose that we evaluate and compare a number of methods for the
-            % verification stage (i.e. the stage that differentiates between spheres
-            % and disks), and list at least two methods for doing so (SVMs, CNNs,
-            % KNNs, Decision forests, Adaboost?). Indicate that we should
-            % investigate simple input representations/transformations that might
-            % help to make these methods more effective (e.g. Fourier transforms,
-            % wavelets, local binary descriptors, patch descriptors, Haar-like
-            % features).
+        % exploring the relative effectiveness of different weak classifiers
+        % and patch descriptors in training boosted classifiers to
+        % differentiate spheres and other round objects
 
-            Propose that we develop a sphere detection system in the style of
-            \citet{masselli2013haar}, and \citet{mitri2004fast}, and \citet{Treptow2004filter}. Propose that
-            we investigate a variety of weak classifiers and variants of
-            Adaboost.
-        }
+        We plan to develop a sphere detection system based on boosted weak
+        classifiers in the style of \citeauthor{zhang2013novel}, and
+        \citeauthor{masselli2013haar}, but with the additional goal of
+        distinguishing spheres from objects of similar appearance such as
+        disks. Due to the increased difficulty of this classification task, we
+        plan to investigate a variety of weak classifiers for use in the
+        adaboost algorithm. Successful classifier options we plan to explore
+        include the extended Haar features used by \citet{zhang2013novel},
+        Histograms of Oriented Gradients (HoG) features, as used in
+        \citet{zhu2006hogs}, and variations on more recent patch descriptors such
+        as the ORB descriptor introduced by \citet{rublee2011orb}.
+
 
         \todo {
             Outline how the methods proposed will be evaluated and compared, with
