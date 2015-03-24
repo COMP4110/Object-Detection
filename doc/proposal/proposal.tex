@@ -311,26 +311,36 @@
         	format so that they are easier to process than the original without
         	losing much, if any, information.
 
-        	Some images will be duplicated and altered in a photo editing program,
-        	for the sole purpose of testing the same image under different 
+        	Some images will be duplicated and altered using photo editing software,
+        	for the sole purpose of testing the same image under various 
         	conditions. These modifications may change the quality of the image or
         	its lighting environment. A transformation to the image such as rotation
         	or scaling may also be applied.
 
             The dataset will include a number of images that contain a variety
-            of spheres and disks. There should be a balance of object sizes,
-            patterns, colours and textures between the data and can include
+            of spheres and disks. There will be a balance of object sizes,
+            patterns, colours and textures between the images and can include
             the use of a tennis, soccer, golf and cricket ball. To reduce the
-            complexity of this project, the images will not contain moving
-            balls, but they should be composed in different ways to capture a
-            range of data.
-            \todo{ make it clearer that `they' refers to the balls rather than the images }
+            complexity of this project, the images will be taken of motionless spheres, to avoid any motion blur.
+            
+            There is also the possibility of generating spheres procedurally, combing computer graphics and Physically Based Rendering \citep{pbr}, seen in Figure \ref{figure:pba}. This will provide an opportunity to thoroughly test and compare the detection methods on spheres with measurable and known characteristics. This will 
+            
+			\begin{figure}[H]            
+				\centering
+    	        \includegraphics[scale=0.3]{microcompare05.jpg}
+	            \caption[Project Schedule] {
+                	Computer generated spheres using Physically Based Rendering \citep{pbr}.
+				}
+				
+			\label{figure:pba}
+            \end{figure}
+            
             Images of balls that are primarily metallic or
             transparent will also not be included. To begin with, the images
             should contain an individual ball or disk and then progress to
             having both, or a combination of, within the same image. This will
             test whether our methods of detection are able to identify
-            multiple  spheres correctly. Some images may feature:
+            multiple spheres correctly. Some images may feature:
 
         	\begin{itemize}
         		\item Objects that appear as spheres from different angles.
