@@ -262,6 +262,7 @@
 	}
 
 	\section{Project plan} {
+    \label{sec:plan}
 
         % % Note: Not sure about this anymore. As our project is now focused
         % % on differentiating spheres and disks, rather than execution time,
@@ -321,16 +322,20 @@
         	its lighting environment. A transformation to the image such as rotation
         	or scaling may also be applied.
 
-        	The dataset will include a number of images that contain a variety of
-        	spheres and disks. There should be a balance of object sizes, patterns,
-        	colours and textures between the data and can include the use of a
-        	tennis, soccer, golf and cricket ball. To reduce the complexity of this
-        	project, the images will not contain moving balls, but they should be
-        	composed in different ways to capture a range of data. To begin with,
-        	the images should contain an individual ball or disk and then progress
-        	to having both, or a combination of, within the same image. This will
-        	test whether our methods of detection are able to identify multiple 
-        	spheres correctly. Some images may feature:
+            The dataset will include a number of images that contain a variety
+            of spheres and disks. There should be a balance of object sizes,
+            patterns, colours and textures between the data and can include
+            the use of a tennis, soccer, golf and cricket ball. To reduce the
+            complexity of this project, the images will not contain moving
+            balls, but they should be composed in different ways to capture a
+            range of data.
+            \todo{ make it clearer that `they' refers to the balls rather than the images }
+            Images of balls that are primarily metallic or
+            transparent will also not be included. To begin with, the images
+            should contain an individual ball or disk and then progress to
+            having both, or a combination of, within the same image. This will
+            test whether our methods of detection are able to identify
+            multiple  spheres correctly. Some images may feature:
 
         	\begin{itemize}
         		\item Objects that appear as spheres from different angles.
@@ -394,6 +399,11 @@
 	}
 
 	\section{Project schedule} {
+        The project plan outlined in section~\ref{sec:plan} is to be achieved
+        according to the schedule presented in the Gantt chart in
+        Figure~\ref{gantt:proposal}.
+
+        \todo{Consider also listing/describing the major points of the plan here}
 
 		\begin{figure}[H]
 	        \makebox[\textwidth][c]{\resizebox{0.95\paperwidth}{!}{\input{proposal_gantt.tex}}}
@@ -402,7 +412,6 @@
 			}
 			\label{gantt:proposal}
 		\end{figure}
-
 	}
 
 	\section{Roles and responsibilities} {
