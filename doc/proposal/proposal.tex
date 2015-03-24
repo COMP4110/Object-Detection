@@ -101,7 +101,7 @@
 		This proposal researches current methods of sphere detection and proposes 
 		the use of boosted weak classifiers based on these findings. This report 
 		describes this method and how its development will be approached. The
-		dataset will be created by the researchers and must include a broad 
+		dataset will be created in-house and must include a broad 
 		range of image features, environments and lighting conditions to ensure
 		that the results can be well tested. The timeline of this proposal is
 		detailed, as well as the roles and responsibilities of the researchers
@@ -129,7 +129,7 @@
 
 	\section{Background and aims} {
 
-  		Keeping track of a ball is a natural and fundamental aspect of playing 
+  		Visually keeping track of a ball is a natural and fundamental aspect of playing 
   		soccer, that many human players would not consider to be a skill in itself. 
   		However, while it may come naturally to humans, fast and reliable ball
         tracking has presented a challenge that has attracted much research in
@@ -144,11 +144,8 @@
         %     next step.
         % }
 
-        Early attempts at ball detection at RoboCup simply used histogramming
-        techniques targeted at a specific range of colour intensities to find
-        a coloured ball. As the RoboCup playing field became less structured,
-        teams have increasingly implemented methods that detect the shape of
-        the ball as well.
+        Early attempts at ball detection algorithms used in the international robot soccer competition,
+        RoboCup, simply used histogramming techniques targeted at a specific range of colour intensities to find a coloured ball. As the RoboCup playing field has become less structured over the years, competing teams have needed to account for unpredictable colours and have increasingly implemented methods that detect the shape of the ball as well.
         \citet{schulz2007ball} used a neural network on
         subsampled luminance images of the ball to detect the shape of the 
         ball. Recent approaches have focused on detecting the approximately
@@ -164,9 +161,9 @@
         }
 
         Many current ball detection methods make assumptions about the ball or
-        the environment that limit their applicability elsewhere. Methods
+        the environment that limit their applicability in a more general case. Methods
         based on colour classification or similarity can suffer from false
-        positives due to other objects having similar colours. These methods may 
+        positive detections due to other objects having similar colours. These methods may 
         also detect both false positives and false negatives due to unexpected changes
         in lighting. Methods based on circle or ellipse detection can be effected by
         false positives due to the presence of disk-like objects in the
@@ -185,13 +182,13 @@
         % }
 
         To avoid the limitations of methods based on assumptions such as
-        these, we propose the creation of a sphere detection method which uses
+        these, we propose to research and develop a sphere detection method which uses
         the shading patterns characteristic of spherical objects to classify
         objects as spheres.
 
         \citet{nillius2008shading} perform shading based sphere detection
-        using PCA with a basis derived analytically from a given BRDF and assumptions
-        on scene illumination. While their method works well for untextured spheres, it is
+        using Principal Component Analysis (PCA) with a basis derived analytically from a given Bidirectional Reflectance Distribution Function (BRDF) and assumptions
+        on scene illumination. While this method works well for plain untextured spheres, it is
         not designed to work on spheres with patterns printed on them, like many
         soccer balls.
 
