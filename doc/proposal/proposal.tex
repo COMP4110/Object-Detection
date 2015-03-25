@@ -17,7 +17,7 @@
 \usepackage{amsmath}
 \usepackage{hyperref}
 
-\usepackage{todonotes}
+\usepackage[disable]{todonotes}
 \presetkeys{todonotes}{inline}{}
 
 \usepackage{natbib}
@@ -285,14 +285,28 @@
         as the ORB descriptor introduced by \citet{rublee2011orb}.
 
 
-        \todo {
-            Outline how the methods proposed will be evaluated and compared, with
-            reference to any expected difficulties.
-        }
+        % \todo {
+        %     Outline how the methods proposed will be evaluated and compared, with
+        %     reference to any expected difficulties.
+        % }
 
-        We will train and test our sphere detector on a purpose built image database.
+		We will train and test our sphere detector on a purpose built image
+        database, the creation of which is outlined in
+        section~\ref{sec:dataset}. The implemented detection methods will be
+        compared in terms of recognition rate, false positive rate, time
+        required for detection, and the training time required. Time
+        permitting, we will also compare the suitability of the best
+        techniques for online detection by running them on a robot.
+
+        To ensure the timely completion of the project, existing libraries
+        will be utilised whenever possible in the implementation of the chosen
+        classification techniques. The NUbots' existing codebase will be
+        considered as a potential starting point for the development of the
+        new classifiers and test platform.
+
 
         \subsection{Image dataset creation} {
+        \label{sec:dataset}
 
         	The creation of the dataset will be built by the research team, removing
         	the need for purchasing which eliminates any copyright and production
