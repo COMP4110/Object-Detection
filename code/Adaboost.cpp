@@ -1,6 +1,8 @@
 #include <ostream>
 #include <iostream>
 
+#include <opencv2/imgproc.hpp>
+
 #include "Adaboost.h"
 
 /**
@@ -9,29 +11,47 @@
  * @param directory The relative path to the directory.
  */
 void Adaboost::readDirectory(const std::string& directory) {
-	// Capture the frames in the specified directory.
-	cv::VideoCapture frames(directory + "/sphere_%03d." + Adaboost::Image.format);
-	// Check if the video capture has been initialised.
-	if (frames.isOpened()) {
-		// Process the frames that were retrieved from the video capture.
-		processFrames(frames);
-	} else {
-		std::cerr << "Could not read the frames in the specified directory." << std::endl;
+	// Specify the path as the directory being read.
+	path = directory;
+	cv::Mat frame;
+	std::string file;
+	for (int i = 1; !(frame = cv::imread(directory + "/" + (file = getFileName(i)), Image.flag)).empty(); i++) {
+		processFrame(frame, file);
 	}
 }
 
-/**
- * Processes a VideoCapture object that contains a sequence of image frames. These frames are converted to grayscale
- * before being processed.
- *
- * @param capture The sequence of frames.
- */
-void processFrames(cv::VideoCapture frames) {
-	cv::Mat frame;// = cv::imread(file, Adaboost::Image.flag);
-	for (int i = 1; frames.read(frame); i++) {
-		std::cout << "Processing frame " << i << "." << std::endl;
+inline std::string Adaboost::getFileName(int index) {
+	return Image.prefix + std::to_string(index) + "." + Image.format;
+}
 
-	}
+/**
+ * TODO
+ * Processes a frame by first converting it to a grayscale image.
+ *
+ * @param frame The image frame.
+ */
+void Adaboost::processFrame(cv::Mat& frame, std::string file) {
+	// Apply a histogram equalization to improve the image contrast.
+	cv::equalizeHist(frame, frame);
+	// Save the frame.
+	saveFrame(frame, file);
+}
+
+/**
+ * Saves a processed frame into a processed subdirectory.
+ *
+ * @param frame The frame that is being saved.
+ * @param file The name of the frame.
+ */
+inline void Adaboost::saveFrame(cv::Mat& frame, std::string file) {
+	cv::imwrite(getSaveDirectory() + "/" + file, frame);
+}
+
+/**
+ * Returns the directory where saved images will be stored.
+ */
+inline std::string Adaboost::getSaveDirectory() {
+	return path + "/processed";
 }
 
 /**
@@ -42,6 +62,5 @@ void processFrames(cv::VideoCapture frames) {
  * @param size The size of the sphere.
  */
 inline void Adaboost::displayDetection(cv::Mat& img, cv::Point center, cv::Size size) {
-	Adaboost::Draw draw;
-	cv::ellipse(img, center, size, draw.angle, draw.startAngle, draw.endAngle, draw.color, draw.thickness, draw.lineType, draw.shift);
+	cv::ellipse(img, center, size, Draw.angle, Draw.startAngle, Draw.endAngle, Draw.color, Draw.thickness, Draw.lineType, Draw.shift);
 }
