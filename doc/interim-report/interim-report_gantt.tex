@@ -1,0 +1,64 @@
+% Define some Gantt chart helper commands:
+\newcommand{\completedganttbar}[4][]{ %
+    \ganttbar[bar/.append style={draw=gray, fill=gray},#1]{#2}{#3}{#4} %
+}
+\newcommand{\optionalganttbar}[4][]{ %
+    \ganttbar[bar/.append style={draw=gray, pattern color=gray, pattern=north west lines},#1]{#2}{#3}{#4} %
+}
+\newcommand{\optionalganttlinkedbar}[4][]{ %
+    \ganttlinkedbar[bar/.append style={draw=gray, pattern color=gray, pattern=north west lines},#1]{#2}{#3}{#4} %
+}
+
+\begin{ganttchart}[
+        hgrid,
+        vgrid={*6{black, dotted},*1{black, dashed}}, % Note: NO SPACES!
+        title height = 1,
+        x unit=0.3cm,
+        y unit title=0.75cm,
+        y unit chart=1cm,
+        time slot format=isodate,
+        % progress=today,
+        % today=2015-8-20,
+        % bar/.append style={fill=green},
+        % bar incomplete/.append style={fill=white},
+        % group incomplete/.append style={draw=black,fill=none},
+        % progress label text={}
+        ]
+        {2015-03-16} % start date: Mon, Mar-16. Week 4.
+        {2015-05-31} % end date: Sun, May-31.
+\setganttlinklabel{f-s}{}
+
+% Gantt chart header:
+% Note: Week starts on Sunday.
+\gantttitlecalendar*{2015-03-16}{2015-05-31}{month=name} \\
+\gantttitlecalendar*{2015-03-16}{2015-04-05}{week=4}
+\gantttitle{Semester 1 Recess}{14}
+\gantttitlecalendar*{2015-04-20}{2015-05-31}{week=7}
+
+% Proposal
+\ganttnewline \ganttgroup{Project proposal}{2015-03-19}{2015-03-26}
+\ganttnewline \ganttbar{Proposal preparation}{2015-03-19}{2015-03-23}
+\ganttnewline \ganttbar{Presentation}{2015-03-24}{2015-03-26}
+
+% Project work
+\ganttnewline \ganttgroup{Project work}{2015-03-27}{2015-04-30}
+\ganttnewline \ganttbar{Dataset collection}{2015-03-27}{2015-04-05}
+\ganttnewline \ganttbar{Candidate selection}{2015-04-01}{2015-04-08}
+\ganttnewline \ganttbar{Development}{2015-04-09}{2015-05-21}
+\ganttnewline \ganttbar{Draft report preparation}{2015-04-23}{2015-04-30}
+
+% Final report
+\ganttnewline \ganttgroup{Final report}{2015-04-31}{2015-05-28}
+\ganttnewline \ganttbar{Detection performance testing}{2015-04-31}{2015-05-21}
+\ganttnewline \ganttbar{Analysis of results}{2015-05-08}{2015-05-28}
+\ganttnewline \ganttbar{Final report preparation}{2015-05-16}{2015-05-28}
+
+% % Examples of gantt chart capabilities: 
+% \ganttnewline \ganttgroup{Label Text}{2015-08-20}{2015-10-5}
+% \ganttnewline \ganttmilestone{Label Text}{2015-08-3}
+% \ganttnewline \completedganttbar{Label Text}{2015-8-9}{2015-8-13}
+% \ganttnewline \ganttlinkedmilestone{Label Text}{2015-08-19}
+% \ganttnewline \ganttbar{Label Text}{2015-09-11}{2015-10-5}
+% \ganttnewline \optionalganttbar{Label Text}{2015-10-6}{2015-10-26}
+
+\end{ganttchart}
