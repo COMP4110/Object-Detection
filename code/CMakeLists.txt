@@ -7,5 +7,5 @@ include_directories($OpenCV_INCLUDE_DIRS} REQUIRED)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 set(SOURCE_FILES main.cpp)
-add_executable(Object_Detection ${SOURCE_FILES} Adaboost.cpp Adaboost.h)
+add_executable(Object_Detection ${SOURCE_FILES} Adaboost.cpp Adaboost.h CascadeClassifier.h CascadeClassifier.cpp)
 target_link_libraries(Object_Detection ${OpenCV_LIBS})

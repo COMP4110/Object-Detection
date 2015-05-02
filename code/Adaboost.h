@@ -1,9 +1,10 @@
-#ifndef ADABOOST_H
-#define ADABOOST_H
+#ifndef OBJECT_DETECTION_ADABOOST_H
+#define OBJECT_DETECTION_ADABOOST_H
 
 #include <string>
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
+#include "CascadeClassifier.h"
 
 class Adaboost {
 
@@ -12,9 +13,8 @@ class Adaboost {
 		const struct {
 			std::string prefix;
 			const std::string format;
-			// Load the image as grayscale
 			int flag;
-		} Image = {"sphere_", "jpg", CV_LOAD_IMAGE_GRAYSCALE};
+		} Image = {"sphere_", "jpg", CV_LOAD_IMAGE_COLOR};
 
 		const struct {
 			const double angle;
@@ -24,9 +24,10 @@ class Adaboost {
 			const int thickness;
 			const int lineType;
 			const int shift;
-		} Draw = {0, 0, 360, (100, 100, 100), 1, 8, 0};
+		} Draw = {0, 0, 360, cv::Scalar(40, 40, 200), 3, 8, 0};
 
 		void processFrame(cv::Mat& frame, std::string file);
+		void detectObjects(cv::Mat& frame, cv::Mat& processedFrame);
 
 		inline std::string getFileName(int index);
 		inline void saveFrame(cv::Mat& frame, std::string file);
@@ -34,6 +35,7 @@ class Adaboost {
 		inline void displayDetection(cv::Mat& img, cv::Point center, cv::Size size);
 
 		std::string path;
+		CascadeClassifier cascadeClassifier;
 
 	public:
 
