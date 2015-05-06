@@ -20,6 +20,11 @@ blacklisted_images_sha1_hashes = [
 	'10f3f7f79e6528aa9d828316248997568ac0d833'  # flickr 'photo not available' image
 ]
 
+blacklisted_search_words = [
+	'n04118538'  # footballs (non-spherical)
+	'n04023962'  # punching bags
+]
+
 file = open('parent_words.yaml', 'r')
 parent_words = yaml.load(file)
 file.close()
@@ -43,6 +48,9 @@ with open(output_dat_filename, 'r') as dat_file:
 
 with open(output_dat_filename, 'a+') as dat_file:
 	for search_word in search_words:
+		if search_word in blacklisted_search_words:
+			print 'Blacklisted search word: {}'.format(search_word)
+			continue
 		mapping_data_url = urllib2.urlopen('http://www.image-net.org/api/text/imagenet.synset.geturls.getmapping?wnid={}'.format(search_word))
 		for map in mapping_data_url.readlines():
 			parts = map.strip().partition(' ')
