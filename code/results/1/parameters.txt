@@ -1,0 +1,3 @@
+positive samples: 300
+negative samples: 500
+default settings
