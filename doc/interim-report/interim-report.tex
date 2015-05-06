@@ -229,13 +229,13 @@
         %     to identify the specular highlight and shadow cast by a sphere.
         % }
 
-        \todo {
-            Contrast the goal of our proposed project with the focus of most other
-            algorithms, which generally do not attempt to verify that they have not
-            erroneously detected disks.
+        % \todo {
+        %     Contrast the goal of our proposed project with the focus of most other
+        %     algorithms, which generally do not attempt to verify that they have not
+        %     erroneously detected disks.
 
-            The below sentence may be enough?
-        }
+        %     The below sentence may be enough?
+        % }
 
         As a result of targeting our approach toward the 3D features that
         distinguish spheres from objects such as disks, we expect our method
@@ -268,19 +268,21 @@
         classifiers in the style of \citeauthor{zhang2013novel}, and
         \citeauthor{masselli2013haar}, but with the additional goal of
         distinguishing spheres from objects of similar appearance such as
-        disks. Due to the increased difficulty of this classification task, we
-        plan to investigate a variety of weak classifiers for use in the
-        adaboost algorithm. Successful classifier options we plan to explore
-        include the extended Haar features used by \citet{zhang2013novel},
-        Histograms of Oriented Gradients (HoG) features, as used in
-        \citet{zhu2006hogs}, and variations on more recent patch descriptors such
-        as the ORB descriptor introduced by \citet{rublee2011orb}.
+        disks. %
+        % Due to the increased difficulty of this classification task, we
+        % plan to investigate a variety of weak classifiers for use in the
+        % adaboost algorithm.
+        Two different types of weak classifier will be considered for the sphere detection task: the extended Haar features used by \citet{zhang2013novel},
+        and Histograms of Oriented Gradients (HoG) features,
+        as used by \citet{dalal2005histograms} and \citet{zhu2006hogs}.
+        A cascade classifier will be trained using each of the weak classifier types, and their performances compared.
 
 
-        % \todo {
-        %     Outline how the methods proposed will be evaluated and compared, with
-        %     reference to any expected difficulties.
-        % }
+        \todo {
+            ORB looks like it'll be too hard to get working, but we should consider comparing LBP, since it's supported by OpenCV.
+            % and variations on more recent patch descriptors such
+            % as the ORB descriptor introduced by \citet{rublee2011orb}.
+        }
 
 		We will train and test our sphere detector on a purpose built image
         database, the creation of which is outlined in
