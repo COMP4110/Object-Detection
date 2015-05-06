@@ -29,6 +29,7 @@ void Adaboost::readDirectory(const std::string& directory) {
 		// Iterate through every image in the directory. It attempts to read the file and exits the loop if no image
 		// was read. This is an alternative to using the boost library.
 		for (int i = 1; !(frame = cv::imread(directory + "/" + (file = getFileName(i)), Image.flag)).empty(); i++) {
+			std::cout << "Processing frame " << i << "." << std::endl;
 			// Process the current frame.
 			processFrame(frame, file);
 		}
@@ -79,12 +80,14 @@ void Adaboost::detectObjects(cv::Mat& frame, cv::Mat& processedFrame) {
 	// Detect the objects using the processed frame and store the results in objects.
 	cascadeClassifier.detect(processedFrame, objects);
 	// Iterate through every detection.
-	for (size_t i = 0, size = objects.size(); i < size; i++) {
-		//Point center(faces[i].x + faces[i].width * 0.5, faces[i].y + faces[i].height * 0.5);
-		//ellipse(frame, center, Size(faces[i].width * 0.5, faces[i].height * 0.5), 0, 0, 360, Scalar(255, 0, 255), 4, 8, 0);
-		// TODO get the correct point and size
+	for (size_t i = 0, len = objects.size(); i < len; i++) {
+		// Get the current object.
+		cv::Rect object = objects[i];
+		// Calculate the size and center of the object.
+		cv::Point center((int) (object.x + object.width * 0.5), (int) (object.y + object.height * 0.5));
+		cv::Size size((int) (object.width * 0.5), (int) (object.height * 0.5));
 		// Display the detection on the coloured frame.
-		displayDetection(frame, cv::Point(50, 50), cv::Size(100, 100));
+		displayDetection(frame, center, size);
 	}
 }
 

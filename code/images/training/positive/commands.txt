@@ -1,3 +1,0 @@
-opencv_createsamples -info info.dat -vec balls.vec -num 40
-
-opencv_traincascade -data classifier -vec positive/balls.vec -bg negative/negative-test.txt -numPos 40 -numNeg 50
