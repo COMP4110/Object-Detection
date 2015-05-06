@@ -1,0 +1,7 @@
+positive samples: 500 / 1000
+negative samples: 250
+precalcValBufSize: 2048
+precalcIdxBufSize: 2048
+minHitRate: 0.95
+default settings
+~2 min

@@ -1,0 +1,7 @@
+positive samples: 600 / 1376
+negative samples: 300
+precalcValBufSize: 2048
+precalcIdxBufSize: 2048
+default settings
+17 minutes
+19 stages

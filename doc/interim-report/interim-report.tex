@@ -37,6 +37,7 @@
 
 %%% PACKAGES
 \usepackage{booktabs} 				% for much better looking tables
+\usepackage{tabularx}
 \usepackage{array} 					% for better arrays (eg matrices) in maths
 \usepackage{paralist} 				% very flexible & customisable lists (eg. enumerate/itemize, etc.)
 \usepackage{verbatim} 				% adds environment for commenting out blocks of text & for better verbatim
@@ -277,131 +278,138 @@
         as used by \citet{dalal2005histograms} and \citet{zhu2006hogs}.
         A cascade classifier will be trained using each of the weak classifier types, and their performances compared.
 
-
         \todo {
             ORB looks like it'll be too hard to get working, but we should consider comparing LBP, since it's supported by OpenCV.
             % and variations on more recent patch descriptors such
             % as the ORB descriptor introduced by \citet{rublee2011orb}.
         }
 
-		We will train and test our sphere detector on a purpose built image
-        database, the creation of which is outlined in
-        section~\ref{sec:dataset}. The implemented detection methods will be
-        compared in terms of recognition rate, false positive rate, time
-        required for detection, and the training time required. Time
-        permitting, we will also compare the suitability of the best
-        techniques for online detection by running them on a robot.
+		We will train and test our sphere detector on an image
+        database compiled from ImageNet \citep{imagenet_cvpr09}, as outlined in 
+        section~\ref{sec:dataset}. The implemented detection methods will be 
+        compared in terms of recognition rate, false positive rate, time 
+        required for detection, and the training time required.
 
-        To ensure the timely completion of the project, existing libraries
-        will be utilised whenever possible in the implementation of the chosen
-        classification techniques. The NUbots' existing codebase will be
-        considered as a potential starting point for the development of the
-        new classifiers and test platform.
+        The Open Source Computer Vision library, OpenCV \citep{opencv_library},
+        will be utilised to train the classifiers from the selected dataset. 
+        Some prelimimary results have been produced using OpenCV utilities 
+        which have detailed in Section~\ref{sec:results}.
 
-
-        \subsection{Image dataset creation} {
+        \subsection{Image dataset compilation} {
         \label{sec:dataset}
 
-        	The creation of the dataset will be built by the research team, removing
-        	the need for purchasing which eliminates any copyright and production
-        	issues that could otherwise occur. This also enables the team to
-        	create a consistent dataset.
+            \begin{table}
+            \centering
+            \caption{The categories used from ImageNet and their associated WordNet \citep{fellbaum1998wordnet} identifiers.}
+            \begin{tabular}{ll}
+                \toprule
+                \textbf{Id} & \textbf{Category} \\
+                \midrule
+                n1212121 & Ball \\
+                \bottomrule
+            \end{tabular}
+            \end{table}
 
-        	The images will be taken using a Cannon EOS60D camera with varying
-        	lighting conditions and environments to ensure a diverse dataset is
-        	obtained. These photographs will be compressed using a high quality
-        	format so that they are easier to process than the original without
-        	losing much, if any, information.
+            % The creation of the dataset will be built by the research team, removing
+            % the need for purchasing which eliminates any copyright and production
+            % issues that could otherwise occur. This also enables the team to
+            % create a consistent dataset.
 
-        	Some images will be duplicated and altered using photo editing software,
-        	for the sole purpose of testing the same image under various 
-        	conditions. These modifications may change the quality of the image or
-        	its lighting environment. A transformation to the image such as rotation
-        	or scaling may also be applied.
+            % The images will be taken using a Cannon EOS60D camera with varying
+            % lighting conditions and environments to ensure a diverse dataset is
+            % obtained. These photographs will be compressed using a high quality
+            % format so that they are easier to process than the original without
+            % losing much, if any, information.
 
-            The dataset will include a number of images \todo{be specific about the number of images} that contain a variety
-            of spheres and disks. There will be a balance of object sizes,
-            patterns, colours and textures between the images and can include
-            the use of a tennis, soccer, golf and cricket ball. To reduce the
-            complexity of this project, the images will be taken of motionless spheres, to avoid any motion blur.
+            % Some images will be duplicated and altered using photo editing software,
+            % for the sole purpose of testing the same image under various 
+            % conditions. These modifications may change the quality of the image or
+            % its lighting environment. A transformation to the image such as rotation
+            % or scaling may also be applied.
+
+            % The dataset will include a number of images \todo{be specific about the number of images} that contain a variety
+            % of spheres and disks. There will be a balance of object sizes,
+            % patterns, colours and textures between the images and can include
+            % the use of a tennis, soccer, golf and cricket ball. To reduce the
+            % complexity of this project, the images will be taken of motionless spheres, to avoid any motion blur.
             
-            There is also the possibility of generating spheres procedurally, combing computer graphics and Physically Based Rendering \citep{pbr}, seen in Figure \ref{figure:pba}. This will provide an opportunity to thoroughly test and compare the detection methods on spheres with easily measurable and known characteristics. This method will be a low priority and used for the validation of results near the end of the project if time permits.
-            \todo{ Stephan says: `This is a very interesting idea. We need a more detailed plan, explanation and proposal for this. Is there any background literature about similar previous approaches?'.
+            % There is also the possibility of generating spheres procedurally, combing computer graphics and Physically Based Rendering \citep{pbr}, seen in Figure \ref{figure:pba}. This will provide an opportunity to thoroughly test and compare the detection methods on spheres with easily measurable and known characteristics. This method will be a low priority and used for the validation of results near the end of the project if time permits.
+            % \todo{ Stephan says: `This is a very interesting idea. We need a more detailed plan, explanation and proposal for this. Is there any background literature about similar previous approaches?'.
 
-            This would be interesting, but I don't think we have any time for it. }
+            % This would be interesting, but I don't think we have any time for it. }
             
-			\begin{figure}[H]            
-				\centering
-    	        \includegraphics[width=13cm]{microcompare05.jpg}
-	            \caption[Project Schedule] {
-                	Generated spheres using Physically Based Rendering \citep{pbr}.
-				}
-				\label{figure:pba}
-            \end{figure}
+            % \begin{figure}[H]            
+            %     \centering
+            %     \includegraphics[width=13cm]{microcompare05.jpg}
+            %     \caption[Project Schedule] {
+            %         Generated spheres using Physically Based Rendering \citep{pbr}.
+            %     }
+            %     \label{figure:pba}
+            % \end{figure}
             
-            Images of balls that are primarily metallic or
-            transparent will also not be included in the initial dataset. To begin with, the images
-            should contain an individual ball or disk and then progress to
-            having both, or a combination of, within the same image. This will
-            test whether our methods of detection are able to identify
-            multiple spheres correctly. Some images may feature:
+            % Images of balls that are primarily metallic or
+            % transparent will also not be included in the initial dataset. To begin with, the images
+            % should contain an individual ball or disk and then progress to
+            % having both, or a combination of, within the same image. This will
+            % test whether our methods of detection are able to identify
+            % multiple spheres correctly. Some images may feature:
 
-        	\begin{itemize}
-        		\item Objects that appear as spheres from different angles.
-        		\item Non-spherical objects.
-        		\item An aspheric (deflated) sphere.
-        		\item Spheres that intersect with each other.
-        		\item Disks that intersect with each other.
-        		\item A sphere and disk that intersect with each other.
-        		\item A sphere or disk that is rotated. \todo{what is rotated and why}
-        		\item A sphere or disk that is partially cropped out.
-        	\end{itemize}
+            % \begin{itemize}
+            %     \item Objects that appear as spheres from different angles.
+            %     \item Non-spherical objects.
+            %     \item An aspheric (deflated) sphere.
+            %     \item Spheres that intersect with each other.
+            %     \item Disks that intersect with each other.
+            %     \item A sphere and disk that intersect with each other.
+            %     \item A sphere or disk that is rotated. \todo{what is rotated and why}
+            %     \item A sphere or disk that is partially cropped out.
+            % \end{itemize}
 
-        	It is of significant importance to create a dataset that features an
-        	array of environments, to ensure that the sphere detection methods are
-        	robust and able to function in as many scenarios as possible. These
-        	environments have been grouped into four distinct categories:
+            % It is of significant importance to create a dataset that features an
+            % array of environments, to ensure that the sphere detection methods are
+            % robust and able to function in as many scenarios as possible. These
+            % environments have been grouped into four distinct categories:
 
-        	\begin{enumerate}
-        		\item \textbf{Soccer:} This is a standard indoor robot soccer 
-        		environment.
-        		\item \textbf{Uniform:} The environment is plain and largely the same
-        		colour.
-        		\item \textbf{Textured:} The environment contains textures and
-        		repeatable patterns.
-        		\item \textbf{Cluttered:} The environment contains many objects that
-        		may obscure the detection of spheres.
-        	\end{enumerate}
-        	
-        	And may exhibit the following range of lighting conditions:
+            % \begin{enumerate}
+            %     \item \textbf{Soccer:} This is a standard indoor robot soccer 
+            %     environment.
+            %     \item \textbf{Uniform:} The environment is plain and largely the same
+            %     colour.
+            %     \item \textbf{Textured:} The environment contains textures and
+            %     repeatable patterns.
+            %     \item \textbf{Cluttered:} The environment contains many objects that
+            %     may obscure the detection of spheres.
+            % \end{enumerate}
+            
+            % And may exhibit the following range of lighting conditions:
 
-        	\begin{itemize}
-        		\item The number of lights vary.
-        		\item The position of the lights vary.
-        		\item The scene is lit from a single light source.
-        		\item The scene is lit from multiple light sources in a similar direction.
-        		\item The scene is lit from multiple light sources from different directions.
-        		\item The lighting is under normal conditions.
-        		\item The lighting is dim.
-        		\begin{itemize}
-        			\item The shadow of the ball should blend with the environment.
-        		\end{itemize}
-        		\item The lighting is bright.
-        		\begin{itemize}
-        			\item The lighting of the ball should blend with the environment.
-        		\end{itemize}
-        	\end{itemize}
+            % \begin{itemize}
+            %     \item The number of lights vary.
+            %     \item The position of the lights vary.
+            %     \item The scene is lit from a single light source.
+            %     \item The scene is lit from multiple light sources in a similar direction.
+            %     \item The scene is lit from multiple light sources from different directions.
+            %     \item The lighting is under normal conditions.
+            %     \item The lighting is dim.
+            %     \begin{itemize}
+            %         \item The shadow of the ball should blend with the environment.
+            %     \end{itemize}
+            %     \item The lighting is bright.
+            %     \begin{itemize}
+            %         \item The lighting of the ball should blend with the environment.
+            %     \end{itemize}
+            % \end{itemize}
 
-        	The dataset should also include a good combination of features and
-        	environment configurations to test more complex cases. For example, two
-        	intersecting spheres of the same colour under dim lighting will be far 
-        	more difficult to identify than two individual spheres of differing
-        	colours in good lighting. The texture of the sphere should also be
-        	considered as it can effect the type of lighting that is emitted.
+            % The dataset should also include a good combination of features and
+            % environment configurations to test more complex cases. For example, two
+            % intersecting spheres of the same colour under dim lighting will be far 
+            % more difficult to identify than two individual spheres of differing
+            % colours in good lighting. The texture of the sphere should also be
+            % considered as it can effect the type of lighting that is emitted.
 
-        	The positions and sizes of the spheres within the dataset will be
-        	specified by drawing boxes around them, so these cropped images can be
-        	used to train the classifiers.
+            % The positions and sizes of the spheres within the dataset will be
+            % specified by drawing boxes around them, so these cropped images can be
+            % used to train the classifiers.
 
         }
 
@@ -409,6 +417,7 @@
 
 	\section{Project schedule} {
     \label{sec:schedule}
+
         The project plan outlined in Section~\ref{sec:plan} is to be achieved
         according to the schedule presented in the Gantt chart in
         Figure~\ref{gantt:proposal}.
@@ -433,12 +442,12 @@
 	}
 
     \section{Preliminary Results} {
+    \label{sec:results}
 
         The development portion of our project is only partially complete, as outlined in Section~\ref{sec:schedule}, but enough work has been completed to produce some preliminary results.
 
         A subset of the proposed image database has been obtained based on the ImageNet synset IDs \todo[inline]{sysnet IDs} for the positive images and \todo[inline]{sysnet IDs} as negative images.
         A Haar 
-
 
     }
 
