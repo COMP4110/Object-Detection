@@ -461,7 +461,7 @@
 
         The development portion of our project is only partially complete, as outlined in Section~\ref{sec:schedule}, but enough work has been completed to produce some preliminary results.
 
-        A subset of the proposed image database has been obtained based on the ImageNet synset IDs \todo[inline]{sysnet IDs} for the positive images and \todo[inline]{sysnet IDs} as negative images.
+        A subset of the proposed image database has been obtained based on the ImageNet synset IDs \todo[inline]{synset IDs} for the positive images and \todo[inline]{synset IDs} as negative images.
 
         Several Haar cascade classifiers were trained on this datset, using different training parameters, and their performances compared qualatitively by viewing the classifier output on a small set of test images.
 
@@ -473,22 +473,24 @@
         \begin{itemize}
             \item The set of positive examples is too small and too varied; and
             \item The set of negative examples is poor, in that the images it contains are far too dissimilar from spheres.
-                  The use of different ImageNet sysnets, such as `n03032811 - Circle, round' into the set of negative samples may improve performance, and will be considered before the final report.
+                  The use of different ImageNet synsets, such as `n03032811 - Circle, round' into the set of negative samples may improve performance, and will be considered before the final report.
         \end{itemize}
 
         The remainder of the project shall have to focus on improving the training data and training method if a reliable sphere detector is to result, especially if it is to acheive our goal of distinguishing spheres and disks.
 
-        \todo {Include results table}
+        \todo {Include results table testing??}
 
-        % \begin{tabular}{ll}
-        % \label{table:interim-results}
-        %     \toprule
-        %     \textbf{Image dimensions} & \textbf{# pos. samples} & \textbf{# neg. samples} & \textbf{# stages} & \textbf{Training time} & \textbf{Results} \\
-        %     \midrule
-        %     5x5 & 5 & 10 & 20 & 5 hours & sdfsdf  \\
-        %     \bottomrule
-        % \end{tabular}
-        % \end{table}
+        \begin{table}[H]
+            \caption{Description TODO}
+            \label{table:interim-results}
+            \begin{tabularx}{\textwidth}{llllll}
+                \toprule
+                \textbf{Image dimensions} & \textbf{\# pos. samples} & \textbf{\# neg. samples} & \textbf{\# stages} & \textbf{Training time} & \textbf{Results} \\
+                \midrule
+                5x5 & 5 & 10 & 20 & 5 hours & sdfsdf \\
+                \bottomrule
+            \end{tabularx}
+        \end{table}
 
     }
 
