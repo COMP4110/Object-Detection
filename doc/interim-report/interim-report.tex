@@ -481,15 +481,11 @@
         \todo {Include results table testing??}
 
         \begin{table}[H]
-            \caption{Description TODO}
             \label{table:interim-results}
-            \begin{tabularx}{\textwidth}{llllll}
-                \toprule
-                \textbf{Image dimensions} & \textbf{\# pos. samples} & \textbf{\# neg. samples} & \textbf{\# stages} & \textbf{Training time} & \textbf{Results} \\
-                \midrule
-                5x5 & 5 & 10 & 20 & 5 hours & sdfsdf \\
-                \bottomrule
-            \end{tabularx}
+            \centering
+            % \resizebox{\linewidth}{!}{\input{interim-results-table.tex}}
+            \makebox[\textwidth][c]{\resizebox{0.5\paperwidth}{!}{\input{interim-results-table.tex}}}
+            \caption{Description TODO}
         \end{table}
 
     }
