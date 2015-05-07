@@ -445,32 +445,6 @@
 
     }
 
-    \section{Project schedule} {
-    \label{sec:schedule}
-
-        The project plan outlined in Section~\ref{sec:plan} is to be achieved
-        according to the schedule presented in the Gantt chart in
-        Figure~\ref{gantt:proposal}.
-
-        The project has 3 main phases:
-
-        \begin{itemize}
-            \item Project proposal (2 weeks)
-            \item Project work (5 weeks)
-            \item Final report (4 weeks)
-        \end{itemize}
-
-        \todo{ Update the chart to indicate what has been accomplished, and what remains to be done. Add more detail, and plan until the final project due date. }
-
-        \begin{figure}[H]
-            \makebox[\textwidth][c]{\resizebox{0.95\paperwidth}{!}{\input{interim-report_gantt.tex}}}
-            \caption[Project Schedule] {
-                A Gantt chart illustrating the planned project schedule.
-            }
-            \label{gantt:proposal}
-        \end{figure}
-    }
-
     \section{Preliminary Results} {
     \label{sec:results}
 
@@ -503,6 +477,35 @@
             \caption{Description TODO}
         \end{table}
 
+    }
+
+    \section{Project schedule} {
+    \label{sec:schedule}
+
+        The project plan outlined in Section~\ref{sec:plan} is to be achieved
+        according to the schedule presented in the Gantt chart in
+        Figure~\ref{gantt:proposal}.
+
+        In response to the preliminary results in Section~\ref{sec:results}, the
+        remainder of the project will focus on curating the image database,
+        and tuning the training parameters of the classifiers to optimise the
+        resulting classifier performance. This process will be iterated, using
+        progressively larger datasets, until an approach for training a
+        successful classifier on a large dataset is found. Once successful
+        training methods are found for each type of classifier, several days
+        will be dedicated to running the classifier training. The trained
+        classifiers will be compared on a test set, and the results summarised
+        in a report. If training of classifiers is found to be sufficiently
+        fast, ROC curves will be generated for each of the feature types, and
+        included in the report.
+
+        \begin{figure}[H]
+            \makebox[\textwidth][c]{\resizebox{0.95\paperwidth}{!}{\input{interim-report_gantt.tex}}}
+            \caption[Project Schedule] {
+                A Gantt chart illustrating the planned project schedule.
+            }
+            \label{gantt:proposal}
+        \end{figure}
     }
 
     \section{Roles and responsibilities} {
