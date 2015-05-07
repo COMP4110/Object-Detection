@@ -1,6 +1,6 @@
 import urllib2
 import tarfile
-import Image
+from PIL import Image
 import io
 import hashlib
 import os.path
@@ -11,6 +11,7 @@ from bs4 import BeautifulSoup as Soup
 parser = argparse.ArgumentParser(description='ImageNet Gatherer')
 parser.add_argument('image_folder', type=str, nargs='?', default='images', help='The folder to store the downloaded images')
 parser.add_argument('info_dat', type=str, nargs='?', default='info.dat', help='The filepath to store the boundingbox information')
+parser.add_argument('words_file', type=str, nargs='?', default='parent_words.yaml', help='The file from which to load the parent words')
 
 args = parser.parse_args()
 
@@ -25,7 +26,8 @@ blacklisted_search_words = [
 	'n04023962'  # punching bags
 ]
 
-file = open('parent_words.yaml', 'r')
+# file = open('parent_words.yaml', 'r')
+file = open(args.words_file, 'r')
 parent_words = yaml.load(file)
 file.close()
 
