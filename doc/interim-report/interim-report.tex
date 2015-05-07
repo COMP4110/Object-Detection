@@ -457,24 +457,29 @@
         Several Haar cascade classifiers were trained on this datset, using different training parameters, and their performances compared qualatitively by viewing the classifier output on a small set of test images.
 
         The preliminary results obtained are summarised in table~\ref{table:interim-results}.
-        The quality of the results obtained varies 
+        These results show that the resulting quality of a classifier is extremely sensitive to the training data and settings used.
+        Some of the classifiers trained show promise, in that they detect balls in some of the images, and appear to detect circular objects in others, but it is clear that most of the supposed detections are false positives.
+        The authors suspect that there are two main reasons for the low classification performance:
 
-        \todo {
-            Add the table
-            % image dimensions | # pos. samples | # neg. samples | # classifier stages | training time | results thumbnails
-            %      24x24
-        }
+        \begin{itemize}
+            \item The set of positive examples is too small and too varied; and
+            \item The set of negative examples is poor, in that the images it contains are far too dissimilar from spheres.
+                  The use of different ImageNet sysnets, such as `n03032811 - Circle, round' into the set of negative samples may improve performance, and will be considered before the final report.
+        \end{itemize}
 
-        \begin{tabular}{ll}
-        \label{table:interim-results}
-            \toprule
-            \textbf{Image dimensions} & \textbf{# pos. samples} & \textbf{# neg. samples} & \textbf{# stages} & \textbf{Training time} & \textbf{Results} \\
-            \midrule
-            5x5 & 5 & 10 & 20 & 5 hours & sdfsdf  \\
-            \bottomrule
-        \end{tabular}
-        \end{table}
+        The remainder of the project shall have to focus on improving the training data and training method if a reliable sphere detector is to result, especially if it is to acheive our goal of distinguishing spheres and disks.
 
+        \todo {Include results table}
+
+        % \begin{tabular}{ll}
+        % \label{table:interim-results}
+        %     \toprule
+        %     \textbf{Image dimensions} & \textbf{# pos. samples} & \textbf{# neg. samples} & \textbf{# stages} & \textbf{Training time} & \textbf{Results} \\
+        %     \midrule
+        %     5x5 & 5 & 10 & 20 & 5 hours & sdfsdf  \\
+        %     \bottomrule
+        % \end{tabular}
+        % \end{table}
 
     }
 
