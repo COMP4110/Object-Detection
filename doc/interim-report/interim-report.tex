@@ -38,6 +38,7 @@
 %%% PACKAGES
 \usepackage{booktabs} 				% for much better looking tables
 \usepackage{tabularx}
+\renewcommand{\arraystretch}{1.5}
 \usepackage{array} 					% for better arrays (eg matrices) in maths
 \usepackage{paralist} 				% very flexible & customisable lists (eg. enumerate/itemize, etc.)
 \usepackage{verbatim} 				% adds environment for commenting out blocks of text & for better verbatim
@@ -298,34 +299,40 @@
         \subsection{Image dataset compilation} {
         \label{sec:dataset}
 
+            Table~\ref{tab:imagenet} refers to the image categories that have been
+            compiled from ImageNet to train the classifier.
+
             \begin{table}
             \centering
             \caption{The categories used from ImageNet and their associated WordNet \citep{fellbaum1998wordnet} identifiers.}
-            \begin{tabular}{ll}
+            \label{tab:imagenet}
+            \begin{tabularx}{\textwidth}{lX}
                 \toprule
                 \textbf{Id} & \textbf{Category} \\
                 \midrule
-                n1212121 & Ball \\
+                n02778669 & Ball \\
+                n02779435 & Ball \\
+                n02799071 & Baseball \\
+                n02802426 & Basketball \\
+                n02839351 & Billiard ball \\
+                n02882301 & Bowling ball, bowl \\
+                n03134739 & Croquet ball \\
+                n03145719 & Cue ball \\
+                n03267113 & Eight ball \\
+                n02778669 & Generic sporting equipment balls \\
+                n03445777 & Golf ball \\
+                n03721047 & Marble \\
+                n03742019 & Medicine ball \\
+                n03825442 & Ninepin ball, skittle ball \\
+                n03942813 & Ping-pong ball \\
+                n02779435 & Plaything, toy, ball \\
+                n03982232 & Pool ball \\
+                n04254680 & Soccer ball \\
+                n04409515 & Tennis ball \\
+                n04540053 & Volleyball \\
                 \bottomrule
-            \end{tabular}
+            \end{tabularx}
             \end{table}
-
-            % The creation of the dataset will be built by the research team, removing
-            % the need for purchasing which eliminates any copyright and production
-            % issues that could otherwise occur. This also enables the team to
-            % create a consistent dataset.
-
-            % The images will be taken using a Cannon EOS60D camera with varying
-            % lighting conditions and environments to ensure a diverse dataset is
-            % obtained. These photographs will be compressed using a high quality
-            % format so that they are easier to process than the original without
-            % losing much, if any, information.
-
-            % Some images will be duplicated and altered using photo editing software,
-            % for the sole purpose of testing the same image under various 
-            % conditions. These modifications may change the quality of the image or
-            % its lighting environment. A transformation to the image such as rotation
-            % or scaling may also be applied.
 
             % The dataset will include a number of images \todo{be specific about the number of images} that contain a variety
             % of spheres and disks. There will be a balance of object sizes,
