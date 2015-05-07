@@ -115,10 +115,10 @@
         % detailed, as well as the roles and responsibilities of the researchers
         % and how the results will be communicated.
 
-        Many recent approaches to ball detection attempt to simplify the problem by viewing it as a circle detection problem, or by training a classifier to detect specific balls with known surface texture.
+        Many recent approaches to ball detection attempt to simplify the problem by viewing it as a circle detection problem, or by training a classifier to detect specific balls with a known surface texture.
         In this work, we propose a generalisation of the ball detection problem to sphere detection, where spherical objects must be detected under unknown lighting and texturing.
         Approaches taken from face detection literature will be applied to the problem, namely boosted-classifiers using Haar, HOGS, and LBP features.
-        We hypothesise that this approach will produce a more robust ball detector. In particular, a detector that doesn't mis-classify circular, disk-like objects as spheres.
+        We hypothesise that this approach will produce a more robust ball detector. In particular, a detector that does not mis-classify circular, disk-like objects as spheres.
         We present preliminary results on applying Haar cascade classifiers to the problem, which indicate that classifier performance is extremely sensitive to the training data and settings used.
 
         % This paper outlines the project in detail, presents some preliminary results, and proposes a plan for its timely completion.
@@ -131,19 +131,19 @@
 
     \section{Summary} {
 
-        \todo {
-            Rewrite: The summary should act as a version of the document in miniature.
+        % \todo {
+        %     Rewrite: The summary should act as a version of the document in miniature.
 
-            (we also need references for any big claims.)
-        }
+        %     (we also need references for any big claims.)
+        % }
 
         This project aims to develop software that is capable of detecting spheres within a given image. Instead of the more common approach of using the sphere's colour, this project will investigate the idea of using the shading of the sphere for detection. Removing the dependency on colour should improve robustness and reduce false positives.
 
         A robust sphere detection algorithm would be of interest in many robotics applications, for example the RoboCup international robot soccer competition \citep{KitanoAKNO97}, where the robots must be able to track a soccer ball in real-time in order to compete. It would also be of interest to human players in competitive sports environments, such as basketball or tennis, where automatic cameras are used to accurately make referee calls based on whether a ball had gone out or not.
 
-        \todo {
-            do we still want to say this?
-        }
+        % \todo {
+            % do we still want to say this?
+        % }
 
         If the methods developed are efficient and perform well enough, they can be expected to be implemented by the Newcastle Robotics Laboratory's RoboCup team, the NUbots.
 
@@ -163,15 +163,15 @@
         subsampled luminance images of the ball to detect the shape of the
         ball. Recent approaches have focused on detecting the approximately
         circular shape of the ball in typical images. These include
-        clustering, Hough filters \citet{li2013survey}, and RANSAC. \todo{add reference for RANSAC ball detection}
+        clustering, Hough filters \citet{li2013survey}, and RANSAC \citep{annable2013nubots}.
 
-        \todo {
-            Make a note about colour classification:
+        % \todo {
+        %     Make a note about colour classification:
 
-            "The preprocessing step of colour classification using a precalculated
-            lookup table has become standard in the Standard Platform and Kid Size
-            leagues."
-        }
+        %     "The preprocessing step of colour classification using a precalculated
+        %     lookup table has become standard in the Standard Platform and Kid Size
+        %     leagues."
+        % }
 
         Many current ball detection methods make assumptions about the ball or
         the environment that limit their applicability in a more general case. Methods
@@ -192,7 +192,9 @@
         using Principal Component Analysis (PCA) with a basis derived analytically from a given Bidirectional Reflectance Distribution Function (BRDF) and assumptions
         on scene illumination. While this method works well for plain untextured spheres, it is
         not designed to work on spheres with patterns printed on them, like many
-        soccer balls. \todo { Stephan says: `Can you explain why and how this can possibly be overcome?' }
+        soccer balls.
+
+        % \todo { Stephan says: `Can you explain why and how this can possibly be overcome?' }
 
         To build a detector that is more robust to differently textured
         spheres, we plan to investigate the application of techniques
@@ -451,11 +453,11 @@
 
         The development portion of our project is only partially complete, as outlined in Section~\ref{sec:schedule}, but enough work has been completed to produce some preliminary results.
 
-        A subset of the proposed image database has been obtained based on the ImageNet synset IDs \todo[inline]{synset IDs} for the positive images and \todo[inline]{synset IDs} as negative images.
+        A subset of the proposed image database has been obtained based on the ImageNet synset IDs listed in Table~\ref{tab:imagenet} for the positive images. A large collection of images from another source were used as negative images. Negative images for the final report will be sourced from ImageNet.
 
         Several Haar cascade classifiers were trained on this datset, using different training parameters, and their performances compared qualatitively by viewing the claissifier output on a small set of test images.
 
-        The preliminary results obtained are summarised in table~\ref{table:interim-results}.
+        The preliminary results obtained are summarised in Table~\ref{table:interim-results}.
         These results show that the resulting quality of a classifier is extremely sensitive to the training data and settings used.
         Some of the classifiers trained show promise, in that they detect balls in some of the images, and appear to detect circular objects in others, but it is clear that most of the supposed detections are false positives.
         The authors suspect that there are two main reasons for the low classification performance:
@@ -468,14 +470,11 @@
 
         The remainder of the project shall have to focus on improving the training data and training method if a reliable sphere detector is to result, especially if it is to acheive our goal of distinguishing spheres and disks.
 
-        \todo {Include results table testing}
-
         \begin{table}[H]
-            \label{table:interim-results}
+            \caption{Summary of preliminary results. The important configuration parameters of each classifier are shown, along with several sample images indicating classification performance.}
             \centering
             % \resizebox{\linewidth}{!}{\input{interim-results-table.tex}}
             \makebox[\textwidth][c]{\resizebox{0.5\paperwidth}{!}{\input{interim-results-table.tex}}}
-            \caption{Description TODO}
         \end{table}
 
     }
@@ -526,8 +525,6 @@
         project will also be made available online, along with the associated code.
 
     }
-
-    \todo{Fix the references}
 
     \bibliography{bibliography}
     \bibliographystyle{apalike}
