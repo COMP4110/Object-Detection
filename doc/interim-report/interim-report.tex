@@ -87,6 +87,7 @@
 \newcommand{\codefile}[1]{{\textit{#1}}}
 \newcommand{\program}[1]{\code{#1}}
 \newcommand{\taskname}[1]{{\textit{#1}}}
+\newcommand{\mytilda}{\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}
 
 \title{Sphere Detection using Boosted Classifiers}
 \subtitle{Computer Vision Interim Report}
@@ -463,7 +464,7 @@
 
         A subset of the proposed image database has been obtained based on the ImageNet synset IDs \todo[inline]{synset IDs} for the positive images and \todo[inline]{synset IDs} as negative images.
 
-        Several Haar cascade classifiers were trained on this datset, using different training parameters, and their performances compared qualatitively by viewing the classifier output on a small set of test images.
+        Several Haar cascade classifiers were trained on this datset, using different training parameters, and their performances compared qualatitively by viewing the claissifier output on a small set of test images.
 
         The preliminary results obtained are summarised in table~\ref{table:interim-results}.
         These results show that the resulting quality of a classifier is extremely sensitive to the training data and settings used.
@@ -478,7 +479,7 @@
 
         The remainder of the project shall have to focus on improving the training data and training method if a reliable sphere detector is to result, especially if it is to acheive our goal of distinguishing spheres and disks.
 
-        \todo {Include results table testing??}
+        \todo {Include results table testing}
 
         \begin{table}[H]
             \label{table:interim-results}
