@@ -71,8 +71,8 @@ with open(output_dat_filename, 'a+') as dat_file:
 		with tarfile.open(fileobj=bounding_boxes_url_data, mode='r|*') as bounding_boxes_file:
 			for fileinfo in bounding_boxes_file:
 				if fileinfo.isreg():
-					file = bounding_boxes_file.extractfile(fileinfo)
-					xml = Soup(file)
+					bounding_box_file = bounding_boxes_file.extractfile(fileinfo)
+					xml = Soup(bounding_box_file)
 					objects = xml.findAll('object')
 					object_name = xml.annotation.filename.string
 
@@ -86,7 +86,6 @@ with open(output_dat_filename, 'a+') as dat_file:
 					except KeyError:
 						print 'Mapping did not contain: {}'.format(object_name)
 						continue
-
 
 					if not os.path.exists(output_image_filename):
 						try:
@@ -104,7 +103,6 @@ with open(output_dat_filename, 'a+') as dat_file:
 							continue
 					else:
 						print 'Image already exists: {}'.format(object_name)
-
 
 					bounding_boxes = []
 					for obj in objects:
