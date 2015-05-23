@@ -1,0 +1,159 @@
+\documentclass{llncs}
+
+\usepackage{graphicx}
+
+\usepackage{url}
+\urldef{\mailsa}\path|{brendan.annable, mitchell.metcalfe, monica.olejniczak}@uon.edu.au|
+
+% Tables
+\usepackage{booktabs}
+\usepackage{tabularx}
+
+% References
+\usepackage[numbers]{natbib}
+\makeatletter
+    % Change natbib numbering style from [#] to #.
+    \renewcommand\@biblabel[1]{#1.}
+    % Reset bibsection so references appear correctly
+    \renewcommand\bibsection%
+    {
+      \section*{\refname
+        \@mkboth{\MakeUppercase{\refname}}{\MakeUppercase{\refname}}}
+    }
+\makeatother
+
+% Other 
+\usepackage{multicol}
+
+\begin{document}
+
+    \mainmatter
+
+    \title{Sphere Detection using Boosted Classifiers}
+    \titlerunning{Sphere Detection using Boosted Classifiers}
+    \author{Brendan Annable, Mitchell Metcalfe, and Monica Olejniczak}
+    \authorrunning{B. Annable, M. Metcalfe, and M. Olejniczak}
+
+    \institute{School of Electrical Engineering and Computer Science \\
+                Faculty of Engineering and Built Environment \\
+                The University of Newcastle, Callaghan, NSW, 2308, Australia. \\
+                \mailsa \\}
+
+    \toctitle{Sphere Detection using Boosted Classifiers}
+    \tocauthor{B.Annable, M. Metcalfe, and M. Olejniczak}
+    \maketitle
+
+    \begin{abstract}
+    %
+    Many recent approaches to ball detection attempt to simplify the problem by viewing it as a circle detection problem, or by training a classifier to detect specific balls with known surface texture. In this work, we propose a generalisation of the ball detection problem to sphere detection, where spherical objects must be detected under unknown lighting and texturing. Approaches taken from face detection literature will be applied to the problem, namely boosted-classifiers using Haar, HOGS, and LBP features. We hypothesise that this approach will produce a more robust ball detector. In particular, a detector that doesn't mis-classify circular, disk-like objects as spheres. We present preliminary results on applying Haar cascade classifiers to the problem, which indicate that classifier performance is extremely sensitive to the training data and settings used.
+    %
+    \keywords{computer vision, sphere detection, adaboost}
+    \end{abstract}
+
+    \section{Related work} {
+    \label{sec:related_work}
+
+        Visually keeping track of a ball is a natural and fundamental aspect of playing soccer, that many human players would not consider to be a skill in itself. However, while it may come naturally to humans, fast and reliable ball tracking has presented a challenge that has attracted much research in the robot soccer community.
+
+        Early attempts at ball detection algorithms used in the international robot soccer competition, RoboCup, simply used histogramming techniques targeted at a specific range of colour intensities to find a coloured ball. As the RoboCup playing field has become less structured over the years, competing teams have needed to account for unpredictable colours and have increasingly implemented methods that detect the shape of the ball as well. \citet{schulz2007ball} used a neural network on subsampled luminance images of the ball to detect the shape of the ball. Recent approaches have focused on detecting the approximately circular shape of the ball in typical images. These include clustering, Hough filters \citep{li2013survey}, and RANSAC \citep{annable2013nubots}.
+
+        Many current ball detection methods make assumptions about the ball or the environment that limit their applicability in a more general case. Methods based on colour classification or similarity can suffer from false positive detections due to other objects having similar colours. These methods may also detect both false positives and false negatives due to unexpected changes in lighting. Methods based on circle or ellipse detection can be effected by false positives due to the presence of disk-like objects in the environment, or due to objects that appear circular when viewed from specific angles.
+
+        To avoid the limitations of methods based on assumptions such as these, we propose to research and develop a sphere detection method which uses the shading patterns characteristic of spherical objects to classify objects as spheres.
+
+        \citet{nillius2008shading} perform shading based sphere detection using Principal Component Analysis (PCA) with a basis derived analytically from a given Bidirectional Reflectance Distribution Function (BRDF) and assumptions on scene illumination. While this method works well for plain untextured spheres, it is
+        not designed to work on spheres with patterns printed on them, like many soccer balls.
+
+        To build a detector that is more robust to differently textured spheres, we plan to investigate the application of techniques popularised in the realm of face detection to the task of sphere detection. We consider this a promising approach, because the 3D features of spheres tend to have similar spatial constraints to facial features in many cases.
+
+        For simplicity, the scope of the proposed project is limited to the common and important case of detecting balls that are resting on the ground. We will also assume that the sphere is illuminated primarily from above to constrain the likely positions of shadows and specular highlights.
+
+        \citet{masselli2013haar} successfully apply a boosted Haar classifier \citep{viola2001robust} to the problem of ball recognition. They show that the Haar classifier outperformed a more classical approach, based on a Hough transform, in the task of detecting uniformly yellow, green, and white balls.
+
+        \citet{zhang2013novel} used a similar approach, but attempted to detect a wide variety of generic FIFA-style balls. They used extended Haar features \citep{Lienhart2002extended} as weak classifiers. \citet{zhang2013novel} reported improved performance when modified Haar features that used a division operation between their area sums, instead of the usual subtraction, were included. This suggests that exploring alternate weak classifiers could lead to valuable performance improvements.
+
+        \citet{mitri2004fast} applied a Sobel filter and a threshold function to each image as preprocessing steps, passing only the detected edge images to the classifiers. The method learnt Classification and Regression Trees (CARTs) of Haar features instead of directly using Haar features as weak classifiers. Their system performed sufficiently well for ball tracking, but detected other round objects as false positives. It also performed significantly better when a more complex training dataset was applied, which included images under different lighting conditions and environments. We consider it likely that their poor false positive rate was a symptom of ignoring the shading information of the spheres by using only an edge image.
+
+        \citet{treptow2004filter} achieved a much lower false positive rate using Haar features directly, but only trained and tested their detector on a single ball.
+
+        As a result of targeting our approach toward the 3D features that distinguish spheres from objects such as disks, we expect our method to be particularly robust against detecting false positives.
+
+    }
+
+    \section{Image dataset compilation} {
+    \label{sec:dataset}
+
+        The dataset will include approximately 3500 positive samples and 8500 negative samples. There will be a balance of object sizes, patterns, colours and textures between the images. The range of image categories that have been compiled from ImageNet are featured in Table~\ref{tab:imagenet}. ImageNet was chosen as a
+        source of training and testing data because it is a widely recognised computer vision resource that offers a wide range of images along with class information and bounding boxes. The use of ImageNet will allow us to train on many more samples than would be possible to collect manually within the timeframe of this project.
+
+        \begin{table}[h]
+        \centering
+        \caption{The categories used from ImageNet and their associated WordNet \citep{fellbaum1998wordnet} identifiers.}
+        \label{tab:imagenet}
+        \begin{tabularx}{\textwidth}{lX}
+            \toprule
+            \textbf{Id} & \textbf{Category} \\
+            \midrule
+            n02778669 & Ball \\
+            n02779435 & Ball \\
+            n02799071 & Baseball \\
+            n02802426 & Basketball \\
+            n02839351 & Billiard ball \\
+            n02882301 & Bowling ball, bowl \\
+            n03134739 & Croquet ball \\
+            n03145719 & Cue ball \\
+            n03267113 & Eight ball \\
+            n02778669 & Generic sporting equipment balls \\
+            n03445777 & Golf ball \\
+            n03721047 & Marble \\
+            n03742019 & Medicine ball \\
+            n03825442 & Ninepin ball, skittle ball \\
+            n03942813 & Ping-pong ball \\
+            n02779435 & Plaything, toy, ball \\
+            n03982232 & Pool ball \\
+            n04254680 & Soccer ball \\
+            n04409515 & Tennis ball \\
+            n04540053 & Volleyball \\
+            \bottomrule
+        \end{tabularx}
+        \end{table}
+
+    }
+
+    \section{Results} {
+    \label{sec:results}
+
+        A subset of the proposed image database has been obtained based on the ImageNet synset IDs listed in Table~\ref{tab:imagenet} for the positive images. A large collection of images from another source were used as negative images. Negative images for the final report will be sourced from ImageNet.
+
+        Several Haar cascade classifiers were trained on this datset, using different training parameters, and their performances compared qualatitively by viewing the claissifier output on a small set of test images.
+
+        The preliminary results obtained are summarised in Table~\ref{table:results}.
+        These results show that the resulting quality of a classifier is extremely sensitive to the training data and settings used.
+        Some of the classifiers trained show promise, in that they detect balls in some of the images, and appear to detect circular objects in others, but it is clear that most of the supposed detections are false positives.
+        The authors suspect that there are two main reasons for the low classification performance:
+
+        \begin{itemize}
+            \item The set of positive examples is too small and too varied; and
+            \item The set of negative examples is poor, in that the images it contains are far too dissimilar from spheres.
+                  The use of different ImageNet synsets, such as `n03032811 - Circle, round' into the set of negative samples may improve performance, and will be considered before the final report.
+        \end{itemize}
+
+        The remainder of the project shall have to focus on improving the training data and training method if a reliable sphere detector is to result, especially if it is to acheive our goal of distinguishing spheres and disks.
+
+        \begin{table}[h]
+            \caption{Summary of preliminary results. The important configuration parameters of each classifier are shown, along with several sample images indicating classification performance.}
+            \centering
+            %\makebox[\textwidth][c]{\resizebox{0.5\paperwidth}{!}{\input{results/table.tex}}}
+        \end{table}
+
+    }
+
+    \section{Conclusion} {
+    \label{sec:conclusion}
+
+    }
+
+    \bibliographystyle{splncsnat}
+    \bibliography{references}
+
+\end{document}
