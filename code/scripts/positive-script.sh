@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 IFS=$'\n'
 files=$(find . -iname "*.jpg" -type f)
 i=1
