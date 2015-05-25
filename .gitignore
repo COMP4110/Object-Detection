@@ -1,3 +1,6 @@
+# Classifier output:
+code/images/tests/processed/*.jpg
+
 # IntelliJ:
 .idea/
 
