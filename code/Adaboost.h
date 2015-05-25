@@ -26,8 +26,8 @@ class Adaboost {
 			const int shift;
 		} Draw = {0, 0, 360, cv::Scalar(40, 40, 200), 3, 8, 0};
 
-		void processFrame(cv::Mat& frame, std::string file);
-		void detectObjects(cv::Mat& frame, cv::Mat& processedFrame);
+		void processFrame(cv::Mat& frame, std::string file, std::string detections_file);
+		std::vector<cv::Rect> detectObjects(cv::Mat& frame, cv::Mat& processedFrame);
 
 		inline std::string getFileName(int index);
 		inline void saveFrame(cv::Mat& frame, std::string file);
@@ -39,7 +39,7 @@ class Adaboost {
 
 	public:
 
-		void readDirectory(const std::string& directory);
+		void readDirectory(const std::string& directory, const std::string& detections_file);
 
 };
 

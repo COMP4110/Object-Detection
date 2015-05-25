@@ -8,6 +8,7 @@
  */
 #include <ostream>
 #include <iostream>
+#include <fstream>
 
 #include <opencv2/imgproc/imgproc.hpp>
 
@@ -18,7 +19,7 @@
  *
  * @param directory The relative path to the directory.
  */
-void Adaboost::readDirectory(const std::string& directory) {
+void Adaboost::readDirectory(const std::string& directory, const std::string& detections_file) {
 	// Specify the path as the directory being read.
 	path = directory;
 	// Create variables to store the image and file name.
@@ -31,7 +32,7 @@ void Adaboost::readDirectory(const std::string& directory) {
 		for (int i = 1; !(frame = cv::imread(directory + "/" + (file = getFileName(i)), Image.flag)).empty(); i++) {
 			std::cout << "Processing frame " << i << "." << std::endl;
 			// Process the current frame.
-			processFrame(frame, file);
+			processFrame(frame, file, detections_file);
 		}
 	} else {
 		std::cerr << "Unable to load the cascade classifier." << std::endl;
@@ -48,13 +49,34 @@ inline std::string Adaboost::getFileName(int index) {
 }
 
 /**
+ * Appends the detected object positions to a file with the given name.
+ *
+ * @param img_file Image file name.
+ * @param objs Detected objects.
+ * @param detections_file File to save detections to.
+ */
+void saveDetections(std::string img_file, std::vector<cv::Rect> objs, std::string detections_file) {
+	std::ofstream fs(detections_file, std::ios::out | std::ios::app);
+	fs << img_file;
+	fs << " " << objs.size();
+	for (auto r : objs) {
+		fs << " " << r.x
+		   << " " << r.y
+		   << " " << r.width
+		   << " " << r.height;
+	}
+	fs << std::endl;
+	fs.close();
+}
+
+/**
  * Processes a frame by converting it to grayscale and applying an equalizing histogram. Objects are then detected in
  * the frame and the processed image is saved.
  *
  * @param frame The current image.
  * @param file The name of the file.
  */
-void Adaboost::processFrame(cv::Mat& frame, std::string file) {
+void Adaboost::processFrame(cv::Mat& frame, std::string file, std::string detections_file) {
 	// Create an image container to store the processed frame.
 	cv::Mat processedFrame;
 	// Convert the frame to grayscale and store it in the new container so it can be processed more efficiently.
@@ -62,9 +84,11 @@ void Adaboost::processFrame(cv::Mat& frame, std::string file) {
 	// Apply a histogram equalization to improve the image contrast.
 	//cv::equalizeHist(processedFrame, processedFrame);
 	// Detect the objects in the frame.
-	detectObjects(frame, processedFrame);
+	auto objs = detectObjects(frame, processedFrame);
 	// Save the frame.
 	saveFrame(frame, file);
+
+	saveDetections(file, objs, detections_file);
 }
 
 /**
@@ -74,7 +98,7 @@ void Adaboost::processFrame(cv::Mat& frame, std::string file) {
  * @param frame The original image.
  * @param processedFrame The processed image used with the classifier.
  */
-void Adaboost::detectObjects(cv::Mat& frame, cv::Mat& processedFrame) {
+std::vector<cv::Rect> Adaboost::detectObjects(cv::Mat& frame, cv::Mat& processedFrame) {
 	// Create a vector of rectangles to store the detected objects.
 	std::vector<cv::Rect> objects;
 	// Detect the objects using the processed frame and store the results in objects.
@@ -89,6 +113,8 @@ void Adaboost::detectObjects(cv::Mat& frame, cv::Mat& processedFrame) {
 		// Display the detection on the coloured frame.
 		displayDetection(frame, center, size);
 	}
+
+	return objects;
 }
 
 /**
