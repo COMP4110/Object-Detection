@@ -1,6 +1,9 @@
 # Classifier output:
 code/images/tests/processed/*.jpg
 
+# Default detections.dat file:
+code/images/tests/detections.dat
+
 # IntelliJ:
 .idea/
 
