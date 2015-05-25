@@ -4,6 +4,6 @@
 
 int main() {
 	Adaboost adaboost;
-	adaboost.readDirectory("images");
+	adaboost.readDirectory("images/tests");
 	return 0;
 }

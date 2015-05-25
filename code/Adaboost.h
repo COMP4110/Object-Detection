@@ -14,7 +14,7 @@ class Adaboost {
 			std::string prefix;
 			const std::string format;
 			int flag;
-		} Image = {"sphere_", "jpg", CV_LOAD_IMAGE_COLOR};
+		} Image = {"test_", "jpg", CV_LOAD_IMAGE_COLOR};
 
 		const struct {
 			const double angle;

@@ -60,7 +60,7 @@ void Adaboost::processFrame(cv::Mat& frame, std::string file) {
 	// Convert the frame to grayscale and store it in the new container so it can be processed more efficiently.
 	cvtColor(frame, processedFrame, CV_BGR2GRAY);
 	// Apply a histogram equalization to improve the image contrast.
-	cv::equalizeHist(processedFrame, processedFrame);
+	//cv::equalizeHist(processedFrame, processedFrame);
 	// Detect the objects in the frame.
 	detectObjects(frame, processedFrame);
 	// Save the frame.
