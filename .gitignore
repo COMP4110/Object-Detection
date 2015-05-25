@@ -4,6 +4,10 @@ code/images/tests/processed/*.jpg
 # Default detections.dat file:
 code/images/tests/detections.dat
 
+# Classifier stages:
+code/classifiers/stage*.xml
+code/classifiers/params.xml
+
 # IntelliJ:
 .idea/
 
