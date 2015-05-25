@@ -107,12 +107,18 @@ with open(output_dat_filename, 'a+') as dat_file:
 					bounding_boxes = []
 					for obj in objects:
 						bbox = obj.bndbox
-						bounding_boxes.append({
+						bounding_box = {
 							'xmin': int(bbox.xmin.string),
 							'ymin': int(bbox.ymin.string),
 							'xmax': int(bbox.xmax.string),
 							'ymax': int(bbox.ymax.string)
-						})
+						}
+						# TODO
+						# if bounding_box['xmin'] < 0 or bounding_box['xmax'] > image_width - 1 or bounding_box['ymin'] < 0 or bounding_box['ymax'] > image_height - 1
+							# or bounding_box['xmin'] > bounding_box['xmax'] or bounding_box['ymin'] > bounding_box['ymax']:
+							# print 'bad'
+							# continue
+						bounding_boxes.append(bounding_box)
 
 					bbox_output = ['{} {} {} {}'.format(
 						bb['xmin'],

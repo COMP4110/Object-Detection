@@ -32,7 +32,7 @@ for image_path, details in info.iteritems():
 			for i in range(1, 4 * num_objects, 4):
 				bbox = bboxes[i:i+4]
 				im_crop = im.crop((bbox[0], bbox[1], bbox[2] + bbox[0], bbox[3] + bbox[1]))
-				im_crop.thumbnail(size, Image.ANTIALIAS)
+				im_crop = im_crop.resize(size, Image.ANTIALIAS)
 				im_crop.save(out_path, 'jpeg')
 		except IOError:
 			print "Error opening {}".format(image_path)
