@@ -26,20 +26,20 @@ class Adaboost {
 			const int shift;
 		} Draw = {0, 0, 360, cv::Scalar(40, 40, 200), 3, 8, 0};
 
-		void processFrame(cv::Mat& frame, std::string file, std::string detections_file);
+		void processFrame(cv::Mat& frame, std::string file_name, std::string save_dir, std::string detections_file);
 		std::vector<cv::Rect> detectObjects(cv::Mat& frame, cv::Mat& processedFrame);
 
 		inline std::string getFileName(int index);
-		inline void saveFrame(cv::Mat& frame, std::string file);
-		inline std::string getSaveDirectory();
+		inline void saveFrame(cv::Mat& frame, std::string save_dir, std::string file);
+		// inline std::string getSaveDirectory();
 		inline void displayDetection(cv::Mat& img, cv::Point center, cv::Size size);
 
-		std::string path;
+		// std::string path;
 		CascadeClassifier cascadeClassifier;
 
 	public:
 
-		void readDirectory(const std::string& directory, const std::string& detections_file, const std::string& classifier_file);
+		void readDirectory(const std::string& directory, const std::string& save_dir, const std::string& detections_file, const std::string& classifier_file);
 
 };
 
