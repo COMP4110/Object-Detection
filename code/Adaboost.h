@@ -39,7 +39,7 @@ class Adaboost {
 
 	public:
 
-		void readDirectory(const std::string& directory, const std::string& detections_file);
+		void readDirectory(const std::string& directory, const std::string& detections_file, const std::string& classifier_file);
 
 };
 

@@ -19,17 +19,18 @@
  *
  * @param directory The relative path to the directory.
  */
-void Adaboost::readDirectory(const std::string& directory, const std::string& detections_file) {
+void Adaboost::readDirectory(const std::string& img_dir, const std::string& detections_file, const std::string& classifier_file) {
 	// Specify the path as the directory being read.
-	path = directory;
+	path = img_dir;
 	// Create variables to store the image and file name.
 	cv::Mat frame;
 	std::string file;
+
 	// Attempt to load the specified classifier.
-	if (cascadeClassifier.load("classifiers/cascade.xml")) {
+	if (cascadeClassifier.load(classifier_file)) {
 		// Iterate through every image in the directory. It attempts to read the file and exits the loop if no image
 		// was read. This is an alternative to using the boost library.
-		for (int i = 1; !(frame = cv::imread(directory + "/" + (file = getFileName(i)), Image.flag)).empty(); i++) {
+		for (int i = 1; !(frame = cv::imread(img_dir + "/" + (file = getFileName(i)), Image.flag)).empty(); i++) {
 			std::cout << "Processing frame " << i << "." << std::endl;
 			// Process the current frame.
 			processFrame(frame, file, detections_file);
