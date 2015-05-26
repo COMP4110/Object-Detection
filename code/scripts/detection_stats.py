@@ -1,6 +1,7 @@
 from PIL import Image
 import os.path
 import argparse
+import math
 
 MAX_BB_CORNER_DISTANCE = 50
 
@@ -23,7 +24,11 @@ def readDataFile(file_name):
 			image_name = image_path.split('/')[-1]
 			num, unused_, objs_str = parts[2].partition(' ')
 
-			objs = list(chunks(map(int, objs_str.split(' ')), 4))
+			objs = []
+			if int(num) > 0:
+				objs = list(chunks(map(int, objs_str.split(' ')), 4))
+
+			objs = map(tuple, objs)
 
 			data[image_name] = objs
 	return data
@@ -40,16 +45,31 @@ def corners(obj):
 def sqrDist(p1, p2):
 	return (p1[0] - p2[0])**2 + (p1[1] - p2[1])**2
 
-# isNear :: (Int, Int) -> (Int, Int) -> Bool
-def isNear(p1, p2):
-	return sqrDist(p1, p2) < MAX_BB_CORNER_DISTANCE^2
+# # isNear :: (Int, Int) -> Int -> (Int, Int) -> Bool
+# def isNear(p1, p2):
+# 	return sqrDist(p1, p2) < MAX_BB_CORNER_DISTANCE^2
+
+# # isDetection :: [Int] -> [Int] -> Bool
+# def isDetection(obj, actual):
+# 	c_obj = corners(obj)
+# 	c_act = corners(actual)
+# 	return all(map(lambda (c1, c2): isNear(c1, c2), zip(c_obj, c_act)))
 
 # isDetection :: [Int] -> [Int] -> Bool
 def isDetection(obj, actual):
-	c_obj = corners(obj)
-	c_act = corners(actual)
+	obj_radius = (obj[2] + obj[3]) / 2
+	act_radius = (actual[2] + actual[3]) / 2
 
-	return all(map(lambda (c1, c2): isNear(c1, c2), zip(c_obj, c_act)))
+	radius_diff = abs(obj_radius - act_radius)
+	radius_rel_error = radius_diff / act_radius
+
+	obj_centre = (obj[0], obj[1])
+	act_centre = (actual[0], actual[1])
+
+	centre_error = math.sqrt(sqrDist(obj_centre, act_centre))
+	rel_centre_error = centre_error / act_radius
+
+	return radius_rel_error < 0.2 and rel_centre_error < 0.1
 
 
 # Start script:
@@ -65,10 +85,6 @@ print 'info_dat: {}'.format(args.info_dat)
 detections = readDataFile(args.detections_dat)
 info = readDataFile(args.info_dat)
 
-total_fp = 0
-total_tp = 0
-total_detected = 0
-
 total_objects = 0
 total_hit_count = 0
 
@@ -76,32 +92,34 @@ for key in detections:
 	detected_objs = detections[key]
 	actual_objs = info[key]
 
-	num_objects = len(actual_objs) + 0.0
-	num_detected = len(detected_objs) + 0.0
+	obj_detection_counts = {}
+	for a in actual_objs:
+		obj_detection_counts[a] = 0
 
+	num_objects = len(actual_objs) + 0.0
+	total_objects += num_objects
+	
 	num_fp = 0
 	num_tp = 0
 	for d in detected_objs:
-		if any(map(lambda a: isDetection(d, a), actual_objs)):
-			num_tp += 1
-		else:
+		tp = False
+		for a in actual_objs:
+			if isDetection(d, a):
+				obj_detection_counts[a] += 1
+				num_tp += 1
+				tp = True
+		if not tp:
 			num_fp += 1
 
-	total_fp += num_fp
-	total_tp += num_tp
+	for a in actual_objs:
+		if obj_detection_counts[a] > 0:
+			total_hit_count += 1 
 
-	# TODO: improve correctness of stats.
-	total_detected += num_detected
-	total_objects += num_objects
-
-	if num_tp > 0:
-		total_hit_count += 1 
-
-	print "img {:19}, tp: {:6.2f}, fp: {:6.2f}, tp%: {:4.2f}, fp%: {:4.2f}".format(key, num_tp, num_fp, num_tp / num_detected, num_fp / num_detected)
-	# print "img {}, tp: {:.2f}, fp: {:.2f}".format(key, num_tp, num_fp)
-	# print "img {}, tp: {:.2f}, fp: {:.2f}".format(key, num_tp, num_fp)
-
-# print "TOTAL, tp%: {:.3f}, fp%: {:.3f}".format(total_tp / total_detected, total_fp / total_detected)
+	num_detected = len(detected_objs) + 0.0
+	if num_detected > 0:
+		print "img: {:19}, tp: {:6.2f}, fp: {:6.2f}, tp%: {:4.2f}".format(key, num_tp, num_fp, num_tp / num_detected)
+	else:
+		print "img: {:19}, tp: {:6.2f}, fp: {:6.2f}".format(key, num_tp, num_fp)
 
 # TODO: This should be: (num objects which had an associated true positive) / (num objects)
 if total_objects != 0:

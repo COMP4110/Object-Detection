@@ -72,7 +72,6 @@ bak_image_files = filter(lambda x: negProg.match(x), bak_image_files)
 neg_image_files = filter(lambda x: negProg.match(x), neg_image_files)
 
 # Truncate file lists to sample the correct number of images:
-useFrac = float(classifier_yaml['dataset']['description']['useFrac'])
 datasetSize = int(classifier_yaml['dataset']['description']['number'])
 posFrac = float(classifier_yaml['dataset']['description']['posFrac'])
 hardNegFrac = float(classifier_yaml['dataset']['description']['hardNegFrac'])
@@ -143,12 +142,33 @@ if not os.path.isdir(traincascade_data_dir_relative):
 else:
 	print '\n## Using existing training data directory: {}'.format(traincascade_data_dir_relative)
 
+# From the opencv_traincascade documentation:
+#	-numPos <number_of_positive_samples>
+#	-numNeg <number_of_negative_samples>
+#		Number of positive/negative samples used in training for every classifier stage.
+# The key word being 'every'. We need to ensure that we don't ask for so
+# many samples that the last stages don't have enough.
+# 
+# We'll use the formula derived on the following page to decide how many
+# samples to use, after solving for numPos:
+# 	http://answers.opencv.org/question/4368/
+# (the formula seems a little off to me - it seems like we should raise
+#  to the power of numStages rather than multiplying? The latter is more
+#  conservative though, so it shouldn't be a problem.)
+skipFrac = float(classifier_yaml['training']['boost']['skipFrac']) # A count of all the skipped samples from vec-file (for all stages).
+skippedSamples = numPos * skipFrac # A count of all the skipped samples from vec-file (for all stages).
+minHitRate = float(classifier_yaml['training']['boost']['minHitRate'])
+numStages = float(classifier_yaml['training']['basic']['numStages'])
+numPosTraining = int((numPos - skippedSamples) / (1 + (1 - minHitRate) * (numStages - 1)))
+# numPosTraining = int((numPos - skippedSamples) / (1 + (1 - minHitRate)**(numStages - 1))) # ??
+numNegTraining = numNeg + numBak
+print '## numPosTraining:', numPosTraining
 samplesCommand = [ 'opencv_traincascade'
 	, '-vec',               balls_vec_fname
 	, '-data',              traincascade_data_dir
 	, '-bg',                neg_info_fname
-	, '-numPos',            str(numPos * useFrac)
-	, '-numNeg',            str(numNeg * useFrac)
+	, '-numPos',            str(numPosTraining)
+	, '-numNeg',            str(numNegTraining)
 	, '-numStages',         classifier_yaml['training']['basic']['numStages']
 	, '-featureType',       classifier_yaml['training']['cascade']['featureType']
 	, '-minHitRate',        classifier_yaml['training']['boost']['minHitRate']
