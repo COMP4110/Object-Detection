@@ -79,8 +79,12 @@ parser.add_argument('info_dat', type=str, nargs='?', default='info.dat', help='F
 
 args = parser.parse_args()
 
+output_lines = []
+
 print 'detections_dat: {}'.format(args.detections_dat)
 print 'info_dat: {}'.format(args.info_dat)
+output_lines += ['detections_dat: {}'.format(args.detections_dat)]
+output_lines += ['info_dat: {}'.format(args.info_dat)]
 
 detections = readDataFile(args.detections_dat)
 info = readDataFile(args.info_dat)
@@ -117,14 +121,24 @@ for key in detections:
 
 	num_detected = len(detected_objs) + 0.0
 	if num_detected > 0:
-		print "img: {:19}, tp: {:6.2f}, fp: {:6.2f}, tp%: {:4.2f}".format(key, num_tp, num_fp, num_tp / num_detected)
+		str = "img: {:19}, tp: {:6.2f}, fp: {:6.2f}, tp%: {:4.2f}".format(key, num_tp, num_fp, num_tp / num_detected)
+		print str; output_lines += [str];
 	else:
-		print "img: {:19}, tp: {:6.2f}, fp: {:6.2f}".format(key, num_tp, num_fp)
+		str = "img: {:19}, tp: {:6.2f}, fp: {:6.2f}".format(key, num_tp, num_fp)
+		print str; output_lines += [str];
 
-# TODO: This should be: (num objects which had an associated true positive) / (num objects)
 if total_objects != 0:
 	hit_rate = total_hit_count / total_objects
-	print "hit_rate:", hit_rate
+	str = "hit_rate: {}".format(hit_rate)
+	print str; output_lines += [str];
 else:
-	print "hit_rate: Inf"
+	str = "hit_rate: Inf"
+	print str; output_lines += [str];
 
+
+results_file_name = '/'.join(args.detections_dat.split('/')[:-1]) + '/results.txt'
+with open(results_file_name, 'w') as dat_file:
+	dat_file.write('{}\n'.format(output_lines[-1]))
+	for line in output_lines:
+		dat_file.write('{}\n'.format(line))
+	dat_file.flush()
