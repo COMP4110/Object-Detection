@@ -115,7 +115,7 @@ balls_vec_fname = '{}/balls.vec'.format(output_dir)
 samplesCommand = [ 'opencv_createsamples'
 	, '-info', pos_info_fname # classifier_yaml['dataset']['info']
 	, '-vec',  balls_vec_fname
-	, '-num',  classifier_yaml['dataset']['num'] # TODO: calculate from file contents.
+	, '-num',  str(datasetSize) # TODO: calculate from file contents.
 	]
 subprocess.call(samplesCommand, cwd=base_dir)
 
@@ -132,9 +132,9 @@ else:
 samplesCommand = [ 'opencv_traincascade'
 	, '-vec',               balls_vec_fname
 	, '-data',              traincascade_data_dir
-	, '-bg',                classifier_yaml['training']['basic']['bg']
-	, '-numPos',            classifier_yaml['training']['basic']['numPos']
-	, '-numNeg',            classifier_yaml['training']['basic']['numNeg']
+	, '-bg',                neg_info_fname
+	, '-numPos',            str(numPos)
+	, '-numNeg',            str(numNeg)
 	, '-numStages',         classifier_yaml['training']['basic']['numStages']
 	, '-featureType',       classifier_yaml['training']['cascade']['featureType']
 	, '-minHitRate',        classifier_yaml['training']['boost']['minHitRate']
