@@ -4,12 +4,6 @@ import argparse
 
 MAX_BB_CORNER_DISTANCE = 50
 
-parser = argparse.ArgumentParser(description='ImageNet Gatherer')
-parser.add_argument('detections_dat', type=str, nargs='?', default='../images/tests/detections.dat', help='File containing image and bounding-box information')
-parser.add_argument('info_dat', type=str, nargs='?', default='info.dat', help='File containing image and bounding-box information')
-
-args = parser.parse_args()
-
 # From: http://stackoverflow.com/a/312464
 # chunks :: [Int] -> [[Int]]
 def chunks(l, n):
@@ -26,11 +20,12 @@ def readDataFile(file_name):
 		for line in dat_file.readlines():
 			parts = line.strip().partition(' ')
 			image_path = parts[0]
+			image_name = image_path.split('/')[-1]
 			num, unused_, objs_str = parts[2].partition(' ')
 
 			objs = list(chunks(map(int, objs_str.split(' ')), 4))
 
-			data[image_path] = objs
+			data[image_name] = objs
 	return data
 
 # corners :: [Int] -> [(Int, Int)]
@@ -58,6 +53,15 @@ def isDetection(obj, actual):
 
 
 # Start script:
+parser = argparse.ArgumentParser(description='ImageNet Gatherer')
+parser.add_argument('detections_dat', type=str, nargs='?', default='../images/tests/detections.dat', help='File containing image and bounding-box information')
+parser.add_argument('info_dat', type=str, nargs='?', default='info.dat', help='File containing image and bounding-box information')
+
+args = parser.parse_args()
+
+print 'detections_dat: {}'.format(args.detections_dat)
+print 'info_dat: {}'.format(args.info_dat)
+
 detections = readDataFile(args.detections_dat)
 info = readDataFile(args.info_dat)
 
@@ -70,7 +74,7 @@ total_hit_count = 0
 
 for key in detections:
 	detected_objs = detections[key]
-	actual_objs = info['images/{}'.format(key)]
+	actual_objs = info[key]
 
 	num_objects = len(actual_objs) + 0.0
 	num_detected = len(detected_objs) + 0.0
@@ -100,5 +104,9 @@ for key in detections:
 # print "TOTAL, tp%: {:.3f}, fp%: {:.3f}".format(total_tp / total_detected, total_fp / total_detected)
 
 # TODO: This should be: (num objects which had an associated true positive) / (num objects)
-hit_rate = total_hit_count / total_objects
-print "hit_rate:", hit_rate
+if total_objects != 0:
+	hit_rate = total_hit_count / total_objects
+	print "hit_rate:", hit_rate
+else:
+	print "hit_rate: Inf"
+
