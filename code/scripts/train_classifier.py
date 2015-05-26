@@ -32,8 +32,6 @@ else:
 	print '\n## Using existing output directory: {}'.format(output_dir_relative)
 
 
-print '\n## Creating dataset...'
-
 # Load the global info file with bounding boxes for all positive images:
 global_info_fname = 'info.dat'
 global_info = {}
@@ -44,90 +42,128 @@ with open(global_info_fname, 'r') as dat_file:
 		details = parts[2]
 		global_info[image_path] = details
 
+
+print '\n## Creating datasets...'
+
 # TODO: Add options to only use a (deterministic) fraction of the samples.
-pos_img_dir = classifier_yaml['dataset']['positive']['directory']
-positive_image_files = glob.glob("{}/{}/*.jpg".format(base_dir, pos_img_dir))
+pos_img_dir = classifier_yaml['dataset']['directory']['positive']
+bak_img_dir = classifier_yaml['dataset']['directory']['background']
+neg_img_dir = classifier_yaml['dataset']['directory']['negative']
+pos_image_files = glob.glob("{}/{}/*.jpg".format(base_dir, pos_img_dir))
+bak_image_files = glob.glob("{}/{}/*.jpg".format(base_dir, bak_img_dir))
+neg_image_files = glob.glob("{}/{}/*.jpg".format(base_dir, neg_img_dir))
 
 pos_info_fname = '{}/positive.txt'.format(output_dir)
-pos_info_fname_depth = len(pos_info_fname.split('/')) - 1
+neg_info_fname = '{}/negative.txt'.format(output_dir)
+
 # Note: image paths in the data file have to be relative to the file itself.
-pos_info_entry_prefix = '../' * pos_info_fname_depth
+pos_info_fname_depth = len(pos_info_fname.split('/')) - 1
+info_entry_prefix = '../' * pos_info_fname_depth
+
+# Filter image file lists to match sysnet specifications:
+
+
+# Truncate file lists to sample the correct number of images:
+datasetSize = int(classifier_yaml['dataset']['description']['number'])
+posFrac = float(classifier_yaml['dataset']['description']['posFrac'])
+hardNegFrac = float(classifier_yaml['dataset']['description']['hardNegFrac'])
+numPos = int(datasetSize * posFrac)
+numNeg = int(datasetSize * (1 - posFrac) * hardNegFrac)
+numBak = datasetSize - numPos - numNeg
+pos_image_files = pos_image_files[:numPos]
+bak_image_files = bak_image_files[:numBak]
+neg_image_files = neg_image_files[:numNeg]
+
+print 'datasetSize:', numPos + numNeg + numBak
+print 'posFrac:', posFrac
+print 'hardNegFrac:', hardNegFrac
+print '  numPos:', numPos
+print '  numNeg:', numNeg
+print '  numBak:', numBak
+
+# Write pos_image_files and bounding box info to pos_info_fname:
 with open('{}/{}'.format(base_dir, pos_info_fname), 'w') as dat_file:
-	for img in sorted(positive_image_files):
+	for img in sorted(pos_image_files):
 		# Use the bounding boxes from the global info file:
 		key = img.split('/')[-1]
 		details = global_info[key]
-		dat_file.write("{}{} {}\n".format(pos_info_entry_prefix, img.strip('../'), details))
-	
+		dat_file.write("{}{} {}\n".format(info_entry_prefix, img.strip('../'), details))
 	dat_file.flush()
 
 print pos_info_fname
 
-
-print '\n## Creating samples...'
-balls_vec_fname = '{}/balls.vec'.format(output_dir)
-
-samplesCommand = [ 'opencv_createsamples'
-	, '-info', pos_info_fname # classifier_yaml['dataset']['info']
-	, '-vec',  balls_vec_fname
-	, '-num',  classifier_yaml['dataset']['num'] # TODO: calculate from file contents.
-	]
-subprocess.call(samplesCommand, cwd=base_dir)
+# Write neg_image_files to neg_info_fname:
+with open('{}/{}'.format(base_dir, neg_info_fname), 'w') as dat_file:
+	for img in sorted(bak_image_files + neg_image_files):
+		dat_file.write("{}{}\n".format(info_entry_prefix, img.strip('../')))
+	dat_file.flush()
+print neg_info_fname
 
 
-print '\n## Training classifier...'
-traincascade_data_dir = '{}/data'.format(output_dir)
-traincascade_data_dir_relative = '{}/{}'.format(base_dir, traincascade_data_dir)
-if not os.path.isdir(traincascade_data_dir_relative):
-	print '\n## Creating training data directory: {}'.format(traincascade_data_dir_relative)
-	os.makedirs(traincascade_data_dir_relative)
-else:
-	print '\n## Using existing training data directory: {}'.format(traincascade_data_dir_relative)
+# print '\n## Creating samples...'
+# balls_vec_fname = '{}/balls.vec'.format(output_dir)
 
-samplesCommand = [ 'opencv_traincascade'
-	, '-vec',               balls_vec_fname
-	, '-data',              traincascade_data_dir
-	, '-bg',                classifier_yaml['training']['basic']['bg']
-	, '-numPos',            classifier_yaml['training']['basic']['numPos']
-	, '-numNeg',            classifier_yaml['training']['basic']['numNeg']
-	, '-numStages',         classifier_yaml['training']['basic']['numStages']
-	, '-featureType',       classifier_yaml['training']['cascade']['featureType']
-	, '-minHitRate',        classifier_yaml['training']['boost']['minHitRate']
-	, '-maxFalseAlarmRate', classifier_yaml['training']['boost']['maxFalseAlarmRate']
-	, '-weightTrimRate',    classifier_yaml['training']['boost']['weightTrimRate']
-	, '-maxDepth',          classifier_yaml['training']['boost']['maxDepth']
-	, '-maxWeakCount',      classifier_yaml['training']['boost']['maxWeakCount']
-	]
-subprocess.call(samplesCommand, cwd=base_dir)
+# samplesCommand = [ 'opencv_createsamples'
+# 	, '-info', pos_info_fname # classifier_yaml['dataset']['info']
+# 	, '-vec',  balls_vec_fname
+# 	, '-num',  classifier_yaml['dataset']['num'] # TODO: calculate from file contents.
+# 	]
+# subprocess.call(samplesCommand, cwd=base_dir)
 
 
-print '\n## Running classifier...'
-detections_fname = '{}/detections.dat'.format(output_dir)
+# print '\n## Training classifier...'
+# traincascade_data_dir = '{}/data'.format(output_dir)
+# traincascade_data_dir_relative = '{}/{}'.format(base_dir, traincascade_data_dir)
+# if not os.path.isdir(traincascade_data_dir_relative):
+# 	print '\n## Creating training data directory: {}'.format(traincascade_data_dir_relative)
+# 	os.makedirs(traincascade_data_dir_relative)
+# else:
+# 	print '\n## Using existing training data directory: {}'.format(traincascade_data_dir_relative)
 
-results_dir = '{}/results'.format(output_dir)
-results_dir_relative = '{}/{}'.format(base_dir, results_dir)
-if not os.path.isdir(results_dir_relative):
-	print '\n## Creating results directory: {}'.format(results_dir_relative)
-	os.makedirs(results_dir_relative)
-else:
-	print '\n## Using existing results directory: {}'.format(results_dir_relative)
+# samplesCommand = [ 'opencv_traincascade'
+# 	, '-vec',               balls_vec_fname
+# 	, '-data',              traincascade_data_dir
+# 	, '-bg',                classifier_yaml['training']['basic']['bg']
+# 	, '-numPos',            classifier_yaml['training']['basic']['numPos']
+# 	, '-numNeg',            classifier_yaml['training']['basic']['numNeg']
+# 	, '-numStages',         classifier_yaml['training']['basic']['numStages']
+# 	, '-featureType',       classifier_yaml['training']['cascade']['featureType']
+# 	, '-minHitRate',        classifier_yaml['training']['boost']['minHitRate']
+# 	, '-maxFalseAlarmRate', classifier_yaml['training']['boost']['maxFalseAlarmRate']
+# 	, '-weightTrimRate',    classifier_yaml['training']['boost']['weightTrimRate']
+# 	, '-maxDepth',          classifier_yaml['training']['boost']['maxDepth']
+# 	, '-maxWeakCount',      classifier_yaml['training']['boost']['maxWeakCount']
+# 	]
+# subprocess.call(samplesCommand, cwd=base_dir)
 
-runCommand = [ './build/Object_Detection'
-	, traincascade_data_dir + '/cascade.xml'
-	, detections_fname
-	, classifier_yaml['testing']['inputDir']
-	, results_dir
-	]
-subprocess.call(runCommand, cwd=base_dir)
+
+# print '\n## Running classifier...'
+# detections_fname = '{}/detections.dat'.format(output_dir)
+
+# results_dir = '{}/results'.format(output_dir)
+# results_dir_relative = '{}/{}'.format(base_dir, results_dir)
+# if not os.path.isdir(results_dir_relative):
+# 	print '\n## Creating results directory: {}'.format(results_dir_relative)
+# 	os.makedirs(results_dir_relative)
+# else:
+# 	print '\n## Using existing results directory: {}'.format(results_dir_relative)
+
+# runCommand = [ './build/Object_Detection'
+# 	, traincascade_data_dir + '/cascade.xml'
+# 	, detections_fname
+# 	, classifier_yaml['testing']['inputDir']
+# 	, results_dir
+# 	]
+# subprocess.call(runCommand, cwd=base_dir)
 
 
-print '\n## Calculating statistics...'
-# Note: Need to use the global data file because
-#       pos_info_fname doesn't have bounding boxes for the test set.
-statsCommand = [ 'python', 'scripts/detection_stats.py'
-	, detections_fname
-	, 'scripts/{}'.format(global_info_fname)
-	]
-subprocess.call(statsCommand, cwd=base_dir)
+# print '\n## Calculating statistics...'
+# # Note: Need to use the global data file because
+# #       pos_info_fname doesn't have bounding boxes for the test set.
+# statsCommand = [ 'python', 'scripts/detection_stats.py'
+# 	, detections_fname
+# 	, 'scripts/{}'.format(global_info_fname)
+# 	]
+# subprocess.call(statsCommand, cwd=base_dir)
 
-# # subprocess.check_output(['ls'], cwd=base_dir)
+# # # subprocess.check_output(['ls'], cwd=base_dir)

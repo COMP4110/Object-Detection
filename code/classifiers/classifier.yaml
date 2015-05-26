@@ -3,17 +3,25 @@
 
 # TODO: support creating these files automatically using fractions of synsets.
 dataset:
-    positive:
-        directory: images/samples/positive
-    negative:
-        directory: images/samples/negative
-    num: '50' # TODO: calculate from file contents.
+    description:
+        number: '64' # Total number of samples.
+        posFrac: '0.5' # Fraction of samples that will be positive.
+        hardNegFrac: '0.25' # Fraction of *negative* samples that will be hard negatives.
+    synsets: # Sample from only these synsets (use '*' for all).
+        pos:
+            - '*'
+        neg:
+            - '*'
+    directory: # Directories from which to draw the different image types.
+        positive: images/samples/positive
+        background: images/samples/background
+        negative: images/samples/hard_negative
 training:
     basic:
         data: classifiers
-        bg: training/negative.txt
-        numPos: '40' # <number_of_positive_samples = 2000>]
-        numNeg: '20' # <number_of_negative_samples = 1000>]
+        # bg: training/negative.txt
+        # numPos: '40' # Unused: calculated from dataset.
+        # numNeg: '20' # Unused: calculated from dataset.
         numStages: '5' # <number_of_stages = 20>]
     cascade:
         featureType: HAAR # {HAAR(default), LBP, HOG}
