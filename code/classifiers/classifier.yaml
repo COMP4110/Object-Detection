@@ -1,0 +1,29 @@
+# Note: Specify all paths from the code directory.
+# Note: Quote all numbers.
+
+# TODO: support creating these files automatically using fractions of synsets.
+dataset:
+    info: training/script-test-positive.txt
+    vec: training/balls.txt
+    num: '50' # TODO: calculate from file contents.
+training:
+    basic:
+        data: classifiers
+        # vec: ../training/balls.txt # just use dataset/vec
+        bg: training/negative.txt
+        numPos: '40' # <number_of_positive_samples = 2000>]
+        numNeg: '20' # <number_of_negative_samples = 1000>]
+        numStages: '5' # <number_of_stages = 20>]
+    cascade:
+        featureType: HAAR # {HAAR(default), LBP, HOG}
+    boost:
+        minHitRate: '0.9' # 0.995
+        maxFalseAlarmRate: '0.75' # 0.5
+        weightTrimRate: '0.95' # 0.95
+        maxDepth: '1' # 1
+        maxWeakCount: '100' # 100
+testing:
+    # classifierFile: classifiers/cascade.xml # calculated from basicParams/data
+    detectionsFile: images/tests/detections.dat
+    inputDir: images/samples/positive_test_set/
+    outputDir: images/tests/processed
