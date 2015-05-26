@@ -7,11 +7,24 @@ dataset:
         number: '64' # Total number of samples.
         posFrac: '0.5' # Fraction of samples that will be positive.
         hardNegFrac: '0.25' # Fraction of *negative* samples that will be hard negatives.
-    synsets: # Sample from only these synsets (use '*' for all).
-        pos:
-            - '*'
-        neg:
-            - '*'
+        synsets: # Sample from only these synsets (use '.*' for all).
+            pos:
+                # - '.*'
+                # - n02799071 # baseball
+                # - n02802426 # basketball
+                # - n02882301 # ten-pin bowling
+                # - n03134739 # croquet
+                - n03145719 # pool
+                - n03267113 # 8-ball
+                # - n03721047 # marbles
+                # - n03742019 # exercise ball
+                # - n03825442 # bowling (mostly ten-pin)
+                # - n03942813 # table tennis
+                - n03982232 # pool (again)
+                # - n04409515 # tennis
+                # - n04540053 # volleyball
+            neg:
+                - '.*'
     directory: # Directories from which to draw the different image types.
         positive: images/samples/positive
         background: images/samples/background
