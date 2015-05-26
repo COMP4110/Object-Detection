@@ -48,7 +48,6 @@ with open(global_info_fname, 'r') as dat_file:
 
 print '\n## Creating datasets...'
 
-# TODO: Add options to only use a (deterministic) fraction of the samples.
 pos_img_dir = classifier_yaml['dataset']['directory']['positive']
 bak_img_dir = classifier_yaml['dataset']['directory']['background']
 neg_img_dir = classifier_yaml['dataset']['directory']['negative']
@@ -73,38 +72,53 @@ bak_image_files = filter(lambda x: negProg.match(x), bak_image_files)
 neg_image_files = filter(lambda x: negProg.match(x), neg_image_files)
 
 # Truncate file lists to sample the correct number of images:
+useFrac = float(classifier_yaml['dataset']['description']['useFrac'])
 datasetSize = int(classifier_yaml['dataset']['description']['number'])
 posFrac = float(classifier_yaml['dataset']['description']['posFrac'])
 hardNegFrac = float(classifier_yaml['dataset']['description']['hardNegFrac'])
 numPos = int(datasetSize * posFrac)
 numNeg = int(datasetSize * (1 - posFrac) * hardNegFrac)
-numBak = datasetSize - numPos - numNeg
-pos_image_files = random.sample(pos_image_files, numPos) # pos_image_files[:numPos]
-bak_image_files = random.sample(bak_image_files, numBak) # bak_image_files[:numBak]
-neg_image_files = random.sample(neg_image_files, numNeg) # neg_image_files[:numNeg]
+numBak = max(0, datasetSize - numPos - numNeg)
+pos_image_files = random.sample(pos_image_files, min(numPos, len(pos_image_files)))
+bak_image_files = random.sample(bak_image_files, min(numBak, len(bak_image_files)))
+neg_image_files = random.sample(neg_image_files, min(numNeg, len(neg_image_files)))
 
-print 'datasetSize:', numPos + numNeg + numBak
+# Adjust numbers in case there weren't enough images:
+datasetSize = numPos + numNeg + numBak
+numPos = len(pos_image_files)
+numBak = len(bak_image_files)
+numNeg = len(neg_image_files)
+
+print 'datasetSize:', datasetSize
 print 'posFrac:', posFrac
 print 'hardNegFrac:', hardNegFrac
 print '  numPos:', numPos
 print '  numNeg:', numNeg
 print '  numBak:', numBak
 
+def write_img(img, dat_file):
+	key = img.split('/')[-1]
+	details = global_info[key]
+	dat_file.write("{}{} {}".format(info_entry_prefix, img.strip('../'), details))
+
 # Write pos_image_files and bounding box info to pos_info_fname:
 with open('{}/{}'.format(base_dir, pos_info_fname), 'w') as dat_file:
-	for img in sorted(pos_image_files):
+	images = sorted(pos_image_files)
+	write_img(images[0], dat_file)
+	for img in images[1:]:
 		# Use the bounding boxes from the global info file:
-		key = img.split('/')[-1]
-		details = global_info[key]
-		dat_file.write("{}{} {}\n".format(info_entry_prefix, img.strip('../'), details))
+		dat_file.write("\n")
+		write_img(img, dat_file)
 	dat_file.flush()
 
 print pos_info_fname
 
 # Write neg_image_files to neg_info_fname:
 with open('{}/{}'.format(base_dir, neg_info_fname), 'w') as dat_file:
-	for img in sorted(bak_image_files + neg_image_files):
-		dat_file.write("{}{}\n".format(info_entry_prefix, img.strip('../')))
+	images = sorted(bak_image_files + neg_image_files)
+	dat_file.write("{}{}".format(info_entry_prefix, images[0].strip('../')))
+	for img in images[1:]:
+		dat_file.write("\n{}{}".format(info_entry_prefix, img.strip('../')))
 	dat_file.flush()
 print neg_info_fname
 
@@ -113,9 +127,9 @@ print '\n## Creating samples...'
 balls_vec_fname = '{}/balls.vec'.format(output_dir)
 
 samplesCommand = [ 'opencv_createsamples'
-	, '-info', pos_info_fname # classifier_yaml['dataset']['info']
+	, '-info', pos_info_fname
 	, '-vec',  balls_vec_fname
-	, '-num',  str(datasetSize) # TODO: calculate from file contents.
+	, '-num',  str(numPos)
 	]
 subprocess.call(samplesCommand, cwd=base_dir)
 
@@ -133,8 +147,8 @@ samplesCommand = [ 'opencv_traincascade'
 	, '-vec',               balls_vec_fname
 	, '-data',              traincascade_data_dir
 	, '-bg',                neg_info_fname
-	, '-numPos',            str(numPos)
-	, '-numNeg',            str(numNeg)
+	, '-numPos',            str(numPos * useFrac)
+	, '-numNeg',            str(numNeg * useFrac)
 	, '-numStages',         classifier_yaml['training']['basic']['numStages']
 	, '-featureType',       classifier_yaml['training']['cascade']['featureType']
 	, '-minHitRate',        classifier_yaml['training']['boost']['minHitRate']
