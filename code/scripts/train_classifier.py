@@ -76,9 +76,17 @@ subprocess.call(samplesCommand, cwd=base_dir)
 
 
 print '\n## Training classifier...'
+traincascade_data_dir = '{}/data'.format(output_dir)
+traincascade_data_dir_relative = '{}/{}'.format(base_dir, traincascade_data_dir)
+if not os.path.isdir(traincascade_data_dir_relative):
+	print '\n## Creating training data directory: {}'.format(traincascade_data_dir_relative)
+	os.makedirs(traincascade_data_dir_relative)
+else:
+	print '\n## Using existing training data directory: {}'.format(traincascade_data_dir_relative)
+
 samplesCommand = [ 'opencv_traincascade'
 	, '-vec',               balls_vec_fname
-	, '-data',              classifier_yaml['training']['basic']['data']
+	, '-data',              traincascade_data_dir
 	, '-bg',                classifier_yaml['training']['basic']['bg']
 	, '-numPos',            classifier_yaml['training']['basic']['numPos']
 	, '-numNeg',            classifier_yaml['training']['basic']['numNeg']
@@ -105,7 +113,7 @@ else:
 	print '\n## Using existing results directory: {}'.format(results_dir_relative)
 
 runCommand = [ './build/Object_Detection'
-	, classifier_yaml['training']['basic']['data'] + '/cascade.xml'
+	, traincascade_data_dir + '/cascade.xml'
 	, detections_fname
 	, classifier_yaml['testing']['inputDir']
 	, results_dir

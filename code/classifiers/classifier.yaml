@@ -5,16 +5,12 @@
 dataset:
     positive:
         directory: images/samples/positive
-        synsets: ['*']
     negative:
         directory: images/samples/negative
-    # info: training/script-test-positive.txt # based on file name.
-    # vec: training/balls.txt # based on file name.
     num: '50' # TODO: calculate from file contents.
 training:
     basic:
         data: classifiers
-        # vec: ../training/balls.txt # just use dataset/vec
         bg: training/negative.txt
         numPos: '40' # <number_of_positive_samples = 2000>]
         numNeg: '20' # <number_of_negative_samples = 1000>]
@@ -28,8 +24,4 @@ training:
         maxDepth: '1' # 1
         maxWeakCount: '100' # 100
 testing:
-    # classifierFile: classifiers/cascade.xml # calculated from basicParams/data
-    # detectionsFile: images/tests/detections.dat # based on file name.
-    # inputDir: images/samples/positive_test_set/
     inputDir: images/samples/positive_test_set_tiny/
-    # outputDir: images/tests/processed # based on file name.
