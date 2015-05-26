@@ -82,6 +82,20 @@ pos_image_files = random.sample(pos_image_files, min(numPos, len(pos_image_files
 bak_image_files = random.sample(bak_image_files, min(numBak, len(bak_image_files)))
 neg_image_files = random.sample(neg_image_files, min(numNeg, len(neg_image_files)))
 
+# Complain if there aren't enough images:
+if numPos != len(pos_image_files):
+	print '  numPos:', numPos
+	print '  len(pos_image_files):', len(pos_image_files)
+	raise ValueError('Not enough positive images!')
+if numNeg != len(neg_image_files):
+	print '  numNeg:', numNeg
+	print '  len(neg_image_files):', len(neg_image_files)
+	raise ValueError('Not enough negitive images!')
+if numBak != len(bak_image_files):
+	print '  numBak:', numBak
+	print '  len(bak_image_files):', len(bak_image_files)
+	raise ValueError('Not enough background images!')
+
 # Adjust numbers in case there weren't enough images:
 datasetSize = numPos + numNeg + numBak
 numPos = len(pos_image_files)
@@ -161,7 +175,7 @@ minHitRate = float(classifier_yaml['training']['boost']['minHitRate'])
 numStages = float(classifier_yaml['training']['basic']['numStages'])
 numPosTraining = int((numPos - skippedSamples) / (1 + (1 - minHitRate) * (numStages - 1)))
 # numPosTraining = int((numPos - skippedSamples) / (1 + (1 - minHitRate)**(numStages - 1))) # ??
-numNegTraining = numNeg + numBak
+numNegTraining = (numNeg + numBak)
 print '## numPosTraining:', numPosTraining
 samplesCommand = [ 'opencv_traincascade'
 	, '-vec',               balls_vec_fname
