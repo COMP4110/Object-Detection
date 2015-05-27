@@ -1,0 +1,1261 @@
+Last login: Wed May 27 02:30:24 on ttys002
+mitchell-laptop:scripts mitchell$  python train_classifier.py ../classifiers/scheme_3.yaml 
+
+## Creating output directory: ../classifiers/scheme_3
+
+## Creating datasets...
+  numNeg: 669
+  len(neg_image_files): 468
+Traceback (most recent call last):
+  File "train_classifier.py", line 93, in <module>
+    raise ValueError('Not enough negitive images!')
+ValueError: Not enough negitive images!
+mitchell-laptop:scripts mitchell$  python train_classifier.py ../classifiers/scheme_2.yaml 
+
+## Creating output directory: ../classifiers/scheme_2
+
+## Creating datasets...
+datasetSize: 2000
+posFrac: 0.33
+hardNegFrac: 0.25
+  numPos: 660
+  numNeg: 334
+  numBak: 1006
+classifiers/scheme_2/positive.txt
+classifiers/scheme_2/negative.txt
+
+## Creating samples...
+Info file name: classifiers/scheme_2/positive.txt
+Img file name: (NULL)
+Vec file name: classifiers/scheme_2/balls.vec
+BG  file name: (NULL)
+Num: 660
+BG color: 0
+BG threshold: 80
+Invert: FALSE
+Max intensity deviation: 40
+Max x angle: 1.1
+Max y angle: 1.1
+Max z angle: 0.5
+Show samples: FALSE
+Original image will be scaled to:
+	Width: $backgroundWidth / 24
+	Height: $backgroundHeight / 24
+Create training samples from images collection...
+Done. Created 660 samples
+
+## Training classifier...
+
+## Creating training data directory: ../classifiers/scheme_2/data
+## numPosTraining: 56
+PARAMETERS:
+cascadeDirName: classifiers/scheme_2/data
+vecFileName: classifiers/scheme_2/balls.vec
+bgFileName: classifiers/scheme_2/negative.txt
+numPos: 56
+numNeg: 1340
+numStages: 20
+precalcValBufSize[Mb] : 256
+precalcIdxBufSize[Mb] : 256
+stageType: BOOST
+featureType: HAAR
+sampleWidth: 24
+sampleHeight: 24
+boostType: GAB
+minHitRate: 0.9
+maxFalseAlarmRate: 0.5
+weightTrimRate: 0.95
+maxDepth: 1
+maxWeakCount: 100
+mode: BASIC
+
+===== TRAINING 0-stage =====
+<BEGIN
+POS count : consumed   56 : 56
+NEG count : acceptanceRatio    1340 : 1
+Precalculation time: 8
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3|        1| 0.370896|
++----+---------+---------+
+END>
+Training until now has taken 0 days 0 hours 1 minutes 14 seconds.
+
+===== TRAINING 1-stage =====
+<BEGIN
+POS count : consumed   56 : 56
+NEG count : acceptanceRatio    1340 : 0.403736
+Precalculation time: 7
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+^CTraceback (most recent call last):
+  File "train_classifier.py", line 194, in <module>
+    subprocess.call(samplesCommand, cwd=base_dir)
+  File "/usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/lib/python2.7/subprocess.py", line 522, in call
+    return Popen(*popenargs, **kwargs).wait()
+  File "/usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/lib/python2.7/subprocess.py", line 1384, in wait
+    pid, sts = _eintr_retry_call(os.waitpid, self.pid, 0)
+  File "/usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/lib/python2.7/subprocess.py", line 476, in _eintr_retry_call
+    return func(*args)
+KeyboardInterrupt
+mitchell-laptop:scripts mitchell$  python train_classifier.py ../classifiers/scheme_2.yaml 
+
+## Creating output directory: ../classifiers/scheme_2
+
+## Creating datasets...
+datasetSize: 2000
+posFrac: 0.33
+hardNegFrac: 0.25
+  numPos: 660
+  numNeg: 334
+  numBak: 1006
+classifiers/scheme_2/positive.txt
+classifiers/scheme_2/negative.txt
+
+## Creating samples...
+Info file name: classifiers/scheme_2/positive.txt
+Img file name: (NULL)
+Vec file name: classifiers/scheme_2/balls.vec
+BG  file name: (NULL)
+Num: 660
+BG color: 0
+BG threshold: 80
+Invert: FALSE
+Max intensity deviation: 40
+Max x angle: 1.1
+Max y angle: 1.1
+Max z angle: 0.5
+Show samples: FALSE
+Original image will be scaled to:
+	Width: $backgroundWidth / 24
+	Height: $backgroundHeight / 24
+Create training samples from images collection...
+Done. Created 660 samples
+
+## Training classifier...
+
+## Creating training data directory: ../classifiers/scheme_2/data
+## numPosTraining: 138
+PARAMETERS:
+cascadeDirName: classifiers/scheme_2/data
+vecFileName: classifiers/scheme_2/balls.vec
+bgFileName: classifiers/scheme_2/negative.txt
+numPos: 138
+numNeg: 1340
+numStages: 20
+precalcValBufSize[Mb] : 256
+precalcIdxBufSize[Mb] : 256
+stageType: BOOST
+featureType: HAAR
+sampleWidth: 24
+sampleHeight: 24
+boostType: GAB
+minHitRate: 0.99
+maxFalseAlarmRate: 0.5
+weightTrimRate: 0.95
+maxDepth: 1
+maxWeakCount: 100
+mode: BASIC
+
+===== TRAINING 0-stage =====
+<BEGIN
+POS count : consumed   138 : 138
+NEG count : acceptanceRatio    1340 : 1
+Precalculation time: 6
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3|        1|        1|
++----+---------+---------+
+|   4| 0.992754| 0.444776|
++----+---------+---------+
+END>
+Training until now has taken 0 days 0 hours 1 minutes 55 seconds.
+
+===== TRAINING 1-stage =====
+<BEGIN
+POS count : consumed   138 : 139
+NEG count : acceptanceRatio    1340 : 0.480804
+Precalculation time: 14
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3|        1|        1|
++----+---------+---------+
+|   4|        1|      0.7|
++----+---------+---------+
+|   5|        1| 0.730597|
++----+---------+---------+
+|   6| 0.992754| 0.547015|
++----+---------+---------+
+|   7|        1| 0.348507|
++----+---------+---------+
+END>
+Training until now has taken 0 days 0 hours 5 minutes 2 seconds.
+
+===== TRAINING 2-stage =====
+<BEGIN
+POS count : consumed   138 : 139
+NEG count : acceptanceRatio    1340 : 0.171071
+Precalculation time: 8
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3|        1|        1|
++----+---------+---------+
+|   4|        1|        1|
++----+---------+---------+
+|   5|        1| 0.697015|
++----+---------+---------+
+|   6|        1| 0.460448|
++----+---------+---------+
+END>
+Training until now has taken 0 days 0 hours 7 minutes 39 seconds.
+
+===== TRAINING 3-stage =====
+<BEGIN
+POS count : consumed   138 : 139
+NEG count : acceptanceRatio    1340 : 0.0833541
+Precalculation time: 6
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3|        1|        1|
++----+---------+---------+
+|   4|        1| 0.708955|
++----+---------+---------+
+|   5| 0.992754| 0.515672|
++----+---------+---------+
+|   6| 0.992754| 0.431343|
++----+---------+---------+
+END>
+Training until now has taken 0 days 0 hours 10 minutes 19 seconds.
+
+===== TRAINING 4-stage =====
+<BEGIN
+POS count : consumed   138 : 140
+NEG count : acceptanceRatio    1340 : 0.0354676
+Precalculation time: 8
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3|        1|        1|
++----+---------+---------+
+|   4|        1| 0.731343|
++----+---------+---------+
+|   5| 0.992754| 0.495522|
++----+---------+---------+
+END>
+Training until now has taken 0 days 0 hours 12 minutes 37 seconds.
+
+===== TRAINING 5-stage =====
+<BEGIN
+POS count : consumed   138 : 141
+NEG count : acceptanceRatio    1340 : 0.0242894
+Precalculation time: 8
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3|        1|        1|
++----+---------+---------+
+|   4|        1| 0.733582|
++----+---------+---------+
+|   5|        1| 0.767164|
++----+---------+---------+
+|   6|        1| 0.589552|
++----+---------+---------+
+|   7| 0.992754| 0.390299|
++----+---------+---------+
+END>
+Training until now has taken 0 days 0 hours 15 minutes 30 seconds.
+
+===== TRAINING 6-stage =====
+<BEGIN
+POS count : consumed   138 : 143
+NEG count : acceptanceRatio    1340 : 0.0179336
+Precalculation time: 5
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3|        1|        1|
++----+---------+---------+
+|   4|        1|        1|
++----+---------+---------+
+|   5| 0.992754| 0.527612|
++----+---------+---------+
+|   6| 0.992754| 0.397761|
++----+---------+---------+
+END>
+Training until now has taken 0 days 0 hours 17 minutes 49 seconds.
+
+===== TRAINING 7-stage =====
+<BEGIN
+POS count : consumed   138 : 144
+NEG count : acceptanceRatio    1340 : 0.0135261
+Precalculation time: 3
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3|        1|        1|
++----+---------+---------+
+|   4|        1|        1|
++----+---------+---------+
+|   5|        1| 0.864925|
++----+---------+---------+
+|   6|        1| 0.883582|
++----+---------+---------+
+|   7| 0.992754| 0.423881|
++----+---------+---------+
+END>
+Training until now has taken 0 days 0 hours 20 minutes 49 seconds.
+
+===== TRAINING 8-stage =====
+<BEGIN
+POS count : consumed   138 : 150
+NEG count : acceptanceRatio    1340 : 0.00361859
+Precalculation time: 10
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3|        1|        1|
++----+---------+---------+
+|   4| 0.992754| 0.849254|
++----+---------+---------+
+|   5| 0.992754| 0.741045|
++----+---------+---------+
+|   6| 0.992754| 0.607463|
++----+---------+---------+
+|   7| 0.992754| 0.528358|
++----+---------+---------+
+|   8| 0.992754| 0.506716|
++----+---------+---------+
+|   9| 0.992754| 0.401493|
++----+---------+---------+
+END>
+Training until now has taken 0 days 0 hours 24 minutes 27 seconds.
+
+===== TRAINING 9-stage =====
+<BEGIN
+POS count : consumed   138 : 151
+NEG count : acceptanceRatio    1340 : 0.00174278
+Precalculation time: 5
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3|        1|        1|
++----+---------+---------+
+|   4| 0.992754| 0.739552|
++----+---------+---------+
+|   5|        1| 0.784328|
++----+---------+---------+
+|   6| 0.992754| 0.682836|
++----+---------+---------+
+|   7| 0.992754| 0.680597|
++----+---------+---------+
+|   8| 0.992754| 0.542537|
++----+---------+---------+
+|   9| 0.992754| 0.407463|
++----+---------+---------+
+END>
+Training until now has taken 0 days 0 hours 28 minutes 19 seconds.
+
+===== TRAINING 10-stage =====
+<BEGIN
+POS count : consumed   138 : 153
+NEG count : acceptanceRatio    1340 : 0.000875664
+Precalculation time: 10
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3|        1|        1|
++----+---------+---------+
+|   4|        1|        1|
++----+---------+---------+
+|   5| 0.992754| 0.804478|
++----+---------+---------+
+|   6|        1| 0.842537|
++----+---------+---------+
+|   7|        1| 0.670896|
++----+---------+---------+
+|   8| 0.992754| 0.529851|
++----+---------+---------+
+|   9| 0.992754| 0.439552|
++----+---------+---------+
+END>
+Training until now has taken 0 days 0 hours 32 minutes 10 seconds.
+
+===== TRAINING 11-stage =====
+<BEGIN
+POS count : consumed   138 : 155
+NEG count : acceptanceRatio    1340 : 0.000419802
+Precalculation time: 6
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3|        1|        1|
++----+---------+---------+
+|   4|        1|        1|
++----+---------+---------+
+|   5| 0.992754| 0.799254|
++----+---------+---------+
+|   6| 0.992754| 0.670149|
++----+---------+---------+
+|   7| 0.992754| 0.555224|
++----+---------+---------+
+|   8| 0.992754| 0.528358|
++----+---------+---------+
+|   9| 0.992754| 0.564179|
++----+---------+---------+
+|  10| 0.992754| 0.523134|
++----+---------+---------+
+|  11| 0.992754| 0.270896|
++----+---------+---------+
+END>
+Training until now has taken 0 days 0 hours 37 minutes 0 seconds.
+
+===== TRAINING 12-stage =====
+<BEGIN
+POS count : consumed   138 : 156
+NEG count : acceptanceRatio    1340 : 0.000119588
+Precalculation time: 5
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3|        1|        1|
++----+---------+---------+
+|   4| 0.992754| 0.830597|
++----+---------+---------+
+|   5| 0.992754| 0.719403|
++----+---------+---------+
+|   6| 0.992754| 0.626866|
++----+---------+---------+
+|   7| 0.992754| 0.551493|
++----+---------+---------+
+|   8| 0.992754| 0.477612|
++----+---------+---------+
+END>
+Training until now has taken 0 days 0 hours 41 minutes 50 seconds.
+
+===== TRAINING 13-stage =====
+<BEGIN
+POS count : consumed   138 : 157
+NEG count : acceptanceRatio    1340 : 6.74805e-05
+Precalculation time: 8
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3| 0.992754| 0.811194|
++----+---------+---------+
+|   4| 0.992754| 0.790299|
++----+---------+---------+
+|   5| 0.992754| 0.772388|
++----+---------+---------+
+|   6|        1|  0.71194|
++----+---------+---------+
+|   7| 0.992754| 0.707463|
++----+---------+---------+
+|   8|        1| 0.696269|
++----+---------+---------+
+|   9| 0.992754| 0.596269|
++----+---------+---------+
+|  10| 0.992754| 0.477612|
++----+---------+---------+
+END>
+Training until now has taken 0 days 0 hours 48 minutes 54 seconds.
+
+===== TRAINING 14-stage =====
+<BEGIN
+POS count : consumed   138 : 158
+NEG count : acceptanceRatio    1340 : 3.34572e-05
+Precalculation time: 8
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3|        1|        1|
++----+---------+---------+
+|   4| 0.992754| 0.836567|
++----+---------+---------+
+|   5| 0.992754| 0.738806|
++----+---------+---------+
+|   6| 0.992754| 0.746269|
++----+---------+---------+
+|   7|        1| 0.629104|
++----+---------+---------+
+|   8| 0.992754| 0.526119|
++----+---------+---------+
+|   9| 0.992754| 0.448507|
++----+---------+---------+
+END>
+Training until now has taken 0 days 0 hours 59 minutes 3 seconds.
+
+===== TRAINING 15-stage =====
+<BEGIN
+POS count : consumed   138 : 164
+NEG count : acceptanceRatio    1340 : 1.69531e-05
+Precalculation time: 3
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3|        1|        1|
++----+---------+---------+
+|   4|        1|        1|
++----+---------+---------+
+|   5|        1| 0.892537|
++----+---------+---------+
+|   6| 0.992754|  0.81791|
++----+---------+---------+
+|   7| 0.992754| 0.730597|
++----+---------+---------+
+|   8| 0.992754| 0.647761|
++----+---------+---------+
+|   9|        1|  0.71194|
++----+---------+---------+
+|  10| 0.992754|      0.5|
++----+---------+---------+
+END>
+Training until now has taken 0 days 1 hours 15 minutes 18 seconds.
+
+===== TRAINING 16-stage =====
+<BEGIN
+POS count : consumed   138 : 166
+NEG count : acceptanceRatio    1340 : 9.63799e-06
+Precalculation time: 3
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3|        1|        1|
++----+---------+---------+
+|   4| 0.992754| 0.830597|
++----+---------+---------+
+|   5| 0.992754| 0.787313|
++----+---------+---------+
+|   6| 0.992754| 0.685821|
++----+---------+---------+
+|   7| 0.992754| 0.608209|
++----+---------+---------+
+|   8| 0.992754| 0.570895|
++----+---------+---------+
+|   9| 0.992754| 0.508955|
++----+---------+---------+
+|  10| 0.992754| 0.493284|
++----+---------+---------+
+END>
+Training until now has taken 0 days 1 hours 39 minutes 57 seconds.
+
+===== TRAINING 17-stage =====
+<BEGIN
+POS count : consumed   138 : 188
+NEG count : acceptanceRatio    1340 : 5.4435e-06
+Precalculation time: 2
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3|        1|        1|
++----+---------+---------+
+|   4|        1|        1|
++----+---------+---------+
+|   5| 0.992754| 0.765672|
++----+---------+---------+
+|   6| 0.992754| 0.777612|
++----+---------+---------+
+|   7|        1| 0.807463|
++----+---------+---------+
+|   8| 0.992754| 0.611194|
++----+---------+---------+
+|   9| 0.992754| 0.428358|
++----+---------+---------+
+END>
+Training until now has taken 0 days 2 hours 17 minutes 0 seconds.
+
+===== TRAINING 18-stage =====
+<BEGIN
+POS count : consumed   138 : 211
+NEG count : acceptanceRatio    1340 : 2.44014e-06
+Precalculation time: 2
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3|        1|        1|
++----+---------+---------+
+|   4|        1| 0.875373|
++----+---------+---------+
+|   5| 0.992754| 0.800746|
++----+---------+---------+
+|   6| 0.992754| 0.764925|
++----+---------+---------+
+|   7| 0.992754| 0.697761|
++----+---------+---------+
+|   8| 0.992754| 0.709701|
++----+---------+---------+
+|   9| 0.992754| 0.623134|
++----+---------+---------+
+|  10| 0.992754| 0.565672|
++----+---------+---------+
+|  11| 0.992754| 0.514925|
++----+---------+---------+
+|  12| 0.992754| 0.366418|
++----+---------+---------+
+END>
+Training until now has taken 0 days 3 hours 18 minutes 32 seconds.
+
+===== TRAINING 19-stage =====
+<BEGIN
+POS count : consumed   138 : 240
+NEG count : acceptanceRatio    1340 : 1.02699e-06
+Precalculation time: 2
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3|        1|        1|
++----+---------+---------+
+|   4|        1| 0.935075|
++----+---------+---------+
+|   5| 0.992754| 0.805224|
++----+---------+---------+
+|   6| 0.992754| 0.833582|
++----+---------+---------+
+|   7| 0.992754| 0.677612|
++----+---------+---------+
+|   8| 0.992754| 0.635075|
++----+---------+---------+
+|   9| 0.992754| 0.652239|
++----+---------+---------+
+|  10| 0.992754| 0.697761|
++----+---------+---------+
+|  11| 0.992754| 0.591045|
++----+---------+---------+
+|  12| 0.992754| 0.490299|
++----+---------+---------+
+END>
+Training until now has taken 0 days 5 hours 32 minutes 16 seconds.
+
+## Running classifier...
+
+## Creating results directory: ../classifiers/scheme_2/results
+classifier_file: classifiers/scheme_2/data/cascade.xml
+detections_file: classifiers/scheme_2/detections.dat
+input_dir: images/samples/positive_test_set/
+output_dir: classifiers/scheme_2/results
+Processing 'images/samples/positive_test_set/n02799071_10481.jpg'
+    Saved image 'classifiers/scheme_2/results/n02799071_10481.jpg'
+Processing 'images/samples/positive_test_set/n02799071_10990.jpg'
+    Saved image 'classifiers/scheme_2/results/n02799071_10990.jpg'
+Processing 'images/samples/positive_test_set/n02799071_11291.jpg'
+    Saved image 'classifiers/scheme_2/results/n02799071_11291.jpg'
+Processing 'images/samples/positive_test_set/n02799071_12862.jpg'
+    Saved image 'classifiers/scheme_2/results/n02799071_12862.jpg'
+Processing 'images/samples/positive_test_set/n02799071_16409.jpg'
+    Saved image 'classifiers/scheme_2/results/n02799071_16409.jpg'
+Processing 'images/samples/positive_test_set/n02799071_2174.jpg'
+    Saved image 'classifiers/scheme_2/results/n02799071_2174.jpg'
+Processing 'images/samples/positive_test_set/n02799071_25420.jpg'
+    Saved image 'classifiers/scheme_2/results/n02799071_25420.jpg'
+Processing 'images/samples/positive_test_set/n02799071_2663.jpg'
+    Saved image 'classifiers/scheme_2/results/n02799071_2663.jpg'
+Processing 'images/samples/positive_test_set/n02799071_27403.jpg'
+    Saved image 'classifiers/scheme_2/results/n02799071_27403.jpg'
+Processing 'images/samples/positive_test_set/n02799071_352.jpg'
+    Saved image 'classifiers/scheme_2/results/n02799071_352.jpg'
+Processing 'images/samples/positive_test_set/n02799071_4339.jpg'
+    Saved image 'classifiers/scheme_2/results/n02799071_4339.jpg'
+Processing 'images/samples/positive_test_set/n02799071_4432.jpg'
+    Saved image 'classifiers/scheme_2/results/n02799071_4432.jpg'
+Processing 'images/samples/positive_test_set/n02799071_4685.jpg'
+    Saved image 'classifiers/scheme_2/results/n02799071_4685.jpg'
+Processing 'images/samples/positive_test_set/n02799071_5299.jpg'
+    Saved image 'classifiers/scheme_2/results/n02799071_5299.jpg'
+Processing 'images/samples/positive_test_set/n02799071_5419.jpg'
+    Saved image 'classifiers/scheme_2/results/n02799071_5419.jpg'
+Processing 'images/samples/positive_test_set/n02799071_5726.jpg'
+    Saved image 'classifiers/scheme_2/results/n02799071_5726.jpg'
+Processing 'images/samples/positive_test_set/n02799071_6677.jpg'
+    Saved image 'classifiers/scheme_2/results/n02799071_6677.jpg'
+Processing 'images/samples/positive_test_set/n02799071_7126.jpg'
+    Saved image 'classifiers/scheme_2/results/n02799071_7126.jpg'
+Processing 'images/samples/positive_test_set/n02799071_7426.jpg'
+    Saved image 'classifiers/scheme_2/results/n02799071_7426.jpg'
+Processing 'images/samples/positive_test_set/n02799071_7765.jpg'
+    Saved image 'classifiers/scheme_2/results/n02799071_7765.jpg'
+Processing 'images/samples/positive_test_set/n02799071_8434.jpg'
+    Saved image 'classifiers/scheme_2/results/n02799071_8434.jpg'
+Processing 'images/samples/positive_test_set/n02799071_9369.jpg'
+    Saved image 'classifiers/scheme_2/results/n02799071_9369.jpg'
+Processing 'images/samples/positive_test_set/n02799071_9439.jpg'
+    Saved image 'classifiers/scheme_2/results/n02799071_9439.jpg'
+Processing 'images/samples/positive_test_set/n02799071_9666.jpg'
+    Saved image 'classifiers/scheme_2/results/n02799071_9666.jpg'
+Processing 'images/samples/positive_test_set/n02802426_10109.jpg'
+    Saved image 'classifiers/scheme_2/results/n02802426_10109.jpg'
+Processing 'images/samples/positive_test_set/n02802426_1071.jpg'
+    Saved image 'classifiers/scheme_2/results/n02802426_1071.jpg'
+Processing 'images/samples/positive_test_set/n02802426_1130.jpg'
+    Saved image 'classifiers/scheme_2/results/n02802426_1130.jpg'
+Processing 'images/samples/positive_test_set/n02802426_1167.jpg'
+    Saved image 'classifiers/scheme_2/results/n02802426_1167.jpg'
+Processing 'images/samples/positive_test_set/n02802426_11764.jpg'
+    Saved image 'classifiers/scheme_2/results/n02802426_11764.jpg'
+Processing 'images/samples/positive_test_set/n02802426_11890.jpg'
+    Saved image 'classifiers/scheme_2/results/n02802426_11890.jpg'
+Processing 'images/samples/positive_test_set/n02802426_12389.jpg'
+    Saved image 'classifiers/scheme_2/results/n02802426_12389.jpg'
+Processing 'images/samples/positive_test_set/n02802426_12647.jpg'
+    Saved image 'classifiers/scheme_2/results/n02802426_12647.jpg'
+Processing 'images/samples/positive_test_set/n02802426_12868.jpg'
+    Saved image 'classifiers/scheme_2/results/n02802426_12868.jpg'
+Processing 'images/samples/positive_test_set/n02802426_13030.jpg'
+    Saved image 'classifiers/scheme_2/results/n02802426_13030.jpg'
+Processing 'images/samples/positive_test_set/n02802426_13133.jpg'
+    Saved image 'classifiers/scheme_2/results/n02802426_13133.jpg'
+Processing 'images/samples/positive_test_set/n02802426_2034.jpg'
+    Saved image 'classifiers/scheme_2/results/n02802426_2034.jpg'
+Processing 'images/samples/positive_test_set/n02802426_2744.jpg'
+    Saved image 'classifiers/scheme_2/results/n02802426_2744.jpg'
+Processing 'images/samples/positive_test_set/n02802426_4040.jpg'
+    Saved image 'classifiers/scheme_2/results/n02802426_4040.jpg'
+Processing 'images/samples/positive_test_set/n02802426_4129.jpg'
+    Saved image 'classifiers/scheme_2/results/n02802426_4129.jpg'
+Processing 'images/samples/positive_test_set/n02802426_4197.jpg'
+    Saved image 'classifiers/scheme_2/results/n02802426_4197.jpg'
+Processing 'images/samples/positive_test_set/n02802426_5016.jpg'
+    Saved image 'classifiers/scheme_2/results/n02802426_5016.jpg'
+Processing 'images/samples/positive_test_set/n02802426_580.jpg'
+    Saved image 'classifiers/scheme_2/results/n02802426_580.jpg'
+Processing 'images/samples/positive_test_set/n02802426_6147.jpg'
+    Saved image 'classifiers/scheme_2/results/n02802426_6147.jpg'
+Processing 'images/samples/positive_test_set/n02802426_6315.jpg'
+    Saved image 'classifiers/scheme_2/results/n02802426_6315.jpg'
+Processing 'images/samples/positive_test_set/n02802426_7562.jpg'
+    Saved image 'classifiers/scheme_2/results/n02802426_7562.jpg'
+Processing 'images/samples/positive_test_set/n02802426_7865.jpg'
+    Saved image 'classifiers/scheme_2/results/n02802426_7865.jpg'
+Processing 'images/samples/positive_test_set/n02802426_8153.jpg'
+    Saved image 'classifiers/scheme_2/results/n02802426_8153.jpg'
+Processing 'images/samples/positive_test_set/n02802426_8291.jpg'
+    Saved image 'classifiers/scheme_2/results/n02802426_8291.jpg'
+Processing 'images/samples/positive_test_set/n02802426_8721.jpg'
+    Saved image 'classifiers/scheme_2/results/n02802426_8721.jpg'
+Processing 'images/samples/positive_test_set/n02802426_9099.jpg'
+    Saved image 'classifiers/scheme_2/results/n02802426_9099.jpg'
+Processing 'images/samples/positive_test_set/n02882301_1419.jpg'
+    Saved image 'classifiers/scheme_2/results/n02882301_1419.jpg'
+Processing 'images/samples/positive_test_set/n02882301_1499.jpg'
+    Saved image 'classifiers/scheme_2/results/n02882301_1499.jpg'
+Processing 'images/samples/positive_test_set/n02882301_455.jpg'
+    Saved image 'classifiers/scheme_2/results/n02882301_455.jpg'
+Processing 'images/samples/positive_test_set/n03134739_1021.jpg'
+    Saved image 'classifiers/scheme_2/results/n03134739_1021.jpg'
+Processing 'images/samples/positive_test_set/n03134739_122.jpg'
+    Saved image 'classifiers/scheme_2/results/n03134739_122.jpg'
+Processing 'images/samples/positive_test_set/n03134739_1281.jpg'
+    Saved image 'classifiers/scheme_2/results/n03134739_1281.jpg'
+Processing 'images/samples/positive_test_set/n03134739_1724.jpg'
+    Saved image 'classifiers/scheme_2/results/n03134739_1724.jpg'
+Processing 'images/samples/positive_test_set/n03134739_1741.jpg'
+    Saved image 'classifiers/scheme_2/results/n03134739_1741.jpg'
+Processing 'images/samples/positive_test_set/n03134739_206.jpg'
+    Saved image 'classifiers/scheme_2/results/n03134739_206.jpg'
+Processing 'images/samples/positive_test_set/n03134739_2615.jpg'
+    Saved image 'classifiers/scheme_2/results/n03134739_2615.jpg'
+Processing 'images/samples/positive_test_set/n03134739_3468.jpg'
+    Saved image 'classifiers/scheme_2/results/n03134739_3468.jpg'
+Processing 'images/samples/positive_test_set/n03134739_3564.jpg'
+    Saved image 'classifiers/scheme_2/results/n03134739_3564.jpg'
+Processing 'images/samples/positive_test_set/n03134739_4339.jpg'
+    Saved image 'classifiers/scheme_2/results/n03134739_4339.jpg'
+Processing 'images/samples/positive_test_set/n03134739_4367.jpg'
+    Saved image 'classifiers/scheme_2/results/n03134739_4367.jpg'
+Processing 'images/samples/positive_test_set/n03134739_4416.jpg'
+    Saved image 'classifiers/scheme_2/results/n03134739_4416.jpg'
+Processing 'images/samples/positive_test_set/n03134739_4469.jpg'
+    Saved image 'classifiers/scheme_2/results/n03134739_4469.jpg'
+Processing 'images/samples/positive_test_set/n03134739_5586.jpg'
+    Saved image 'classifiers/scheme_2/results/n03134739_5586.jpg'
+Processing 'images/samples/positive_test_set/n03134739_581.jpg'
+    Saved image 'classifiers/scheme_2/results/n03134739_581.jpg'
+Processing 'images/samples/positive_test_set/n03134739_6484.jpg'
+    Saved image 'classifiers/scheme_2/results/n03134739_6484.jpg'
+Processing 'images/samples/positive_test_set/n03134739_7079.jpg'
+    Saved image 'classifiers/scheme_2/results/n03134739_7079.jpg'
+Processing 'images/samples/positive_test_set/n03134739_711.jpg'
+    Saved image 'classifiers/scheme_2/results/n03134739_711.jpg'
+Processing 'images/samples/positive_test_set/n03134739_7389.jpg'
+    Saved image 'classifiers/scheme_2/results/n03134739_7389.jpg'
+Processing 'images/samples/positive_test_set/n03134739_9388.jpg'
+    Saved image 'classifiers/scheme_2/results/n03134739_9388.jpg'
+Processing 'images/samples/positive_test_set/n03145719_1044.jpg'
+    Saved image 'classifiers/scheme_2/results/n03145719_1044.jpg'
+Processing 'images/samples/positive_test_set/n03145719_1357.jpg'
+    Saved image 'classifiers/scheme_2/results/n03145719_1357.jpg'
+Processing 'images/samples/positive_test_set/n03145719_5738.jpg'
+    Saved image 'classifiers/scheme_2/results/n03145719_5738.jpg'
+Processing 'images/samples/positive_test_set/n03145719_7595.jpg'
+    Saved image 'classifiers/scheme_2/results/n03145719_7595.jpg'
+Processing 'images/samples/positive_test_set/n03267113_1098.jpg'
+    Saved image 'classifiers/scheme_2/results/n03267113_1098.jpg'
+Processing 'images/samples/positive_test_set/n03267113_1574.jpg'
+    Saved image 'classifiers/scheme_2/results/n03267113_1574.jpg'
+Processing 'images/samples/positive_test_set/n03267113_2761.jpg'
+    Saved image 'classifiers/scheme_2/results/n03267113_2761.jpg'
+Processing 'images/samples/positive_test_set/n03267113_3295.jpg'
+    Saved image 'classifiers/scheme_2/results/n03267113_3295.jpg'
+Processing 'images/samples/positive_test_set/n03267113_4115.jpg'
+    Saved image 'classifiers/scheme_2/results/n03267113_4115.jpg'
+Processing 'images/samples/positive_test_set/n03267113_441.jpg'
+    Saved image 'classifiers/scheme_2/results/n03267113_441.jpg'
+Processing 'images/samples/positive_test_set/n03267113_461.jpg'
+    Saved image 'classifiers/scheme_2/results/n03267113_461.jpg'
+Processing 'images/samples/positive_test_set/n03267113_4647.jpg'
+    Saved image 'classifiers/scheme_2/results/n03267113_4647.jpg'
+Processing 'images/samples/positive_test_set/n03267113_5826.jpg'
+    Saved image 'classifiers/scheme_2/results/n03267113_5826.jpg'
+Processing 'images/samples/positive_test_set/n03267113_589.jpg'
+    Saved image 'classifiers/scheme_2/results/n03267113_589.jpg'
+Processing 'images/samples/positive_test_set/n03267113_7661.jpg'
+    Saved image 'classifiers/scheme_2/results/n03267113_7661.jpg'
+Processing 'images/samples/positive_test_set/n03721047_2214.jpg'
+    Saved image 'classifiers/scheme_2/results/n03721047_2214.jpg'
+Processing 'images/samples/positive_test_set/n03721047_250.jpg'
+    Saved image 'classifiers/scheme_2/results/n03721047_250.jpg'
+Processing 'images/samples/positive_test_set/n03721047_274.jpg'
+    Saved image 'classifiers/scheme_2/results/n03721047_274.jpg'
+Processing 'images/samples/positive_test_set/n03721047_4085.jpg'
+    Saved image 'classifiers/scheme_2/results/n03721047_4085.jpg'
+Processing 'images/samples/positive_test_set/n03721047_656.jpg'
+    Saved image 'classifiers/scheme_2/results/n03721047_656.jpg'
+Processing 'images/samples/positive_test_set/n03721047_8993.jpg'
+    Saved image 'classifiers/scheme_2/results/n03721047_8993.jpg'
+Processing 'images/samples/positive_test_set/n03721047_9248.jpg'
+    Saved image 'classifiers/scheme_2/results/n03721047_9248.jpg'
+Processing 'images/samples/positive_test_set/n03721047_9523.jpg'
+    Saved image 'classifiers/scheme_2/results/n03721047_9523.jpg'
+Processing 'images/samples/positive_test_set/n03721047_9665.jpg'
+    Saved image 'classifiers/scheme_2/results/n03721047_9665.jpg'
+Processing 'images/samples/positive_test_set/n03721047_9700.jpg'
+    Saved image 'classifiers/scheme_2/results/n03721047_9700.jpg'
+Processing 'images/samples/positive_test_set/n03742019_2541.jpg'
+    Saved image 'classifiers/scheme_2/results/n03742019_2541.jpg'
+Processing 'images/samples/positive_test_set/n03742019_2668.jpg'
+    Saved image 'classifiers/scheme_2/results/n03742019_2668.jpg'
+Processing 'images/samples/positive_test_set/n03742019_2752.jpg'
+    Saved image 'classifiers/scheme_2/results/n03742019_2752.jpg'
+Processing 'images/samples/positive_test_set/n03742019_2794.jpg'
+    Saved image 'classifiers/scheme_2/results/n03742019_2794.jpg'
+Processing 'images/samples/positive_test_set/n03742019_3692.jpg'
+    Saved image 'classifiers/scheme_2/results/n03742019_3692.jpg'
+Processing 'images/samples/positive_test_set/n03742019_4283.jpg'
+    Saved image 'classifiers/scheme_2/results/n03742019_4283.jpg'
+Processing 'images/samples/positive_test_set/n03742019_5687.jpg'
+    Saved image 'classifiers/scheme_2/results/n03742019_5687.jpg'
+Processing 'images/samples/positive_test_set/n03742019_6147.jpg'
+    Saved image 'classifiers/scheme_2/results/n03742019_6147.jpg'
+Processing 'images/samples/positive_test_set/n03742019_6520.jpg'
+    Saved image 'classifiers/scheme_2/results/n03742019_6520.jpg'
+Processing 'images/samples/positive_test_set/n03742019_6763.jpg'
+    Saved image 'classifiers/scheme_2/results/n03742019_6763.jpg'
+Processing 'images/samples/positive_test_set/n03742019_6967.jpg'
+    Saved image 'classifiers/scheme_2/results/n03742019_6967.jpg'
+Processing 'images/samples/positive_test_set/n03742019_7026.jpg'
+    Saved image 'classifiers/scheme_2/results/n03742019_7026.jpg'
+Processing 'images/samples/positive_test_set/n03742019_7523.jpg'
+    Saved image 'classifiers/scheme_2/results/n03742019_7523.jpg'
+Processing 'images/samples/positive_test_set/n03742019_7852.jpg'
+    Saved image 'classifiers/scheme_2/results/n03742019_7852.jpg'
+Processing 'images/samples/positive_test_set/n03942813_2956.jpg'
+    Saved image 'classifiers/scheme_2/results/n03942813_2956.jpg'
+Processing 'images/samples/positive_test_set/n03942813_3468.jpg'
+    Saved image 'classifiers/scheme_2/results/n03942813_3468.jpg'
+Processing 'images/samples/positive_test_set/n03942813_352.jpg'
+    Saved image 'classifiers/scheme_2/results/n03942813_352.jpg'
+Processing 'images/samples/positive_test_set/n03942813_3709.jpg'
+    Saved image 'classifiers/scheme_2/results/n03942813_3709.jpg'
+Processing 'images/samples/positive_test_set/n03942813_4594.jpg'
+    Saved image 'classifiers/scheme_2/results/n03942813_4594.jpg'
+Processing 'images/samples/positive_test_set/n03942813_4693.jpg'
+    Saved image 'classifiers/scheme_2/results/n03942813_4693.jpg'
+Processing 'images/samples/positive_test_set/n03942813_5593.jpg'
+    Saved image 'classifiers/scheme_2/results/n03942813_5593.jpg'
+Processing 'images/samples/positive_test_set/n03942813_5850.jpg'
+    Saved image 'classifiers/scheme_2/results/n03942813_5850.jpg'
+Processing 'images/samples/positive_test_set/n03942813_7780.jpg'
+    Saved image 'classifiers/scheme_2/results/n03942813_7780.jpg'
+Processing 'images/samples/positive_test_set/n03942813_7791.jpg'
+    Saved image 'classifiers/scheme_2/results/n03942813_7791.jpg'
+Processing 'images/samples/positive_test_set/n03942813_8841.jpg'
+    Saved image 'classifiers/scheme_2/results/n03942813_8841.jpg'
+Processing 'images/samples/positive_test_set/n03942813_8925.jpg'
+    Saved image 'classifiers/scheme_2/results/n03942813_8925.jpg'
+Processing 'images/samples/positive_test_set/n03942813_9001.jpg'
+    Saved image 'classifiers/scheme_2/results/n03942813_9001.jpg'
+Processing 'images/samples/positive_test_set/n03942813_9090.jpg'
+    Saved image 'classifiers/scheme_2/results/n03942813_9090.jpg'
+Processing 'images/samples/positive_test_set/n03942813_9271.jpg'
+    Saved image 'classifiers/scheme_2/results/n03942813_9271.jpg'
+Processing 'images/samples/positive_test_set/n03982232_1352.jpg'
+    Saved image 'classifiers/scheme_2/results/n03982232_1352.jpg'
+Processing 'images/samples/positive_test_set/n03982232_1744.jpg'
+    Saved image 'classifiers/scheme_2/results/n03982232_1744.jpg'
+Processing 'images/samples/positive_test_set/n03982232_2212.jpg'
+    Saved image 'classifiers/scheme_2/results/n03982232_2212.jpg'
+Processing 'images/samples/positive_test_set/n03982232_297.jpg'
+    Saved image 'classifiers/scheme_2/results/n03982232_297.jpg'
+Processing 'images/samples/positive_test_set/n03982232_329.jpg'
+    Saved image 'classifiers/scheme_2/results/n03982232_329.jpg'
+Processing 'images/samples/positive_test_set/n03982232_3311.jpg'
+    Saved image 'classifiers/scheme_2/results/n03982232_3311.jpg'
+Processing 'images/samples/positive_test_set/n03982232_383.jpg'
+    Saved image 'classifiers/scheme_2/results/n03982232_383.jpg'
+Processing 'images/samples/positive_test_set/n03982232_4377.jpg'
+    Saved image 'classifiers/scheme_2/results/n03982232_4377.jpg'
+Processing 'images/samples/positive_test_set/n03982232_4583.jpg'
+    Saved image 'classifiers/scheme_2/results/n03982232_4583.jpg'
+Processing 'images/samples/positive_test_set/n03982232_4671.jpg'
+    Saved image 'classifiers/scheme_2/results/n03982232_4671.jpg'
+Processing 'images/samples/positive_test_set/n03982232_540.jpg'
+    Saved image 'classifiers/scheme_2/results/n03982232_540.jpg'
+Processing 'images/samples/positive_test_set/n03982232_5971.jpg'
+    Saved image 'classifiers/scheme_2/results/n03982232_5971.jpg'
+Processing 'images/samples/positive_test_set/n03982232_6668.jpg'
+    Saved image 'classifiers/scheme_2/results/n03982232_6668.jpg'
+Processing 'images/samples/positive_test_set/n03982232_7456.jpg'
+    Saved image 'classifiers/scheme_2/results/n03982232_7456.jpg'
+Processing 'images/samples/positive_test_set/n03982232_8290.jpg'
+    Saved image 'classifiers/scheme_2/results/n03982232_8290.jpg'
+Processing 'images/samples/positive_test_set/n04409515_10312.jpg'
+    Saved image 'classifiers/scheme_2/results/n04409515_10312.jpg'
+Processing 'images/samples/positive_test_set/n04409515_11818.jpg'
+    Saved image 'classifiers/scheme_2/results/n04409515_11818.jpg'
+Processing 'images/samples/positive_test_set/n04409515_1251.jpg'
+    Saved image 'classifiers/scheme_2/results/n04409515_1251.jpg'
+Processing 'images/samples/positive_test_set/n04409515_13007.jpg'
+    Saved image 'classifiers/scheme_2/results/n04409515_13007.jpg'
+Processing 'images/samples/positive_test_set/n04409515_1623.jpg'
+    Saved image 'classifiers/scheme_2/results/n04409515_1623.jpg'
+Processing 'images/samples/positive_test_set/n04409515_1712.jpg'
+    Saved image 'classifiers/scheme_2/results/n04409515_1712.jpg'
+Processing 'images/samples/positive_test_set/n04409515_1768.jpg'
+    Saved image 'classifiers/scheme_2/results/n04409515_1768.jpg'
+Processing 'images/samples/positive_test_set/n04409515_17747.jpg'
+    Saved image 'classifiers/scheme_2/results/n04409515_17747.jpg'
+Processing 'images/samples/positive_test_set/n04409515_19377.jpg'
+    Saved image 'classifiers/scheme_2/results/n04409515_19377.jpg'
+Processing 'images/samples/positive_test_set/n04409515_21754.jpg'
+    Saved image 'classifiers/scheme_2/results/n04409515_21754.jpg'
+Processing 'images/samples/positive_test_set/n04409515_2591.jpg'
+    Saved image 'classifiers/scheme_2/results/n04409515_2591.jpg'
+Processing 'images/samples/positive_test_set/n04409515_2637.jpg'
+    Saved image 'classifiers/scheme_2/results/n04409515_2637.jpg'
+Processing 'images/samples/positive_test_set/n04409515_2723.jpg'
+    Saved image 'classifiers/scheme_2/results/n04409515_2723.jpg'
+Processing 'images/samples/positive_test_set/n04409515_5682.jpg'
+    Saved image 'classifiers/scheme_2/results/n04409515_5682.jpg'
+Processing 'images/samples/positive_test_set/n04409515_6495.jpg'
+    Saved image 'classifiers/scheme_2/results/n04409515_6495.jpg'
+Processing 'images/samples/positive_test_set/n04540053_11814.jpg'
+    Saved image 'classifiers/scheme_2/results/n04540053_11814.jpg'
+Processing 'images/samples/positive_test_set/n04540053_12074.jpg'
+    Saved image 'classifiers/scheme_2/results/n04540053_12074.jpg'
+Processing 'images/samples/positive_test_set/n04540053_1253.jpg'
+    Saved image 'classifiers/scheme_2/results/n04540053_1253.jpg'
+Processing 'images/samples/positive_test_set/n04540053_13496.jpg'
+    Saved image 'classifiers/scheme_2/results/n04540053_13496.jpg'
+Processing 'images/samples/positive_test_set/n04540053_14217.jpg'
+    Saved image 'classifiers/scheme_2/results/n04540053_14217.jpg'
+Processing 'images/samples/positive_test_set/n04540053_1470.jpg'
+    Saved image 'classifiers/scheme_2/results/n04540053_1470.jpg'
+Processing 'images/samples/positive_test_set/n04540053_15031.jpg'
+    Saved image 'classifiers/scheme_2/results/n04540053_15031.jpg'
+Processing 'images/samples/positive_test_set/n04540053_2131.jpg'
+    Saved image 'classifiers/scheme_2/results/n04540053_2131.jpg'
+Processing 'images/samples/positive_test_set/n04540053_2139.jpg'
+    Saved image 'classifiers/scheme_2/results/n04540053_2139.jpg'
+Processing 'images/samples/positive_test_set/n04540053_2866.jpg'
+    Saved image 'classifiers/scheme_2/results/n04540053_2866.jpg'
+Processing 'images/samples/positive_test_set/n04540053_3229.jpg'
+    Saved image 'classifiers/scheme_2/results/n04540053_3229.jpg'
+Processing 'images/samples/positive_test_set/n04540053_3485.jpg'
+    Saved image 'classifiers/scheme_2/results/n04540053_3485.jpg'
+Processing 'images/samples/positive_test_set/n04540053_3577.jpg'
+    Saved image 'classifiers/scheme_2/results/n04540053_3577.jpg'
+Processing 'images/samples/positive_test_set/n04540053_3650.jpg'
+    Saved image 'classifiers/scheme_2/results/n04540053_3650.jpg'
+Processing 'images/samples/positive_test_set/n04540053_3782.jpg'
+    Saved image 'classifiers/scheme_2/results/n04540053_3782.jpg'
+Processing 'images/samples/positive_test_set/n04540053_4301.jpg'
+    Saved image 'classifiers/scheme_2/results/n04540053_4301.jpg'
+Processing 'images/samples/positive_test_set/n04540053_6759.jpg'
+    Saved image 'classifiers/scheme_2/results/n04540053_6759.jpg'
+Processing 'images/samples/positive_test_set/n04540053_8002.jpg'
+    Saved image 'classifiers/scheme_2/results/n04540053_8002.jpg'
+Processing 'images/samples/positive_test_set/n04540053_9053.jpg'
+    Saved image 'classifiers/scheme_2/results/n04540053_9053.jpg'
+Processing 'images/samples/positive_test_set/n04540053_9709.jpg'
+    Saved image 'classifiers/scheme_2/results/n04540053_9709.jpg'
+
+## Calculating statistics...
+detections_dat: classifiers/scheme_2/detections.dat
+info_dat: scripts/info.dat
+img: n04409515_13007.jpg, tp:   1.00, fp:   0.00, tp%: 1.00
+img: n03742019_5687.jpg , tp:   0.00, fp:   0.00
+img: n04540053_3650.jpg , tp:   0.00, fp:   0.00
+img: n04540053_1253.jpg , tp:   0.00, fp:   0.00
+img: n03942813_5593.jpg , tp:   0.00, fp:   0.00
+img: n03134739_3564.jpg , tp:   0.00, fp:   0.00
+img: n02802426_5016.jpg , tp:   0.00, fp:   0.00
+img: n02802426_6147.jpg , tp:   0.00, fp:   0.00
+img: n02799071_25420.jpg, tp:   0.00, fp:   0.00
+img: n04540053_4301.jpg , tp:   0.00, fp:   0.00
+img: n03267113_7661.jpg , tp:   0.00, fp:   1.00, tp%: 0.00
+img: n04540053_9053.jpg , tp:   0.00, fp:   0.00
+img: n03982232_297.jpg  , tp:   0.00, fp:   0.00
+img: n02802426_13133.jpg, tp:   0.00, fp:   0.00
+img: n02802426_4129.jpg , tp:   0.00, fp:   0.00
+img: n03942813_4693.jpg , tp:   0.00, fp:   0.00
+img: n03982232_4377.jpg , tp:   0.00, fp:   1.00, tp%: 0.00
+img: n04540053_3229.jpg , tp:   0.00, fp:   0.00
+img: n04540053_13496.jpg, tp:   0.00, fp:   0.00
+img: n04540053_14217.jpg, tp:   0.00, fp:   0.00
+img: n02802426_8153.jpg , tp:   0.00, fp:   0.00
+img: n02802426_10109.jpg, tp:   0.00, fp:   0.00
+img: n02802426_8291.jpg , tp:   0.00, fp:   0.00
+img: n03742019_7852.jpg , tp:   0.00, fp:   0.00
+img: n03134739_6484.jpg , tp:   0.00, fp:   0.00
+img: n03134739_4339.jpg , tp:   0.00, fp:   0.00
+img: n03742019_6967.jpg , tp:   0.00, fp:   0.00
+img: n03942813_7791.jpg , tp:   0.00, fp:   0.00
+img: n03742019_6147.jpg , tp:   0.00, fp:   0.00
+img: n04409515_11818.jpg, tp:   0.00, fp:   0.00
+img: n04409515_17747.jpg, tp:   0.00, fp:   0.00
+img: n03742019_2752.jpg , tp:   0.00, fp:   0.00
+img: n03721047_274.jpg  , tp:   0.00, fp:   0.00
+img: n03145719_5738.jpg , tp:   1.00, fp:   0.00, tp%: 1.00
+img: n03742019_2794.jpg , tp:   0.00, fp:   0.00
+img: n03267113_1574.jpg , tp:   0.00, fp:   0.00
+img: n02799071_4685.jpg , tp:   0.00, fp:   0.00
+img: n02802426_13030.jpg, tp:   0.00, fp:   0.00
+img: n03942813_9271.jpg , tp:   0.00, fp:   0.00
+img: n02799071_16409.jpg, tp:   0.00, fp:   0.00
+img: n02802426_1071.jpg , tp:   0.00, fp:   0.00
+img: n02799071_4432.jpg , tp:   0.00, fp:   0.00
+img: n03742019_6520.jpg , tp:   0.00, fp:   0.00
+img: n03134739_5586.jpg , tp:   0.00, fp:   0.00
+img: n03267113_589.jpg  , tp:   0.00, fp:   1.00, tp%: 0.00
+img: n04540053_3577.jpg , tp:   1.00, fp:   0.00, tp%: 1.00
+img: n03134739_2615.jpg , tp:   0.00, fp:   0.00
+img: n02802426_4197.jpg , tp:   0.00, fp:   0.00
+img: n03942813_8925.jpg , tp:   0.00, fp:   1.00, tp%: 0.00
+img: n04409515_1251.jpg , tp:   1.00, fp:   0.00, tp%: 1.00
+img: n03134739_1021.jpg , tp:   0.00, fp:   0.00
+img: n03942813_5850.jpg , tp:   0.00, fp:   0.00
+img: n04540053_15031.jpg, tp:   0.00, fp:   0.00
+img: n03982232_3311.jpg , tp:   0.00, fp:   0.00
+img: n03982232_6668.jpg , tp:   0.00, fp:   0.00
+img: n03134739_1281.jpg , tp:   0.00, fp:   0.00
+img: n02799071_10990.jpg, tp:   0.00, fp:   0.00
+img: n03134739_4367.jpg , tp:   0.00, fp:   0.00
+img: n04409515_5682.jpg , tp:   0.00, fp:   0.00
+img: n03134739_122.jpg  , tp:   0.00, fp:   0.00
+img: n02799071_4339.jpg , tp:   0.00, fp:   0.00
+img: n02799071_8434.jpg , tp:   0.00, fp:   0.00
+img: n03721047_9248.jpg , tp:   0.00, fp:   0.00
+img: n02882301_1499.jpg , tp:   0.00, fp:   0.00
+img: n04409515_10312.jpg, tp:   0.00, fp:   0.00
+img: n03982232_4583.jpg , tp:   2.00, fp:   0.00, tp%: 1.00
+img: n04540053_2139.jpg , tp:   0.00, fp:   0.00
+img: n03742019_2541.jpg , tp:   2.00, fp:   0.00, tp%: 1.00
+img: n03134739_581.jpg  , tp:   0.00, fp:   0.00
+img: n02802426_2034.jpg , tp:   0.00, fp:   0.00
+img: n03942813_2956.jpg , tp:   0.00, fp:   1.00, tp%: 0.00
+img: n03982232_7456.jpg , tp:   0.00, fp:   0.00
+img: n02799071_9666.jpg , tp:   0.00, fp:   0.00
+img: n02799071_6677.jpg , tp:   0.00, fp:   0.00
+img: n03982232_383.jpg  , tp:   0.00, fp:   0.00
+img: n03982232_4671.jpg , tp:   0.00, fp:   0.00
+img: n03721047_9700.jpg , tp:   0.00, fp:   1.00, tp%: 0.00
+img: n02799071_12862.jpg, tp:   0.00, fp:   0.00
+img: n03267113_5826.jpg , tp:   0.00, fp:   1.00, tp%: 0.00
+img: n02799071_9369.jpg , tp:   0.00, fp:   0.00
+img: n03267113_4115.jpg , tp:   0.00, fp:   2.00, tp%: 0.00
+img: n02799071_9439.jpg , tp:   0.00, fp:   0.00
+img: n02802426_12647.jpg, tp:   0.00, fp:   0.00
+img: n03267113_1098.jpg , tp:   0.00, fp:   0.00
+img: n03721047_9665.jpg , tp:   0.00, fp:   0.00
+img: n04409515_21754.jpg, tp:   0.00, fp:   0.00
+img: n04409515_1623.jpg , tp:   0.00, fp:   0.00
+img: n02802426_12389.jpg, tp:   0.00, fp:   0.00
+img: n03982232_1352.jpg , tp:   0.00, fp:   0.00
+img: n03267113_4647.jpg , tp:   0.00, fp:   1.00, tp%: 0.00
+img: n04540053_8002.jpg , tp:   0.00, fp:   0.00
+img: n03721047_8993.jpg , tp:   0.00, fp:   0.00
+img: n04540053_12074.jpg, tp:   0.00, fp:   0.00
+img: n02802426_6315.jpg , tp:   0.00, fp:   0.00
+img: n02802426_12868.jpg, tp:   0.00, fp:   0.00
+img: n03267113_441.jpg  , tp:   0.00, fp:   1.00, tp%: 0.00
+img: n04409515_1712.jpg , tp:   0.00, fp:   0.00
+img: n03982232_329.jpg  , tp:   0.00, fp:   0.00
+img: n02802426_8721.jpg , tp:   0.00, fp:   0.00
+img: n03721047_4085.jpg , tp:   0.00, fp:   0.00
+img: n02802426_1130.jpg , tp:   0.00, fp:   0.00
+img: n03942813_9090.jpg , tp:   1.00, fp:   0.00, tp%: 1.00
+img: n04409515_1768.jpg , tp:   0.00, fp:   0.00
+img: n03267113_2761.jpg , tp:   0.00, fp:   0.00
+img: n03982232_1744.jpg , tp:   0.00, fp:   0.00
+img: n03145719_7595.jpg , tp:   0.00, fp:   0.00
+img: n03134739_7079.jpg , tp:   0.00, fp:   0.00
+img: n03145719_1357.jpg , tp:   0.00, fp:   0.00
+img: n04540053_11814.jpg, tp:   0.00, fp:   0.00
+img: n04540053_2866.jpg , tp:   0.00, fp:   0.00
+img: n03982232_2212.jpg , tp:   1.00, fp:   0.00, tp%: 1.00
+img: n02802426_11890.jpg, tp:   0.00, fp:   0.00
+img: n03942813_352.jpg  , tp:   0.00, fp:   0.00
+img: n03742019_3692.jpg , tp:   0.00, fp:   0.00
+img: n02882301_455.jpg  , tp:   0.00, fp:   1.00, tp%: 0.00
+img: n04540053_6759.jpg , tp:   0.00, fp:   0.00
+img: n03134739_1724.jpg , tp:   0.00, fp:   0.00
+img: n02799071_7126.jpg , tp:   0.00, fp:   0.00
+img: n02799071_352.jpg  , tp:   0.00, fp:   0.00
+img: n02799071_11291.jpg, tp:   0.00, fp:   0.00
+img: n03134739_206.jpg  , tp:   1.00, fp:   0.00, tp%: 1.00
+img: n03942813_4594.jpg , tp:   1.00, fp:   0.00, tp%: 1.00
+img: n02799071_2174.jpg , tp:   0.00, fp:   0.00
+img: n02799071_7765.jpg , tp:   0.00, fp:   0.00
+img: n04409515_2637.jpg , tp:   0.00, fp:   0.00
+img: n03134739_1741.jpg , tp:   0.00, fp:   0.00
+img: n03742019_7026.jpg , tp:   0.00, fp:   0.00
+img: n03134739_4416.jpg , tp:   0.00, fp:   0.00
+img: n02799071_5726.jpg , tp:   0.00, fp:   0.00
+img: n03742019_2668.jpg , tp:   0.00, fp:   0.00
+img: n04409515_2723.jpg , tp:   0.00, fp:   0.00
+img: n03267113_461.jpg  , tp:   0.00, fp:   0.00
+img: n02802426_11764.jpg, tp:   0.00, fp:   0.00
+img: n03942813_3468.jpg , tp:   0.00, fp:   0.00
+img: n03942813_8841.jpg , tp:   0.00, fp:   0.00
+img: n03721047_656.jpg  , tp:   0.00, fp:   0.00
+img: n03942813_3709.jpg , tp:   1.00, fp:   0.00, tp%: 1.00
+img: n03721047_9523.jpg , tp:   0.00, fp:   0.00
+img: n02802426_4040.jpg , tp:   0.00, fp:   0.00
+img: n03982232_5971.jpg , tp:   0.00, fp:   0.00
+img: n03982232_8290.jpg , tp:   0.00, fp:   0.00
+img: n03721047_2214.jpg , tp:   0.00, fp:   0.00
+img: n02799071_27403.jpg, tp:   0.00, fp:   0.00
+img: n03134739_4469.jpg , tp:   0.00, fp:   0.00
+img: n02802426_7562.jpg , tp:   0.00, fp:   0.00
+img: n04540053_2131.jpg , tp:   0.00, fp:   0.00
+img: n04409515_19377.jpg, tp:   0.00, fp:   0.00
+img: n02802426_1167.jpg , tp:   0.00, fp:   0.00
+img: n03742019_4283.jpg , tp:   0.00, fp:   0.00
+img: n02799071_5299.jpg , tp:   0.00, fp:   0.00
+img: n03145719_1044.jpg , tp:   1.00, fp:   0.00, tp%: 1.00
+img: n03721047_250.jpg  , tp:   0.00, fp:   0.00
+img: n02882301_1419.jpg , tp:   0.00, fp:   0.00
+img: n04540053_3782.jpg , tp:   0.00, fp:   0.00
+img: n02799071_2663.jpg , tp:   0.00, fp:   0.00
+img: n03982232_540.jpg  , tp:   1.00, fp:   0.00, tp%: 1.00
+img: n02799071_10481.jpg, tp:   0.00, fp:   0.00
+img: n03134739_711.jpg  , tp:   0.00, fp:   0.00
+img: n02802426_7865.jpg , tp:   0.00, fp:   0.00
+img: n03134739_3468.jpg , tp:   0.00, fp:   0.00
+img: n03942813_7780.jpg , tp:   0.00, fp:   0.00
+img: n04540053_1470.jpg , tp:   0.00, fp:   0.00
+img: n04540053_9709.jpg , tp:   0.00, fp:   0.00
+img: n04540053_3485.jpg , tp:   0.00, fp:   0.00
+img: n04409515_2591.jpg , tp:   0.00, fp:   0.00
+img: n03742019_7523.jpg , tp:   0.00, fp:   0.00
+img: n02802426_580.jpg  , tp:   0.00, fp:   0.00
+img: n02802426_9099.jpg , tp:   0.00, fp:   0.00
+img: n03742019_6763.jpg , tp:   0.00, fp:   0.00
+img: n03942813_9001.jpg , tp:   0.00, fp:   0.00
+img: n02799071_7426.jpg , tp:   0.00, fp:   0.00
+img: n03134739_9388.jpg , tp:   0.00, fp:   0.00
+img: n03267113_3295.jpg , tp:   0.00, fp:   1.00, tp%: 0.00
+img: n04409515_6495.jpg , tp:   0.00, fp:   0.00
+img: n02802426_2744.jpg , tp:   0.00, fp:   0.00
+img: n02799071_5419.jpg , tp:   0.00, fp:   0.00
+img: n03134739_7389.jpg , tp:   0.00, fp:   0.00
+hit_rate: 0.0649350649351
+mitchell-laptop:scripts mitchell$ 

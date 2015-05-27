@@ -1,0 +1,1750 @@
+../../images/samples/positive/n02799071_10013.jpg 1 26 103 335 357
+../../images/samples/positive/n02799071_10091.jpg 1 302 119 109 105
+../../images/samples/positive/n02799071_10180.jpg 1 93 42 287 294
+../../images/samples/positive/n02799071_10297.jpg 1 442 208 31 22
+../../images/samples/positive/n02799071_10492.jpg 1 430 359 53 50
+../../images/samples/positive/n02799071_10599.jpg 1 239 87 235 233
+../../images/samples/positive/n02799071_10802.jpg 1 3 0 240 242
+../../images/samples/positive/n02799071_10953.jpg 1 87 102 305 308
+../../images/samples/positive/n02799071_11082.jpg 1 63 234 165 98
+../../images/samples/positive/n02799071_1122.jpg 1 70 125 246 240
+../../images/samples/positive/n02799071_11290.jpg 1 98 286 232 212
+../../images/samples/positive/n02799071_11315.jpg 1 150 68 101 101
+../../images/samples/positive/n02799071_11530.jpg 1 113 308 17 18
+../../images/samples/positive/n02799071_11594.jpg 1 26 137 314 313
+../../images/samples/positive/n02799071_11780.jpg 1 418 144 19 19
+../../images/samples/positive/n02799071_1186.jpg 1 200 7 243 248
+../../images/samples/positive/n02799071_1198.jpg 1 310 208 16 15
+../../images/samples/positive/n02799071_11990.jpg 1 277 342 53 50
+../../images/samples/positive/n02799071_12019.jpg 1 156 306 192 165
+../../images/samples/positive/n02799071_12033.jpg 1 22 5 458 375
+../../images/samples/positive/n02799071_12414.jpg 1 135 146 111 103
+../../images/samples/positive/n02799071_12440.jpg 1 183 167 17 20
+../../images/samples/positive/n02799071_12477.jpg 1 152 342 94 85
+../../images/samples/positive/n02799071_12623.jpg 2 165 69 333 301 167 72 332 302
+../../images/samples/positive/n02799071_12658.jpg 3 321 31 52 54 134 221 46 50 131 271 46 52
+../../images/samples/positive/n02799071_1268.jpg 2 148 51 190 192 391 118 10 11
+../../images/samples/positive/n02799071_12691.jpg 1 61 12 137 131
+../../images/samples/positive/n02799071_12805.jpg 1 183 77 159 135
+../../images/samples/positive/n02799071_12822.jpg 1 53 247 30 31
+../../images/samples/positive/n02799071_1292.jpg 1 240 67 28 29
+../../images/samples/positive/n02799071_12927.jpg 1 40 120 169 166
+../../images/samples/positive/n02799071_13049.jpg 1 52 106 104 109
+../../images/samples/positive/n02799071_13340.jpg 1 225 118 171 135
+../../images/samples/positive/n02799071_13413.jpg 1 292 65 132 136
+../../images/samples/positive/n02799071_13559.jpg 1 110 38 128 125
+../../images/samples/positive/n02799071_13873.jpg 1 141 25 159 157
+../../images/samples/positive/n02799071_13948.jpg 1 115 116 251 245
+../../images/samples/positive/n02799071_13960.jpg 1 36 45 362 451
+../../images/samples/positive/n02799071_14070.jpg 1 156 97 302 320
+../../images/samples/positive/n02799071_1417.jpg 1 47 213 21 20
+../../images/samples/positive/n02799071_14224.jpg 1 132 9 355 351
+../../images/samples/positive/n02799071_14450.jpg 1 176 187 81 64
+../../images/samples/positive/n02799071_14538.jpg 1 77 156 48 47
+../../images/samples/positive/n02799071_14613.jpg 1 44 32 423 342
+../../images/samples/positive/n02799071_148.jpg 1 68 87 131 132
+../../images/samples/positive/n02799071_14816.jpg 1 329 223 60 59
+../../images/samples/positive/n02799071_14905.jpg 1 231 132 124 114
+../../images/samples/positive/n02799071_15239.jpg 1 90 71 21 20
+../../images/samples/positive/n02799071_15305.jpg 1 103 80 264 252
+../../images/samples/positive/n02799071_15540.jpg 1 41 155 27 22
+../../images/samples/positive/n02799071_15611.jpg 1 101 14 321 321
+../../images/samples/positive/n02799071_15696.jpg 2 33 60 293 203 32 62 294 189
+../../images/samples/positive/n02799071_15815.jpg 1 156 45 43 40
+../../images/samples/positive/n02799071_15929.jpg 1 313 151 136 136
+../../images/samples/positive/n02799071_15956.jpg 1 206 146 20 19
+../../images/samples/positive/n02799071_16194.jpg 1 267 27 56 48
+../../images/samples/positive/n02799071_16270.jpg 1 318 155 12 14
+../../images/samples/positive/n02799071_16372.jpg 1 305 158 129 130
+../../images/samples/positive/n02799071_16404.jpg 1 192 305 78 72
+../../images/samples/positive/n02799071_16605.jpg 1 296 120 123 117
+../../images/samples/positive/n02799071_16869.jpg 2 211 190 54 59 210 190 56 57
+../../images/samples/positive/n02799071_16908.jpg 1 107 49 85 89
+../../images/samples/positive/n02799071_1742.jpg 1 426 93 54 49
+../../images/samples/positive/n02799071_17494.jpg 1 388 186 106 107
+../../images/samples/positive/n02799071_17616.jpg 1 106 138 240 232
+../../images/samples/positive/n02799071_17992.jpg 2 139 46 234 240 139 46 233 233
+../../images/samples/positive/n02799071_18357.jpg 2 180 197 49 44 334 164 41 36
+../../images/samples/positive/n02799071_18771.jpg 1 65 0 415 331
+../../images/samples/positive/n02799071_19000.jpg 1 235 156 59 58
+../../images/samples/positive/n02799071_203.jpg 1 0 7 317 366
+../../images/samples/positive/n02799071_20486.jpg 1 100 83 189 186
+../../images/samples/positive/n02799071_20887.jpg 1 2 3 340 284
+../../images/samples/positive/n02799071_21132.jpg 1 213 54 100 95
+../../images/samples/positive/n02799071_21160.jpg 1 123 0 375 364
+../../images/samples/positive/n02799071_2135.jpg 1 192 154 11 10
+../../images/samples/positive/n02799071_21416.jpg 2 230 0 269 303 230 0 269 303
+../../images/samples/positive/n02799071_21469.jpg 1 95 49 144 149
+../../images/samples/positive/n02799071_2147.jpg 1 10 80 192 194
+../../images/samples/positive/n02799071_2165.jpg 1 15 5 403 402
+../../images/samples/positive/n02799071_2281.jpg 1 55 58 293 255
+../../images/samples/positive/n02799071_23919.jpg 1 52 22 394 359
+../../images/samples/positive/n02799071_24133.jpg 1 5 142 167 171
+../../images/samples/positive/n02799071_2649.jpg 1 104 12 273 279
+../../images/samples/positive/n02799071_26827.jpg 1 89 155 105 106
+../../images/samples/positive/n02799071_26887.jpg 1 121 32 244 208
+../../images/samples/positive/n02799071_2715.jpg 1 211 27 375 459
+../../images/samples/positive/n02799071_2739.jpg 1 324 166 23 19
+../../images/samples/positive/n02799071_27486.jpg 1 147 112 136 141
+../../images/samples/positive/n02799071_2792.jpg 1 105 22 47 54
+../../images/samples/positive/n02799071_2832.jpg 1 6 11 466 464
+../../images/samples/positive/n02799071_2869.jpg 1 115 39 325 278
+../../images/samples/positive/n02799071_28766.jpg 1 110 59 258 258
+../../images/samples/positive/n02799071_3005.jpg 2 163 18 108 107 139 266 12 11
+../../images/samples/positive/n02799071_301.jpg 1 71 63 354 357
+../../images/samples/positive/n02799071_3153.jpg 2 0 0 499 374 2 0 497 374
+../../images/samples/positive/n02799071_3219.jpg 1 0 19 472 313
+../../images/samples/positive/n02799071_325.jpg 1 0 2 499 330
+../../images/samples/positive/n02799071_326.jpg 1 105 122 197 196
+../../images/samples/positive/n02799071_36.jpg 1 147 127 19 17
+../../images/samples/positive/n02799071_3782.jpg 1 151 106 238 239
+../../images/samples/positive/n02799071_3840.jpg 1 83 186 42 40
+../../images/samples/positive/n02799071_3943.jpg 1 227 133 68 69
+../../images/samples/positive/n02799071_4264.jpg 1 55 41 151 150
+../../images/samples/positive/n02799071_4443.jpg 1 41 44 282 219
+../../images/samples/positive/n02799071_4476.jpg 1 76 147 133 133
+../../images/samples/positive/n02799071_4499.jpg 1 163 37 21 21
+../../images/samples/positive/n02799071_464.jpg 1 209 124 50 50
+../../images/samples/positive/n02799071_4888.jpg 1 47 210 104 100
+../../images/samples/positive/n02799071_4893.jpg 2 455 126 31 32 250 357 32 30
+../../images/samples/positive/n02799071_4995.jpg 1 266 52 233 268
+../../images/samples/positive/n02799071_5017.jpg 1 37 45 288 301
+../../images/samples/positive/n02799071_5057.jpg 1 1 1 360 331
+../../images/samples/positive/n02799071_5123.jpg 1 150 230 198 202
+../../images/samples/positive/n02799071_5224.jpg 1 366 140 13 13
+../../images/samples/positive/n02799071_5301.jpg 1 123 205 92 80
+../../images/samples/positive/n02799071_5347.jpg 1 8 6 90 87
+../../images/samples/positive/n02799071_5624.jpg 1 81 126 154 150
+../../images/samples/positive/n02799071_5690.jpg 1 132 45 45 42
+../../images/samples/positive/n02799071_5705.jpg 1 58 23 22 21
+../../images/samples/positive/n02799071_5707.jpg 1 43 86 119 117
+../../images/samples/positive/n02799071_572.jpg 1 148 89 191 195
+../../images/samples/positive/n02799071_5731.jpg 1 11 12 439 454
+../../images/samples/positive/n02799071_5958.jpg 1 97 53 187 182
+../../images/samples/positive/n02799071_6033.jpg 1 105 122 85 87
+../../images/samples/positive/n02799071_6389.jpg 1 72 113 24 23
+../../images/samples/positive/n02799071_6447.jpg 1 125 280 8 11
+../../images/samples/positive/n02799071_6474.jpg 1 162 66 543 528
+../../images/samples/positive/n02799071_6475.jpg 1 161 211 29 29
+../../images/samples/positive/n02799071_6582.jpg 1 53 250 184 181
+../../images/samples/positive/n02799071_6602.jpg 1 62 28 375 376
+../../images/samples/positive/n02799071_6700.jpg 1 321 316 25 17
+../../images/samples/positive/n02799071_6728.jpg 1 275 22 46 36
+../../images/samples/positive/n02799071_678.jpg 1 88 158 135 116
+../../images/samples/positive/n02799071_6925.jpg 1 330 18 26 22
+../../images/samples/positive/n02799071_7131.jpg 1 129 81 190 194
+../../images/samples/positive/n02799071_7277.jpg 1 308 96 126 128
+../../images/samples/positive/n02799071_7337.jpg 1 103 29 321 324
+../../images/samples/positive/n02799071_746.jpg 1 265 53 172 182
+../../images/samples/positive/n02799071_7905.jpg 1 112 124 353 250
+../../images/samples/positive/n02799071_7956.jpg 1 161 77 120 118
+../../images/samples/positive/n02799071_8200.jpg 1 121 38 279 270
+../../images/samples/positive/n02799071_8229.jpg 1 38 86 28 24
+../../images/samples/positive/n02799071_8234.jpg 1 136 28 27 25
+../../images/samples/positive/n02799071_8488.jpg 1 152 17 304 294
+../../images/samples/positive/n02799071_8514.jpg 1 145 93 32 34
+../../images/samples/positive/n02799071_8534.jpg 1 353 182 22 20
+../../images/samples/positive/n02799071_862.jpg 1 47 123 24 17
+../../images/samples/positive/n02799071_8627.jpg 1 33 48 285 282
+../../images/samples/positive/n02799071_8772.jpg 1 20 85 17 18
+../../images/samples/positive/n02799071_884.jpg 1 240 109 117 113
+../../images/samples/positive/n02799071_8995.jpg 1 28 239 29 27
+../../images/samples/positive/n02799071_9315.jpg 1 118 72 221 219
+../../images/samples/positive/n02799071_9942.jpg 1 63 40 106 103
+../../images/samples/positive/n02802426_100.jpg 1 18 207 66 65
+../../images/samples/positive/n02802426_10019.jpg 1 192 244 57 54
+../../images/samples/positive/n02802426_10057.jpg 1 105 51 47 46
+../../images/samples/positive/n02802426_10100.jpg 1 56 160 44 43
+../../images/samples/positive/n02802426_10103.jpg 1 46 141 37 41
+../../images/samples/positive/n02802426_10122.jpg 1 195 60 24 24
+../../images/samples/positive/n02802426_10137.jpg 1 37 23 69 73
+../../images/samples/positive/n02802426_10239.jpg 1 142 56 35 36
+../../images/samples/positive/n02802426_10243.jpg 1 62 161 49 48
+../../images/samples/positive/n02802426_10258.jpg 1 93 217 59 63
+../../images/samples/positive/n02802426_10327.jpg 1 1 107 67 68
+../../images/samples/positive/n02802426_10337.jpg 1 0 1 302 497
+../../images/samples/positive/n02802426_10357.jpg 1 28 157 64 68
+../../images/samples/positive/n02802426_1038.jpg 2 0 0 499 331 138 0 149 49
+../../images/samples/positive/n02802426_10537.jpg 1 239 10 41 44
+../../images/samples/positive/n02802426_10602.jpg 1 327 153 23 25
+../../images/samples/positive/n02802426_10645.jpg 2 1 0 498 333 264 193 86 92
+../../images/samples/positive/n02802426_10707.jpg 1 308 277 33 33
+../../images/samples/positive/n02802426_10710.jpg 1 244 272 66 65
+../../images/samples/positive/n02802426_10760.jpg 1 240 277 76 71
+../../images/samples/positive/n02802426_10842.jpg 1 306 186 46 45
+../../images/samples/positive/n02802426_10877.jpg 1 151 115 41 41
+../../images/samples/positive/n02802426_10910.jpg 1 429 189 79 78
+../../images/samples/positive/n02802426_10984.jpg 1 17 21 134 133
+../../images/samples/positive/n02802426_10988.jpg 1 2 2 156 154
+../../images/samples/positive/n02802426_11090.jpg 1 58 223 211 202
+../../images/samples/positive/n02802426_11142.jpg 1 160 17 34 31
+../../images/samples/positive/n02802426_11286.jpg 1 295 164 36 37
+../../images/samples/positive/n02802426_11356.jpg 1 308 206 39 39
+../../images/samples/positive/n02802426_11357.jpg 1 328 159 25 28
+../../images/samples/positive/n02802426_11392.jpg 2 187 60 49 45 155 12 46 48
+../../images/samples/positive/n02802426_11447.jpg 1 127 220 94 93
+../../images/samples/positive/n02802426_11502.jpg 1 131 95 16 16
+../../images/samples/positive/n02802426_11508.jpg 1 252 135 19 31
+../../images/samples/positive/n02802426_11575.jpg 1 215 0 25 13
+../../images/samples/positive/n02802426_11638.jpg 1 26 5 61 60
+../../images/samples/positive/n02802426_11650.jpg 1 98 168 165 159
+../../images/samples/positive/n02802426_11655.jpg 1 70 194 87 87
+../../images/samples/positive/n02802426_11686.jpg 2 138 308 46 49 250 147 23 22
+../../images/samples/positive/n02802426_11742.jpg 1 0 347 62 124
+../../images/samples/positive/n02802426_1175.jpg 2 0 3 499 329 158 21 21 24
+../../images/samples/positive/n02802426_11777.jpg 1 155 245 56 51
+../../images/samples/positive/n02802426_11793.jpg 1 36 189 73 65
+../../images/samples/positive/n02802426_11794.jpg 1 234 5 60 60
+../../images/samples/positive/n02802426_11842.jpg 1 0 6 29 29
+../../images/samples/positive/n02802426_11973.jpg 1 188 293 51 54
+../../images/samples/positive/n02802426_12002.jpg 1 216 102 23 25
+../../images/samples/positive/n02802426_12010.jpg 1 313 67 54 55
+../../images/samples/positive/n02802426_12024.jpg 1 302 161 18 24
+../../images/samples/positive/n02802426_12060.jpg 1 218 43 27 27
+../../images/samples/positive/n02802426_12062.jpg 1 1 0 277 279
+../../images/samples/positive/n02802426_12074.jpg 1 235 156 36 37
+../../images/samples/positive/n02802426_12111.jpg 1 151 50 43 43
+../../images/samples/positive/n02802426_12131.jpg 1 366 92 70 68
+../../images/samples/positive/n02802426_12153.jpg 1 268 231 43 41
+../../images/samples/positive/n02802426_12174.jpg 1 172 175 65 68
+../../images/samples/positive/n02802426_12225.jpg 1 224 205 55 66
+../../images/samples/positive/n02802426_12426.jpg 1 274 95 21 20
+../../images/samples/positive/n02802426_12440.jpg 1 276 191 28 29
+../../images/samples/positive/n02802426_12654.jpg 1 211 163 45 37
+../../images/samples/positive/n02802426_12656.jpg 1 131 246 58 56
+../../images/samples/positive/n02802426_12746.jpg 1 99 277 43 44
+../../images/samples/positive/n02802426_12758.jpg 1 114 137 48 47
+../../images/samples/positive/n02802426_12903.jpg 1 182 216 87 85
+../../images/samples/positive/n02802426_12913.jpg 2 315 263 70 70 315 266 62 65
+../../images/samples/positive/n02802426_12921.jpg 1 330 253 44 43
+../../images/samples/positive/n02802426_12965.jpg 1 394 187 25 23
+../../images/samples/positive/n02802426_12971.jpg 1 174 245 73 74
+../../images/samples/positive/n02802426_13000.jpg 1 254 53 17 18
+../../images/samples/positive/n02802426_13042.jpg 1 297 241 45 47
+../../images/samples/positive/n02802426_13071.jpg 1 70 214 20 20
+../../images/samples/positive/n02802426_131.jpg 1 137 51 42 41
+../../images/samples/positive/n02802426_1313.jpg 1 209 60 22 20
+../../images/samples/positive/n02802426_13161.jpg 1 83 185 64 65
+../../images/samples/positive/n02802426_13238.jpg 1 51 179 27 28
+../../images/samples/positive/n02802426_13250.jpg 1 115 254 47 43
+../../images/samples/positive/n02802426_13424.jpg 1 16 24 84 84
+../../images/samples/positive/n02802426_1353.jpg 1 111 18 40 22
+../../images/samples/positive/n02802426_1413.jpg 1 192 151 39 41
+../../images/samples/positive/n02802426_1417.jpg 1 251 157 16 15
+../../images/samples/positive/n02802426_1467.jpg 1 264 229 40 42
+../../images/samples/positive/n02802426_1488.jpg 2 194 46 47 49 193 47 48 47
+../../images/samples/positive/n02802426_1505.jpg 1 6 5 214 215
+../../images/samples/positive/n02802426_1569.jpg 1 230 112 31 31
+../../images/samples/positive/n02802426_1601.jpg 1 110 174 57 60
+../../images/samples/positive/n02802426_1669.jpg 1 0 0 139 135
+../../images/samples/positive/n02802426_1701.jpg 1 138 113 45 48
+../../images/samples/positive/n02802426_1721.jpg 1 30 77 51 56
+../../images/samples/positive/n02802426_1755.jpg 1 314 19 42 38
+../../images/samples/positive/n02802426_18115.jpg 1 286 41 34 35
+../../images/samples/positive/n02802426_1829.jpg 1 60 198 53 53
+../../images/samples/positive/n02802426_1830.jpg 1 181 52 43 44
+../../images/samples/positive/n02802426_1840.jpg 1 215 152 62 56
+../../images/samples/positive/n02802426_1860.jpg 1 336 281 49 47
+../../images/samples/positive/n02802426_1929.jpg 1 252 271 57 57
+../../images/samples/positive/n02802426_1958.jpg 1 92 182 64 63
+../../images/samples/positive/n02802426_1987.jpg 1 164 341 115 117
+../../images/samples/positive/n02802426_2127.jpg 1 325 203 56 58
+../../images/samples/positive/n02802426_2193.jpg 1 283 270 39 40
+../../images/samples/positive/n02802426_2194.jpg 1 139 12 52 53
+../../images/samples/positive/n02802426_2287.jpg 1 228 78 40 38
+../../images/samples/positive/n02802426_2369.jpg 1 25 191 61 59
+../../images/samples/positive/n02802426_2388.jpg 1 3 9 589 584
+../../images/samples/positive/n02802426_2417.jpg 1 214 95 30 30
+../../images/samples/positive/n02802426_2488.jpg 1 0 1 331 497
+../../images/samples/positive/n02802426_2550.jpg 1 36 53 52 53
+../../images/samples/positive/n02802426_2587.jpg 1 125 98 59 58
+../../images/samples/positive/n02802426_2642.jpg 1 204 117 50 50
+../../images/samples/positive/n02802426_267.jpg 1 87 103 39 43
+../../images/samples/positive/n02802426_276.jpg 1 0 221 48 67
+../../images/samples/positive/n02802426_2783.jpg 1 67 26 55 57
+../../images/samples/positive/n02802426_282.jpg 1 161 27 73 72
+../../images/samples/positive/n02802426_2959.jpg 1 299 22 99 95
+../../images/samples/positive/n02802426_2966.jpg 1 432 53 108 113
+../../images/samples/positive/n02802426_2976.jpg 1 104 109 35 37
+../../images/samples/positive/n02802426_3096.jpg 1 251 162 35 35
+../../images/samples/positive/n02802426_3180.jpg 1 234 71 25 23
+../../images/samples/positive/n02802426_3192.jpg 1 292 220 33 30
+../../images/samples/positive/n02802426_329.jpg 2 40 51 56 55 38 51 54 56
+../../images/samples/positive/n02802426_3291.jpg 1 155 129 33 32
+../../images/samples/positive/n02802426_3357.jpg 1 138 209 48 41
+../../images/samples/positive/n02802426_3381.jpg 1 230 292 60 56
+../../images/samples/positive/n02802426_3429.jpg 1 365 74 37 41
+../../images/samples/positive/n02802426_3456.jpg 1 369 340 41 31
+../../images/samples/positive/n02802426_3458.jpg 2 18 286 188 192 251 22 30 34
+../../images/samples/positive/n02802426_3524.jpg 1 96 71 49 47
+../../images/samples/positive/n02802426_3543.jpg 1 0 110 39 65
+../../images/samples/positive/n02802426_3573.jpg 1 110 333 75 72
+../../images/samples/positive/n02802426_3587.jpg 1 252 16 20 23
+../../images/samples/positive/n02802426_3683.jpg 1 666 130 36 33
+../../images/samples/positive/n02802426_3694.jpg 1 47 259 283 239
+../../images/samples/positive/n02802426_3724.jpg 1 149 220 18 20
+../../images/samples/positive/n02802426_3739.jpg 1 204 296 60 59
+../../images/samples/positive/n02802426_3745.jpg 1 108 70 165 170
+../../images/samples/positive/n02802426_3822.jpg 1 345 327 35 46
+../../images/samples/positive/n02802426_3884.jpg 1 58 13 55 55
+../../images/samples/positive/n02802426_390.jpg 1 86 143 25 25
+../../images/samples/positive/n02802426_3985.jpg 1 92 202 88 85
+../../images/samples/positive/n02802426_4000.jpg 1 205 107 27 28
+../../images/samples/positive/n02802426_4028.jpg 1 428 87 45 45
+../../images/samples/positive/n02802426_4111.jpg 1 12 166 40 38
+../../images/samples/positive/n02802426_412.jpg 1 1008 1084 207 198
+../../images/samples/positive/n02802426_417.jpg 1 210 259 59 62
+../../images/samples/positive/n02802426_4224.jpg 1 214 114 31 29
+../../images/samples/positive/n02802426_4230.jpg 1 228 52 50 48
+../../images/samples/positive/n02802426_4235.jpg 1 266 95 33 32
+../../images/samples/positive/n02802426_4256.jpg 1 205 31 42 47
+../../images/samples/positive/n02802426_4305.jpg 1 159 179 65 64
+../../images/samples/positive/n02802426_4317.jpg 1 40 199 37 39
+../../images/samples/positive/n02802426_4331.jpg 1 295 44 24 21
+../../images/samples/positive/n02802426_4370.jpg 1 313 194 18 23
+../../images/samples/positive/n02802426_4373.jpg 1 182 151 79 80
+../../images/samples/positive/n02802426_4460.jpg 1 445 58 36 36
+../../images/samples/positive/n02802426_4462.jpg 1 58 20 50 54
+../../images/samples/positive/n02802426_4486.jpg 1 167 296 27 32
+../../images/samples/positive/n02802426_4491.jpg 1 12 287 38 39
+../../images/samples/positive/n02802426_4496.jpg 1 46 35 53 53
+../../images/samples/positive/n02802426_4507.jpg 1 155 152 27 27
+../../images/samples/positive/n02802426_4510.jpg 1 231 117 26 25
+../../images/samples/positive/n02802426_4548.jpg 1 1 200 70 78
+../../images/samples/positive/n02802426_4560.jpg 1 20 266 70 71
+../../images/samples/positive/n02802426_4600.jpg 1 82 2 83 56
+../../images/samples/positive/n02802426_4696.jpg 1 394 196 40 40
+../../images/samples/positive/n02802426_4714.jpg 1 191 160 67 67
+../../images/samples/positive/n02802426_4857.jpg 1 146 120 81 105
+../../images/samples/positive/n02802426_4972.jpg 1 95 2 51 51
+../../images/samples/positive/n02802426_5160.jpg 1 11 256 142 156
+../../images/samples/positive/n02802426_5241.jpg 1 116 158 73 74
+../../images/samples/positive/n02802426_5328.jpg 1 132 12 80 80
+../../images/samples/positive/n02802426_5346.jpg 1 105 88 45 42
+../../images/samples/positive/n02802426_5541.jpg 1 268 121 78 84
+../../images/samples/positive/n02802426_5552.jpg 1 132 222 70 73
+../../images/samples/positive/n02802426_5556.jpg 1 265 153 42 40
+../../images/samples/positive/n02802426_5788.jpg 1 283 196 58 55
+../../images/samples/positive/n02802426_5933.jpg 1 57 105 55 58
+../../images/samples/positive/n02802426_5952.jpg 1 33 41 119 121
+../../images/samples/positive/n02802426_5973.jpg 1 131 179 41 47
+../../images/samples/positive/n02802426_60.jpg 1 15 351 70 71
+../../images/samples/positive/n02802426_6030.jpg 1 78 147 165 158
+../../images/samples/positive/n02802426_6134.jpg 1 146 93 60 63
+../../images/samples/positive/n02802426_6159.jpg 1 209 114 32 31
+../../images/samples/positive/n02802426_6170.jpg 1 239 26 48 49
+../../images/samples/positive/n02802426_6247.jpg 1 115 176 55 54
+../../images/samples/positive/n02802426_6256.jpg 1 62 18 59 64
+../../images/samples/positive/n02802426_6278.jpg 1 161 15 56 56
+../../images/samples/positive/n02802426_6473.jpg 1 108 209 48 48
+../../images/samples/positive/n02802426_655.jpg 1 65 127 63 64
+../../images/samples/positive/n02802426_6560.jpg 1 126 161 15 18
+../../images/samples/positive/n02802426_6618.jpg 1 130 57 142 146
+../../images/samples/positive/n02802426_6631.jpg 1 174 0 302 285
+../../images/samples/positive/n02802426_6641.jpg 1 101 13 29 32
+../../images/samples/positive/n02802426_6686.jpg 1 214 172 32 38
+../../images/samples/positive/n02802426_669.jpg 2 269 239 20 21 267 236 19 22
+../../images/samples/positive/n02802426_6750.jpg 1 182 240 23 28
+../../images/samples/positive/n02802426_681.jpg 1 161 44 23 22
+../../images/samples/positive/n02802426_6810.jpg 1 5 295 55 53
+../../images/samples/positive/n02802426_6815.jpg 1 232 203 37 33
+../../images/samples/positive/n02802426_6837.jpg 1 123 191 68 72
+../../images/samples/positive/n02802426_686.jpg 1 219 161 50 47
+../../images/samples/positive/n02802426_6878.jpg 1 92 205 56 60
+../../images/samples/positive/n02802426_6935.jpg 1 29 28 343 343
+../../images/samples/positive/n02802426_6962.jpg 1 46 39 98 110
+../../images/samples/positive/n02802426_6996.jpg 1 107 300 72 70
+../../images/samples/positive/n02802426_70.jpg 1 160 334 50 49
+../../images/samples/positive/n02802426_7005.jpg 1 17 151 61 57
+../../images/samples/positive/n02802426_7044.jpg 1 66 275 32 32
+../../images/samples/positive/n02802426_7084.jpg 1 117 123 50 49
+../../images/samples/positive/n02802426_7100.jpg 1 328 127 171 205
+../../images/samples/positive/n02802426_7109.jpg 1 14 12 331 334
+../../images/samples/positive/n02802426_7181.jpg 1 155 109 29 28
+../../images/samples/positive/n02802426_7203.jpg 1 48 76 62 61
+../../images/samples/positive/n02802426_7208.jpg 1 47 25 60 62
+../../images/samples/positive/n02802426_7336.jpg 1 0 0 399 399
+../../images/samples/positive/n02802426_7403.jpg 1 169 20 48 50
+../../images/samples/positive/n02802426_7480.jpg 1 225 120 12 12
+../../images/samples/positive/n02802426_753.jpg 1 41 279 47 46
+../../images/samples/positive/n02802426_7542.jpg 1 193 288 80 80
+../../images/samples/positive/n02802426_7594.jpg 1 217 133 21 19
+../../images/samples/positive/n02802426_7665.jpg 1 131 110 34 35
+../../images/samples/positive/n02802426_7726.jpg 1 221 240 20 21
+../../images/samples/positive/n02802426_7737.jpg 1 113 0 59 55
+../../images/samples/positive/n02802426_7866.jpg 1 203 47 24 24
+../../images/samples/positive/n02802426_7880.jpg 1 129 148 33 37
+../../images/samples/positive/n02802426_7964.jpg 1 141 170 49 45
+../../images/samples/positive/n02802426_7977.jpg 1 116 152 36 36
+../../images/samples/positive/n02802426_8023.jpg 1 143 16 71 71
+../../images/samples/positive/n02802426_8042.jpg 1 129 179 27 30
+../../images/samples/positive/n02802426_8069.jpg 1 172 143 57 57
+../../images/samples/positive/n02802426_812.jpg 1 227 363 58 58
+../../images/samples/positive/n02802426_8125.jpg 1 303 158 18 17
+../../images/samples/positive/n02802426_813.jpg 1 205 164 32 36
+../../images/samples/positive/n02802426_8142.jpg 1 229 239 27 29
+../../images/samples/positive/n02802426_818.jpg 1 147 18 48 48
+../../images/samples/positive/n02802426_8222.jpg 1 110 193 59 61
+../../images/samples/positive/n02802426_8310.jpg 1 61 57 101 103
+../../images/samples/positive/n02802426_8324.jpg 1 226 215 69 70
+../../images/samples/positive/n02802426_8514.jpg 1 61 58 41 47
+../../images/samples/positive/n02802426_8606.jpg 1 229 71 32 35
+../../images/samples/positive/n02802426_8634.jpg 1 52 12 190 182
+../../images/samples/positive/n02802426_8671.jpg 1 185 207 52 48
+../../images/samples/positive/n02802426_8702.jpg 1 357 69 24 23
+../../images/samples/positive/n02802426_8724.jpg 1 83 252 73 74
+../../images/samples/positive/n02802426_8798.jpg 1 117 239 59 57
+../../images/samples/positive/n02802426_8826.jpg 1 140 280 90 91
+../../images/samples/positive/n02802426_8985.jpg 1 93 244 79 79
+../../images/samples/positive/n02802426_9023.jpg 1 180 59 315 306
+../../images/samples/positive/n02802426_9038.jpg 1 151 112 98 96
+../../images/samples/positive/n02802426_9041.jpg 1 52 175 63 61
+../../images/samples/positive/n02802426_9085.jpg 1 132 92 35 35
+../../images/samples/positive/n02802426_9097.jpg 1 49 168 37 34
+../../images/samples/positive/n02802426_9165.jpg 2 108 90 32 32 108 88 35 33
+../../images/samples/positive/n02802426_9242.jpg 1 321 190 42 43
+../../images/samples/positive/n02802426_9243.jpg 1 384 39 25 21
+../../images/samples/positive/n02802426_9276.jpg 1 190 302 45 40
+../../images/samples/positive/n02802426_9279.jpg 1 234 31 46 50
+../../images/samples/positive/n02802426_9282.jpg 1 266 161 44 45
+../../images/samples/positive/n02802426_9319.jpg 1 233 242 39 40
+../../images/samples/positive/n02802426_9340.jpg 1 83 259 52 47
+../../images/samples/positive/n02802426_9349.jpg 1 351 59 32 32
+../../images/samples/positive/n02802426_9388.jpg 1 153 39 57 66
+../../images/samples/positive/n02802426_9394.jpg 1 180 91 96 94
+../../images/samples/positive/n02802426_9399.jpg 1 139 93 43 42
+../../images/samples/positive/n02802426_9412.jpg 1 66 26 233 231
+../../images/samples/positive/n02802426_9447.jpg 1 160 317 45 45
+../../images/samples/positive/n02802426_9456.jpg 1 212 104 48 48
+../../images/samples/positive/n02802426_9458.jpg 1 44 11 114 114
+../../images/samples/positive/n02802426_9557.jpg 1 250 91 27 23
+../../images/samples/positive/n02802426_9635.jpg 1 54 55 32 40
+../../images/samples/positive/n02802426_9665.jpg 1 235 87 40 39
+../../images/samples/positive/n02802426_9684.jpg 1 309 138 46 49
+../../images/samples/positive/n02802426_9724.jpg 1 132 100 35 35
+../../images/samples/positive/n02802426_9792.jpg 1 60 166 71 69
+../../images/samples/positive/n02802426_9834.jpg 1 200 86 24 24
+../../images/samples/positive/n02802426_9912.jpg 1 137 47 31 32
+../../images/samples/positive/n02882301_11025.jpg 4 251 260 120 114 141 256 115 114 89 112 102 99 53 207 111 107
+../../images/samples/positive/n02882301_11268.jpg 4 251 127 95 95 244 248 87 94 158 126 94 94 61 124 96 96
+../../images/samples/positive/n02882301_11476.jpg 1 158 101 192 192
+../../images/samples/positive/n02882301_12019.jpg 1 212 144 111 114
+../../images/samples/positive/n02882301_12116.jpg 1 225 142 129 111
+../../images/samples/positive/n02882301_13817.jpg 1 88 67 232 215
+../../images/samples/positive/n02882301_1579.jpg 1 224 95 10 14
+../../images/samples/positive/n02882301_1926.jpg 6 323 250 67 68 189 182 63 59 327 128 56 54 189 100 51 52 98 130 54 53 290 80 45 45
+../../images/samples/positive/n02882301_2521.jpg 1 222 377 45 44
+../../images/samples/positive/n02882301_288.jpg 1 37 237 61 56
+../../images/samples/positive/n02882301_3060.jpg 1 149 123 149 146
+../../images/samples/positive/n02882301_3390.jpg 1 162 155 52 57
+../../images/samples/positive/n02882301_4000.jpg 1 154 94 233 238
+../../images/samples/positive/n02882301_4016.jpg 1 152 211 64 67
+../../images/samples/positive/n02882301_4509.jpg 3 142 149 152 145 248 132 136 135 329 114 103 105
+../../images/samples/positive/n02882301_5153.jpg 1 167 213 29 25
+../../images/samples/positive/n02882301_5245.jpg 4 211 144 59 55 304 65 59 56 180 94 60 59 49 94 61 57
+../../images/samples/positive/n02882301_5247.jpg 2 180 204 61 64 436 25 63 67
+../../images/samples/positive/n02882301_5271.jpg 1 327 179 42 40
+../../images/samples/positive/n02882301_5603.jpg 1 341 69 158 174
+../../images/samples/positive/n02882301_6009.jpg 2 0 362 144 109 88 349 118 122
+../../images/samples/positive/n02882301_6202.jpg 1 0 44 284 330
+../../images/samples/positive/n02882301_7360.jpg 2 227 266 34 40 178 266 23 37
+../../images/samples/positive/n02882301_7384.jpg 1 100 205 166 166
+../../images/samples/positive/n02882301_7634.jpg 1 201 221 60 59
+../../images/samples/positive/n02882301_8675.jpg 1 255 151 27 29
+../../images/samples/positive/n02882301_9136.jpg 1 301 217 154 154
+../../images/samples/positive/n02882301_9676.jpg 1 0 0 463 332
+../../images/samples/positive/n02882301_9719.jpg 1 166 96 246 222
+../../images/samples/positive/n03134739_1009.jpg 1 37 57 7 7
+../../images/samples/positive/n03134739_1033.jpg 2 175 92 12 12 155 107 13 13
+../../images/samples/positive/n03134739_1074.jpg 1 204 131 106 90
+../../images/samples/positive/n03134739_1100.jpg 1 49 60 83 67
+../../images/samples/positive/n03134739_1140.jpg 2 374 133 29 20 460 128 25 21
+../../images/samples/positive/n03134739_1152.jpg 2 53 416 45 42 237 253 20 14
+../../images/samples/positive/n03134739_1214.jpg 1 94 120 86 88
+../../images/samples/positive/n03134739_1234.jpg 1 113 117 197 199
+../../images/samples/positive/n03134739_1266.jpg 1 81 316 23 22
+../../images/samples/positive/n03134739_1280.jpg 1 87 383 14 13
+../../images/samples/positive/n03134739_1321.jpg 2 41 79 175 173 196 26 162 156
+../../images/samples/positive/n03134739_1345.jpg 1 326 281 19 23
+../../images/samples/positive/n03134739_1385.jpg 2 96 167 24 19 197 162 14 13
+../../images/samples/positive/n03134739_1388.jpg 4 237 245 23 25 351 213 19 17 277 234 24 24 314 227 21 13
+../../images/samples/positive/n03134739_1444.jpg 1 113 336 25 23
+../../images/samples/positive/n03134739_1464.jpg 1 1 2 496 495
+../../images/samples/positive/n03134739_1469.jpg 1 110 122 21 19
+../../images/samples/positive/n03134739_1470.jpg 2 124 198 16 15 111 203 15 11
+../../images/samples/positive/n03134739_1478.jpg 1 211 540 24 28
+../../images/samples/positive/n03134739_1497.jpg 1 86 344 29 26
+../../images/samples/positive/n03134739_1511.jpg 2 328 298 16 14 217 302 18 15
+../../images/samples/positive/n03134739_1552.jpg 3 243 432 22 19 87 192 9 11 2 200 8 7
+../../images/samples/positive/n03134739_1570.jpg 1 252 309 24 24
+../../images/samples/positive/n03134739_1592.jpg 1 22 262 21 20
+../../images/samples/positive/n03134739_1598.jpg 2 131 293 17 21 199 269 14 18
+../../images/samples/positive/n03134739_1641.jpg 2 57 198 41 37 149 127 27 20
+../../images/samples/positive/n03134739_167.jpg 2 216 239 58 47 197 239 33 20
+../../images/samples/positive/n03134739_1679.jpg 3 332 275 15 15 33 248 15 11 404 247 10 14
+../../images/samples/positive/n03134739_1743.jpg 2 140 426 22 22 252 430 22 12
+../../images/samples/positive/n03134739_1760.jpg 3 150 329 22 23 241 315 22 22 388 286 19 18
+../../images/samples/positive/n03134739_1789.jpg 1 128 417 29 28
+../../images/samples/positive/n03134739_1847.jpg 1 118 291 194 199
+../../images/samples/positive/n03134739_1961.jpg 1 2 2 495 496
+../../images/samples/positive/n03134739_204.jpg 4 136 413 41 38 272 402 46 44 131 272 31 33 205 390 41 42
+../../images/samples/positive/n03134739_2114.jpg 1 260 278 86 86
+../../images/samples/positive/n03134739_220.jpg 1 59 125 145 145
+../../images/samples/positive/n03134739_2213.jpg 2 337 168 34 36 369 161 29 32
+../../images/samples/positive/n03134739_2293.jpg 1 100 137 173 164
+../../images/samples/positive/n03134739_23.jpg 1 91 331 75 59
+../../images/samples/positive/n03134739_2321.jpg 1 35 170 257 191
+../../images/samples/positive/n03134739_2341.jpg 2 95 181 23 24 45 342 23 15
+../../images/samples/positive/n03134739_236.jpg 2 240 338 20 25 348 262 19 16
+../../images/samples/positive/n03134739_2387.jpg 1 40 5 240 244
+../../images/samples/positive/n03134739_2409.jpg 1 303 216 30 28
+../../images/samples/positive/n03134739_248.jpg 1 128 478 29 20
+../../images/samples/positive/n03134739_2558.jpg 1 236 445 29 23
+../../images/samples/positive/n03134739_2612.jpg 1 108 298 100 103
+../../images/samples/positive/n03134739_2626.jpg 1 161 421 41 30
+../../images/samples/positive/n03134739_2662.jpg 1 206 167 18 17
+../../images/samples/positive/n03134739_2741.jpg 2 324 234 24 19 211 208 11 11
+../../images/samples/positive/n03134739_2757.jpg 1 198 288 13 11
+../../images/samples/positive/n03134739_2803.jpg 1 51 359 24 23
+../../images/samples/positive/n03134739_2811.jpg 1 461 316 24 21
+../../images/samples/positive/n03134739_2870.jpg 4 90 231 14 15 142 218 17 14 116 221 17 19 141 210 15 10
+../../images/samples/positive/n03134739_2901.jpg 1 129 300 12 13
+../../images/samples/positive/n03134739_2943.jpg 1 298 345 24 15
+../../images/samples/positive/n03134739_2970.jpg 1 116 135 166 144
+../../images/samples/positive/n03134739_2978.jpg 1 4 65 41 36
+../../images/samples/positive/n03134739_3010.jpg 1 467 352 29 22
+../../images/samples/positive/n03134739_3020.jpg 1 30 469 22 19
+../../images/samples/positive/n03134739_3093.jpg 2 347 280 31 31 85 277 20 24
+../../images/samples/positive/n03134739_3100.jpg 2 274 384 52 54 77 394 48 43
+../../images/samples/positive/n03134739_312.jpg 1 43 306 241 192
+../../images/samples/positive/n03134739_3129.jpg 1 126 345 79 63
+../../images/samples/positive/n03134739_3162.jpg 1 275 158 48 50
+../../images/samples/positive/n03134739_3180.jpg 1 177 303 17 14
+../../images/samples/positive/n03134739_3186.jpg 1 171 342 30 27
+../../images/samples/positive/n03134739_3208.jpg 3 311 92 79 70 73 122 78 66 287 38 65 50
+../../images/samples/positive/n03134739_3214.jpg 1 225 339 26 21
+../../images/samples/positive/n03134739_3228.jpg 2 276 300 16 13 75 234 9 10
+../../images/samples/positive/n03134739_3327.jpg 3 255 307 14 11 362 282 14 11 485 240 14 13
+../../images/samples/positive/n03134739_3362.jpg 1 178 135 105 97
+../../images/samples/positive/n03134739_3367.jpg 3 281 316 21 23 175 303 19 17 232 101 9 8
+../../images/samples/positive/n03134739_3377.jpg 1 52 442 31 29
+../../images/samples/positive/n03134739_3404.jpg 3 234 233 36 36 443 91 31 23 163 25 24 20
+../../images/samples/positive/n03134739_3435.jpg 4 544 371 69 63 604 396 78 70 75 360 63 58 286 27 71 71
+../../images/samples/positive/n03134739_3438.jpg 1 89 195 72 77
+../../images/samples/positive/n03134739_3447.jpg 1 72 185 44 42
+../../images/samples/positive/n03134739_349.jpg 2 422 268 25 29 422 196 23 23
+../../images/samples/positive/n03134739_3542.jpg 1 25 63 35 32
+../../images/samples/positive/n03134739_3545.jpg 3 82 431 30 26 164 411 24 21 112 299 18 18
+../../images/samples/positive/n03134739_3567.jpg 1 122 86 82 80
+../../images/samples/positive/n03134739_3606.jpg 2 161 393 25 25 133 387 30 26
+../../images/samples/positive/n03134739_373.jpg 1 74 438 40 38
+../../images/samples/positive/n03134739_3783.jpg 1 108 99 119 115
+../../images/samples/positive/n03134739_3793.jpg 1 206 247 40 37
+../../images/samples/positive/n03134739_3869.jpg 1 135 339 27 25
+../../images/samples/positive/n03134739_3870.jpg 2 224 317 13 13 197 234 11 11
+../../images/samples/positive/n03134739_3902.jpg 1 213 361 14 15
+../../images/samples/positive/n03134739_3916.jpg 2 128 350 27 21 120 103 22 25
+../../images/samples/positive/n03134739_3960.jpg 1 393 211 7 7
+../../images/samples/positive/n03134739_4011.jpg 1 217 135 99 94
+../../images/samples/positive/n03134739_4023.jpg 1 257 320 19 20
+../../images/samples/positive/n03134739_411.jpg 1 102 413 18 18
+../../images/samples/positive/n03134739_4189.jpg 1 160 206 117 120
+../../images/samples/positive/n03134739_4264.jpg 1 101 236 231 250
+../../images/samples/positive/n03134739_4274.jpg 5 414 200 13 15 167 214 14 13 182 306 16 15 233 207 15 12 264 217 14 12
+../../images/samples/positive/n03134739_4292.jpg 2 168 239 25 15 98 281 40 41
+../../images/samples/positive/n03134739_4302.jpg 1 268 211 42 37
+../../images/samples/positive/n03134739_4356.jpg 1 463 45 78 81
+../../images/samples/positive/n03134739_438.jpg 2 145 203 123 109 88 70 32 25
+../../images/samples/positive/n03134739_4381.jpg 2 215 423 17 17 227 435 16 20
+../../images/samples/positive/n03134739_4382.jpg 3 446 334 11 10 335 332 13 14 379 332 15 11
+../../images/samples/positive/n03134739_4601.jpg 1 282 330 24 23
+../../images/samples/positive/n03134739_4652.jpg 1 268 296 19 19
+../../images/samples/positive/n03134739_4679.jpg 2 127 181 75 71 48 67 64 58
+../../images/samples/positive/n03134739_4748.jpg 1 221 441 28 29
+../../images/samples/positive/n03134739_4794.jpg 1 339 248 61 51
+../../images/samples/positive/n03134739_4827.jpg 2 240 330 28 23 227 292 24 21
+../../images/samples/positive/n03134739_4834.jpg 4 83 218 27 28 326 186 15 20 257 165 19 15 107 216 20 21
+../../images/samples/positive/n03134739_4840.jpg 2 192 186 39 35 238 180 33 24
+../../images/samples/positive/n03134739_4849.jpg 1 186 273 60 59
+../../images/samples/positive/n03134739_4867.jpg 1 188 198 55 57
+../../images/samples/positive/n03134739_4936.jpg 1 271 432 61 61
+../../images/samples/positive/n03134739_4937.jpg 3 234 233 34 36 442 90 33 27 164 20 20 26
+../../images/samples/positive/n03134739_4955.jpg 4 81 393 71 75 202 378 69 67 196 305 65 65 148 277 64 59
+../../images/samples/positive/n03134739_5125.jpg 2 113 407 34 39 107 302 19 21
+../../images/samples/positive/n03134739_5142.jpg 1 321 345 35 25
+../../images/samples/positive/n03134739_5158.jpg 2 228 274 16 17 203 265 12 16
+../../images/samples/positive/n03134739_517.jpg 1 117 21 74 75
+../../images/samples/positive/n03134739_526.jpg 1 201 196 27 27
+../../images/samples/positive/n03134739_529.jpg 1 158 258 38 39
+../../images/samples/positive/n03134739_539.jpg 1 230 273 18 17
+../../images/samples/positive/n03134739_54.jpg 4 197 122 301 376 0 56 196 420 30 1 465 237 0 443 303 55
+../../images/samples/positive/n03134739_5644.jpg 2 241 218 25 28 180 361 32 34
+../../images/samples/positive/n03134739_567.jpg 1 187 266 33 36
+../../images/samples/positive/n03134739_5755.jpg 1 180 390 86 77
+../../images/samples/positive/n03134739_5801.jpg 1 136 303 61 52
+../../images/samples/positive/n03134739_5829.jpg 1 280 395 28 26
+../../images/samples/positive/n03134739_6088.jpg 2 93 221 64 52 111 193 59 34
+../../images/samples/positive/n03134739_6139.jpg 1 239 252 13 15
+../../images/samples/positive/n03134739_617.jpg 1 138 58 47 44
+../../images/samples/positive/n03134739_630.jpg 1 277 263 18 14
+../../images/samples/positive/n03134739_6493.jpg 4 313 174 37 29 366 149 25 19 336 167 22 22 341 159 31 27
+../../images/samples/positive/n03134739_653.jpg 2 127 391 87 69 211 300 43 27
+../../images/samples/positive/n03134739_679.jpg 1 153 150 97 99
+../../images/samples/positive/n03134739_6793.jpg 1 208 87 179 166
+../../images/samples/positive/n03134739_6950.jpg 2 192 382 83 63 76 143 59 52
+../../images/samples/positive/n03134739_699.jpg 3 16 418 26 23 150 337 27 19 147 351 30 29
+../../images/samples/positive/n03134739_700.jpg 1 164 247 32 25
+../../images/samples/positive/n03134739_7133.jpg 2 390 113 27 36 346 150 24 29
+../../images/samples/positive/n03134739_7154.jpg 4 227 188 50 51 327 170 55 56 108 200 53 52 424 155 50 49
+../../images/samples/positive/n03134739_7236.jpg 2 197 353 11 13 332 305 13 13
+../../images/samples/positive/n03134739_7360.jpg 1 380 190 10 7
+../../images/samples/positive/n03134739_745.jpg 2 101 470 19 18 0 455 13 20
+../../images/samples/positive/n03134739_7470.jpg 2 53 299 31 32 108 257 27 26
+../../images/samples/positive/n03134739_7519.jpg 1 400 59 26 27
+../../images/samples/positive/n03134739_767.jpg 1 163 196 37 29
+../../images/samples/positive/n03134739_7765.jpg 1 152 78 201 199
+../../images/samples/positive/n03134739_7904.jpg 1 325 294 16 17
+../../images/samples/positive/n03134739_791.jpg 1 230 320 20 18
+../../images/samples/positive/n03134739_7913.jpg 2 204 348 18 18 203 333 17 17
+../../images/samples/positive/n03134739_792.jpg 2 239 226 35 26 272 222 30 26
+../../images/samples/positive/n03134739_7955.jpg 1 40 138 293 194
+../../images/samples/positive/n03134739_7993.jpg 1 165 402 20 21
+../../images/samples/positive/n03134739_8003.jpg 3 236 451 20 22 210 448 26 25 322 311 16 14
+../../images/samples/positive/n03134739_802.jpg 4 291 285 22 13 258 452 34 23 287 172 11 11 325 491 27 7
+../../images/samples/positive/n03134739_804.jpg 1 102 49 107 85
+../../images/samples/positive/n03134739_805.jpg 1 295 382 20 20
+../../images/samples/positive/n03134739_8200.jpg 1 201 251 22 17
+../../images/samples/positive/n03134739_8239.jpg 1 113 186 88 88
+../../images/samples/positive/n03134739_8365.jpg 2 255 381 22 16 338 383 28 25
+../../images/samples/positive/n03134739_841.jpg 1 38 375 67 70
+../../images/samples/positive/n03134739_853.jpg 2 140 268 23 22 127 267 16 17
+../../images/samples/positive/n03134739_8616.jpg 1 130 378 12 12
+../../images/samples/positive/n03134739_875.jpg 2 159 121 120 119 278 168 101 103
+../../images/samples/positive/n03134739_8803.jpg 2 233 258 28 31 235 287 35 33
+../../images/samples/positive/n03134739_9.jpg 2 118 379 46 37 244 365 41 40
+../../images/samples/positive/n03134739_9031.jpg 1 298 209 107 87
+../../images/samples/positive/n03134739_906.jpg 2 369 275 19 17 238 263 18 14
+../../images/samples/positive/n03134739_9091.jpg 3 172 228 26 25 114 259 34 29 189 156 18 18
+../../images/samples/positive/n03134739_910.jpg 1 5 3 493 495
+../../images/samples/positive/n03134739_9126.jpg 1 121 350 93 67
+../../images/samples/positive/n03134739_914.jpg 1 207 354 60 54
+../../images/samples/positive/n03134739_917.jpg 3 327 12 146 148 209 58 53 50 81 54 72 70
+../../images/samples/positive/n03134739_93.jpg 1 202 418 61 59
+../../images/samples/positive/n03134739_9332.jpg 1 331 61 167 163
+../../images/samples/positive/n03134739_935.jpg 1 175 139 112 94
+../../images/samples/positive/n03134739_9368.jpg 1 244 168 53 51
+../../images/samples/positive/n03134739_9515.jpg 1 112 303 44 39
+../../images/samples/positive/n03134739_9649.jpg 3 278 300 30 33 43 293 22 19 271 78 15 15
+../../images/samples/positive/n03134739_975.jpg 1 263 279 17 19
+../../images/samples/positive/n03145719_1206.jpg 1 399 231 12 8
+../../images/samples/positive/n03145719_1242.jpg 1 199 131 97 95
+../../images/samples/positive/n03145719_1255.jpg 1 126 14 277 279
+../../images/samples/positive/n03145719_1288.jpg 1 53 142 74 74
+../../images/samples/positive/n03145719_1587.jpg 1 121 354 53 48
+../../images/samples/positive/n03145719_1971.jpg 1 296 187 86 88
+../../images/samples/positive/n03145719_2437.jpg 1 145 272 38 37
+../../images/samples/positive/n03145719_2504.jpg 1 200 99 268 273
+../../images/samples/positive/n03145719_2990.jpg 1 126 159 122 132
+../../images/samples/positive/n03145719_3755.jpg 1 139 38 196 191
+../../images/samples/positive/n03145719_3905.jpg 1 111 55 160 161
+../../images/samples/positive/n03145719_4506.jpg 1 267 201 104 105
+../../images/samples/positive/n03145719_4555.jpg 1 98 233 31 36
+../../images/samples/positive/n03145719_5397.jpg 2 19 287 31 33 94 313 34 20
+../../images/samples/positive/n03145719_5636.jpg 2 180 188 10 15 74 197 14 13
+../../images/samples/positive/n03145719_5717.jpg 1 273 124 82 82
+../../images/samples/positive/n03145719_5994.jpg 2 414 288 27 29 291 251 22 21
+../../images/samples/positive/n03145719_6852.jpg 2 316 174 41 43 231 161 36 35
+../../images/samples/positive/n03145719_6885.jpg 2 140 144 60 69 258 153 64 56
+../../images/samples/positive/n03145719_6900.jpg 2 285 114 158 160 155 138 54 46
+../../images/samples/positive/n03145719_7352.jpg 1 315 178 47 49
+../../images/samples/positive/n03145719_7362.jpg 1 90 82 177 177
+../../images/samples/positive/n03145719_7516.jpg 1 49 253 34 33
+../../images/samples/positive/n03145719_7807.jpg 1 162 172 38 41
+../../images/samples/positive/n03145719_7900.jpg 1 142 360 50 51
+../../images/samples/positive/n03145719_7975.jpg 1 140 262 23 24
+../../images/samples/positive/n03145719_8196.jpg 1 223 238 17 17
+../../images/samples/positive/n03145719_8283.jpg 2 206 136 171 171 33 128 174 172
+../../images/samples/positive/n03145719_8340.jpg 1 444 208 26 20
+../../images/samples/positive/n03145719_8598.jpg 1 2 38 381 294
+../../images/samples/positive/n03145719_870.jpg 1 244 295 84 37
+../../images/samples/positive/n03145719_877.jpg 1 171 206 37 37
+../../images/samples/positive/n03145719_9116.jpg 1 6 1 492 496
+../../images/samples/positive/n03267113_1053.jpg 1 39 123 193 186
+../../images/samples/positive/n03267113_1197.jpg 1 136 98 217 214
+../../images/samples/positive/n03267113_1310.jpg 1 184 93 191 187
+../../images/samples/positive/n03267113_1369.jpg 1 234 147 28 31
+../../images/samples/positive/n03267113_1472.jpg 1 101 130 316 317
+../../images/samples/positive/n03267113_1563.jpg 1 217 70 256 254
+../../images/samples/positive/n03267113_174.jpg 1 338 39 42 43
+../../images/samples/positive/n03267113_1814.jpg 1 16 83 183 183
+../../images/samples/positive/n03267113_2117.jpg 1 1 2 495 491
+../../images/samples/positive/n03267113_2376.jpg 1 256 93 210 211
+../../images/samples/positive/n03267113_2515.jpg 1 129 116 254 262
+../../images/samples/positive/n03267113_267.jpg 1 132 4 235 233
+../../images/samples/positive/n03267113_2841.jpg 1 180 96 194 183
+../../images/samples/positive/n03267113_2844.jpg 1 218 194 114 112
+../../images/samples/positive/n03267113_2892.jpg 1 12 4 377 383
+../../images/samples/positive/n03267113_2996.jpg 1 189 143 132 133
+../../images/samples/positive/n03267113_3145.jpg 1 243 114 147 142
+../../images/samples/positive/n03267113_3182.jpg 1 357 258 80 78
+../../images/samples/positive/n03267113_3184.jpg 1 31 283 191 194
+../../images/samples/positive/n03267113_3249.jpg 1 159 169 98 101
+../../images/samples/positive/n03267113_3285.jpg 1 229 78 40 42
+../../images/samples/positive/n03267113_330.jpg 1 87 6 225 229
+../../images/samples/positive/n03267113_3587.jpg 1 126 58 217 212
+../../images/samples/positive/n03267113_3729.jpg 1 1 2 265 194
+../../images/samples/positive/n03267113_3816.jpg 1 162 0 190 147
+../../images/samples/positive/n03267113_3827.jpg 1 109 164 117 116
+../../images/samples/positive/n03267113_3854.jpg 1 3 109 114 109
+../../images/samples/positive/n03267113_41.jpg 1 307 267 113 107
+../../images/samples/positive/n03267113_4129.jpg 1 82 203 75 72
+../../images/samples/positive/n03267113_4161.jpg 1 197 156 103 88
+../../images/samples/positive/n03267113_4258.jpg 1 307 191 119 119
+../../images/samples/positive/n03267113_4378.jpg 1 216 138 89 88
+../../images/samples/positive/n03267113_4418.jpg 1 186 134 102 89
+../../images/samples/positive/n03267113_4623.jpg 1 0 244 207 223
+../../images/samples/positive/n03267113_4665.jpg 1 370 273 23 22
+../../images/samples/positive/n03267113_4706.jpg 1 102 80 378 252
+../../images/samples/positive/n03267113_4730.jpg 1 190 150 133 136
+../../images/samples/positive/n03267113_4776.jpg 1 156 219 25 24
+../../images/samples/positive/n03267113_4859.jpg 1 216 211 61 61
+../../images/samples/positive/n03267113_4927.jpg 1 19 97 295 275
+../../images/samples/positive/n03267113_4934.jpg 1 0 0 320 365
+../../images/samples/positive/n03267113_5123.jpg 1 28 81 438 249
+../../images/samples/positive/n03267113_5179.jpg 1 229 135 214 217
+../../images/samples/positive/n03267113_5384.jpg 1 112 103 123 127
+../../images/samples/positive/n03267113_5398.jpg 1 234 95 117 118
+../../images/samples/positive/n03267113_5471.jpg 1 165 107 136 129
+../../images/samples/positive/n03267113_5529.jpg 1 143 60 231 233
+../../images/samples/positive/n03267113_5681.jpg 1 25 89 251 251
+../../images/samples/positive/n03267113_5710.jpg 1 72 34 205 209
+../../images/samples/positive/n03267113_6216.jpg 1 161 37 213 323
+../../images/samples/positive/n03267113_6276.jpg 1 0 42 499 332
+../../images/samples/positive/n03267113_6316.jpg 1 121 327 105 110
+../../images/samples/positive/n03267113_665.jpg 1 160 88 162 165
+../../images/samples/positive/n03267113_687.jpg 1 223 181 109 113
+../../images/samples/positive/n03267113_6984.jpg 1 26 246 110 105
+../../images/samples/positive/n03267113_7048.jpg 1 37 0 461 372
+../../images/samples/positive/n03267113_710.jpg 1 193 130 97 96
+../../images/samples/positive/n03267113_7408.jpg 1 129 39 94 95
+../../images/samples/positive/n03267113_7496.jpg 1 33 32 435 437
+../../images/samples/positive/n03267113_7841.jpg 1 64 92 238 230
+../../images/samples/positive/n03267113_7867.jpg 1 107 133 84 85
+../../images/samples/positive/n03267113_7922.jpg 1 117 58 266 338
+../../images/samples/positive/n03267113_8010.jpg 1 147 31 238 242
+../../images/samples/positive/n03267113_8398.jpg 1 36 129 172 173
+../../images/samples/positive/n03267113_8412.jpg 1 120 222 84 85
+../../images/samples/positive/n03267113_8733.jpg 1 314 44 167 183
+../../images/samples/positive/n03267113_880.jpg 1 59 151 195 181
+../../images/samples/positive/n03267113_8964.jpg 1 127 71 34 34
+../../images/samples/positive/n03267113_906.jpg 1 318 175 104 105
+../../images/samples/positive/n03267113_9089.jpg 1 287 137 134 137
+../../images/samples/positive/n03267113_9110.jpg 1 287 56 120 123
+../../images/samples/positive/n03267113_9174.jpg 1 233 103 233 228
+../../images/samples/positive/n03721047_1004.jpg 5 0 64 141 214 98 96 279 277 142 18 192 110 328 51 171 217 0 11 107 71
+../../images/samples/positive/n03721047_10055.jpg 3 190 32 151 117 201 110 123 117 316 122 140 110
+../../images/samples/positive/n03721047_10700.jpg 1 237 106 162 145
+../../images/samples/positive/n03721047_10706.jpg 1 70 1 268 260
+../../images/samples/positive/n03721047_1085.jpg 1 192 15 247 250
+../../images/samples/positive/n03721047_11171.jpg 1 95 70 149 152
+../../images/samples/positive/n03721047_11196.jpg 1 52 53 385 389
+../../images/samples/positive/n03721047_11658.jpg 1 407 231 70 67
+../../images/samples/positive/n03721047_117.jpg 1 64 40 177 174
+../../images/samples/positive/n03721047_11913.jpg 4 147 151 83 84 253 162 87 90 370 178 85 87 40 139 86 87
+../../images/samples/positive/n03721047_12862.jpg 1 6 17 492 481
+../../images/samples/positive/n03721047_1289.jpg 1 54 26 239 241
+../../images/samples/positive/n03721047_133.jpg 1 107 111 270 267
+../../images/samples/positive/n03721047_14033.jpg 1 167 79 148 171
+../../images/samples/positive/n03721047_1421.jpg 1 65 40 193 194
+../../images/samples/positive/n03721047_14328.jpg 1 50 46 374 378
+../../images/samples/positive/n03721047_1464.jpg 2 96 39 187 180 411 74 88 172
+../../images/samples/positive/n03721047_14644.jpg 1 173 94 150 151
+../../images/samples/positive/n03721047_14668.jpg 1 27 95 300 279
+../../images/samples/positive/n03721047_14879.jpg 1 88 99 309 298
+../../images/samples/positive/n03721047_14909.jpg 1 200 63 141 145
+../../images/samples/positive/n03721047_15062.jpg 1 271 111 148 148
+../../images/samples/positive/n03721047_15092.jpg 1 52 156 202 203
+../../images/samples/positive/n03721047_15186.jpg 2 170 90 173 178 64 3 112 111
+../../images/samples/positive/n03721047_15314.jpg 3 63 110 242 246 304 34 147 150 74 38 156 128
+../../images/samples/positive/n03721047_1555.jpg 1 159 212 202 200
+../../images/samples/positive/n03721047_1731.jpg 4 164 84 158 156 316 65 180 178 165 241 149 90 9 81 156 160
+../../images/samples/positive/n03721047_1775.jpg 3 224 69 70 71 338 29 68 67 47 124 89 88
+../../images/samples/positive/n03721047_2032.jpg 1 250 11 239 194
+../../images/samples/positive/n03721047_2483.jpg 1 108 47 274 275
+../../images/samples/positive/n03721047_268.jpg 1 1 5 200 186
+../../images/samples/positive/n03721047_2967.jpg 1 295 163 36 36
+../../images/samples/positive/n03721047_303.jpg 3 295 110 111 124 73 119 142 150 189 108 112 114
+../../images/samples/positive/n03721047_32.jpg 1 1 6 492 492
+../../images/samples/positive/n03721047_3216.jpg 1 143 102 181 184
+../../images/samples/positive/n03721047_3303.jpg 1 77 68 342 335
+../../images/samples/positive/n03721047_3736.jpg 1 142 74 214 230
+../../images/samples/positive/n03721047_3768.jpg 1 0 0 598 597
+../../images/samples/positive/n03721047_4043.jpg 2 17 53 139 139 171 56 132 135
+../../images/samples/positive/n03721047_4084.jpg 1 173 45 197 192
+../../images/samples/positive/n03721047_413.jpg 1 70 53 341 350
+../../images/samples/positive/n03721047_4211.jpg 1 5 18 472 449
+../../images/samples/positive/n03721047_428.jpg 1 182 130 117 88
+../../images/samples/positive/n03721047_4441.jpg 2 122 57 241 235 135 295 226 203
+../../images/samples/positive/n03721047_473.jpg 1 138 59 249 248
+../../images/samples/positive/n03721047_5.jpg 4 68 140 100 88 163 146 120 129 221 171 152 181 0 160 115 202
+../../images/samples/positive/n03721047_52.jpg 3 352 119 112 116 192 114 111 113 37 114 107 103
+../../images/samples/positive/n03721047_5246.jpg 4 250 103 95 94 379 112 97 97 137 93 88 88 20 91 94 93
+../../images/samples/positive/n03721047_534.jpg 4 204 107 196 187 10 4 148 133 383 10 98 96 201 3 99 44
+../../images/samples/positive/n03721047_547.jpg 1 107 111 277 274
+../../images/samples/positive/n03721047_6884.jpg 1 161 13 268 266
+../../images/samples/positive/n03721047_737.jpg 1 108 0 289 272
+../../images/samples/positive/n03721047_7531.jpg 1 34 24 204 205
+../../images/samples/positive/n03721047_7584.jpg 1 19 23 322 324
+../../images/samples/positive/n03721047_7847.jpg 1 29 0 444 332
+../../images/samples/positive/n03721047_8032.jpg 1 15 8 157 155
+../../images/samples/positive/n03721047_81.jpg 4 70 273 130 147 191 232 140 146 76 61 204 200 281 103 161 164
+../../images/samples/positive/n03721047_8433.jpg 1 44 38 235 237
+../../images/samples/positive/n03721047_8529.jpg 1 83 106 295 284
+../../images/samples/positive/n03721047_8567.jpg 1 135 63 238 236
+../../images/samples/positive/n03721047_8787.jpg 2 187 49 304 280 8 0 273 282
+../../images/samples/positive/n03721047_880.jpg 1 140 0 272 270
+../../images/samples/positive/n03721047_886.jpg 1 165 77 241 244
+../../images/samples/positive/n03721047_9060.jpg 2 188 35 293 293 0 65 115 212
+../../images/samples/positive/n03721047_957.jpg 1 247 131 143 149
+../../images/samples/positive/n03721047_9579.jpg 1 0 0 331 325
+../../images/samples/positive/n03742019_1013.jpg 1 168 74 299 298
+../../images/samples/positive/n03742019_1129.jpg 1 143 182 107 108
+../../images/samples/positive/n03742019_1208.jpg 1 23 24 107 108
+../../images/samples/positive/n03742019_1239.jpg 1 26 2 47 44
+../../images/samples/positive/n03742019_1301.jpg 1 0 0 286 287
+../../images/samples/positive/n03742019_1348.jpg 1 146 27 395 393
+../../images/samples/positive/n03742019_143.jpg 1 36 21 80 78
+../../images/samples/positive/n03742019_1478.jpg 1 3 3 192 194
+../../images/samples/positive/n03742019_1485.jpg 1 10 19 255 244
+../../images/samples/positive/n03742019_15.jpg 1 24 22 239 238
+../../images/samples/positive/n03742019_1537.jpg 1 24 18 114 115
+../../images/samples/positive/n03742019_1542.jpg 1 16 6 201 202
+../../images/samples/positive/n03742019_1567.jpg 2 0 24 53 58 44 18 55 62
+../../images/samples/positive/n03742019_161.jpg 1 13 25 108 110
+../../images/samples/positive/n03742019_1615.jpg 1 9 6 171 169
+../../images/samples/positive/n03742019_1718.jpg 1 95 218 208 205
+../../images/samples/positive/n03742019_1721.jpg 1 33 0 35 28
+../../images/samples/positive/n03742019_1726.jpg 2 378 117 119 117 189 255 134 118
+../../images/samples/positive/n03742019_1752.jpg 1 28 285 168 156
+../../images/samples/positive/n03742019_178.jpg 2 32 214 111 108 291 202 109 107
+../../images/samples/positive/n03742019_1810.jpg 1 67 139 166 171
+../../images/samples/positive/n03742019_1814.jpg 1 13 10 68 64
+../../images/samples/positive/n03742019_1835.jpg 1 7 7 331 332
+../../images/samples/positive/n03742019_1950.jpg 2 22 20 92 93 117 2 93 97
+../../images/samples/positive/n03742019_1959.jpg 1 87 0 342 326
+../../images/samples/positive/n03742019_1977.jpg 2 293 314 110 104 39 319 108 109
+../../images/samples/positive/n03742019_1983.jpg 2 48 260 104 100 300 238 107 109
+../../images/samples/positive/n03742019_1990.jpg 1 23 10 112 111
+../../images/samples/positive/n03742019_2061.jpg 2 162 41 187 190 0 0 208 215
+../../images/samples/positive/n03742019_2094.jpg 2 42 240 116 112 322 229 112 106
+../../images/samples/positive/n03742019_2125.jpg 1 38 40 185 185
+../../images/samples/positive/n03742019_221.jpg 1 222 208 111 120
+../../images/samples/positive/n03742019_2258.jpg 1 21 6 57 57
+../../images/samples/positive/n03742019_2285.jpg 1 193 125 38 34
+../../images/samples/positive/n03742019_2352.jpg 2 291 92 61 61 0 33 35 30
+../../images/samples/positive/n03742019_2358.jpg 2 42 376 46 49 45 65 45 46
+../../images/samples/positive/n03742019_2410.jpg 1 0 181 373 317
+../../images/samples/positive/n03742019_2432.jpg 1 256 61 56 57
+../../images/samples/positive/n03742019_2452.jpg 1 113 8 71 71
+../../images/samples/positive/n03742019_2485.jpg 1 116 114 49 44
+../../images/samples/positive/n03742019_2512.jpg 1 17 18 89 88
+../../images/samples/positive/n03742019_2517.jpg 1 65 15 33 37
+../../images/samples/positive/n03742019_2544.jpg 1 138 48 230 214
+../../images/samples/positive/n03742019_2576.jpg 1 67 5 44 48
+../../images/samples/positive/n03742019_2615.jpg 1 77 104 21 22
+../../images/samples/positive/n03742019_2670.jpg 1 215 173 30 32
+../../images/samples/positive/n03742019_2692.jpg 1 196 202 46 51
+../../images/samples/positive/n03742019_2763.jpg 1 15 9 85 90
+../../images/samples/positive/n03742019_2764.jpg 1 22 6 60 59
+../../images/samples/positive/n03742019_2900.jpg 1 69 16 345 343
+../../images/samples/positive/n03742019_2910.jpg 1 28 185 41 49
+../../images/samples/positive/n03742019_2939.jpg 1 8 15 197 195
+../../images/samples/positive/n03742019_2979.jpg 1 49 29 187 199
+../../images/samples/positive/n03742019_3000.jpg 1 171 250 118 116
+../../images/samples/positive/n03742019_3045.jpg 2 420 3 373 371 7 101 412 412
+../../images/samples/positive/n03742019_3089.jpg 1 27 33 543 490
+../../images/samples/positive/n03742019_3108.jpg 1 12 13 178 177
+../../images/samples/positive/n03742019_3126.jpg 1 59 57 172 170
+../../images/samples/positive/n03742019_3139.jpg 1 135 87 143 142
+../../images/samples/positive/n03742019_3153.jpg 3 197 101 101 98 84 100 100 98 3 118 77 77
+../../images/samples/positive/n03742019_3173.jpg 3 172 11 124 153 32 23 196 198 8 22 116 124
+../../images/samples/positive/n03742019_3174.jpg 1 231 132 65 68
+../../images/samples/positive/n03742019_334.jpg 1 162 282 108 129
+../../images/samples/positive/n03742019_3342.jpg 1 2 203 85 91
+../../images/samples/positive/n03742019_3428.jpg 1 25 40 141 149
+../../images/samples/positive/n03742019_3552.jpg 1 36 33 227 232
+../../images/samples/positive/n03742019_3578.jpg 5 297 110 40 38 155 132 59 61 352 18 23 20 351 262 31 29 364 242 22 24
+../../images/samples/positive/n03742019_3696.jpg 1 97 241 65 69
+../../images/samples/positive/n03742019_3738.jpg 1 148 102 335 335
+../../images/samples/positive/n03742019_3742.jpg 1 64 0 132 97
+../../images/samples/positive/n03742019_3767.jpg 1 227 239 53 53
+../../images/samples/positive/n03742019_3782.jpg 1 168 107 298 297
+../../images/samples/positive/n03742019_379.jpg 1 91 290 74 81
+../../images/samples/positive/n03742019_3791.jpg 5 152 148 71 67 13 74 73 67 193 75 72 65 102 74 74 69 59 147 75 67
+../../images/samples/positive/n03742019_3935.jpg 1 4 4 153 167
+../../images/samples/positive/n03742019_3999.jpg 2 1 31 249 250 261 29 240 240
+../../images/samples/positive/n03742019_4006.jpg 1 195 21 275 275
+../../images/samples/positive/n03742019_402.jpg 1 3 4 72 66
+../../images/samples/positive/n03742019_4088.jpg 1 157 180 170 141
+../../images/samples/positive/n03742019_413.jpg 1 238 100 236 242
+../../images/samples/positive/n03742019_415.jpg 1 268 202 52 39
+../../images/samples/positive/n03742019_4218.jpg 1 104 123 63 60
+../../images/samples/positive/n03742019_424.jpg 1 7 16 195 192
+../../images/samples/positive/n03742019_4292.jpg 2 86 266 57 52 345 164 38 36
+../../images/samples/positive/n03742019_4355.jpg 3 138 205 104 108 40 307 26 21 295 311 25 24
+../../images/samples/positive/n03742019_440.jpg 1 150 182 206 196
+../../images/samples/positive/n03742019_4411.jpg 1 30 27 237 234
+../../images/samples/positive/n03742019_4430.jpg 1 10 11 230 228
+../../images/samples/positive/n03742019_4435.jpg 1 26 14 196 195
+../../images/samples/positive/n03742019_45.jpg 1 284 13 65 66
+../../images/samples/positive/n03742019_4542.jpg 1 1 1 98 101
+../../images/samples/positive/n03742019_4664.jpg 1 9 5 119 116
+../../images/samples/positive/n03742019_4687.jpg 2 133 261 69 75 206 267 21 35
+../../images/samples/positive/n03742019_4822.jpg 1 84 0 320 224
+../../images/samples/positive/n03742019_491.jpg 1 34 9 90 94
+../../images/samples/positive/n03742019_4937.jpg 1 185 48 45 34
+../../images/samples/positive/n03742019_5031.jpg 1 214 133 34 35
+../../images/samples/positive/n03742019_512.jpg 1 20 16 121 124
+../../images/samples/positive/n03742019_519.jpg 1 40 38 213 217
+../../images/samples/positive/n03742019_5250.jpg 1 48 11 292 316
+../../images/samples/positive/n03742019_531.jpg 1 188 316 94 87
+../../images/samples/positive/n03742019_5403.jpg 1 103 167 219 186
+../../images/samples/positive/n03742019_5424.jpg 1 77 295 46 42
+../../images/samples/positive/n03742019_557.jpg 1 87 19 344 343
+../../images/samples/positive/n03742019_5639.jpg 1 265 139 36 36
+../../images/samples/positive/n03742019_587.jpg 1 66 0 50 52
+../../images/samples/positive/n03742019_607.jpg 1 0 2 299 297
+../../images/samples/positive/n03742019_6098.jpg 1 9 22 98 101
+../../images/samples/positive/n03742019_6116.jpg 1 31 51 37 34
+../../images/samples/positive/n03742019_6309.jpg 1 12 7 78 77
+../../images/samples/positive/n03742019_6345.jpg 1 3 60 46 48
+../../images/samples/positive/n03742019_643.jpg 1 280 186 19 17
+../../images/samples/positive/n03742019_6458.jpg 1 33 75 33 31
+../../images/samples/positive/n03742019_6475.jpg 2 158 25 54 56 315 0 21 13
+../../images/samples/positive/n03742019_654.jpg 1 45 20 261 269
+../../images/samples/positive/n03742019_666.jpg 1 23 23 238 235
+../../images/samples/positive/n03742019_6713.jpg 2 329 290 117 106 43 307 117 110
+../../images/samples/positive/n03742019_675.jpg 1 41 25 150 156
+../../images/samples/positive/n03742019_6766.jpg 1 192 1 189 141
+../../images/samples/positive/n03742019_6771.jpg 3 78 297 80 77 129 143 63 95 341 149 95 105
+../../images/samples/positive/n03742019_6802.jpg 1 35 246 57 62
+../../images/samples/positive/n03742019_6905.jpg 1 21 177 97 83
+../../images/samples/positive/n03742019_6960.jpg 2 320 0 53 43 67 184 27 26
+../../images/samples/positive/n03742019_7142.jpg 1 296 78 60 59
+../../images/samples/positive/n03742019_7163.jpg 1 332 244 104 100
+../../images/samples/positive/n03742019_7220.jpg 2 15 165 103 98 168 165 97 91
+../../images/samples/positive/n03742019_7226.jpg 1 19 132 48 51
+../../images/samples/positive/n03742019_7255.jpg 1 20 9 56 78
+../../images/samples/positive/n03742019_7317.jpg 1 0 15 249 269
+../../images/samples/positive/n03742019_7329.jpg 1 3 4 199 198
+../../images/samples/positive/n03742019_7379.jpg 1 188 178 129 143
+../../images/samples/positive/n03742019_743.jpg 1 0 0 249 249
+../../images/samples/positive/n03742019_7457.jpg 1 16 16 333 329
+../../images/samples/positive/n03742019_7482.jpg 1 161 245 91 87
+../../images/samples/positive/n03742019_7550.jpg 1 73 72 142 143
+../../images/samples/positive/n03742019_7573.jpg 2 263 158 52 46 17 115 26 25
+../../images/samples/positive/n03742019_7653.jpg 2 324 219 112 103 42 233 115 105
+../../images/samples/positive/n03742019_777.jpg 3 206 143 48 44 337 87 38 33 35 199 51 52
+../../images/samples/positive/n03742019_7779.jpg 1 93 197 83 89
+../../images/samples/positive/n03742019_8048.jpg 1 67 208 148 135
+../../images/samples/positive/n03742019_8181.jpg 1 22 15 456 457
+../../images/samples/positive/n03742019_831.jpg 1 13 4 70 70
+../../images/samples/positive/n03742019_857.jpg 1 6 8 112 111
+../../images/samples/positive/n03742019_890.jpg 1 158 55 355 354
+../../images/samples/positive/n03742019_899.jpg 1 4 3 147 148
+../../images/samples/positive/n03742019_919.jpg 1 150 56 276 279
+../../images/samples/positive/n03742019_924.jpg 1 25 3 100 97
+../../images/samples/positive/n03742019_931.jpg 1 217 137 244 223
+../../images/samples/positive/n03742019_947.jpg 1 35 4 181 251
+../../images/samples/positive/n03742019_959.jpg 1 0 0 274 274
+../../images/samples/positive/n03742019_960.jpg 2 55 137 158 156 113 65 133 129
+../../images/samples/positive/n03742019_979.jpg 1 128 242 79 80
+../../images/samples/positive/n03825442_1036.jpg 1 90 42 29 30
+../../images/samples/positive/n03825442_1462.jpg 3 146 140 43 36 122 128 29 32 159 128 33 17
+../../images/samples/positive/n03825442_1490.jpg 1 90 43 23 23
+../../images/samples/positive/n03825442_200.jpg 1 140 89 16 17
+../../images/samples/positive/n03825442_2315.jpg 1 107 296 38 40
+../../images/samples/positive/n03825442_2370.jpg 3 377 221 106 108 190 239 87 87 282 234 92 97
+../../images/samples/positive/n03825442_2670.jpg 1 260 164 114 116
+../../images/samples/positive/n03825442_2778.jpg 1 116 175 175 173
+../../images/samples/positive/n03825442_3266.jpg 1 317 411 112 129
+../../images/samples/positive/n03825442_3577.jpg 1 168 329 140 142
+../../images/samples/positive/n03825442_358.jpg 2 146 179 88 90 207 147 82 81
+../../images/samples/positive/n03825442_3589.jpg 1 192 332 84 83
+../../images/samples/positive/n03825442_3594.jpg 1 31 111 12 12
+../../images/samples/positive/n03825442_3700.jpg 1 17 50 30 30
+../../images/samples/positive/n03825442_380.jpg 1 68 17 216 237
+../../images/samples/positive/n03825442_3901.jpg 1 166 204 112 113
+../../images/samples/positive/n03825442_3968.jpg 3 28 70 29 29 0 76 27 30 5 64 27 16
+../../images/samples/positive/n03825442_4126.jpg 1 320 140 47 43
+../../images/samples/positive/n03825442_652.jpg 1 219 162 26 26
+../../images/samples/positive/n03825442_770.jpg 1 108 70 51 51
+../../images/samples/positive/n03825442_788.jpg 1 283 176 69 66
+../../images/samples/positive/n03942813_110.jpg 1 108 110 217 215
+../../images/samples/positive/n03942813_1113.jpg 1 71 247 84 84
+../../images/samples/positive/n03942813_1213.jpg 2 93 318 104 104 212 62 28 28
+../../images/samples/positive/n03942813_1283.jpg 2 125 123 129 129 250 88 128 133
+../../images/samples/positive/n03942813_1507.jpg 2 284 162 117 118 166 159 118 122
+../../images/samples/positive/n03942813_1562.jpg 1 254 156 35 35
+../../images/samples/positive/n03942813_1607.jpg 1 89 172 82 59
+../../images/samples/positive/n03942813_1695.jpg 1 125 131 81 85
+../../images/samples/positive/n03942813_1752.jpg 1 206 200 20 25
+../../images/samples/positive/n03942813_1766.jpg 1 305 208 12 16
+../../images/samples/positive/n03942813_18.jpg 1 176 228 139 138
+../../images/samples/positive/n03942813_1814.jpg 1 115 112 12 14
+../../images/samples/positive/n03942813_1827.jpg 1 291 263 27 29
+../../images/samples/positive/n03942813_1842.jpg 1 391 100 44 44
+../../images/samples/positive/n03942813_1889.jpg 1 80 87 63 63
+../../images/samples/positive/n03942813_197.jpg 1 122 271 28 26
+../../images/samples/positive/n03942813_207.jpg 1 430 54 30 29
+../../images/samples/positive/n03942813_2072.jpg 1 197 97 118 120
+../../images/samples/positive/n03942813_2078.jpg 1 301 336 33 32
+../../images/samples/positive/n03942813_2105.jpg 1 150 314 21 18
+../../images/samples/positive/n03942813_2148.jpg 1 160 191 18 17
+../../images/samples/positive/n03942813_2214.jpg 1 113 211 268 261
+../../images/samples/positive/n03942813_2268.jpg 1 408 179 60 54
+../../images/samples/positive/n03942813_2278.jpg 1 266 214 68 65
+../../images/samples/positive/n03942813_2332.jpg 1 165 120 16 14
+../../images/samples/positive/n03942813_242.jpg 1 343 232 42 41
+../../images/samples/positive/n03942813_254.jpg 1 22 49 27 27
+../../images/samples/positive/n03942813_2606.jpg 1 197 151 97 98
+../../images/samples/positive/n03942813_270.jpg 1 246 231 129 128
+../../images/samples/positive/n03942813_2753.jpg 1 189 77 129 129
+../../images/samples/positive/n03942813_2915.jpg 1 111 175 216 211
+../../images/samples/positive/n03942813_2960.jpg 1 255 3 223 201
+../../images/samples/positive/n03942813_299.jpg 1 294 180 19 18
+../../images/samples/positive/n03942813_3380.jpg 1 212 279 17 16
+../../images/samples/positive/n03942813_3383.jpg 1 163 227 30 28
+../../images/samples/positive/n03942813_3427.jpg 3 18 217 99 100 330 214 87 95 260 215 67 91
+../../images/samples/positive/n03942813_3442.jpg 1 104 158 14 17
+../../images/samples/positive/n03942813_3453.jpg 1 256 200 27 28
+../../images/samples/positive/n03942813_3486.jpg 1 220 51 117 117
+../../images/samples/positive/n03942813_3559.jpg 1 175 111 108 103
+../../images/samples/positive/n03942813_3591.jpg 1 221 183 10 11
+../../images/samples/positive/n03942813_3596.jpg 1 162 215 46 40
+../../images/samples/positive/n03942813_3690.jpg 1 204 24 173 174
+../../images/samples/positive/n03942813_3722.jpg 1 48 41 27 27
+../../images/samples/positive/n03942813_3750.jpg 1 268 164 115 118
+../../images/samples/positive/n03942813_3917.jpg 1 76 300 88 91
+../../images/samples/positive/n03942813_3973.jpg 1 132 62 165 166
+../../images/samples/positive/n03942813_4077.jpg 1 314 185 14 10
+../../images/samples/positive/n03942813_4083.jpg 1 219 228 64 66
+../../images/samples/positive/n03942813_4163.jpg 1 97 20 290 291
+../../images/samples/positive/n03942813_4187.jpg 1 272 182 70 66
+../../images/samples/positive/n03942813_4224.jpg 1 159 103 217 218
+../../images/samples/positive/n03942813_4308.jpg 1 123 223 26 23
+../../images/samples/positive/n03942813_4345.jpg 1 203 132 69 70
+../../images/samples/positive/n03942813_4426.jpg 1 57 133 131 130
+../../images/samples/positive/n03942813_4521.jpg 1 60 329 32 33
+../../images/samples/positive/n03942813_4542.jpg 1 412 242 41 29
+../../images/samples/positive/n03942813_4595.jpg 1 110 225 152 118
+../../images/samples/positive/n03942813_4631.jpg 1 243 175 15 16
+../../images/samples/positive/n03942813_486.jpg 1 101 86 207 191
+../../images/samples/positive/n03942813_4894.jpg 1 239 86 13 13
+../../images/samples/positive/n03942813_4993.jpg 1 90 321 16 17
+../../images/samples/positive/n03942813_5020.jpg 1 37 283 89 88
+../../images/samples/positive/n03942813_5084.jpg 1 200 110 105 106
+../../images/samples/positive/n03942813_5132.jpg 1 233 326 37 37
+../../images/samples/positive/n03942813_5173.jpg 1 181 97 19 19
+../../images/samples/positive/n03942813_523.jpg 1 321 265 22 20
+../../images/samples/positive/n03942813_5250.jpg 2 294 212 43 38 158 214 45 44
+../../images/samples/positive/n03942813_5400.jpg 1 323 71 46 48
+../../images/samples/positive/n03942813_541.jpg 1 359 97 22 24
+../../images/samples/positive/n03942813_5441.jpg 1 216 271 18 18
+../../images/samples/positive/n03942813_5469.jpg 1 119 130 18 18
+../../images/samples/positive/n03942813_5481.jpg 1 110 230 62 62
+../../images/samples/positive/n03942813_561.jpg 1 198 158 122 125
+../../images/samples/positive/n03942813_572.jpg 1 191 217 16 18
+../../images/samples/positive/n03942813_5834.jpg 1 118 282 47 44
+../../images/samples/positive/n03942813_5840.jpg 1 375 27 78 80
+../../images/samples/positive/n03942813_5856.jpg 1 247 166 23 24
+../../images/samples/positive/n03942813_5944.jpg 1 299 75 25 23
+../../images/samples/positive/n03942813_5957.jpg 1 128 143 14 15
+../../images/samples/positive/n03942813_6001.jpg 1 83 220 15 17
+../../images/samples/positive/n03942813_6010.jpg 1 162 116 91 89
+../../images/samples/positive/n03942813_6015.jpg 1 230 195 32 32
+../../images/samples/positive/n03942813_6047.jpg 1 102 83 30 29
+../../images/samples/positive/n03942813_6052.jpg 1 232 183 48 44
+../../images/samples/positive/n03942813_606.jpg 1 193 207 132 136
+../../images/samples/positive/n03942813_6062.jpg 1 196 146 90 86
+../../images/samples/positive/n03942813_6094.jpg 3 46 201 38 50 97 275 44 46 106 209 41 46
+../../images/samples/positive/n03942813_6113.jpg 3 142 16 11 12 153 66 17 15 158 95 15 11
+../../images/samples/positive/n03942813_6276.jpg 1 174 199 33 32
+../../images/samples/positive/n03942813_6372.jpg 2 188 240 52 51 119 254 41 36
+../../images/samples/positive/n03942813_6522.jpg 1 48 181 32 26
+../../images/samples/positive/n03942813_6607.jpg 1 0 128 188 207
+../../images/samples/positive/n03942813_6625.jpg 1 53 281 18 19
+../../images/samples/positive/n03942813_6683.jpg 1 231 205 20 17
+../../images/samples/positive/n03942813_6862.jpg 1 248 290 18 20
+../../images/samples/positive/n03942813_6880.jpg 1 453 235 25 27
+../../images/samples/positive/n03942813_6886.jpg 1 147 227 50 43
+../../images/samples/positive/n03942813_7000.jpg 1 49 127 138 129
+../../images/samples/positive/n03942813_7005.jpg 1 319 328 72 39
+../../images/samples/positive/n03942813_7029.jpg 1 271 146 125 120
+../../images/samples/positive/n03942813_7144.jpg 1 147 82 142 144
+../../images/samples/positive/n03942813_7212.jpg 1 166 170 85 82
+../../images/samples/positive/n03942813_7269.jpg 1 319 298 15 15
+../../images/samples/positive/n03942813_7277.jpg 1 225 33 70 72
+../../images/samples/positive/n03942813_7365.jpg 1 123 261 23 29
+../../images/samples/positive/n03942813_7378.jpg 1 159 157 19 19
+../../images/samples/positive/n03942813_7502.jpg 1 147 125 113 112
+../../images/samples/positive/n03942813_7563.jpg 1 354 195 55 53
+../../images/samples/positive/n03942813_762.jpg 1 237 158 93 93
+../../images/samples/positive/n03942813_7812.jpg 1 129 30 52 53
+../../images/samples/positive/n03942813_7896.jpg 1 228 179 26 27
+../../images/samples/positive/n03942813_7910.jpg 1 287 298 78 70
+../../images/samples/positive/n03942813_7989.jpg 1 220 231 58 60
+../../images/samples/positive/n03942813_7992.jpg 1 17 220 9 12
+../../images/samples/positive/n03942813_8077.jpg 1 190 71 77 78
+../../images/samples/positive/n03942813_8086.jpg 1 309 170 12 11
+../../images/samples/positive/n03942813_8116.jpg 1 361 311 29 28
+../../images/samples/positive/n03942813_8131.jpg 1 183 243 13 18
+../../images/samples/positive/n03942813_82.jpg 1 231 97 71 61
+../../images/samples/positive/n03942813_8206.jpg 1 138 331 34 32
+../../images/samples/positive/n03942813_8217.jpg 1 47 214 19 23
+../../images/samples/positive/n03942813_8238.jpg 1 136 77 32 31
+../../images/samples/positive/n03942813_8252.jpg 1 208 194 11 10
+../../images/samples/positive/n03942813_8258.jpg 1 197 345 42 42
+../../images/samples/positive/n03942813_8402.jpg 1 238 258 45 39
+../../images/samples/positive/n03942813_8404.jpg 1 110 396 31 30
+../../images/samples/positive/n03942813_8405.jpg 1 38 17 12 14
+../../images/samples/positive/n03942813_8407.jpg 1 165 149 11 18
+../../images/samples/positive/n03942813_8421.jpg 1 246 203 10 12
+../../images/samples/positive/n03942813_8442.jpg 1 111 301 61 60
+../../images/samples/positive/n03942813_8477.jpg 1 251 238 34 20
+../../images/samples/positive/n03942813_8486.jpg 1 147 194 90 90
+../../images/samples/positive/n03942813_8526.jpg 1 182 120 13 14
+../../images/samples/positive/n03942813_8535.jpg 1 221 143 25 29
+../../images/samples/positive/n03942813_8549.jpg 1 214 154 12 8
+../../images/samples/positive/n03942813_8572.jpg 1 270 202 18 19
+../../images/samples/positive/n03942813_8587.jpg 1 219 84 25 26
+../../images/samples/positive/n03942813_8616.jpg 1 264 24 23 29
+../../images/samples/positive/n03942813_8617.jpg 1 86 286 24 24
+../../images/samples/positive/n03942813_8650.jpg 1 231 213 22 25
+../../images/samples/positive/n03942813_8651.jpg 1 286 198 13 13
+../../images/samples/positive/n03942813_8657.jpg 1 70 112 225 225
+../../images/samples/positive/n03942813_8674.jpg 1 245 163 31 32
+../../images/samples/positive/n03942813_8696.jpg 1 153 447 25 26
+../../images/samples/positive/n03942813_8767.jpg 1 322 147 16 16
+../../images/samples/positive/n03942813_8782.jpg 1 319 149 11 11
+../../images/samples/positive/n03942813_8823.jpg 1 158 233 29 30
+../../images/samples/positive/n03942813_8835.jpg 1 285 172 15 12
+../../images/samples/positive/n03942813_8892.jpg 1 83 159 28 27
+../../images/samples/positive/n03942813_8908.jpg 1 253 234 18 18
+../../images/samples/positive/n03942813_8914.jpg 1 205 87 164 162
+../../images/samples/positive/n03942813_8936.jpg 2 287 191 16 12 374 184 5 7
+../../images/samples/positive/n03942813_8941.jpg 1 433 83 20 21
+../../images/samples/positive/n03942813_8990.jpg 1 270 170 11 14
+../../images/samples/positive/n03942813_9002.jpg 1 211 227 25 30
+../../images/samples/positive/n03942813_9017.jpg 1 236 207 19 16
+../../images/samples/positive/n03942813_9026.jpg 1 383 172 41 23
+../../images/samples/positive/n03942813_9028.jpg 1 151 34 18 21
+../../images/samples/positive/n03942813_9060.jpg 1 293 103 14 14
+../../images/samples/positive/n03942813_9073.jpg 1 247 212 16 16
+../../images/samples/positive/n03942813_9083.jpg 1 282 110 52 41
+../../images/samples/positive/n03942813_9091.jpg 1 285 285 55 70
+../../images/samples/positive/n03942813_9098.jpg 1 271 213 30 37
+../../images/samples/positive/n03942813_9114.jpg 1 192 357 22 19
+../../images/samples/positive/n03942813_9124.jpg 1 76 112 23 24
+../../images/samples/positive/n03942813_9146.jpg 1 297 105 107 106
+../../images/samples/positive/n03942813_9150.jpg 1 93 255 12 12
+../../images/samples/positive/n03942813_9157.jpg 1 183 168 24 25
+../../images/samples/positive/n03942813_9168.jpg 1 189 190 5 5
+../../images/samples/positive/n03942813_9178.jpg 1 221 301 35 35
+../../images/samples/positive/n03942813_9195.jpg 1 286 154 71 73
+../../images/samples/positive/n03942813_9234.jpg 2 223 99 22 23 297 214 12 16
+../../images/samples/positive/n03942813_9254.jpg 1 105 235 9 11
+../../images/samples/positive/n03942813_9260.jpg 1 15 325 40 37
+../../images/samples/positive/n03942813_9296.jpg 1 160 57 12 18
+../../images/samples/positive/n03942813_9297.jpg 1 131 133 208 203
+../../images/samples/positive/n03942813_9306.jpg 1 199 219 9 11
+../../images/samples/positive/n03942813_9332.jpg 1 106 404 32 34
+../../images/samples/positive/n03942813_9361.jpg 1 242 229 16 16
+../../images/samples/positive/n03942813_9435.jpg 1 208 255 21 24
+../../images/samples/positive/n03942813_9460.jpg 1 207 86 17 18
+../../images/samples/positive/n03942813_9508.jpg 1 226 238 18 19
+../../images/samples/positive/n03942813_9567.jpg 1 215 218 31 33
+../../images/samples/positive/n03942813_9618.jpg 1 9 222 16 15
+../../images/samples/positive/n03942813_9641.jpg 1 88 192 81 81
+../../images/samples/positive/n03942813_9659.jpg 1 115 211 16 16
+../../images/samples/positive/n03942813_9699.jpg 1 50 202 15 20
+../../images/samples/positive/n03942813_9700.jpg 1 79 146 20 19
+../../images/samples/positive/n03942813_9705.jpg 1 242 221 10 16
+../../images/samples/positive/n03942813_9706.jpg 1 292 200 6 11
+../../images/samples/positive/n03942813_9718.jpg 1 174 187 11 17
+../../images/samples/positive/n03942813_9719.jpg 1 364 158 11 17
+../../images/samples/positive/n03942813_9785.jpg 1 345 154 8 9
+../../images/samples/positive/n03942813_9799.jpg 1 12 191 17 15
+../../images/samples/positive/n03942813_9802.jpg 1 300 201 18 18
+../../images/samples/positive/n03942813_9818.jpg 1 127 265 11 13
+../../images/samples/positive/n03942813_9840.jpg 1 174 149 13 14
+../../images/samples/positive/n03942813_9853.jpg 1 333 138 16 15
+../../images/samples/positive/n03942813_9891.jpg 1 238 207 13 16
+../../images/samples/positive/n03942813_9940.jpg 1 134 258 141 145
+../../images/samples/positive/n03982232_1103.jpg 2 256 149 72 75 191 164 20 20
+../../images/samples/positive/n03982232_12.jpg 1 122 44 230 230
+../../images/samples/positive/n03982232_1234.jpg 2 236 256 53 51 276 190 25 24
+../../images/samples/positive/n03982232_1266.jpg 3 114 185 40 44 449 189 35 32 0 202 22 83
+../../images/samples/positive/n03982232_1310.jpg 2 82 198 79 84 51 270 80 60
+../../images/samples/positive/n03982232_13288.jpg 1 35 97 159 161
+../../images/samples/positive/n03982232_1348.jpg 3 7 1 282 239 232 124 266 249 25 225 231 149
+../../images/samples/positive/n03982232_13721.jpg 3 274 191 119 125 322 119 7 8 361 118 9 10
+../../images/samples/positive/n03982232_1398.jpg 2 124 87 187 191 357 178 26 30
+../../images/samples/positive/n03982232_1513.jpg 2 177 303 54 56 335 258 43 46
+../../images/samples/positive/n03982232_1531.jpg 1 25 35 418 339
+../../images/samples/positive/n03982232_15888.jpg 3 146 111 135 133 0 129 172 230 129 95 46 48
+../../images/samples/positive/n03982232_16210.jpg 2 84 203 12 14 50 253 31 27
+../../images/samples/positive/n03982232_174.jpg 4 125 426 31 37 103 462 38 34 176 386 29 21 82 440 38 40
+../../images/samples/positive/n03982232_1932.jpg 2 207 122 158 158 48 122 155 157
+../../images/samples/positive/n03982232_1935.jpg 2 328 235 40 43 265 227 35 24
+../../images/samples/positive/n03982232_1937.jpg 3 71 327 97 100 232 36 70 69 168 51 68 70
+../../images/samples/positive/n03982232_2017.jpg 2 332 175 124 123 216 132 70 72
+../../images/samples/positive/n03982232_2102.jpg 1 262 34 233 235
+../../images/samples/positive/n03982232_212.jpg 1 193 198 114 113
+../../images/samples/positive/n03982232_216.jpg 1 56 44 221 222
+../../images/samples/positive/n03982232_2179.jpg 6 72 222 206 209 128 47 67 65 251 25 40 50 180 42 45 63 71 33 54 65 30 25 35 46
+../../images/samples/positive/n03982232_2308.jpg 1 17 49 266 274
+../../images/samples/positive/n03982232_2342.jpg 1 167 100 149 142
+../../images/samples/positive/n03982232_2370.jpg 1 266 101 194 182
+../../images/samples/positive/n03982232_2451.jpg 1 82 369 107 101
+../../images/samples/positive/n03982232_2474.jpg 1 179 23 320 351
+../../images/samples/positive/n03982232_2502.jpg 2 265 310 36 32 299 304 30 33
+../../images/samples/positive/n03982232_2554.jpg 1 53 102 185 184
+../../images/samples/positive/n03982232_2666.jpg 8 230 269 33 33 306 194 17 18 221 154 14 14 106 178 20 21 78 196 24 22 67 174 18 18 339 186 19 17 262 160 14 10
+../../images/samples/positive/n03982232_2863.jpg 1 160 77 116 111
+../../images/samples/positive/n03982232_2869.jpg 1 144 135 124 137
+../../images/samples/positive/n03982232_2934.jpg 1 186 203 108 111
+../../images/samples/positive/n03982232_2945.jpg 4 229 186 87 88 189 179 58 70 71 184 75 74 302 180 61 63
+../../images/samples/positive/n03982232_3066.jpg 2 118 149 78 80 412 76 42 46
+../../images/samples/positive/n03982232_3088.jpg 1 10 11 488 486
+../../images/samples/positive/n03982232_3233.jpg 2 195 125 160 159 10 100 56 59
+../../images/samples/positive/n03982232_336.jpg 1 84 4 231 231
+../../images/samples/positive/n03982232_3373.jpg 1 164 63 224 226
+../../images/samples/positive/n03982232_3394.jpg 1 121 111 124 125
+../../images/samples/positive/n03982232_3398.jpg 1 205 215 49 45
+../../images/samples/positive/n03982232_3501.jpg 1 234 73 106 102
+../../images/samples/positive/n03982232_3513.jpg 1 197 170 300 328
+../../images/samples/positive/n03982232_3670.jpg 1 259 15 240 301
+../../images/samples/positive/n03982232_368.jpg 2 192 189 87 88 300 145 39 39
+../../images/samples/positive/n03982232_3827.jpg 1 165 217 99 98
+../../images/samples/positive/n03982232_4150.jpg 2 88 58 178 170 89 57 175 167
+../../images/samples/positive/n03982232_4423.jpg 1 272 191 126 126
+../../images/samples/positive/n03982232_4525.jpg 5 182 104 154 159 335 107 163 172 6 90 97 130 183 103 149 157 90 102 107 128
+../../images/samples/positive/n03982232_4662.jpg 2 236 151 117 117 125 128 25 29
+../../images/samples/positive/n03982232_4684.jpg 2 117 384 49 53 68 420 75 76
+../../images/samples/positive/n03982232_4708.jpg 6 131 145 87 89 286 150 69 77 212 150 77 82 345 150 62 77 393 156 59 64 397 156 58 66
+../../images/samples/positive/n03982232_4984.jpg 1 384 136 115 114
+../../images/samples/positive/n03982232_5077.jpg 1 28 96 179 178
+../../images/samples/positive/n03982232_51.jpg 1 147 349 92 93
+../../images/samples/positive/n03982232_5246.jpg 3 36 187 121 123 360 183 50 41 336 209 30 23
+../../images/samples/positive/n03982232_5287.jpg 2 120 305 80 81 98 262 59 56
+../../images/samples/positive/n03982232_5352.jpg 1 0 87 199 374
+../../images/samples/positive/n03982232_5431.jpg 2 245 44 70 71 0 48 93 102
+../../images/samples/positive/n03982232_544.jpg 2 204 158 150 151 212 24 91 101
+../../images/samples/positive/n03982232_5492.jpg 1 68 204 25 28
+../../images/samples/positive/n03982232_617.jpg 5 227 326 34 37 260 322 36 38 197 317 30 34 230 237 25 26 214 393 57 37
+../../images/samples/positive/n03982232_6234.jpg 1 65 147 106 107
+../../images/samples/positive/n03982232_6273.jpg 2 225 101 150 149 39 86 147 147
+../../images/samples/positive/n03982232_6301.jpg 1 105 333 116 123
+../../images/samples/positive/n03982232_6335.jpg 1 0 0 340 331
+../../images/samples/positive/n03982232_6350.jpg 5 135 408 36 37 63 414 37 39 12 433 38 27 92 409 36 39 284 440 36 22
+../../images/samples/positive/n03982232_6488.jpg 2 43 71 79 85 40 164 77 77
+../../images/samples/positive/n03982232_6595.jpg 1 197 215 105 107
+../../images/samples/positive/n03982232_6821.jpg 1 163 72 181 180
+../../images/samples/positive/n03982232_684.jpg 2 179 207 77 76 237 185 20 18
+../../images/samples/positive/n03982232_7017.jpg 3 170 85 203 278 161 0 140 116 1 25 172 276
+../../images/samples/positive/n03982232_7205.jpg 1 236 72 165 165
+../../images/samples/positive/n03982232_723.jpg 1 191 127 121 122
+../../images/samples/positive/n03982232_7255.jpg 1 65 231 166 162
+../../images/samples/positive/n03982232_729.jpg 2 7 6 221 232 394 65 88 88
+../../images/samples/positive/n03982232_73.jpg 1 360 373 58 63
+../../images/samples/positive/n03982232_7314.jpg 2 314 136 139 138 115 17 56 70
+../../images/samples/positive/n03982232_7357.jpg 2 378 276 42 41 282 287 8 8
+../../images/samples/positive/n03982232_7399.jpg 1 71 211 48 48
+../../images/samples/positive/n03982232_7452.jpg 1 68 65 173 171
+../../images/samples/positive/n03982232_7492.jpg 2 51 190 34 32 88 188 27 30
+../../images/samples/positive/n03982232_750.jpg 1 168 50 219 213
+../../images/samples/positive/n03982232_751.jpg 2 286 230 25 28 203 269 42 45
+../../images/samples/positive/n03982232_7516.jpg 3 151 284 175 173 172 52 152 144 12 181 158 157
+../../images/samples/positive/n03982232_7564.jpg 7 263 224 84 85 347 167 15 15 87 173 25 21 0 196 39 57 137 166 17 17 136 166 21 22 243 164 16 15
+../../images/samples/positive/n03982232_7601.jpg 1 80 207 151 149
+../../images/samples/positive/n03982232_764.jpg 1 42 79 231 235
+../../images/samples/positive/n03982232_7736.jpg 1 63 119 189 191
+../../images/samples/positive/n03982232_7738.jpg 1 182 142 83 70
+../../images/samples/positive/n03982232_7766.jpg 2 79 2 188 137 74 0 193 148
+../../images/samples/positive/n03982232_78.jpg 1 114 112 163 160
+../../images/samples/positive/n03982232_7906.jpg 1 177 29 152 158
+../../images/samples/positive/n03982232_7949.jpg 1 23 198 250 253
+../../images/samples/positive/n03982232_7976.jpg 2 200 67 114 118 283 0 64 24
+../../images/samples/positive/n03982232_7995.jpg 2 146 193 108 99 162 97 103 97
+../../images/samples/positive/n03982232_8017.jpg 1 74 37 229 226
+../../images/samples/positive/n03982232_8042.jpg 4 53 127 23 28 160 63 13 17 158 60 17 21 221 23 19 14
+../../images/samples/positive/n03982232_8173.jpg 2 381 260 36 35 27 10 250 247
+../../images/samples/positive/n03982232_8206.jpg 1 65 85 268 188
+../../images/samples/positive/n03982232_8331.jpg 2 181 13 34 34 268 36 105 113
+../../images/samples/positive/n03982232_8411.jpg 1 94 79 140 144
+../../images/samples/positive/n03982232_8451.jpg 2 239 159 31 34 337 179 36 21
+../../images/samples/positive/n03982232_8502.jpg 1 71 143 71 69
+../../images/samples/positive/n03982232_8612.jpg 2 233 36 157 157 78 36 159 154
+../../images/samples/positive/n03982232_889.jpg 2 217 395 31 28 112 394 29 32
+../../images/samples/positive/n03982232_9.jpg 1 40 301 30 29
+../../images/samples/positive/n03982232_9329.jpg 1 185 137 123 123
+../../images/samples/positive/n04409515_10015.jpg 1 320 193 21 21
+../../images/samples/positive/n04409515_10050.jpg 5 55 22 100 103 153 41 93 95 231 206 35 34 97 92 70 56 240 175 32 28
+../../images/samples/positive/n04409515_10592.jpg 1 176 101 128 128
+../../images/samples/positive/n04409515_1060.jpg 1 216 132 60 60
+../../images/samples/positive/n04409515_1064.jpg 1 83 95 133 132
+../../images/samples/positive/n04409515_10723.jpg 1 188 93 129 129
+../../images/samples/positive/n04409515_10788.jpg 1 111 58 233 222
+../../images/samples/positive/n04409515_10792.jpg 1 138 248 119 123
+../../images/samples/positive/n04409515_10858.jpg 1 150 80 161 136
+../../images/samples/positive/n04409515_10950.jpg 1 82 0 363 332
+../../images/samples/positive/n04409515_11034.jpg 1 1 1 497 497
+../../images/samples/positive/n04409515_11072.jpg 1 72 314 142 144
+../../images/samples/positive/n04409515_11129.jpg 1 172 122 121 122
+../../images/samples/positive/n04409515_1169.jpg 1 230 451 43 41
+../../images/samples/positive/n04409515_11788.jpg 1 272 212 93 90
+../../images/samples/positive/n04409515_1208.jpg 1 275 84 134 126
+../../images/samples/positive/n04409515_1209.jpg 1 197 75 155 156
+../../images/samples/positive/n04409515_1231.jpg 1 45 357 123 120
+../../images/samples/positive/n04409515_1259.jpg 1 79 151 187 181
+../../images/samples/positive/n04409515_13461.jpg 1 262 199 97 98
+../../images/samples/positive/n04409515_1359.jpg 1 232 61 198 197
+../../images/samples/positive/n04409515_1387.jpg 1 192 365 112 115
+../../images/samples/positive/n04409515_1418.jpg 1 157 107 118 106
+../../images/samples/positive/n04409515_14519.jpg 1 0 19 499 313
+../../images/samples/positive/n04409515_14609.jpg 1 103 81 180 175
+../../images/samples/positive/n04409515_1471.jpg 1 363 162 126 130
+../../images/samples/positive/n04409515_1496.jpg 1 311 47 180 184
+../../images/samples/positive/n04409515_15168.jpg 1 30 33 38 36
+../../images/samples/positive/n04409515_1557.jpg 3 121 173 131 124 246 117 127 124 337 69 123 125
+../../images/samples/positive/n04409515_1608.jpg 1 84 156 118 115
+../../images/samples/positive/n04409515_1618.jpg 2 367 255 27 24 149 182 15 8
+../../images/samples/positive/n04409515_1628.jpg 1 425 188 12 11
+../../images/samples/positive/n04409515_16386.jpg 1 158 314 60 50
+../../images/samples/positive/n04409515_1648.jpg 1 61 32 17 14
+../../images/samples/positive/n04409515_16533.jpg 1 100 0 288 271
+../../images/samples/positive/n04409515_16700.jpg 1 238 52 114 115
+../../images/samples/positive/n04409515_1677.jpg 1 263 187 42 31
+../../images/samples/positive/n04409515_1685.jpg 1 207 85 33 33
+../../images/samples/positive/n04409515_1694.jpg 1 127 64 236 234
+../../images/samples/positive/n04409515_176.jpg 1 132 93 223 217
+../../images/samples/positive/n04409515_1767.jpg 3 133 12 234 235 4 237 242 250 262 243 234 240
+../../images/samples/positive/n04409515_17709.jpg 1 161 185 307 308
+../../images/samples/positive/n04409515_17902.jpg 1 95 312 131 129
+../../images/samples/positive/n04409515_1794.jpg 1 190 235 127 99
+../../images/samples/positive/n04409515_1810.jpg 1 187 128 108 105
+../../images/samples/positive/n04409515_18144.jpg 1 126 145 160 163
+../../images/samples/positive/n04409515_18187.jpg 1 78 241 40 36
+../../images/samples/positive/n04409515_1825.jpg 1 90 33 288 298
+../../images/samples/positive/n04409515_18257.jpg 1 258 58 171 168
+../../images/samples/positive/n04409515_1827.jpg 1 122 236 19 14
+../../images/samples/positive/n04409515_1835.jpg 1 47 216 93 92
+../../images/samples/positive/n04409515_1836.jpg 1 391 178 16 13
+../../images/samples/positive/n04409515_1852.jpg 1 242 235 43 20
+../../images/samples/positive/n04409515_18727.jpg 1 444 244 28 31
+../../images/samples/positive/n04409515_18806.jpg 1 369 248 32 32
+../../images/samples/positive/n04409515_18867.jpg 1 110 159 138 127
+../../images/samples/positive/n04409515_18913.jpg 2 251 64 197 193 50 0 83 74
+../../images/samples/positive/n04409515_18972.jpg 1 63 46 175 174
+../../images/samples/positive/n04409515_19036.jpg 1 46 217 126 129
+../../images/samples/positive/n04409515_19135.jpg 1 95 165 24 27
+../../images/samples/positive/n04409515_19163.jpg 1 117 176 95 92
+../../images/samples/positive/n04409515_19199.jpg 1 298 146 27 26
+../../images/samples/positive/n04409515_19393.jpg 1 78 308 24 23
+../../images/samples/positive/n04409515_19407.jpg 1 120 73 21 18
+../../images/samples/positive/n04409515_19515.jpg 1 28 77 32 29
+../../images/samples/positive/n04409515_19549.jpg 1 371 169 120 119
+../../images/samples/positive/n04409515_1963.jpg 1 103 283 139 132
+../../images/samples/positive/n04409515_1965.jpg 2 238 188 125 87 346 104 79 63
+../../images/samples/positive/n04409515_19685.jpg 1 140 365 43 42
+../../images/samples/positive/n04409515_1974.jpg 1 77 219 53 41
+../../images/samples/positive/n04409515_1975.jpg 1 196 113 111 108
+../../images/samples/positive/n04409515_19757.jpg 1 296 243 47 48
+../../images/samples/positive/n04409515_19816.jpg 1 306 82 138 137
+../../images/samples/positive/n04409515_19845.jpg 1 373 281 120 92
+../../images/samples/positive/n04409515_2006.jpg 1 32 93 340 360
+../../images/samples/positive/n04409515_2017.jpg 1 201 217 89 92
+../../images/samples/positive/n04409515_20291.jpg 1 193 34 173 174
+../../images/samples/positive/n04409515_2033.jpg 1 43 30 288 301
+../../images/samples/positive/n04409515_2052.jpg 1 119 162 27 28
+../../images/samples/positive/n04409515_2083.jpg 1 233 275 88 50
+../../images/samples/positive/n04409515_20912.jpg 1 361 0 133 106
+../../images/samples/positive/n04409515_2103.jpg 1 52 58 219 212
+../../images/samples/positive/n04409515_2110.jpg 1 95 275 67 66
+../../images/samples/positive/n04409515_21120.jpg 1 160 275 52 57
+../../images/samples/positive/n04409515_21452.jpg 1 63 238 220 224
+../../images/samples/positive/n04409515_2155.jpg 1 50 52 400 396
+../../images/samples/positive/n04409515_2166.jpg 1 62 219 28 31
+../../images/samples/positive/n04409515_21736.jpg 1 63 225 82 80
+../../images/samples/positive/n04409515_21756.jpg 1 304 250 19 20
+../../images/samples/positive/n04409515_2185.jpg 1 42 34 91 91
+../../images/samples/positive/n04409515_2199.jpg 1 154 276 68 63
+../../images/samples/positive/n04409515_2200.jpg 3 230 183 58 52 175 194 51 31 280 157 23 39
+../../images/samples/positive/n04409515_2201.jpg 1 262 160 137 127
+../../images/samples/positive/n04409515_22019.jpg 1 319 185 122 107
+../../images/samples/positive/n04409515_22067.jpg 1 296 109 136 133
+../../images/samples/positive/n04409515_22158.jpg 1 52 100 103 102
+../../images/samples/positive/n04409515_22217.jpg 3 308 26 133 132 183 54 139 137 52 19 134 132
+../../images/samples/positive/n04409515_22225.jpg 1 48 22 338 321
+../../images/samples/positive/n04409515_2233.jpg 1 57 368 25 24
+../../images/samples/positive/n04409515_2237.jpg 1 87 322 18 18
+../../images/samples/positive/n04409515_2256.jpg 1 110 199 124 110
+../../images/samples/positive/n04409515_2262.jpg 1 90 148 117 88
+../../images/samples/positive/n04409515_2263.jpg 1 88 73 86 85
+../../images/samples/positive/n04409515_2265.jpg 1 28 147 152 132
+../../images/samples/positive/n04409515_2270.jpg 1 52 210 228 222
+../../images/samples/positive/n04409515_2298.jpg 1 241 107 40 89
+../../images/samples/positive/n04409515_2303.jpg 1 239 189 82 82
+../../images/samples/positive/n04409515_2323.jpg 1 96 16 273 273
+../../images/samples/positive/n04409515_2338.jpg 1 92 35 285 285
+../../images/samples/positive/n04409515_2397.jpg 1 281 385 51 30
+../../images/samples/positive/n04409515_2405.jpg 5 32 124 111 107 237 158 37 35 376 152 44 46 343 159 30 31 148 152 49 47
+../../images/samples/positive/n04409515_2466.jpg 1 45 361 67 67
+../../images/samples/positive/n04409515_2504.jpg 1 157 295 93 95
+../../images/samples/positive/n04409515_252.jpg 1 15 0 436 376
+../../images/samples/positive/n04409515_2560.jpg 1 219 192 21 22
+../../images/samples/positive/n04409515_2604.jpg 1 87 255 111 116
+../../images/samples/positive/n04409515_2622.jpg 1 34 0 439 340
+../../images/samples/positive/n04409515_2641.jpg 2 117 151 142 137 284 126 60 63
+../../images/samples/positive/n04409515_2648.jpg 1 152 54 347 320
+../../images/samples/positive/n04409515_2667.jpg 1 214 113 48 42
+../../images/samples/positive/n04409515_2684.jpg 1 236 130 45 28
+../../images/samples/positive/n04409515_2687.jpg 1 25 43 101 85
+../../images/samples/positive/n04409515_2695.jpg 1 101 32 12 9
+../../images/samples/positive/n04409515_2718.jpg 1 5 2 493 495
+../../images/samples/positive/n04409515_2731.jpg 1 161 344 14 12
+../../images/samples/positive/n04409515_2734.jpg 1 193 176 24 11
+../../images/samples/positive/n04409515_2744.jpg 1 398 202 41 27
+../../images/samples/positive/n04409515_2780.jpg 1 272 196 23 19
+../../images/samples/positive/n04409515_2781.jpg 1 251 229 11 11
+../../images/samples/positive/n04409515_2808.jpg 1 177 193 42 43
+../../images/samples/positive/n04409515_2809.jpg 1 336 200 38 32
+../../images/samples/positive/n04409515_2836.jpg 1 222 77 130 165
+../../images/samples/positive/n04409515_2838.jpg 1 288 152 11 11
+../../images/samples/positive/n04409515_2898.jpg 1 32 147 19 17
+../../images/samples/positive/n04409515_3049.jpg 1 120 375 119 115
+../../images/samples/positive/n04409515_3122.jpg 1 119 52 291 292
+../../images/samples/positive/n04409515_3221.jpg 1 161 116 113 113
+../../images/samples/positive/n04409515_3253.jpg 1 79 55 202 204
+../../images/samples/positive/n04409515_3255.jpg 1 70 132 212 214
+../../images/samples/positive/n04409515_3278.jpg 1 271 122 213 209
+../../images/samples/positive/n04409515_3304.jpg 1 391 153 108 170
+../../images/samples/positive/n04409515_3318.jpg 1 147 32 305 306
+../../images/samples/positive/n04409515_3426.jpg 1 82 26 253 250
+../../images/samples/positive/n04409515_3628.jpg 1 162 86 189 177
+../../images/samples/positive/n04409515_3682.jpg 1 105 268 114 114
+../../images/samples/positive/n04409515_3770.jpg 1 80 397 76 79
+../../images/samples/positive/n04409515_3798.jpg 1 128 117 134 133
+../../images/samples/positive/n04409515_380.jpg 1 214 20 228 224
+../../images/samples/positive/n04409515_3923.jpg 1 106 33 142 145
+../../images/samples/positive/n04409515_408.jpg 1 88 423 63 69
+../../images/samples/positive/n04409515_4129.jpg 1 127 123 174 149
+../../images/samples/positive/n04409515_4223.jpg 1 18 133 117 116
+../../images/samples/positive/n04409515_4400.jpg 1 99 130 72 63
+../../images/samples/positive/n04409515_4453.jpg 1 20 142 262 270
+../../images/samples/positive/n04409515_446.jpg 1 150 80 132 132
+../../images/samples/positive/n04409515_4570.jpg 1 20 25 294 290
+../../images/samples/positive/n04409515_4933.jpg 2 191 145 60 61 60 17 55 58
+../../images/samples/positive/n04409515_5030.jpg 1 41 137 206 190
+../../images/samples/positive/n04409515_5112.jpg 1 58 70 363 362
+../../images/samples/positive/n04409515_5200.jpg 1 186 177 102 82
+../../images/samples/positive/n04409515_5225.jpg 2 67 363 53 52 156 111 45 46
+../../images/samples/positive/n04409515_5244.jpg 1 36 12 190 195
+../../images/samples/positive/n04409515_5459.jpg 1 223 155 118 103
+../../images/samples/positive/n04409515_5609.jpg 1 179 45 192 190
+../../images/samples/positive/n04409515_5631.jpg 1 386 136 89 90
+../../images/samples/positive/n04409515_5646.jpg 3 183 27 209 208 243 198 215 187 36 170 213 201
+../../images/samples/positive/n04409515_5666.jpg 1 191 61 228 224
+../../images/samples/positive/n04409515_5675.jpg 1 79 83 167 156
+../../images/samples/positive/n04409515_5677.jpg 1 323 302 19 21
+../../images/samples/positive/n04409515_5756.jpg 1 263 97 29 30
+../../images/samples/positive/n04409515_5761.jpg 1 42 73 76 63
+../../images/samples/positive/n04409515_5797.jpg 1 203 138 241 236
+../../images/samples/positive/n04409515_5816.jpg 1 166 305 90 90
+../../images/samples/positive/n04409515_5848.jpg 1 123 177 175 173
+../../images/samples/positive/n04409515_5872.jpg 1 187 143 113 117
+../../images/samples/positive/n04409515_5899.jpg 1 121 75 263 255
+../../images/samples/positive/n04409515_5974.jpg 1 164 31 57 59
+../../images/samples/positive/n04409515_60.jpg 2 239 122 203 185 93 35 139 114
+../../images/samples/positive/n04409515_6009.jpg 1 325 263 97 101
+../../images/samples/positive/n04409515_6035.jpg 1 196 243 41 43
+../../images/samples/positive/n04409515_6090.jpg 1 331 127 243 241
+../../images/samples/positive/n04409515_6097.jpg 1 73 173 192 138
+../../images/samples/positive/n04409515_6112.jpg 1 181 109 91 93
+../../images/samples/positive/n04409515_6116.jpg 1 91 355 66 67
+../../images/samples/positive/n04409515_6130.jpg 1 252 172 129 129
+../../images/samples/positive/n04409515_6187.jpg 1 63 47 323 301
+../../images/samples/positive/n04409515_6192.jpg 1 130 24 102 102
+../../images/samples/positive/n04409515_6209.jpg 1 192 262 19 13
+../../images/samples/positive/n04409515_6246.jpg 1 273 100 100 100
+../../images/samples/positive/n04409515_6262.jpg 1 198 111 87 85
+../../images/samples/positive/n04409515_6296.jpg 1 135 55 220 219
+../../images/samples/positive/n04409515_6304.jpg 1 39 41 137 137
+../../images/samples/positive/n04409515_6348.jpg 1 141 91 222 222
+../../images/samples/positive/n04409515_6366.jpg 1 37 39 180 183
+../../images/samples/positive/n04409515_6395.jpg 1 287 126 116 118
+../../images/samples/positive/n04409515_6461.jpg 1 142 238 82 72
+../../images/samples/positive/n04409515_6510.jpg 1 129 48 212 205
+../../images/samples/positive/n04409515_6545.jpg 1 367 216 87 82
+../../images/samples/positive/n04409515_657.jpg 1 285 106 27 31
+../../images/samples/positive/n04409515_6578.jpg 1 0 17 499 315
+../../images/samples/positive/n04409515_6723.jpg 1 152 289 127 131
+../../images/samples/positive/n04409515_6750.jpg 1 80 96 228 224
+../../images/samples/positive/n04409515_6804.jpg 1 40 95 188 185
+../../images/samples/positive/n04409515_6823.jpg 1 310 140 126 127
+../../images/samples/positive/n04409515_6906.jpg 1 205 116 76 79
+../../images/samples/positive/n04409515_7151.jpg 1 0 18 329 480
+../../images/samples/positive/n04409515_7250.jpg 1 29 36 258 252
+../../images/samples/positive/n04409515_7268.jpg 1 281 98 78 76
+../../images/samples/positive/n04409515_737.jpg 1 147 74 185 151
+../../images/samples/positive/n04409515_7370.jpg 1 180 125 134 138
+../../images/samples/positive/n04409515_7387.jpg 1 162 176 67 50
+../../images/samples/positive/n04409515_7476.jpg 1 1 93 301 271
+../../images/samples/positive/n04409515_7570.jpg 1 37 127 138 135
+../../images/samples/positive/n04409515_7711.jpg 1 164 50 277 274
+../../images/samples/positive/n04409515_7803.jpg 1 13 81 275 268
+../../images/samples/positive/n04409515_7843.jpg 2 360 165 44 45 295 183 47 48
+../../images/samples/positive/n04409515_817.jpg 1 72 333 195 164
+../../images/samples/positive/n04409515_8225.jpg 1 8 6 344 337
+../../images/samples/positive/n04409515_8327.jpg 1 132 139 177 164
+../../images/samples/positive/n04409515_8558.jpg 2 174 134 37 34 29 93 32 16
+../../images/samples/positive/n04409515_8740.jpg 1 208 238 78 75
+../../images/samples/positive/n04409515_8856.jpg 1 198 131 73 74
+../../images/samples/positive/n04409515_887.jpg 1 67 7 219 218
+../../images/samples/positive/n04409515_8933.jpg 1 133 364 96 102
+../../images/samples/positive/n04409515_8949.jpg 1 201 87 160 162
+../../images/samples/positive/n04409515_932.jpg 3 251 213 100 94 433 170 37 38 162 219 66 55
+../../images/samples/positive/n04409515_9474.jpg 2 273 119 39 39 234 124 37 34
+../../images/samples/positive/n04409515_9506.jpg 1 216 123 97 95
+../../images/samples/positive/n04409515_9709.jpg 1 149 117 194 195
+../../images/samples/positive/n04409515_9917.jpg 1 127 286 110 115
+../../images/samples/positive/n04540053_10049.jpg 1 241 146 56 54
+../../images/samples/positive/n04540053_10074.jpg 1 71 21 51 52
+../../images/samples/positive/n04540053_10162.jpg 1 91 80 27 27
+../../images/samples/positive/n04540053_10166.jpg 1 45 7 36 43
+../../images/samples/positive/n04540053_10222.jpg 1 148 141 30 26
+../../images/samples/positive/n04540053_10328.jpg 1 176 195 46 47
+../../images/samples/positive/n04540053_10548.jpg 1 202 27 28 30
+../../images/samples/positive/n04540053_10609.jpg 1 262 43 16 17
+../../images/samples/positive/n04540053_10701.jpg 1 188 36 32 34
+../../images/samples/positive/n04540053_1076.jpg 1 254 134 34 35
+../../images/samples/positive/n04540053_10810.jpg 1 18 3 54 55
+../../images/samples/positive/n04540053_10811.jpg 1 271 11 52 54
+../../images/samples/positive/n04540053_1085.jpg 1 195 43 23 24
+../../images/samples/positive/n04540053_10885.jpg 1 185 133 30 35
+../../images/samples/positive/n04540053_1094.jpg 1 206 122 18 24
+../../images/samples/positive/n04540053_10985.jpg 1 0 10 28 42
+../../images/samples/positive/n04540053_11089.jpg 1 140 8 66 68
+../../images/samples/positive/n04540053_11090.jpg 1 178 228 19 19
+../../images/samples/positive/n04540053_11142.jpg 1 156 73 35 32
+../../images/samples/positive/n04540053_11183.jpg 1 252 0 36 25
+../../images/samples/positive/n04540053_11239.jpg 1 330 88 31 34
+../../images/samples/positive/n04540053_11412.jpg 1 401 39 47 56
+../../images/samples/positive/n04540053_11521.jpg 1 211 48 66 72
+../../images/samples/positive/n04540053_11591.jpg 1 185 153 43 34
+../../images/samples/positive/n04540053_1164.jpg 1 246 115 61 62
+../../images/samples/positive/n04540053_11645.jpg 1 176 75 39 42
+../../images/samples/positive/n04540053_11760.jpg 1 56 31 100 111
+../../images/samples/positive/n04540053_11808.jpg 1 148 20 39 41
+../../images/samples/positive/n04540053_11879.jpg 1 193 34 14 15
+../../images/samples/positive/n04540053_11896.jpg 1 291 38 45 39
+../../images/samples/positive/n04540053_11919.jpg 1 353 2 79 78
+../../images/samples/positive/n04540053_12038.jpg 1 0 325 77 173
+../../images/samples/positive/n04540053_12130.jpg 1 116 0 30 22
+../../images/samples/positive/n04540053_12160.jpg 1 82 46 46 41
+../../images/samples/positive/n04540053_12161.jpg 1 347 12 56 57
+../../images/samples/positive/n04540053_12207.jpg 1 262 68 50 49
+../../images/samples/positive/n04540053_1233.jpg 1 204 338 56 59
+../../images/samples/positive/n04540053_12370.jpg 1 321 0 56 53
+../../images/samples/positive/n04540053_12373.jpg 1 379 60 58 62
+../../images/samples/positive/n04540053_12567.jpg 1 253 105 22 21
+../../images/samples/positive/n04540053_12969.jpg 1 152 225 15 16
+../../images/samples/positive/n04540053_12973.jpg 1 204 37 35 39
+../../images/samples/positive/n04540053_1312.jpg 1 178 60 28 27
+../../images/samples/positive/n04540053_13180.jpg 1 183 22 36 41
+../../images/samples/positive/n04540053_13247.jpg 1 106 165 46 47
+../../images/samples/positive/n04540053_1334.jpg 1 183 1 32 35
+../../images/samples/positive/n04540053_13476.jpg 1 190 105 18 16
+../../images/samples/positive/n04540053_13478.jpg 1 9 71 16 17
+../../images/samples/positive/n04540053_13599.jpg 1 137 161 39 42
+../../images/samples/positive/n04540053_13603.jpg 2 236 125 17 22 361 191 12 19
+../../images/samples/positive/n04540053_13670.jpg 1 136 16 52 48
+../../images/samples/positive/n04540053_13854.jpg 1 168 87 161 159
+../../images/samples/positive/n04540053_14029.jpg 1 240 148 21 25
+../../images/samples/positive/n04540053_1409.jpg 1 426 7 52 51
+../../images/samples/positive/n04540053_14165.jpg 1 183 57 185 181
+../../images/samples/positive/n04540053_14177.jpg 1 191 61 25 32
+../../images/samples/positive/n04540053_14224.jpg 1 132 1 42 29
+../../images/samples/positive/n04540053_14291.jpg 1 293 42 89 94
+../../images/samples/positive/n04540053_14299.jpg 1 200 120 15 15
+../../images/samples/positive/n04540053_1430.jpg 1 106 13 47 48
+../../images/samples/positive/n04540053_14372.jpg 1 211 55 44 42
+../../images/samples/positive/n04540053_14479.jpg 1 232 112 24 26
+../../images/samples/positive/n04540053_14490.jpg 1 240 35 30 32
+../../images/samples/positive/n04540053_1481.jpg 1 228 79 27 28
+../../images/samples/positive/n04540053_14897.jpg 1 228 80 9 11
+../../images/samples/positive/n04540053_14936.jpg 1 298 38 49 42
+../../images/samples/positive/n04540053_14977.jpg 1 167 34 56 51
+../../images/samples/positive/n04540053_1507.jpg 1 175 85 26 25
+../../images/samples/positive/n04540053_15120.jpg 1 187 41 50 46
+../../images/samples/positive/n04540053_15232.jpg 1 146 235 49 42
+../../images/samples/positive/n04540053_15245.jpg 1 241 94 13 14
+../../images/samples/positive/n04540053_15274.jpg 1 278 152 10 10
+../../images/samples/positive/n04540053_15400.jpg 1 112 86 31 46
+../../images/samples/positive/n04540053_15426.jpg 1 88 242 32 31
+../../images/samples/positive/n04540053_15463.jpg 1 291 80 34 36
+../../images/samples/positive/n04540053_15476.jpg 1 259 48 55 55
+../../images/samples/positive/n04540053_15495.jpg 1 162 45 74 75
+../../images/samples/positive/n04540053_15506.jpg 1 72 30 51 52
+../../images/samples/positive/n04540053_15513.jpg 1 180 37 20 22
+../../images/samples/positive/n04540053_1552.jpg 1 248 191 38 39
+../../images/samples/positive/n04540053_15520.jpg 1 52 107 31 59
+../../images/samples/positive/n04540053_15545.jpg 2 185 90 33 35 83 172 13 13
+../../images/samples/positive/n04540053_15661.jpg 1 204 210 40 45
+../../images/samples/positive/n04540053_15695.jpg 1 232 11 70 68
+../../images/samples/positive/n04540053_15865.jpg 1 226 46 67 64
+../../images/samples/positive/n04540053_16008.jpg 1 193 4 42 42
+../../images/samples/positive/n04540053_1653.jpg 1 214 44 89 77
+../../images/samples/positive/n04540053_16790.jpg 1 302 18 38 37
+../../images/samples/positive/n04540053_17010.jpg 1 151 41 46 44
+../../images/samples/positive/n04540053_17038.jpg 1 162 106 87 84
+../../images/samples/positive/n04540053_17241.jpg 1 251 67 51 53
+../../images/samples/positive/n04540053_1735.jpg 1 176 108 30 37
+../../images/samples/positive/n04540053_1740.jpg 1 235 22 34 34
+../../images/samples/positive/n04540053_1743.jpg 1 128 62 34 33
+../../images/samples/positive/n04540053_1769.jpg 1 111 152 26 26
+../../images/samples/positive/n04540053_1841.jpg 1 25 110 65 67
+../../images/samples/positive/n04540053_1850.jpg 1 212 80 34 42
+../../images/samples/positive/n04540053_1870.jpg 1 169 83 33 29
+../../images/samples/positive/n04540053_19018.jpg 1 304 14 44 42
+../../images/samples/positive/n04540053_19432.jpg 1 235 40 108 106
+../../images/samples/positive/n04540053_19766.jpg 1 173 25 64 51
+../../images/samples/positive/n04540053_2129.jpg 1 265 60 64 62
+../../images/samples/positive/n04540053_2179.jpg 1 342 58 18 18
+../../images/samples/positive/n04540053_2199.jpg 1 295 147 27 29
+../../images/samples/positive/n04540053_2488.jpg 1 112 8 44 37
+../../images/samples/positive/n04540053_2497.jpg 1 411 15 66 66
+../../images/samples/positive/n04540053_2498.jpg 1 232 44 32 30
+../../images/samples/positive/n04540053_2545.jpg 1 115 45 31 31
+../../images/samples/positive/n04540053_2613.jpg 1 155 58 81 78
+../../images/samples/positive/n04540053_2679.jpg 1 162 0 66 40
+../../images/samples/positive/n04540053_2762.jpg 1 234 0 48 32
+../../images/samples/positive/n04540053_3006.jpg 1 126 101 59 59
+../../images/samples/positive/n04540053_3011.jpg 1 143 18 39 43
+../../images/samples/positive/n04540053_3026.jpg 1 303 6 54 50
+../../images/samples/positive/n04540053_3261.jpg 1 365 66 60 59
+../../images/samples/positive/n04540053_3320.jpg 1 112 53 73 77
+../../images/samples/positive/n04540053_333.jpg 1 5 74 39 40
+../../images/samples/positive/n04540053_3391.jpg 1 145 3 42 42
+../../images/samples/positive/n04540053_3453.jpg 1 204 120 33 29
+../../images/samples/positive/n04540053_3487.jpg 1 129 121 39 45
+../../images/samples/positive/n04540053_3547.jpg 1 132 41 46 37
+../../images/samples/positive/n04540053_3584.jpg 1 92 105 35 35
+../../images/samples/positive/n04540053_3605.jpg 1 260 199 52 47
+../../images/samples/positive/n04540053_3618.jpg 1 162 124 88 81
+../../images/samples/positive/n04540053_3621.jpg 1 201 70 20 19
+../../images/samples/positive/n04540053_3676.jpg 1 93 174 37 32
+../../images/samples/positive/n04540053_3714.jpg 1 421 308 35 35
+../../images/samples/positive/n04540053_3744.jpg 1 170 25 39 41
+../../images/samples/positive/n04540053_3759.jpg 1 43 191 65 67
+../../images/samples/positive/n04540053_3869.jpg 1 126 52 45 49
+../../images/samples/positive/n04540053_3985.jpg 1 190 48 35 37
+../../images/samples/positive/n04540053_3995.jpg 1 142 10 45 51
+../../images/samples/positive/n04540053_4044.jpg 1 235 146 16 25
+../../images/samples/positive/n04540053_4230.jpg 1 258 195 28 28
+../../images/samples/positive/n04540053_4313.jpg 1 292 136 24 23
+../../images/samples/positive/n04540053_4348.jpg 1 336 174 18 22
+../../images/samples/positive/n04540053_4431.jpg 1 122 98 52 53
+../../images/samples/positive/n04540053_4578.jpg 1 145 7 45 53
+../../images/samples/positive/n04540053_4589.jpg 1 220 322 33 43
+../../images/samples/positive/n04540053_4596.jpg 1 238 13 40 39
+../../images/samples/positive/n04540053_4632.jpg 1 246 15 37 37
+../../images/samples/positive/n04540053_4658.jpg 1 88 156 44 47
+../../images/samples/positive/n04540053_4673.jpg 1 43 190 84 80
+../../images/samples/positive/n04540053_4712.jpg 1 179 145 25 28
+../../images/samples/positive/n04540053_4713.jpg 1 18 34 36 37
+../../images/samples/positive/n04540053_4719.jpg 2 98 47 59 56 170 433 42 45
+../../images/samples/positive/n04540053_4736.jpg 1 226 7 46 49
+../../images/samples/positive/n04540053_4737.jpg 1 235 81 26 24
+../../images/samples/positive/n04540053_4795.jpg 1 415 246 37 36
+../../images/samples/positive/n04540053_4812.jpg 1 154 66 25 25
+../../images/samples/positive/n04540053_483.jpg 1 236 98 35 32
+../../images/samples/positive/n04540053_4855.jpg 1 206 1 72 73
+../../images/samples/positive/n04540053_4880.jpg 1 57 28 51 52
+../../images/samples/positive/n04540053_4994.jpg 1 169 15 62 62
+../../images/samples/positive/n04540053_5196.jpg 1 436 272 156 152
+../../images/samples/positive/n04540053_5273.jpg 1 227 22 83 85
+../../images/samples/positive/n04540053_5698.jpg 1 67 16 73 75
+../../images/samples/positive/n04540053_5999.jpg 1 47 1 78 72
+../../images/samples/positive/n04540053_6100.jpg 1 29 4 53 54
+../../images/samples/positive/n04540053_6197.jpg 1 242 0 57 47
+../../images/samples/positive/n04540053_6312.jpg 1 54 212 71 77
+../../images/samples/positive/n04540053_6405.jpg 1 156 27 71 72
+../../images/samples/positive/n04540053_6457.jpg 1 147 18 24 23
+../../images/samples/positive/n04540053_6479.jpg 1 185 29 69 68
+../../images/samples/positive/n04540053_6500.jpg 1 91 12 35 35
+../../images/samples/positive/n04540053_6609.jpg 1 435 7 28 28
+../../images/samples/positive/n04540053_6618.jpg 1 126 125 39 37
+../../images/samples/positive/n04540053_6629.jpg 1 167 65 51 47
+../../images/samples/positive/n04540053_6798.jpg 1 239 47 69 71
+../../images/samples/positive/n04540053_6849.jpg 1 97 62 76 75
+../../images/samples/positive/n04540053_6995.jpg 1 48 64 33 33
+../../images/samples/positive/n04540053_7006.jpg 1 219 88 20 18
+../../images/samples/positive/n04540053_7052.jpg 1 209 14 53 55
+../../images/samples/positive/n04540053_7055.jpg 1 203 126 27 25
+../../images/samples/positive/n04540053_7104.jpg 1 139 51 38 39
+../../images/samples/positive/n04540053_7128.jpg 1 74 120 39 37
+../../images/samples/positive/n04540053_7144.jpg 1 141 10 51 50
+../../images/samples/positive/n04540053_7146.jpg 1 257 89 54 56
+../../images/samples/positive/n04540053_7236.jpg 1 181 97 37 34
+../../images/samples/positive/n04540053_7261.jpg 1 167 6 35 41
+../../images/samples/positive/n04540053_7306.jpg 1 180 48 30 30
+../../images/samples/positive/n04540053_7350.jpg 1 162 35 39 36
+../../images/samples/positive/n04540053_7371.jpg 1 124 11 20 21
+../../images/samples/positive/n04540053_7383.jpg 1 265 52 77 81
+../../images/samples/positive/n04540053_7479.jpg 1 294 0 36 39
+../../images/samples/positive/n04540053_7536.jpg 1 146 93 38 37
+../../images/samples/positive/n04540053_7555.jpg 1 276 141 8 11
+../../images/samples/positive/n04540053_7602.jpg 1 112 92 35 30
+../../images/samples/positive/n04540053_7647.jpg 1 201 76 50 46
+../../images/samples/positive/n04540053_7928.jpg 1 346 33 47 46
+../../images/samples/positive/n04540053_7937.jpg 1 368 5 59 56
+../../images/samples/positive/n04540053_8170.jpg 1 165 53 57 52
+../../images/samples/positive/n04540053_8254.jpg 1 245 255 18 21
+../../images/samples/positive/n04540053_8324.jpg 1 88 98 77 78
+../../images/samples/positive/n04540053_8390.jpg 1 185 1 41 35
+../../images/samples/positive/n04540053_8406.jpg 1 279 174 21 20
+../../images/samples/positive/n04540053_8428.jpg 1 148 25 52 57
+../../images/samples/positive/n04540053_8460.jpg 1 208 142 18 22
+../../images/samples/positive/n04540053_8471.jpg 1 336 150 49 61
+../../images/samples/positive/n04540053_8603.jpg 1 351 3 62 62
+../../images/samples/positive/n04540053_8741.jpg 1 200 11 44 46
+../../images/samples/positive/n04540053_8801.jpg 1 86 68 70 70
+../../images/samples/positive/n04540053_8946.jpg 1 157 114 45 44
+../../images/samples/positive/n04540053_9061.jpg 1 203 182 27 29
+../../images/samples/positive/n04540053_9071.jpg 1 167 155 39 36
+../../images/samples/positive/n04540053_9085.jpg 1 218 180 53 53
+../../images/samples/positive/n04540053_9094.jpg 1 287 95 45 45
+../../images/samples/positive/n04540053_9122.jpg 1 193 146 58 60
+../../images/samples/positive/n04540053_914.jpg 1 307 107 22 26
+../../images/samples/positive/n04540053_9194.jpg 3 161 106 26 28 364 266 12 13 35 211 16 17
+../../images/samples/positive/n04540053_9195.jpg 1 92 52 35 36
+../../images/samples/positive/n04540053_9238.jpg 1 363 105 48 41
+../../images/samples/positive/n04540053_9256.jpg 1 263 72 28 27
+../../images/samples/positive/n04540053_9280.jpg 1 221 0 39 38
+../../images/samples/positive/n04540053_9287.jpg 1 107 2 81 79
+../../images/samples/positive/n04540053_929.jpg 2 111 46 21 24 173 93 10 11
+../../images/samples/positive/n04540053_9447.jpg 1 180 51 71 73
+../../images/samples/positive/n04540053_9582.jpg 1 117 41 44 45
+../../images/samples/positive/n04540053_969.jpg 1 249 46 21 23
+../../images/samples/positive/n04540053_9752.jpg 1 156 67 72 69
+../../images/samples/positive/n04540053_9778.jpg 1 285 23 58 59
+../../images/samples/positive/n04540053_9782.jpg 1 50 45 43 43
+../../images/samples/positive/n04540053_9788.jpg 1 208 19 47 47
+../../images/samples/positive/n04540053_9794.jpg 1 248 52 65 66
+../../images/samples/positive/n04540053_9798.jpg 1 166 130 26 26
+../../images/samples/positive/n04540053_9812.jpg 1 111 19 37 36
+../../images/samples/positive/n04540053_9837.jpg 1 236 32 40 39
+../../images/samples/positive/n04540053_9867.jpg 1 108 127 42 40
+../../images/samples/positive/n04540053_9868.jpg 1 277 8 44 49
