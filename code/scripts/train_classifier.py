@@ -178,9 +178,9 @@ numPosTraining = int((numPos - skippedSamples) / (1 + (1 - minHitRate) * (numSta
 numNegTraining = (numNeg + numBak)
 print '## numPosTraining:', numPosTraining
 samplesCommand = [ 'opencv_traincascade'
-	, '-vec',               balls_vec_fname
-	, '-data',              traincascade_data_dir
-	, '-bg',                neg_info_fname
+	, '-vec',               balls_vec_fname.split('/')[-1]
+	, '-data',              'data'
+	, '-bg',                neg_info_fname.split('/')[-1]
 	, '-numPos',            str(numPosTraining)
 	, '-numNeg',            str(numNegTraining)
 	, '-numStages',         classifier_yaml['training']['basic']['numStages']
@@ -191,7 +191,7 @@ samplesCommand = [ 'opencv_traincascade'
 	, '-maxDepth',          classifier_yaml['training']['boost']['maxDepth']
 	, '-maxWeakCount',      classifier_yaml['training']['boost']['maxWeakCount']
 	]
-subprocess.call(samplesCommand, cwd=base_dir)
+subprocess.call(samplesCommand, cwd='{}/{}'.format(base_dir, output_dir))
 
 
 print '\n## Running classifier...'
