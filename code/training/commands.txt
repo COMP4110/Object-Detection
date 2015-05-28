@@ -1,3 +1,7 @@
 opencv_createsamples -info positive.txt -vec balls.vec -num $(wc -l positive.txt)
 
 opencv_traincascade -data ../classifiers -vec balls.vec -bg negative.txt -numPos $(wc -l positive.txt) -numNeg $(wc -l negative.txt)
+
+rm ../classifiers/template -rf
+
+python train_classifier.py ../classifiers/template.yaml
