@@ -93,30 +93,12 @@
 \section{Methodology}
 	% 
 	%  (describe the goal of comparing techniques)
-\begin{frame}{Software used}
-	\begin{itemize}
-		\item Classifiers of each feature type were trained simultaneously
-		\item Run on a Macbook Pro with an Intel Core i7 (I7-3740QM) processor and 16GB RAM.
-	\end{itemize}
-\end{frame}
-
 
 \section{Training}
 
-\begin{frame}{Software used}
-	\begin{itemize}
-		\item Classifiers of each feature type were trained simultaneously
-		\item Run on a Macbook Pro with an Intel Core i7 (I7-3740QM) processor and 16GB RAM.
-	\end{itemize}
+\begin{frame}{Dataset}
+	All training and testing images were sourced from ImageNet \citep{imagenet_cvpr09}.
 \end{frame}
-
-\begin{frame}{Software used}
-	\begin{itemize}
-		\item Python scripts for dataset generation and performance statistics.
-		\item \citet{opencv_library} for training and running the clasifier.
-	\end{itemize}
-\end{frame}
-
 
 \begin{frame}{Positive samples}
 	\begin{table}[H]
@@ -145,6 +127,42 @@
 		\end{tabularx}
 	\end{table}
 \end{frame}
+
+\begin{frame}{Positive samples (\scarequotes(Simple))}
+	\begin{table}[H]
+		\footnotesize
+		\centering
+		\caption{ImageNet synsets used for the positive samples in the training set and their associated WordNet \citep{fellbaum1998wordnet} identifiers.}
+		\label{tab:postraining}
+		\begin{tabularx}{\textwidth}{lX}
+			\toprule
+			\textbf{Id} & \textbf{Category} \\
+			\midrule
+			\textcolor{red}{n02799071} & \textcolor{red}{Baseball} \\
+			n02802426 & Basketball \\
+			n02882301 & Bowling ball, bowl \\
+			\textcolor{red}{n03134739} & \textcolor{red}{Croquet ball} \\
+			\textcolor{red}{n03145719} & \textcolor{red}{Cue ball} \\
+			n03267113 & Eight ball \\
+			n03721047 & Marble \\
+			n03742019 & Medicine ball \\
+			\textcolor{red}{n03825442} & \textcolor{red}{Ninepin ball, skittle ball} \\
+			\textcolor{red}{n03942813} & \textcolor{red}{Ping-pong ball} \\
+			\textcolor{red}{n03982232} & \textcolor{red}{Pool ball} \\
+			n04409515 & Tennis ball \\
+			n04540053 & Volleyball \\
+			\bottomrule
+		\end{tabularx}
+	\end{table}
+\end{frame}
+
+% n02799071 & Baseball \\
+% n03134739 & Croquet ball \\
+% n03145719 & pool \\
+% n03825442 & bowling (mostly ten-pin) \\
+% n03942813 & table tennis \\
+% n03982232 & pool (again) \\
+
 
 \begin{frame}{Test set}
 	\begin{table}[H]
@@ -199,6 +217,13 @@
 			\bottomrule
 		\end{tabularx}
 	\end{table}
+\end{frame}
+
+\begin{frame}{Software used}
+	\begin{itemize}
+		\item Classifiers of each feature type were trained simultaneously
+		\item Run on a Macbook Pro with an Intel Core i7 (I7-3740QM) processor and 16GB RAM.
+	\end{itemize}
 \end{frame}
 
 
