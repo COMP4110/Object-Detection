@@ -53,25 +53,18 @@
 	\subsection{Motivation}
 
 	\begin{frame}{Robot soccer}
-		Robots at RoboCup \citep{KitanoAKNO97} need to know where the ball is.
-
-		Basic approach is circle detection, which has problems:
+		Robots at RoboCup \citep{KitanoAKNO97} need to know where the ball is. Basic approach is circle detection, which has problems: \\
 		\begin{itemize}
-			\item centre circle
-	        \item penalty spots
-	        \item line intersections
-	        \item anything that looks round from some angle
+			\item Centre circle
+	        \item Penalty spots
+	        \item Line intersections
+	        \item Anything that looks round from some angle
 		\end{itemize}
 	\end{frame}
 
 	\begin{frame}{Current approaches}
 		A review of recent literature reveals several recent approaches:
-		\begin{itemize}
-			\item centre circle
-	        \item penalty spots
-	        \item line intersections
-	        \item anything that looks round from some angle
-		\end{itemize}
+		\todo{Something}
 	\end{frame}
 
 	\begin{frame}{Sphere detection problem}
@@ -80,6 +73,14 @@
 			\item Detect spheres.
 			\item Do not detect any \scarequotes{round things} unless they are spheres.
 		\end{itemize}
+		\begin{table}[H]
+			\centering
+			%\tabcolsep=0.11cm
+			\begin{tabularx}{\textwidth}{@{}cc@{}}
+				% \includegraphics[height=\samplesheight]{training_images/positive/n04409515_2793} &
+				% \includegraphics[height=\samplesheight]{training_images/hard_negative/n03208556_9694}
+			\end{tabularx}
+		\end{table}
 	\end{frame}
 
 \section{Focus of work}
