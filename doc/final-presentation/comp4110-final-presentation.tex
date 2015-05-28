@@ -21,6 +21,8 @@
 \newcommand{\taskname}[1]{{\textit{#1}}}
 \newcommand{\newterm}[1]{{\textit{#1}}}
 \newcommand{\scarequotes}[1]{`#1'}
+\newcommand{\sampleswidth}{0.23\textwidth}
+\newcommand{\samplesheight}{1.5cm}
 
 % \definecolor{darkgreen}{rgb}{0,0.6,0}
 % \usepackage{pgf}
@@ -73,13 +75,10 @@
 			\item Detect spheres.
 			\item Do not detect any \scarequotes{round things} unless they are spheres.
 		\end{itemize}
-		\begin{table}[H]
+		\begin{table}[h]
 			\centering
-			%\tabcolsep=0.11cm
-			\begin{tabularx}{\textwidth}{@{}cc@{}}
-				\includegraphics[height=\samplesheight]{training_images/positive/n04409515_2793} &
-				\includegraphics[height=\samplesheight]{training_images/hard_negative/n03208556_9694}
-			\end{tabularx}
+			\includegraphics[height=4cm]{training_images/positive/n04409515_2793}
+			\includegraphics[height=4cm]{training_images/hard_negative/n03208556_9694}
 		\end{table}
 	\end{frame}
 
@@ -89,10 +88,9 @@
 	\end{frame}
 
 	\begin{frame}{Feature comparison}
-		Compare appropriateness of the following feature types for the problem:
+		Compare appropriateness of the following feature types for the problem: \\
 		\begin{itemize}
-			\item Extended
-        Haar features \citep{Lienhart2002extended};
+			\item Extended Haar features \citep{Lienhart2002extended}
 			\item Local Binary Patterns (LBPs) \citep{liao2007learning}
 			\item Histograms of Oriented Gradients (HoG) features \citep{dalal2005histograms}
 		\end{itemize}
@@ -220,8 +218,6 @@
 \end{frame}
 
 \begin{frame}{Samples}
-	\newcommand{\sampleswidth}{0.23\textwidth}
-	\newcommand{\samplesheight}{1.5cm}
 	\begin{table}[H]
 		\centering
 		\tabcolsep=0.11cm
