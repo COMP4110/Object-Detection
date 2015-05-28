@@ -1,0 +1,55 @@
+# Note: Specify all paths from the code directory.
+# Note: Quote all numbers.
+
+dataset:
+    description:
+        number: '3500' # Total number of samples.
+        posFrac: '0.5' # Fraction of samples that will be positive.
+        hardNegFrac: '0.0' # Fraction of *negative* samples that will be hard negatives.
+        synsets: # Sample from only these synsets (use '.*' for all).
+            pos:
+                # - '.*'
+                - n02799071 # Baseball
+                - n02802426 # Basketball
+                - n02882301 # Bowling ball, bowl
+                - n03134739 # Croquet ball
+                - n03145719 # Cue ball
+                - n03267113 # Eight ball
+                - n03721047 # Marble
+                - n03742019 # Medicine ball
+                - n03825442 # Ninepin ball, skittle ball
+                - n03942813 # Ping-pong ball
+                - n03982232 # Pool ball
+                - n04409515 # Tennis ball
+                - n04540053 # Volleyball
+            neg:
+                - '.*'
+    directory: # Directories from which to draw the different image types.
+        positive: images/samples/positive
+        background: images/samples/background
+        negative: images/samples/hard_negative
+training:
+    basic:
+        data: classifiers
+        numStages: '20' # <number_of_stages = 20>]
+    cascade:
+        featureType: HOG # {HAAR(default), LBP, HOG}
+    boost:
+        minHitRate: '0.99' # 0.995
+        maxFalseAlarmRate: '0.5' # 0.5
+        weightTrimRate: '0.95' # 0.95
+        maxDepth: '1' # 1
+        maxWeakCount: '100' # 100
+        skipFrac: '0.75' # http://answers.opencv.org/question/4368/
+                        # While the selection, some new positive samples from
+                        # vec-file can be recognized as background right away
+                        # by the current cascade and we skip such samples. The
+                        # count of skipped sample depends on your vec-file
+                        # (how different samples are in it) and other training
+                        # parameters. This is an estimate of the total number
+                        # of skipped samples from vec-file (for all stages) as
+                        # a fraction of the total number of positive samples.
+    haarFeature:
+        mode: ALL # Use extended Haar features
+testing:
+    inputDir: images/samples/positive_test_set/
