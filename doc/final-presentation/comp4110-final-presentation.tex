@@ -1,5 +1,6 @@
 \documentclass{beamer}
 \usepackage{graphicx, epstopdf}
+\usepackage{grffile}
 \usepackage{amsmath, amssymb, amsbsy, amstext}
 % \usepackage{xcolor}
 
@@ -134,7 +135,7 @@
 	\end{table}
 \end{frame}
 
-\begin{frame}{Positive samples (\scarequotes(Simple))}
+\begin{frame}{Positive samples (\scarequotes{Simple})}
 	\begin{table}[H]
 		\footnotesize
 		\centering
@@ -213,6 +214,37 @@
 				n08659446 & Field \\
 				n03841666 & Office, business office \\
 			\bottomrule
+		\end{tabularx}
+	\end{table}
+\end{frame}
+
+\begin{frame}{Samples}
+	\newcommand{\sampleswidth}{0.23\textwidth}
+	\newcommand{\samplesheight}{1.5cm}
+	\begin{table}[H]
+		\centering
+		\tabcolsep=0.11cm
+		\begin{tabularx}{\textwidth}{@{}cccc@{}}
+			% Positive
+			\includegraphics[height=\samplesheight]{training_images/positive/n02799071_17616} &
+			\includegraphics[height=\samplesheight]{training_images/positive/n02802426_6256} &
+			\includegraphics[height=\samplesheight]{training_images/positive/n03145719_8658} &
+			\includegraphics[height=\samplesheight]{training_images/positive/n04409515_2793} \\
+			% Positive thumbnails
+			\includegraphics[height=\samplesheight]{training_images/positive/n02799071_17616.thumbnail.jpg} &
+			\includegraphics[height=\samplesheight]{training_images/positive/n02802426_6256.thumbnail.jpg} &
+			\includegraphics[height=\samplesheight]{training_images/positive/n03145719_8658.thumbnail.jpg} &
+			\includegraphics[height=\samplesheight]{training_images/positive/n04409515_2793.thumbnail.jpg} \\
+			% Hard negative
+			\includegraphics[height=\samplesheight]{training_images/hard_negative/n03208556_9694} &
+			\includegraphics[height=\samplesheight]{training_images/hard_negative/n03208556_11973} &
+			\includegraphics[height=\samplesheight]{training_images/hard_negative/n03208556_13484} &
+			\includegraphics[height=\samplesheight]{training_images/hard_negative/n04019541_26831} \\
+			% Hard negative thumbnails
+			\includegraphics[height=\samplesheight]{training_images/hard_negative/n03208556_9694.thumbnail.jpg} &
+			\includegraphics[height=\samplesheight]{training_images/hard_negative/n03208556_11973.thumbnail.jpg} &
+			\includegraphics[height=\samplesheight]{training_images/hard_negative/n03208556_13484.thumbnail.jpg} &
+			\includegraphics[height=\samplesheight]{training_images/hard_negative/n04019541_26831.thumbnail.jpg}
 		\end{tabularx}
 	\end{table}
 \end{frame}
