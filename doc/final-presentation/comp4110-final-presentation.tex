@@ -28,7 +28,7 @@
 % \usepackage{pgf}
 % \logo{\pgfputat{\pgfxy(-2,6)}{\pgfbox[center,base]{\includegraphics[height=2cm]{amsilogo.jpg}}}}
 
-\usetheme{Darmstadt} 
+\usetheme{Darmstadt}
 %\usetheme{Dresden} %Dresden, Darmstadt, Warsaw
 % \usecolortheme{dove}
 % \title{Sphere Detection using Boosted Classifiers}
@@ -42,7 +42,7 @@
 
 	\maketitle
 
-	
+
 	% \begin{frame}{Object detection}
 	% 	\begin{center}
 	% 		To create an object detector using supervised learning, a correctly
@@ -55,13 +55,16 @@
 	\subsection{Motivation}
 
 	\begin{frame}{Robot soccer}
-		Robots at RoboCup \citep{KitanoAKNO97} need to know where the ball is. Basic approach is circle detection, which has problems: \\
+		Robots at RoboCup \citep{KitanoAKNO97} need find the ball. A common approach is simple circle detection, which has problems: \par
 		\begin{itemize}
 			\item Centre circle
 	        \item Penalty spots
 	        \item Line intersections
 	        \item Anything that looks round from some angle
 		\end{itemize}
+		\begin{center}
+			\includegraphics[height=4cm]{field2}
+		\end{center}
 	\end{frame}
 
 	\begin{frame}{Current approaches}
@@ -77,7 +80,7 @@
 		\end{itemize}
 		\begin{table}[h]
 			\centering
-			\includegraphics[height=4cm]{training_images/positive/n04409515_2793}
+			\includegraphics[height=4cm]{training_images/positive/n04409515_2793} \hspace*{0.1cm}
 			\includegraphics[height=4cm]{training_images/hard_negative/n03208556_9694}
 		\end{table}
 	\end{frame}
@@ -88,7 +91,7 @@
 	\end{frame}
 
 	\begin{frame}{Feature comparison}
-		Compare appropriateness of the following feature types for the problem: \\
+		Compare appropriateness of the following feature types for the problem: \par
 		\begin{itemize}
 			\item Extended Haar features \citep{Lienhart2002extended}
 			\item Local Binary Patterns (LBPs) \citep{liao2007learning}
@@ -97,7 +100,7 @@
 	\end{frame}
 
 \section{Methodology}
-	% 
+	%
 	%  (describe the goal of comparing techniques)
 
 \section{Training}
@@ -221,7 +224,7 @@
 	\begin{table}[H]
 		\centering
 		\tabcolsep=0.11cm
-		\begin{tabularx}{\textwidth}{@{}cccc@{}}
+		\begin{tabularx}{\textwidth}{@{}XXXX@{}}
 			% Positive
 			\includegraphics[height=\samplesheight]{training_images/positive/n02799071_17616} &
 			\includegraphics[height=\samplesheight]{training_images/positive/n02802426_6256} &

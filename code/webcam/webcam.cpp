@@ -30,8 +30,8 @@ int main(int argc, char* argv[]) {
 		std::cout << "Error: Could not open webcam" << std::endl;
 	}
 
-	cap.set(CV_CAP_PROP_FRAME_WIDTH, 800);
-    cap.set(CV_CAP_PROP_FRAME_HEIGHT, 600);
+	cap.set(CV_CAP_PROP_FRAME_WIDTH, 1024);
+    cap.set(CV_CAP_PROP_FRAME_HEIGHT, 768);
 
 	cv::Mat frame;
 	cv::Mat image;
@@ -40,7 +40,7 @@ int main(int argc, char* argv[]) {
 //	cvSetWindowProperty("Detections", CV_WND_PROP_FULLSCREEN, CV_WINDOW_FULLSCREEN);
 
 
-	double scale = 0.40;
+	double scale = 0.50;
 	while (true) {
 		cap >> frame;
 
