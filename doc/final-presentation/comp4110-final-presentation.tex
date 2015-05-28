@@ -10,7 +10,7 @@
 % \usepackage[disable]{todonotes}
 \presetkeys{todonotes}{inline}{}
 
-\usepackage{booktabs}               % for much better looking tables
+\usepackage{booktabs} % for much better looking tables
 \usepackage{tabularx}
 
 % \definecolor{darkgreen}{rgb}{0,0.6,0}
@@ -67,21 +67,121 @@
 
 	% Literature
 
+	% 
+
 	% Methodology
+	% 
 	%  (describe the goal of comparing techniques)
 
 	% Training
+	% - all classifiers of each type were trained simultaneously
+	% - run on macbook pro with an Intel Core i7 (I7-3740QM) processor and 16GB ram
+\section{Training}
 
-	% Results
+\begin{frame}{Positive samples}
+	\begin{table}[H]
+		\footnotesize
+		\centering
+		\caption{The categories from ImageNet used for the positive samples in the training set and their associated WordNet \citep{fellbaum1998wordnet} identifiers.}
+		\label{tab:postraining}
+		\begin{tabularx}{\textwidth}{lX}
+			\toprule
+			\textbf{Id} & \textbf{Category} \\
+			\midrule
+			n02799071 & Baseball \\
+			n02802426 & Basketball \\
+			n02882301 & Bowling ball, bowl \\
+			n03134739 & Croquet ball \\
+			n03145719 & Cue ball \\
+			n03267113 & Eight ball \\
+			n03721047 & Marble \\
+			n03742019 & Medicine ball \\
+			n03825442 & Ninepin ball, skittle ball \\
+			n03942813 & Ping-pong ball \\
+			n03982232 & Pool ball \\
+			n04409515 & Tennis ball \\
+			n04540053 & Volleyball \\
+			\bottomrule
+		\end{tabularx}
+	\end{table}
+\end{frame}
+
+\begin{frame}{Test set}
+	\begin{table}[H]
+		\centering
+		\caption{Additional WordNet identifiers for positive samples in the test set.}
+		\label{tab:postest}
+		\begin{tabularx}{\textwidth}{lX}
+			\toprule
+			\textbf{Id} & \textbf{Category} \\
+			\midrule
+				n02778669 & Ball \\
+				n02779435 & Ball \\
+				n02839351 & Billiard ball \\
+				n02778669 & Generic sporting equipment balls \\
+				n03445777 & Golf ball \\
+				n02779435 & Plaything, toy, ball \\
+				n04254680 & Soccer ball \\
+			\bottomrule
+		\end{tabularx}
+	\end{table}
+\end{frame}
+
+\begin{frame}{Negative samples}
+	\begin{table}[H]
+		\centering
+		\caption{WordNet identifiers for hard negative samples in the training set.}
+		\label{tab:negtraining}
+		\begin{tabularx}{\textwidth}{lX}
+			\toprule
+			\textbf{Id} & \textbf{Category} \\
+			\midrule
+				n03032811 & Circle, round \\
+				n13873917 & Circle \\
+				n13873502 & Circle \\
+			\bottomrule
+		\end{tabularx}
+	\end{table}
+\end{frame}
+
+\begin{frame}{Background samples}
+	\begin{table}[H]
+		\centering
+		\caption{WordNet identifiers for background samples in the test set.}
+		\label{tab:baktraining}
+		\begin{tabularx}{\textwidth}{lX}
+			\toprule
+			\textbf{Id} & \textbf{Category} \\
+			\midrule
+				n02782778 & Ballpark, park \\
+				n08659446 & Field \\
+				n03841666 & Office, business office \\
+			\bottomrule
+		\end{tabularx}
+	\end{table}
+\end{frame}
+
+
+\section{Results}
+
+% Make a table of results
+% Hopefully a graph?
+
+\section{Conclusion}
 
 	% Conclusion
+	%   - Haar features clearly performed better than HOGS or LBP on the sphere detection task
+	%   - 
+
+	% Future Work
+	%   - 
 
 	% References
 
 
 	\begin{frame}{Bibliography}
 		\bibliography{references}
-    	\bibliographystyle{apalike}
+		\bibliographystyle{apalike}
 	\end{frame}
 
 \end{document}
