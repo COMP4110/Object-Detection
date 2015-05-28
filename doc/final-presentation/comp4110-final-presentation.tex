@@ -77,8 +77,8 @@
 			\centering
 			%\tabcolsep=0.11cm
 			\begin{tabularx}{\textwidth}{@{}cc@{}}
-				% \includegraphics[height=\samplesheight]{training_images/positive/n04409515_2793} &
-				% \includegraphics[height=\samplesheight]{training_images/hard_negative/n03208556_9694}
+				\includegraphics[height=\samplesheight]{training_images/positive/n04409515_2793} &
+				\includegraphics[height=\samplesheight]{training_images/hard_negative/n03208556_9694}
 			\end{tabularx}
 		\end{table}
 	\end{frame}
@@ -262,6 +262,38 @@
 
 % Make a table of results
 % Hopefully a graph?
+
+\begin{frame}{Training results}
+	\begin{table}[H]
+		\footnotesize
+		\centering
+		% \caption{Results for all training schemes}
+		% \label{tab:trainresults}
+		\begin{tabularx}{\textwidth}{lcccccc}
+			\toprule
+			\textbf{name} & \textbf{number} & \textbf{posFrag} & \textbf{hardNegFrac} & \textbf{fullset} & \textbf{type} & \textbf{hitrate} \\
+			\midrule
+			\(scheme_1\) & 2000 & 0.33 & 0 & 0 & HAAR & 9.09\% \\
+			\(scheme_2\) & 2000 & 0.33 & 0.25 & 0 & HAAR & 6.49\% \\
+			\(scheme_3\) & 2000 & 0.33 & 0.25 & 0 & HAAR & 16.45\% \\
+			\(scheme_4\) & 4000 & 0.5 & 0.2 & 1 & HAAR & 19.91\% \\
+			\(scheme_5\) & 3500 & 0.5 & 0 & 1 & HAAR & 20.35\% \\
+			\(lbp_1\) & 2000 & 0.33 & 0 & 0 & LBP & 01.73\% \\
+			\(lbp_2\) & 2000 & 0.33 & 0.25 & 0 & LBP & 3.03\% \\
+			\(lbp_3\) & 2000 & 0.33 & 0.25 & 0 & LBP & 4.76\% \\
+			\(lbp_4\) & 4000 & 0.5 & 0.2 & 1 & LBP & 6.06\% \\
+			\(lbp_5\) & 3500 & 0.5 & 0 & 1 & LBP & 8.23\% \\
+			\(hog_1\) & 2000 & 0.33 & 0 & 0 & HOG & 1.3\% \\
+			\(hog_2\) & 2000 & 0.33 & 0.25 & 0 & HOG & 0.87\% \\
+			\(hog_3\) & 2000 & 0.33 & 0.25 & 0 & HOG & 2.6\% \\
+			\(hog_4\) & 4000 & 0.5 & 0.2 & 1 & HOG & 3.03\% \\
+			\(hog_5\) & 3500 & 0.5 & 0 & 1 & HOG & 5.19\% \\
+			\bottomrule
+		\end{tabularx}
+	\end{table}
+\end{frame}
+
+
 
 \section{Conclusion}
 
