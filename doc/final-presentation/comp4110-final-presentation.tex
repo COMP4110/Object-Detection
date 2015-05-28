@@ -21,6 +21,8 @@
 \newcommand{\taskname}[1]{{\textit{#1}}}
 \newcommand{\newterm}[1]{{\textit{#1}}}
 \newcommand{\scarequotes}[1]{`#1'}
+\newcommand{\sampleswidth}{0.23\textwidth}
+\newcommand{\samplesheight}{1.5cm}
 
 % \definecolor{darkgreen}{rgb}{0,0.6,0}
 % \usepackage{pgf}
@@ -53,7 +55,7 @@
 	\subsection{Motivation}
 
 	\begin{frame}{Robot soccer}
-		Robots at RoboCup \citep{KitanoAKNO97} need find the ball. A common approach is simple circle detection, which has problems: \\
+		Robots at RoboCup \citep{KitanoAKNO97} need find the ball. A common approach is simple circle detection, which has problems: \par
 		\begin{itemize}
 			\item Centre circle
 	        \item Penalty spots
@@ -76,13 +78,10 @@
 			\item Detect spheres.
 			\item Do not detect any \scarequotes{round things} unless they are spheres.
 		\end{itemize}
-		\begin{table}[H]
+		\begin{table}[h]
 			\centering
-			%\tabcolsep=0.11cm
-			\begin{tabularx}{\textwidth}{@{}cc@{}}
-				% \includegraphics[height=\samplesheight]{training_images/positive/n04409515_2793} &
-				% \includegraphics[height=\samplesheight]{training_images/hard_negative/n03208556_9694}
-			\end{tabularx}
+			\includegraphics[height=4cm]{training_images/positive/n04409515_2793} \hspace*{0.1cm}
+			\includegraphics[height=4cm]{training_images/hard_negative/n03208556_9694}
 		\end{table}
 	\end{frame}
 
@@ -92,10 +91,9 @@
 	\end{frame}
 
 	\begin{frame}{Feature comparison}
-		Compare appropriateness of the following feature types for the problem:
+		Compare appropriateness of the following feature types for the problem: \par
 		\begin{itemize}
-			\item Extended
-        Haar features \citep{Lienhart2002extended};
+			\item Extended Haar features \citep{Lienhart2002extended}
 			\item Local Binary Patterns (LBPs) \citep{liao2007learning}
 			\item Histograms of Oriented Gradients (HoG) features \citep{dalal2005histograms}
 		\end{itemize}
@@ -223,12 +221,10 @@
 \end{frame}
 
 \begin{frame}{Samples}
-	\newcommand{\sampleswidth}{0.23\textwidth}
-	\newcommand{\samplesheight}{1.5cm}
 	\begin{table}[H]
 		\centering
 		\tabcolsep=0.11cm
-		\begin{tabularx}{\textwidth}{@{}cccc@{}}
+		\begin{tabularx}{\textwidth}{@{}XXXX@{}}
 			% Positive
 			\includegraphics[height=\samplesheight]{training_images/positive/n02799071_17616} &
 			\includegraphics[height=\samplesheight]{training_images/positive/n02802426_6256} &
@@ -265,6 +261,42 @@
 
 % Make a table of results
 % Hopefully a graph?
+
+\begin{frame}{Training results}
+	\begin{table}[H]
+		\footnotesize
+		\centering
+		% \caption{Results for all training schemes}
+		% \label{tab:trainresults}
+		\begin{tabularx}{\textwidth}{lcccccc}
+			\toprule
+			\textbf{name} & \textbf{number} & \textbf{posFrag} & \textbf{hardNegFrac} & \textbf{fullset} & \textbf{type} & \textbf{hitrate} \\
+			\midrule
+			\(scheme_1\) & 2000 & 0.33 & 0 & 0 & HAAR & 9.09\% \\
+			\(scheme_2\) & 2000 & 0.33 & 0.25 & 0 & HAAR & 6.49\% \\
+			\(scheme_3\) & 2000 & 0.33 & 0.25 & 0 & HAAR & 16.45\% \\
+			\(scheme_4\) & 4000 & 0.5 & 0.2 & 1 & HAAR & 19.91\% \\
+			\(scheme_5\) & 3500 & 0.5 & 0 & 1 & HAAR & 20.35\% \\
+			\(lbp_1\) & 2000 & 0.33 & 0 & 0 & LBP & 01.73\% \\
+			\(lbp_2\) & 2000 & 0.33 & 0.25 & 0 & LBP & 3.03\% \\
+			\(lbp_3\) & 2000 & 0.33 & 0.25 & 0 & LBP & 4.76\% \\
+			\(lbp_4\) & 4000 & 0.5 & 0.2 & 1 & LBP & 6.06\% \\
+			\(lbp_5\) & 3500 & 0.5 & 0 & 1 & LBP & 8.23\% \\
+			\(hog_1\) & 2000 & 0.33 & 0 & 0 & HOG & 1.3\% \\
+			\(hog_2\) & 2000 & 0.33 & 0.25 & 0 & HOG & 0.87\% \\
+			\(hog_3\) & 2000 & 0.33 & 0.25 & 0 & HOG & 2.6\% \\
+			\(hog_4\) & 4000 & 0.5 & 0.2 & 1 & HOG & 3.03\% \\
+			\(hog_5\) & 3500 & 0.5 & 0 & 1 & HOG & 5.19\% \\
+			\bottomrule
+		\end{tabularx}
+	\end{table}
+\end{frame}
+
+\begin{frame}{Trial comparison chart}
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{results_graph}
+	\end{center}
+\end{frame}
 
 \section{Conclusion}
 
