@@ -26,7 +26,7 @@
 % \usepackage{pgf}
 % \logo{\pgfputat{\pgfxy(-2,6)}{\pgfbox[center,base]{\includegraphics[height=2cm]{amsilogo.jpg}}}}
 
-\usetheme{Darmstadt} 
+\usetheme{Darmstadt}
 %\usetheme{Dresden} %Dresden, Darmstadt, Warsaw
 % \usecolortheme{dove}
 % \title{Sphere Detection using Boosted Classifiers}
@@ -40,7 +40,7 @@
 
 	\maketitle
 
-	
+
 	% \begin{frame}{Object detection}
 	% 	\begin{center}
 	% 		To create an object detector using supervised learning, a correctly
@@ -53,13 +53,16 @@
 	\subsection{Motivation}
 
 	\begin{frame}{Robot soccer}
-		Robots at RoboCup \citep{KitanoAKNO97} need to know where the ball is. Basic approach is circle detection, which has problems: \\
+		Robots at RoboCup \citep{KitanoAKNO97} need find the ball. A common approach is simple circle detection, which has problems: \\
 		\begin{itemize}
 			\item Centre circle
 	        \item Penalty spots
 	        \item Line intersections
 	        \item Anything that looks round from some angle
 		\end{itemize}
+		\begin{center}
+			\includegraphics[height=4cm]{field2}
+		\end{center}
 	\end{frame}
 
 	\begin{frame}{Current approaches}
@@ -99,7 +102,7 @@
 	\end{frame}
 
 \section{Methodology}
-	% 
+	%
 	%  (describe the goal of comparing techniques)
 
 \section{Training}
@@ -267,11 +270,11 @@
 
 	\subsection{Feature performance comparison}
 	%   - Haar features clearly performed better than HOGS or LBP on the sphere detection task
-	%   - 
+	%   -
 
 	\subsection{Future work}
 	% Future Work
-	%   - 
+	%   -
 
 	\subsection{Bibliography}
 
