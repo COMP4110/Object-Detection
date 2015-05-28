@@ -13,6 +13,14 @@
 \usepackage{booktabs} % for much better looking tables
 \usepackage{tabularx}
 
+\newcommand{\code}[1]{{\texttt{#1}}}
+\newcommand{\libraryname}[1]{{\texttt{#1}}}
+\newcommand{\codefile}[1]{{\textit{#1}}}
+\newcommand{\program}[1]{\code{#1}}
+\newcommand{\taskname}[1]{{\textit{#1}}}
+\newcommand{\newterm}[1]{{\textit{#1}}}
+\newcommand{\scarequotes}[1]{`#1'}
+
 % \definecolor{darkgreen}{rgb}{0,0.6,0}
 % \usepackage{pgf}
 % \logo{\pgfputat{\pgfxy(-2,6)}{\pgfbox[center,base]{\includegraphics[height=2cm]{amsilogo.jpg}}}}
@@ -20,7 +28,8 @@
 \usetheme{Darmstadt} 
 %\usetheme{Dresden} %Dresden, Darmstadt, Warsaw
 % \usecolortheme{dove}
-\title{Sphere Detection using Boosted Classifiers}
+% \title{Sphere Detection using Boosted Classifiers}
+\title{Comparing Feature Desctiptor Performance of Boosted Classifiers }
 % \subtitle{Computer Vision Interim Report}
 \author{Brendan Annable, Mitchell Metcalfe, Monica Olejniczak}
 \institute{The University of Newcastle, Australia}
@@ -30,59 +39,90 @@
 
 	\maketitle
 
-	\section{Motivation}
 	
 	% \begin{frame}{Object detection}
 	% 	\begin{center}
-			
 	% 		To create an object detector using supervised learning, a correctly
 	% 		labelled dataset needs to be created for training.
-
-	% 		\citet{opencv_library}
-
 	% 	\end{center}
 	% \end{frame}
 
-	% Title slide
+\section{Introduction}
 
-	% Motivation:
-	%   - ball detection for robot soccer
-	%   - Robocup
-	%     - need to know where the ball is
-	%     - circle detection
-	%       * common problems:
-	%         - centre circle
-	%         - penalty spots
-	%         - line intersections
-	%         - anything that looks round from some angle
-	%   - Possible solutions:
-	%     - Classify the texture of the desired object
-	%     - train a generic sphere classifier and use it to detect the ball
-	%         - potential wider appeal
+	\subsection{Motivation}
 
-	% Focus of work
-	%	- Detect spheres
-	%   - do not detect other 'round things'
-	%   (show example images)
+	\begin{frame}{Robot soccer}
+		Robots at RoboCup \citep{KitanoAKNO97} need to know where the ball is.
 
-	% Literature
+		Basic approach is circle detection, which has problems:
+		\begin{itemize}
+			\item centre circle
+	        \item penalty spots
+	        \item line intersections
+	        \item anything that looks round from some angle
+		\end{itemize}
+	\end{frame}
 
-	% 
+	\begin{frame}{Current approaches}
+		A review of recent literature reveals several recent approaches:
+		\begin{itemize}
+			\item centre circle
+	        \item penalty spots
+	        \item line intersections
+	        \item anything that looks round from some angle
+		\end{itemize}
+	\end{frame}
 
-	% Methodology
+	\begin{frame}{Sphere detection problem}
+		\begin{itemize}
+			\item More general problem than ball detction.
+			\item Detect spheres.
+			\item Do not detect any \scarequotes{round things} unless they are spheres.
+		\end{itemize}
+	\end{frame}
+
+\section{Focus of work}
+	\begin{frame}{Proposed approach}
+		Attempt to solve the more generic problem of sphere detection using a boosted classifier cascade.
+	\end{frame}
+
+	\begin{frame}{Feature comparison}
+		We compare 
+	\end{frame}
+
+\section{Methodology}
 	% 
 	%  (describe the goal of comparing techniques)
+\begin{frame}{Software used}
+	\begin{itemize}
+		\item Classifiers of each feature type were trained simultaneously
+		\item Run on a Macbook Pro with an Intel Core i7 (I7-3740QM) processor and 16GB RAM.
+	\end{itemize}
+\end{frame}
 
-	% Training
-	% - all classifiers of each type were trained simultaneously
-	% - run on macbook pro with an Intel Core i7 (I7-3740QM) processor and 16GB ram
+
 \section{Training}
+
+\begin{frame}{Software used}
+	\begin{itemize}
+		\item Classifiers of each feature type were trained simultaneously
+		\item Run on a Macbook Pro with an Intel Core i7 (I7-3740QM) processor and 16GB RAM.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Software used}
+	\begin{itemize}
+		\item Python scripts for dataset generation and performance statistics.
+		\item \citet{opencv_library} for training and running the clasifier.
+	\end{itemize}
+\end{frame}
+
 
 \begin{frame}{Positive samples}
 	\begin{table}[H]
 		\footnotesize
 		\centering
-		\caption{The categories from ImageNet used for the positive samples in the training set and their associated WordNet \citep{fellbaum1998wordnet} identifiers.}
+		\caption{ImageNet synsets used for the positive samples in the training set and their associated WordNet \citep{fellbaum1998wordnet} identifiers.}
 		\label{tab:postraining}
 		\begin{tabularx}{\textwidth}{lX}
 			\toprule
@@ -169,15 +209,15 @@
 
 \section{Conclusion}
 
-	% Conclusion
+	\subsection{Feature performance comparison}
 	%   - Haar features clearly performed better than HOGS or LBP on the sphere detection task
 	%   - 
 
+	\subsection{Future work}
 	% Future Work
 	%   - 
 
-	% References
-
+	\subsection{Bibliography}
 
 	\begin{frame}{Bibliography}
 		\bibliography{references}
