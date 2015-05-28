@@ -261,6 +261,37 @@
 
 % Make a table of results
 % Hopefully a graph?
+\begin{frame}{Training results}
+	\begin{table}[H]
+		\footnotesize
+		\centering
+		% \caption{Results for all training schemes}
+		% \label{tab:trainresults}
+		\begin{tabularx}{\textwidth}{lcccccc}
+			\toprule
+			\textbf{name} & \textbf{number} & \textbf{posFrag} & 
+			\textbf{hardNegFrac} & \textbf{fullset} &
+			 \textbf{type} & \textbf{hitrate} \\
+			\midrule
+			\(scheme_1\) & 2000 & 0.33 	& 0 	& 0	& HAAR	 & 9.09\% 	\\
+			\(scheme_2\) & 2000 & 0.33 	& 0.25 	& 0	& HAAR	 & 6.49\% 	\\
+			\(scheme_3\) & 2000 & 0.33 	& 0.25 	& 0	& HAAR	 & 16.45\% 	\\
+			\(scheme_4\) & 4000 & 0.5 	& 0.2 	& 1	& HAAR	 & 19.91\% 	\\
+			\(scheme_5\) & 3500 & 0.5 	& 0 	& 1	& HAAR	 & 20.35\% 	\\
+			\(lbp_1\)    & 2000 & 0.33 	& 0 	& 0	& LBP	 & 01.73\% 	\\
+			\(lbp_2\)    & 2000 & 0.33 	& 0.25 	& 0	& LBP	 & 3.03\% 	\\
+			\(lbp_3\)    & 2000 & 0.33 	& 0.25 	& 0	& LBP	 & 4.76\% 	\\
+			\(lbp_4\)    & 4000 & 0.5 	& 0.2 	& 1	& LBP	 & 6.06\% 	\\
+			\(lbp_5\)    & 3500 & 0.5 	& 0 	& 1	& LBP	 & 8.23\% 	\\
+			\(hog_1\)    & 2000 & 0.33 	& 0 	& 0	& HOG	 & 1.3\% 	\\
+			\(hog_2\)    & 2000 & 0.33 	& 0.25 	& 0	& HOG	 & 0.87\% 	\\
+			\(hog_3\)    & 2000 & 0.33 	& 0.25 	& 0	& HOG	 & 2.6\% 	\\
+			\(hog_4\)    & 4000 & 0.5 	& 0.2 	& 1	& HOG	 & 3.03\% 	\\
+			\(hog_5\)    & 3500 & 0.5 	& 0 	& 1	& HOG	 & 5.19\% 	\\
+			\bottomrule
+		\end{tabularx}%
+	\end{table}
+\end{frame}
 
 \begin{frame}{Training results}
 	\begin{table}[H]
@@ -270,25 +301,27 @@
 		% \label{tab:trainresults}
 		\begin{tabularx}{\textwidth}{lcccccc}
 			\toprule
-			\textbf{name} & \textbf{number} & \textbf{posFrag} & \textbf{hardNegFrac} & \textbf{fullset} & \textbf{type} & \textbf{hitrate} \\
+			\textbf{name} & \textbf{number} & \textbf{posFrag} & 
+			\textbf{hardNegFrac} & \textbf{fullset} &
+			  \textbf{hitrate} & \textbf{falsepositives} \\
 			\midrule
-			\(scheme_1\) & 2000 & 0.33 & 0 & 0 & HAAR & 9.09\% \\
-			\(scheme_2\) & 2000 & 0.33 & 0.25 & 0 & HAAR & 6.49\% \\
-			\(scheme_3\) & 2000 & 0.33 & 0.25 & 0 & HAAR & 16.45\% \\
-			\(scheme_4\) & 4000 & 0.5 & 0.2 & 1 & HAAR & 19.91\% \\
-			\(scheme_5\) & 3500 & 0.5 & 0 & 1 & HAAR & 20.35\% \\
-			\(lbp_1\) & 2000 & 0.33 & 0 & 0 & LBP & 01.73\% \\
-			\(lbp_2\) & 2000 & 0.33 & 0.25 & 0 & LBP & 3.03\% \\
-			\(lbp_3\) & 2000 & 0.33 & 0.25 & 0 & LBP & 4.76\% \\
-			\(lbp_4\) & 4000 & 0.5 & 0.2 & 1 & LBP & 6.06\% \\
-			\(lbp_5\) & 3500 & 0.5 & 0 & 1 & LBP & 8.23\% \\
-			\(hog_1\) & 2000 & 0.33 & 0 & 0 & HOG & 1.3\% \\
-			\(hog_2\) & 2000 & 0.33 & 0.25 & 0 & HOG & 0.87\% \\
-			\(hog_3\) & 2000 & 0.33 & 0.25 & 0 & HOG & 2.6\% \\
-			\(hog_4\) & 4000 & 0.5 & 0.2 & 1 & HOG & 3.03\% \\
-			\(hog_5\) & 3500 & 0.5 & 0 & 1 & HOG & 5.19\% \\
+			\(scheme_1\) & 2000 & 0.33 	& 0 	& 0	& 9.09\% 	& 27 	\\
+			\(scheme_2\) & 2000 & 0.33 	& 0.25 	& 0	& 6.49\% 	& 12 	\\
+			\(scheme_3\) & 2000 & 0.33 	& 0.25 	& 0	& 16.45\% 	& 65 	\\
+			\(scheme_4\) & 4000 & 0.5 	& 0.2 	& 1	& 19.91\% 	& 66 	\\
+			\(scheme_5\) & 3500 & 0.5 	& 0 	& 1	& 20.35\% 	& 71 	\\
+			\(lbp_1\)    & 2000 & 0.33 	& 0 	& 0	& 01.73\% 	& 10 	\\
+			\(lbp_2\)    & 2000 & 0.33 	& 0.25 	& 0	& 3.03\% 	& 12 	\\
+			\(lbp_3\)    & 2000 & 0.33 	& 0.25 	& 0	& 4.76\% 	& 19 	\\
+			\(lbp_4\)    & 4000 & 0.5 	& 0.2 	& 1	& 6.06\% 	& 21 	\\
+			\(lbp_5\)    & 3500 & 0.5 	& 0 	& 1	& 8.23\% 	& 31 	\\
+			\(hog_1\)    & 2000 & 0.33 	& 0 	& 0	& 1.3\% 	& 5  	\\
+			\(hog_2\)    & 2000 & 0.33 	& 0.25 	& 0	& 0.87\% 	& 2 	\\
+			\(hog_3\)    & 2000 & 0.33 	& 0.25 	& 0	& 2.6\% 	& 11 	\\
+			\(hog_4\)    & 4000 & 0.5 	& 0.2 	& 1	& 3.03\% 	& 5 	\\
+			\(hog_5\)    & 3500 & 0.5 	& 0 	& 1	& 5.19\% 	& 12 	\\
 			\bottomrule
-		\end{tabularx}
+		\end{tabularx}%
 	\end{table}
 \end{frame}
 
