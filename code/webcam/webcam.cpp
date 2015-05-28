@@ -30,14 +30,23 @@ int main(int argc, char* argv[]) {
 		std::cout << "Error: Could not open webcam" << std::endl;
 	}
 
+	cap.set(CV_CAP_PROP_FRAME_WIDTH, 800);
+    cap.set(CV_CAP_PROP_FRAME_HEIGHT, 600);
+
 	cv::Mat frame;
 	cv::Mat image;
-	cv::namedWindow("Detections", 1);
+	cv::Mat down_image;
+	cv::namedWindow("Detections", CV_WINDOW_NORMAL);
+//	cvSetWindowProperty("Detections", CV_WND_PROP_FULLSCREEN, CV_WINDOW_FULLSCREEN);
 
+
+	double scale = 0.40;
 	while (true) {
 		cap >> frame;
 
 		cvtColor(frame, image, CV_BGR2GRAY);
+		//cv::equalizeHist(image, image);
+		cv::resize(image, down_image, cv::Size(), scale, scale, 0);
 
 		cv::Size minSize = cv::Size();
 		cv::Size maxSize = cv::Size();
@@ -45,19 +54,25 @@ int main(int argc, char* argv[]) {
 		int minNeighbours = 3;
 		int flags = 0;
 		std::vector<cv::Rect> objects;
-		classifier.detectMultiScale(image, objects, scaleFactor, minNeighbours, flags, minSize, maxSize);
+		classifier.detectMultiScale(down_image, objects, scaleFactor, minNeighbours, flags, minSize, maxSize);
 
 		for (size_t i = 0, len = objects.size(); i < len; i++) {
 			// Get the current object.
 			cv::Rect object = objects[i];
 			// Calculate the size and center of the object.
-			cv::Point center((int) (object.x + object.width * 0.5), (int) (object.y + object.height * 0.5));
-			cv::Size size((int) (object.width * 0.5), (int) (object.height * 0.5));
+			cv::Point center((int) ((object.x + object.width * 0.5) / scale), (int) ((object.y + object.height * 0.5) / scale));
+			cv::Size size((int) ((object.width * 0.5) / scale), (int) ((object.height * 0.5) / scale));
 			// Display the detection on the coloured frame.
 			cv::ellipse(frame, center, size, Draw.angle, Draw.startAngle, Draw.endAngle, Draw.color, Draw.thickness, Draw.lineType, Draw.shift);
+
+//			cv::Point center2((int) (object.x + object.width * 0.5), (int) (object.y + object.height * 0.5));
+//			cv::Size size2((int) (object.width * 0.5), (int) (object.height * 0.5));
+			// Display the detection on the coloured frame.
+//			cv::ellipse(down_image, center2, size2, Draw.angle, Draw.startAngle, Draw.endAngle, Draw.color, Draw.thickness, Draw.lineType, Draw.shift);
 		}
 
 		cv::imshow("Detections", frame);
+//		cv::imshow("Detections", down_image);
 
         cv::waitKey(30);
     }
