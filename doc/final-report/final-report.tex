@@ -1,5 +1,4 @@
 \documentclass{llncs}
-% \documentclass{article}
 
 \usepackage{graphicx}
 
@@ -281,7 +280,7 @@
 					\label{fig:positive_samples}%
 				}%
 		        \qquad
-		        \subfigure[Negative samples.]{%
+		        \subfigure[Hard negative samples.]{%
 		        	% Enclose in shortstack to enable line break.
 		        	\shortstack{%
 			        	% Hard negative
@@ -295,9 +294,9 @@
 						\includesample{hard_negative/n03208556_13484_thumbnail.jpg}%
 						\includesample{hard_negative/n04019541_26831_thumbnail.jpg}%
 					}%
-					\label{fig:negative_samples}%
+					\label{fig:hard_negative_samples}%
 		        }%
-		        \caption{Examples of positive and negative samples.}
+		        \caption{Examples of positive~\ref{fig:positive_samples} and hard negative~\ref{fig:hard_negative_samples} samples used for training. The first row represents the original image, while the second row represents the same samples that have been cropped, resized and converted to grayscale prior to training.}
 		        \label{fig:samples}
 			\end{figure}
 
