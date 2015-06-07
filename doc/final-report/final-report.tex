@@ -104,7 +104,7 @@
 
 	\section{Training For Sphere Detection} {
 
-		The aim of this project is to create a robust sphere detector that does not detect disk-like objects as false positives. To achieve this, we trained boosted classifiers using weak classifiers based on three different feature-types: Haar, LBP, HOG. We hypothesised that including a larger proportion of disk-like negative images in the training set would increase the precision of the resulting sphere detectors. This hypothesis was tested, which has been described in Section~\ref{sec:experiment}.
+		The aim of this project is to create a robust sphere detector that does not detect disk-like objects as false positives. To achieve this, we trained boosted classifiers using weak classifiers based on three different feature-types: Haar, LBP and HOG. We hypothesised that including a larger proportion of disk-like negative images in the training set would increase the precision of the resulting sphere detectors. This hypothesis was tested, which has been described in Section~\ref{sec:experiment}.
 
 	}
 
@@ -118,20 +118,13 @@
 		\subsection{Image Dataset Compilation} {
 		\label{sec:dataset}
 
-			% The dataset will include approximately 3500 positive samples and 8500 negative samples. There will be a balance of object sizes, patterns, colours and textures between the images.
-
 			ImageNet is an image database organised according to the WordNet hierarchy \citep{imagenet_cvpr09, fellbaum1998wordnet} that was used as a source of training and testing data. This resource was chosen because it is widely recognised in computer vision, since it offers a wide range of images and their respective class and bounding box information. The use of ImageNet has facilitated the training of many more samples than would be possible to collect manually within the timeframe of this project.
 
-			\todo{Add what wordnet is}
+			\todo{Add what wordnet is and a reference to why 24 x 24 is optimised}
 
-			Only images that contain bounding box information were extracted from ImageNet. 
-
-			% Once the images were extracted 
-
-			Only images with  bounding box info were used + all samples were cropped , resized and converted to grayscale 24 x 24 which have been shown in Figure~\ref{fig:samples}.
+			Only images that contained bounding box information were extracted from ImageNet. Prior to training, these images were cropped to fit the bounding box information, resized to 24 x 24 pixels and converted to grayscale. An example of this process has been demonstrated in Figure~\ref{fig:samples}.
 
 			% compile / extracted
-			% 24 * 24 optimised reference yeah
 
 			\newcommand{\samplefigurewidth}{0.45\textwidth}
 			\newcommand{\samplewidth}{0.14\textwidth}
@@ -155,7 +148,7 @@
 					\label{fig:positive_samples}%
 				}%
 		        \qquad
-		        \subfigure[Hard negative samples.]{%
+		        \subfigure[Negative samples.]{%
 		        	% Enclose in shortstack to enable line break.
 		        	\shortstack{%
 			        	% Hard negative
@@ -167,13 +160,13 @@
 						\includesample{hard_negative/hard_negative_2_thumbnail}%
 						\includesample{hard_negative/hard_negative_3_thumbnail}%
 					}%
-					\label{fig:hard_negative_samples}%
+					\label{fig:negative_samples}%
 		        }%
-		        \caption{Examples of positive~\ref{fig:positive_samples} and hard negative~\ref{fig:hard_negative_samples} samples used for training. The first row represents the original image, while the second row represents the same samples that have been cropped, resized and converted to grayscale prior to training.}
+		        \caption{Examples of positive~\ref{fig:positive_samples} and negative~\ref{fig:negative_samples} samples used for training. The first row represents the original image, while the second row represents the same samples that have been cropped, resized and converted to grayscale prior to training.}
 		        \label{fig:samples}
 			\end{figure}
 
-			Table~\ref{tab:positive_samples} represents the positive samples used in the training set.
+			Several WordNet synsets were used to compile the training and test set for this project. Table~\ref{tab:positive_samples} represents the positive samples used in the training set, while Table~\ref{tab:positive_samples_simple} is a subset of these positive samples that were also used for training. The test set comprises the categories listed in Table~\ref{tab:test_set}, along with the positive training set samples previously described in Table~\ref{tab:positive_samples}. The negative training set shown in Table~\ref{tab:negative_samples}, is drawn from both the hard negative training set and the background training set, as shown in Table~\ref{tab:background_samples}.
 
 			\begin{table}
 				\centering
@@ -200,8 +193,6 @@
 				\end{tabularx}
 			\end{table}
 
-			Table~\ref{tab:positive_samples_simple} represents the simple positive samples used in the training set.
-
 			\begin{table}
 				\centering
 				\caption{ImageNet synsets used for the simple positive samples in the training set and their associated WordNet identifiers.}
@@ -219,8 +210,6 @@
 					\bottomrule
 				\end{tabularx}
 			\end{table}
-
-			Table~\ref{tab:test_set} represents the additional positive samples used in the test set.
 
 			\begin{table}
 				\centering
@@ -241,11 +230,9 @@
 				\end{tabularx}
 			\end{table}
 
-			Table~\ref{tab:negative_samples} represents the hard negative samples used in the training set.
-
 			\begin{table}
 				\centering
-				\caption{ImageNet synsets used for the hard negative samples in the training set and their associated WordNet identifiers.}
+				\caption{ImageNet synsets used for the negative samples in the training set and their associated WordNet identifiers.}
 				\label{tab:negative_samples}
 				\begin{tabularx}{\textwidth}{lX}
 					\toprule
@@ -257,8 +244,6 @@
 					\bottomrule
 				\end{tabularx}
 			\end{table}
-
-			Table~\ref{tab:background_samples} represents the background samples used in the training set.
 
 			\begin{table}
 				\centering
@@ -399,6 +384,13 @@
 		}
 
 		It can be seen from Figure~\ref{fig:trial_comparison_chart} that the HAAR feature type ... DID PERFECTLY!
+
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.5\textwidth]{images/fifa_ball}
+			\caption{FIFA ball.}
+			\label{fig:fifa_ball}
+		\end{figure}
 	}
 
 	\section{Conclusion} {
