@@ -73,24 +73,30 @@ def isDetection(obj, actual):
 
 
 # Start script:
+def str2bool(s):
+	return s in ['true', 'True', 't', 'T']
+
 parser = argparse.ArgumentParser(description='ImageNet Gatherer')
 parser.add_argument('detections_dat', type=str, nargs='?', default='../images/tests/detections.dat', help='File containing image and bounding-box information')
 parser.add_argument('info_dat', type=str, nargs='?', default='info.dat', help='File containing image and bounding-box information')
+parser.add_argument('full_results', type=str2bool, nargs='?', default=True, help='Whether to output results or each image, or just a summary.')
 
 args = parser.parse_args()
 
 output_lines = []
 
-print 'detections_dat: {}'.format(args.detections_dat)
-print 'info_dat: {}'.format(args.info_dat)
-output_lines += ['detections_dat: {}'.format(args.detections_dat)]
-output_lines += ['info_dat: {}'.format(args.info_dat)]
+if args.full_results:
+	print 'detections_dat: {}'.format(args.detections_dat)
+	print 'info_dat: {}'.format(args.info_dat)
+	output_lines += ['detections_dat: {}'.format(args.detections_dat)]
+	output_lines += ['info_dat: {}'.format(args.info_dat)]
 
 detections = readDataFile(args.detections_dat)
 info = readDataFile(args.info_dat)
 
 total_objects = 0
 total_hit_count = 0
+total_detections = 0
 
 for key in detections:
 	detected_objs = detections[key]
@@ -102,6 +108,7 @@ for key in detections:
 
 	num_objects = len(actual_objs) + 0.0
 	total_objects += num_objects
+	total_detections += len(detected_objs) + 0.0
 	
 	num_fp = 0
 	num_tp = 0
@@ -120,21 +127,29 @@ for key in detections:
 			total_hit_count += 1 
 
 	num_detected = len(detected_objs) + 0.0
-	if num_detected > 0:
-		str = "img: {:19}, tp: {:6.2f}, fp: {:6.2f}, tp%: {:4.2f}".format(key, num_tp, num_fp, num_tp / num_detected)
-		print str; output_lines += [str];
-	else:
-		str = "img: {:19}, tp: {:6.2f}, fp: {:6.2f}".format(key, num_tp, num_fp)
-		print str; output_lines += [str];
+	if args.full_results:
+		if num_detected > 0:
+			str = "img: {:19}, tp: {:6.2f}, fp: {:6.2f}, tp%: {:4.2f}".format(key, num_tp, num_fp, num_tp / num_detected)
+			print str; output_lines += [str];
+		else:
+			str = "img: {:19}, tp: {:6.2f}, fp: {:6.2f}".format(key, num_tp, num_fp)
+			print str; output_lines += [str];
 
+recall_str = "recall: Inf"
 if total_objects != 0:
-	hit_rate = total_hit_count / total_objects
-	str = "hit_rate: {}".format(hit_rate)
-	print str; output_lines += [str];
-else:
-	str = "hit_rate: Inf"
-	print str; output_lines += [str];
+	recall = total_hit_count / total_objects
+	recall_str = "recall: {:9.5f}".format(recall)
 
+
+precision = total_hit_count / total_detections
+precision_str = "precision: {:9.5f}".format(precision)
+
+if args.full_results:
+	print recall_str; output_lines += [recall_str];
+	print precision_str; output_lines += [precision_str];
+else:
+	str = '{:15}, {}, {}'.format(args.detections_dat, precision_str, recall_str)
+	print str; output_lines += [str];
 
 results_file_name = '/'.join(args.detections_dat.split('/')[:-1]) + '/results.txt'
 with open(results_file_name, 'w') as dat_file:
