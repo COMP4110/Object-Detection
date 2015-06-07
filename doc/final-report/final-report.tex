@@ -37,7 +37,7 @@
 \makeatother
 
 % Todo notes
-\usepackage{todonotes}
+\usepackage[disable]{todonotes}
 \presetkeys{todonotes}{inline}{}
 
 % Other
@@ -318,9 +318,6 @@
 		}
 	}
 
-	\section{Results} {
-	\label{sec:results}
-
 		% Several Haar cascade classifiers were trained on this datset, using different training parameters, and their performances compared qualatitively by viewing the claissifier output on a small set of test images.
 
 		% The preliminary results obtained are summarised in Table~\ref{tab:results}.
@@ -334,6 +331,9 @@
 		% 		  The use of different ImageNet synsets, such as `n03032811 - Circle, round' into the set of negative samples may improve performance, and will be considered before the final report.
 		% \end{itemize}
 
+	\section{Results} {
+	\label{sec:results}
+
 		The performance of the classifier trained in each trial was evaluated by calculating its \newterm{precision} and \newterm{recall} when run on the test set.
 		The results of the classifier training and testing performed for the experiment are summarized in Table~\ref{tab:training_results}, and have been presented graphically in Figure~\ref{fig:trial_comparison_chart_precision}, and Figure~\ref{fig:trial_comparison_chart_recall}.
 
@@ -341,8 +341,8 @@
 			\centering
 			\caption{Training results for all training schemes.}
 			\label{tab:training_results}
-			\scalebox{0.75}{
-				\begin{tabularx}{1.25\textwidth}{@{}lcccccccc@{}}
+			\scalebox{0.8}{
+				\begin{tabularx}{1.3\textwidth}{@{}lcccccccc@{}}
 					\toprule
 					\textbf{Name} & \textbf{Set size} & \textbf{Positive \%} & \textbf{Hard Negative \%} & \textbf{NumPos} & \textbf{Simple} & \textbf{Feature type} & \textbf{Precision \%} & \textbf{Recall \%} \\
 					\midrule
@@ -365,6 +365,7 @@
 				\end{tabularx}
 			}
 		\end{table}
+		\newpage
 
 		% Figure~\ref{fig:trial_comparison_chart}
 
@@ -373,6 +374,8 @@
 		\begin{figure}[H]
 			\begin{tikzpicture}
 				\begin{axis}[
+					width=\textwidth,
+      				height=0.65\textwidth,
 					ybar,
 					enlargelimits=0.15,
 					legend style={at={(0.5,-0.15)},
@@ -396,6 +399,8 @@
  		\begin{figure}[H]
 			\begin{tikzpicture}
 				\begin{axis}[
+					width=\textwidth,
+      				height=0.65\textwidth,
 					ybar,
 					enlargelimits=0.15,
 					legend style={at={(0.5,-0.15)},
