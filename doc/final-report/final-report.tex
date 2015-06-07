@@ -449,14 +449,15 @@
 		This test involved the use of a HD webcam to perform live object detection. The webcam was presented with a number of balls with the intention of observing the robustness of the trained sphere detector.
 		This experiment appeared to perform quite well and detected most of the balls in the scene. The sphere detector, however, did not perform well when presented with a highly textured ball as seen in Figure~\ref{fig:fifa_ball}.
 
+		It was also noted that the detector could not detect the balls when the webcam was significantly rotated such that the ball was upside down with respect to the camera. This effect is illustrated in Figure~\ref{fig:rotated_sequence}. This supports the suggestion that the detectors using Haar features perform shading based detection and not simply circle detection.
+
 		\begin{figure}
 			\centering
-			\includegraphics[width=0.5\textwidth]{images/fifa_ball}
+			\includegraphics[width=0.7\textwidth]{images/fifa_ball}
 			\caption{The FIFA ball that often could not be detected.}
 			\label{fig:fifa_ball}
 		\end{figure}
-
-		It was also noted that the detector could not detect the balls when the webcam was significantly rotated such that the ball was upside down with respect to the camera. This effect is illustrated in Figure~\ref{fig:rotated_sequence}. This supports the suggestion that the detectors using Haar features perform shading based detection and not simply circle detection.
+		\newpage
 
 		% \todo{note that there is no clear relationship between the number of images used and precision}
 
@@ -464,7 +465,7 @@
 
 		\newcommand{\includesequence}[1]{\hspace{0.05cm}\includegraphics[width=0.23\textwidth]{images/rotation/#1}}
 
-		\begin{figure}
+		\begin{figure}[H]
 			\centering
 			\includesequence{2}
 			\includesequence{25}
