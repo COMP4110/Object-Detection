@@ -161,6 +161,8 @@
 				The categories selected for the simple set were those that contained mostly images of plain, non-textured spheres, and are listed in Table~\ref{tab:positive_samples_simple}. The two datasets are described in more detail in Section~\ref{sec:dataset}.
 
 				The \newterm{simple} parameter describes whether the simple set of positive samples was used instead of the full set.
+
+				Note that in designing the training schemes, the set size of each training schemes that used the simple training set were restricted to be lower than those that used the full training set, due to the far lesser number of images in the simple set.
 		\end{description}
 
 		\subsection{Image Dataset Compilation} {
@@ -314,7 +316,7 @@
 	\section{Results} {
 	\label{sec:results}
 
-		\todo{State the results without interpretation, including any basic graphs/tables of the results.}
+		% \todo{State the results without interpretation, including any basic graphs/tables of the results.}
 
 		% Several Haar cascade classifiers were trained on this datset, using different training parameters, and their performances compared qualatitively by viewing the claissifier output on a small set of test images.
 
@@ -329,13 +331,16 @@
 		% 		  The use of different ImageNet synsets, such as `n03032811 - Circle, round' into the set of negative samples may improve performance, and will be considered before the final report.
 		% \end{itemize}
 
-		The results of our training have been illustrated in Table~\ref{tab:training_results}.
+		The performance of the classifier trained in each trial was evaluated by calculating its \newterm{precision} and \newterm{recall} when run on the test set.
+		The results of the classifier training and testing performed for the experiment are summarized in Table~\ref{tab:training_results}, and have been presented graphically in Figure~\ref{fig:trial_comparison_chart_precision}, and Figure~\ref{fig:trial_comparison_chart_recall}.
 
-		\todo{discuss what recall + precision is}
 
-		These results indicate that Haar feature-types performed better than HOGS or LBP due to the overall higher precision and recall rate. However, it is clear from this data that HOG has a high precision rate that matches closely to HAAR features. It is interesting to note that using the simple positive training set resulted in a lower rate of recall.
 
-		\todo{expand, it's rushed}
+		% \todo{discuss what recall + precision is}
+
+		
+
+		% \todo{expand, it's rushed}
 
 		% LBP features performed better than HOGS. Increasing the proportion of negative images decreased the hit rate.
 
@@ -343,63 +348,32 @@
 			\centering
 			\caption{Training results for all training schemes.}
 			\label{tab:training_results}
-			\scalebox{0.8}{
-				\begin{tabularx}{1.1\textwidth}{@{}lccccccc@{}}
+			\scalebox{0.75}{
+				\begin{tabularx}{1.25\textwidth}{@{}lcccccccc@{}}
 					\toprule
-					\textbf{Name} & \textbf{Number} & \textbf{Pos. \%} & \textbf{Hard Neg. \%} & \textbf{Simple} & \textbf{Type} & \textbf{Precision \%} & \textbf{Recall \%} \\
+					\textbf{Name} & \textbf{Set size} & \textbf{Positive \%} & \textbf{Hard Negative \%} & \textbf{NumPos} & \textbf{Simple} & \textbf{Feature type} & \textbf{Precision \%} & \textbf{Recall \%} \\
 					\midrule
-						\(haar_1\) & 2000 & 0.33 & 0     & Yes & HAAR & 42.857 &  9.091 \\
-						\(haar_2\) & 2000 & 0.33 & 0.25  & Yes & HAAR & 53.571 &  6.494 \\
-						\(haar_3\) & 2000 & 0.33 & 0.25  & Yes & HAAR & 36.538 & 16.450 \\
-						\(haar_4\) & 4000 & 0.5  & 0.2   & No  & HAAR & 41.818 & 19.913 \\
-						\(haar_5\) & 3500 & 0.5  & 0     & No  & HAAR & 39.831 & 20.346 \\
-						\(lbp_1\)  & 2000 & 0.33 & 0     & Yes & LBP  & 26.667 &  1.732 \\
-						\(lbp_2\)  & 2000 & 0.33 & 0.25  & Yes & LBP  & 36.842 &  3.030 \\
-						\(lbp_3\)  & 2000 & 0.33 & 0.25  & Yes & LBP  & 36.667 &  4.762 \\
-						\(lbp_4\)  & 4000 & 0.5  & 0.2   & No  & LBP  & 40.000 &  6.061 \\
-						\(lbp_5\)  & 3500 & 0.5  & 0     & No  & LBP  & 38.000 &  8.225 \\
-						\(hog_1\)  & 2000 & 0.33 & 0     & Yes & HOG  & 37.500 &  1.299 \\
-						\(hog_2\)  & 2000 & 0.33 & 0.25  & Yes & HOG  & 50.000 &  0.866 \\
-						\(hog_3\)  & 2000 & 0.33 & 0.25  & Yes & HOG  & 33.333 &  2.597 \\
-						\(hog_4\)  & 4000 & 0.5  & 0.2   & No  & HOG  & 50.000 &  3.030 \\
-						\(hog_5\)  & 3500 & 0.5  & 0     & No  & HOG  & 42.857 &  5.195 \\
+						\(haar_1\) & 2000 & 0.33 & 0     & 138 & Yes & HAAR & 42.857 &  9.091 \\
+						\(haar_2\) & 2000 & 0.33 & 0.25  & 138 & Yes & HAAR & 53.571 &  6.494 \\
+						\(haar_3\) & 2000 & 0.33 & 0.25  & 277 & Yes & HAAR & 36.538 & 16.450 \\
+						\(haar_4\) & 4000 & 0.5  & 0.2   & 420 & No  & HAAR & 41.818 & 19.913 \\
+						\(haar_5\) & 3500 & 0.5  & 0     & 367 & No  & HAAR & 39.831 & 20.346 \\
+						\(lbp_1\)  & 2000 & 0.33 & 0     & 138 & Yes & LBP  & 26.667 &  1.732 \\
+						\(lbp_2\)  & 2000 & 0.33 & 0.25  & 138 & Yes & LBP  & 36.842 &  3.030 \\
+						\(lbp_3\)  & 2000 & 0.33 & 0.25  & 277 & Yes & LBP  & 36.667 &  4.762 \\
+						\(lbp_4\)  & 4000 & 0.5  & 0.2   & 420 & No  & LBP  & 40.000 &  6.061 \\
+						\(lbp_5\)  & 3500 & 0.5  & 0     & 367 & No  & LBP  & 38.000 &  8.225 \\
+						\(hog_1\)  & 2000 & 0.33 & 0     & 138 & Yes & HOG  & 37.500 &  1.299 \\
+						\(hog_2\)  & 2000 & 0.33 & 0.25  & 138 & Yes & HOG  & 50.000 &  0.866 \\
+						\(hog_3\)  & 2000 & 0.33 & 0.25  & 277 & Yes & HOG  & 33.333 &  2.597 \\
+						\(hog_4\)  & 4000 & 0.5  & 0.2   & 420 & No  & HOG  & 50.000 &  3.030 \\
+						\(hog_5\)  & 3500 & 0.5  & 0     & 367 & No  & HOG  & 42.857 &  5.195 \\
 					\bottomrule
 				\end{tabularx}
 			}
 		\end{table}
 
-		% \begin{table}
-		% 	\centering
-		% 	\caption{Training results for all training schemes.}
-		% 	\label{tab:precisionrecall}
-		% 	\begin{tabularx}{\textwidth}{XXX}
-		% 		\toprule
-		% 		\textbf{Name} & \textbf{Precision \%} & \textbf{Recall \%} \\
-		% 		\midrule
-		% 		\(haar_1\)   & 42.857 &  9.091 \\
-		% 		\(haar_2\)   & 53.571 &  6.494 \\
-		% 		\(haar_3\)   & 36.538 & 16.450 \\
-		% 		\(haar_4\)   & 41.818 & 19.913 \\
-		% 		\(haar_5\)   & 39.831 & 20.346 \\
-		% 		\(lbp_1\)    & 26.667 &  1.732 \\
-		% 		\(lbp_2\)    & 36.842 &  3.030 \\
-		% 		\(lbp_3\)    & 36.667 &  4.762 \\
-		% 		\(lbp_4\)    & 40.000 &  6.061 \\
-		% 		\(lbp_5\)    & 38.000 &  8.225 \\
-		% 		\(hog_1\)    & 37.500 &  1.299 \\
-		% 		\(hog_2\)    & 50.000 &  0.866 \\
-		% 		\(hog_3\)    & 33.333 &  2.597 \\
-		% 		\(hog_4\)    & 50.000 &  3.030 \\
-		% 		\(hog_5\)    & 42.857 &  5.195 \\
-		% 		% \(scheme_6\) &  0.405 & 18.182 \\
-		% 		% \(scheme_7\) &  0.293 & 15.152 \\
-		% 		% \(scheme_8\) &  0.585 & 26.840 \\
-		% 		% \(template\) &  1.561 &  6.494 \\
-		% 		\bottomrule
-		% 	\end{tabularx}
-		% \end{table}
-
-		Figure~\ref{fig:trial_comparison_chart}
+		% Figure~\ref{fig:trial_comparison_chart}
 
 		\newcommand{\plotscheme}[5]{\addplot coordinates {(Scheme 1, #1) (Scheme 2, #2) (Scheme 3, #3) (Scheme 4, #4) (Scheme 5, #5)};}
 
@@ -423,7 +397,7 @@
 				\end{axis}
 			\end{tikzpicture}
 			\caption{A column graph comparing each trial scheme with the resulting rate of precision.}
-			\label{fig:trial_comparison_chart_2}
+			\label{fig:trial_comparison_chart_precision}
 		\end{figure}
 
  		\begin{figure}[H]
@@ -446,18 +420,31 @@
 				\end{axis}
 			\end{tikzpicture}
 			\caption{A column graph comparing each trial scheme with the resulting rate of recall.}
-			\label{fig:trial_comparison_chart}
+			\label{fig:trial_comparison_chart_recall}
 		\end{figure}
-
 	}
 
 	\section{Discussion} {
 
 		\todo{Interpret the results and determine whether the hypothesis was correct. Compare the results to other methods. Discuss any additional results not related to the controlled experiment (e.g. performance in practice, the best classifier attained, etc.)}
 
-		\todo{It can be seen from Figure~\ref{fig:trial_comparison_chart} that the HAAR feature type ... DID PERFECTLY!}
+		A clear trend is visible in Figure~\ref{fig:trial_comparison_chart_recall}, where the recall of the classifiers that used Haar features was much greater than those that used LBPs, which in turn had higher recall than the classifiers using HOG features.
 
-		A smaller informal experiment was conducted alongside this project, which involved using a HD webcam to perform live object detection. The webcam was presented with a number of balls with the intention of observing the robustness of the trained sphere detector. This experiment appeared to perform quite well and detected most of the balls in the scene. The sphere detector, however, did not perform well when presented with a highly textured ball as seen in Figure~\ref{fig:fifa_ball}.
+		Figure~\ref{fig:trial_comparison_chart_precision} shows that the Haar classifiers almost always had higher precision than the classifiers using LBP features, although the difference in performance in trials 3--5 may not be significant.
+		The classifiers using HOG features also generally had higher precision than those using LBP features, except in \(scheme_3\).
+
+		Based on these observations, the results suggest that Haar features are more appropriate than LBP features for the sphere detection task, as the Haar classifiers had the same are better precision and recall for every training scheme.
+		We suggest that this may be 
+
+
+		% Additionally, recall rate for classifiers of each feature type generally increased with the scheme number. 
+
+		\todo{Results show that Haar is better than LBP.}
+
+		\todo{Rephrase:
+			A smaller informal experiment was conducted alongside this project, which involved using a HD webcam to perform live object detection. The webcam was presented with a number of balls with the intention of observing the robustness of the trained sphere detector.
+		}
+		 This experiment appeared to perform quite well and detected most of the balls in the scene. The sphere detector, however, did not perform well when presented with a highly textured ball as seen in Figure~\ref{fig:fifa_ball}.
 
 		\begin{figure}
 			\centering
@@ -466,7 +453,11 @@
 			\label{fig:fifa_ball}
 		\end{figure}
 
-		It was also noted that the detector could not detect the balls when the webcam was significantly rotated such that the ball was upside down with respect to the camera. This observation has been shown in Figure~\ref{fig:rotated_sequence}, we hypothesised that this indicates that the detector must be performing shading based detection and not simply circle detection.
+		It was also noted that the detector could not detect the balls when the webcam was significantly rotated such that the ball was upside down with respect to the camera. This effect is illustrated in Figure~\ref{fig:rotated_sequence}. This may suggest that the detector must be performing shading based detection and not simply circle detection.
+
+		\todo{note that there is no clear relationship between the number of images used and precision}
+
+% These results indicate that Haar feature-types performed better than HOGS or LBP due to the overall higher precision and recall rate. However, it is clear from this data that HOG has a high precision rate that matches closely to HAAR features. It is interesting to note that using the simple positive training set resulted in a lower rate of recall.
 
 		\newcommand{\includesequence}[1]{\hspace{0.05cm}\includegraphics[width=0.23\textwidth]{images/rotation/#1}}
 
