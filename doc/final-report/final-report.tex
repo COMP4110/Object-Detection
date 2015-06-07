@@ -111,15 +111,10 @@
 
 		We hypothesised that including a larger proportion of disk-like negative images in the training set would increase the precision of the resulting sphere detectors.
 
-		To achieve this, we trained Viola-Jones detector cascades \citep{viola2001rapid}
-		using each of three different feature types.
-		We tested our hypothesis on each of three commonly used, but different feature types.
-		The feature types used were
-		Extended Haar features \citep{Lienhart2002extended},
-		Local Binary Patterns (LBPs) \citep{liao2007learning}, and
-		Histograms of Oriented Gradients (HoG) features \citep{dalal2005histograms}.
+		To achieve this, we trained Viola-Jones detector cascades~\citep{viola2001rapid} using each of three different feature types. We tested our hypothesis on each of three commonly used, but different feature types. The feature types used were Extended Haar features~\citep{Lienhart2002extended}, Local Binary Patterns (LBPs)~\citep{liao2007learning}, and Histograms of Oriented Gradients (HoG) features~\citep{dalal2005histograms}.
 
 		The hypothesis was tested through the experiment outlined in Section~\ref{sec:experiment}.
+
 	}
 
 	\section{Experiment} {
@@ -321,8 +316,6 @@
 
 		\todo{State the results without interpretation, including any basic graphs/tables of the results.}
 
-		% A subset of the proposed image database has been obtained based on the ImageNet synset IDs listed in Table~\ref{tab:imagenet} for the positive images. A large collection of images from another source were used as negative images. Negative images for the final report will be sourced from ImageNet.
-
 		% Several Haar cascade classifiers were trained on this datset, using different training parameters, and their performances compared qualatitively by viewing the claissifier output on a small set of test images.
 
 		% The preliminary results obtained are summarised in Table~\ref{tab:results}.
@@ -336,36 +329,42 @@
 		% 		  The use of different ImageNet synsets, such as `n03032811 - Circle, round' into the set of negative samples may improve performance, and will be considered before the final report.
 		% \end{itemize}
 
-		% The remainder of the project shall have to focus on improving the training data and training method if a reliable sphere detector is to result, especially if it is to acheive our goal of distinguishing spheres and disks.
+		The results of our training have been illustrated in Table~\ref{tab:training_results}.
 
-		Table~\ref{tab:training_results}
+		\todo{discuss what recall + precision is}
+
+		These results indicate that Haar feature-types performed better than HOGS or LBP due to the overall higher precision and recall rate. However, it is clear from this data that HOG has a high precision rate that matches closely to HAAR features. It is interesting to note that using the simple positive training set resulted in a lower rate of recall.
+
+		\todo{expand, it's rushed}
+
+		% LBP features performed better than HOGS. Increasing the proportion of negative images decreased the hit rate.
 
 		\begin{table}
 			\centering
 			\caption{Training results for all training schemes.}
 			\label{tab:training_results}
 			\scalebox{0.8}{
-			\begin{tabularx}{1.1\textwidth}{@{}lccccccc@{}}
-				\toprule
-				\textbf{Name} & \textbf{Number} & \textbf{Pos. \%} & \textbf{Hard Neg. \%} & \textbf{Simple} & \textbf{Type} & \textbf{Precision \%} & \textbf{Recall \%} \\
-				\midrule
-					\(haar_1\) & 2000 & 0.33 & 0     & Yes & HAAR & 42.857 &  9.091 \\
-					\(haar_2\) & 2000 & 0.33 & 0.25  & Yes & HAAR & 53.571 &  6.494 \\
-					\(haar_3\) & 2000 & 0.33 & 0.25  & Yes & HAAR & 36.538 & 16.450 \\
-					\(haar_4\) & 4000 & 0.5  & 0.2   & No  & HAAR & 41.818 & 19.913 \\
-					\(haar_5\) & 3500 & 0.5  & 0     & No  & HAAR & 39.831 & 20.346 \\
-					\(lbp_1\)  & 2000 & 0.33 & 0     & Yes & LBP  & 26.667 &  1.732 \\
-					\(lbp_2\)  & 2000 & 0.33 & 0.25  & Yes & LBP  & 36.842 &  3.030 \\
-					\(lbp_3\)  & 2000 & 0.33 & 0.25  & Yes & LBP  & 36.667 &  4.762 \\
-					\(lbp_4\)  & 4000 & 0.5  & 0.2   & No  & LBP  & 40.000 &  6.061 \\
-					\(lbp_5\)  & 3500 & 0.5  & 0     & No  & LBP  & 38.000 &  8.225 \\
-					\(hog_1\)  & 2000 & 0.33 & 0     & Yes & HOG  & 37.500 &  1.299 \\
-					\(hog_2\)  & 2000 & 0.33 & 0.25  & Yes & HOG  & 50.000 &  0.866 \\
-					\(hog_3\)  & 2000 & 0.33 & 0.25  & Yes & HOG  & 33.333 &  2.597 \\
-					\(hog_4\)  & 4000 & 0.5  & 0.2   & No  & HOG  & 50.000 &  3.030 \\
-					\(hog_5\)  & 3500 & 0.5  & 0     & No  & HOG  & 42.857 &  5.195 \\
-				\bottomrule
-			\end{tabularx}
+				\begin{tabularx}{1.1\textwidth}{@{}lccccccc@{}}
+					\toprule
+					\textbf{Name} & \textbf{Number} & \textbf{Pos. \%} & \textbf{Hard Neg. \%} & \textbf{Simple} & \textbf{Type} & \textbf{Precision \%} & \textbf{Recall \%} \\
+					\midrule
+						\(haar_1\) & 2000 & 0.33 & 0     & Yes & HAAR & 42.857 &  9.091 \\
+						\(haar_2\) & 2000 & 0.33 & 0.25  & Yes & HAAR & 53.571 &  6.494 \\
+						\(haar_3\) & 2000 & 0.33 & 0.25  & Yes & HAAR & 36.538 & 16.450 \\
+						\(haar_4\) & 4000 & 0.5  & 0.2   & No  & HAAR & 41.818 & 19.913 \\
+						\(haar_5\) & 3500 & 0.5  & 0     & No  & HAAR & 39.831 & 20.346 \\
+						\(lbp_1\)  & 2000 & 0.33 & 0     & Yes & LBP  & 26.667 &  1.732 \\
+						\(lbp_2\)  & 2000 & 0.33 & 0.25  & Yes & LBP  & 36.842 &  3.030 \\
+						\(lbp_3\)  & 2000 & 0.33 & 0.25  & Yes & LBP  & 36.667 &  4.762 \\
+						\(lbp_4\)  & 4000 & 0.5  & 0.2   & No  & LBP  & 40.000 &  6.061 \\
+						\(lbp_5\)  & 3500 & 0.5  & 0     & No  & LBP  & 38.000 &  8.225 \\
+						\(hog_1\)  & 2000 & 0.33 & 0     & Yes & HOG  & 37.500 &  1.299 \\
+						\(hog_2\)  & 2000 & 0.33 & 0.25  & Yes & HOG  & 50.000 &  0.866 \\
+						\(hog_3\)  & 2000 & 0.33 & 0.25  & Yes & HOG  & 33.333 &  2.597 \\
+						\(hog_4\)  & 4000 & 0.5  & 0.2   & No  & HOG  & 50.000 &  3.030 \\
+						\(hog_5\)  & 3500 & 0.5  & 0     & No  & HOG  & 42.857 &  5.195 \\
+					\bottomrule
+				\end{tabularx}
 			}
 		\end{table}
 
@@ -401,33 +400,8 @@
 		% \end{table}
 
 		Figure~\ref{fig:trial_comparison_chart}
-		
-		\newcommand{\plotscheme}[5]{\addplot coordinates {(Scheme 1, #1) (Scheme 2, #2) (Scheme 3, #3) (Scheme 4, #4) (Scheme 5, #5)};}
- 		\begin{figure}[H]
-			\begin{tikzpicture}
-				\begin{axis}[
-					ybar,
-					enlargelimits=0.15,
-					legend style={at={(0.5,-0.15)},
-					anchor=north,legend columns=-1},
-					ylabel={Recall (\%)},
-					symbolic x coords={Scheme 1, Scheme 2, Scheme 3, Scheme 4, Scheme 5},
-					xtick=data,
-					nodes near coords*={\pgfmathprintnumber[fixed,precision=1]\pgfplotspointmeta},
-					nodes near coords align={vertical},
-					]
-				\plotscheme{1.299}{0.866}{2.597}{3.030}{5.195}
-				\plotscheme{1.732}{3.030}{4.762}{6.061}{8.225}
-				\plotscheme{9.091}{6.494}{16.450}{19.913}{20.346}
-				\legend{HOG,LBP,HAAR}
-				\end{axis}
-			\end{tikzpicture}
-			\caption{Trial comparison chart.}
-			\label{fig:trial_comparison_chart}
-		\end{figure}
 
-		% \todo{sdfdsf}
-		% dfgdfg
+		\newcommand{\plotscheme}[5]{\addplot coordinates {(Scheme 1, #1) (Scheme 2, #2) (Scheme 3, #3) (Scheme 4, #4) (Scheme 5, #5)};}
 
 		\begin{figure}[H]
 			\begin{tikzpicture}
@@ -441,22 +415,41 @@
 					xtick=data,
 					nodes near coords*={\pgfmathprintnumber[fixed,precision=1]\pgfplotspointmeta},
 					nodes near coords align={vertical},
-					]
+				]
 				\plotscheme{37.500}{50.000}{33.333}{50.000}{42.857}
 				\plotscheme{26.667}{36.842}{36.667}{40.000}{38.000}
 				\plotscheme{42.857}{53.571}{36.538}{41.818}{39.831}
 				\legend{HOG,LBP,HAAR}
 				\end{axis}
 			\end{tikzpicture}
-			\caption{Trial comparison chart.}
+			\caption{A column graph comparing each trial scheme with the resulting rate of precision.}
 			\label{fig:trial_comparison_chart_2}
 		\end{figure}
 
+ 		\begin{figure}[H]
+			\begin{tikzpicture}
+				\begin{axis}[
+					ybar,
+					enlargelimits=0.15,
+					legend style={at={(0.5,-0.15)},
+					anchor=north,legend columns=-1},
+					ylabel={Recall (\%)},
+					symbolic x coords={Scheme 1, Scheme 2, Scheme 3, Scheme 4, Scheme 5},
+					xtick=data,
+					nodes near coords*={\pgfmathprintnumber[fixed,precision=1]\pgfplotspointmeta},
+					nodes near coords align={vertical},
+				]
+				\plotscheme{1.299}{0.866}{2.597}{3.030}{5.195}
+				\plotscheme{1.732}{3.030}{4.762}{6.061}{8.225}
+				\plotscheme{9.091}{6.494}{16.450}{19.913}{20.346}
+				\legend{HOG,LBP,HAAR}
+				\end{axis}
+			\end{tikzpicture}
+			\caption{A column graph comparing each trial scheme with the resulting rate of recall.}
+			\label{fig:trial_comparison_chart}
+		\end{figure}
+
 	}
-
-
-
-
 
 	\section{Discussion} {
 
