@@ -102,179 +102,126 @@
 	\section{Image Dataset Compilation} {
 	\label{sec:dataset}
 
-		The dataset will include approximately 3500 positive samples and 8500 negative samples. There will be a balance of object sizes, patterns, colours and textures between the images. The range of image categories that have been compiled from ImageNet are featured in Table~\ref{tab:imagenet}. ImageNet was chosen as a
-		source of training and testing data because it is a widely recognised computer vision resource that offers a wide range of images along with class information and bounding boxes. The use of ImageNet will allow us to train on many more samples than would be possible to collect manually within the timeframe of this project.
+		% The dataset will include approximately 3500 positive samples and 8500 negative samples. There will be a balance of object sizes, patterns, colours and textures between the images.
+
+		ImageNet is an image database organised according to the WordNet hierarchy \citep{imagenet_cvpr09, fellbaum1998wordnet} that was used as a source of training and testing data. This resource was chosen because it is widely recognised in computer vision, since it offers a wide range of images and their respective class and bounding box information. The use of ImageNet has facilitated the training of many more samples than would be possible to collect manually within the timeframe of this project.
+
+		Table~\ref{tab:positive_samples} represents the positive samples used in the training set.
 
 		\begin{table}
 			\centering
-			\caption{The categories used from ImageNet and their associated WordNet \citep{fellbaum1998wordnet} identifiers.}
-			\label{tab:imagenet}
+			\caption{ImageNet synsets used for the positive samples in the training set and their associated WordNet identifiers.}
+			\label{tab:positive_samples}
 			\begin{tabularx}{\textwidth}{lX}
 				\toprule
 				\textbf{Id} & \textbf{Category} \\
 				\midrule
-					n02778669 & Ball \\
-					n02779435 & Ball \\
 					n02799071 & Baseball \\
 					n02802426 & Basketball \\
-					n02839351 & Billiard ball \\
 					n02882301 & Bowling ball, bowl \\
 					n03134739 & Croquet ball \\
 					n03145719 & Cue ball \\
 					n03267113 & Eight ball \\
-					n02778669 & Generic sporting equipment balls \\
-					n03445777 & Golf ball \\
 					n03721047 & Marble \\
 					n03742019 & Medicine ball \\
 					n03825442 & Ninepin ball, skittle ball \\
 					n03942813 & Ping-pong ball \\
-					n02779435 & Plaything, toy, ball \\
 					n03982232 & Pool ball \\
-					n04254680 & Soccer ball \\
 					n04409515 & Tennis ball \\
 					n04540053 & Volleyball \\
 				\bottomrule
 			\end{tabularx}
 		\end{table}
 
-		\subsection{Positive Samples} {
+		Table~\ref{tab:positive_samples_simple} represents the simple positive samples used in the training set.
 
-			Table~\ref{tab:positive_samples}
+		\newcommand{\highlight}[1]{\textcolor{red}{#1}}
+		\begin{table}
+			\centering
+			\caption{ImageNet synsets used for the simple positive samples in the training set and their associated WordNet identifiers.}
+			\label{tab:positive_samples_simple}
+			\begin{tabularx}{\textwidth}{lX}
+				\toprule
+				\textbf{Id} & \textbf{Category} \\
+				\midrule
+					\highlight{n02799071} & \highlight{Baseball} \\
+					n02802426 & Basketball \\
+					n02882301 & Bowling ball, bowl \\
+					\highlight{n03134739} & \highlight{Croquet ball} \\
+					\highlight{n03145719} & \highlight{Cue ball} \\
+					n03267113 & Eight ball \\
+					n03721047 & Marble \\
+					n03742019 & Medicine ball \\
+					\highlight{n03825442} & \highlight{Ninepin ball, skittle ball} \\
+					\highlight{n03942813} & \highlight{Ping-pong ball} \\
+					\highlight{n03982232} & \highlight{Pool ball} \\
+					n04409515 & Tennis ball \\
+					n04540053 & Volleyball \\
+				\bottomrule
+			\end{tabularx}
+		\end{table}
 
-			\begin{table}
-				\centering
-				\caption{ImageNet synsets used for the positive samples in the training set and their associated WordNet \citep{fellbaum1998wordnet} identifiers.}
-				\label{tab:positive_samples}
-				\begin{tabularx}{\textwidth}{lX}
-					\toprule
-					\textbf{Id} & \textbf{Category} \\
-					\midrule
-						n02799071 & Baseball \\
-						n02802426 & Basketball \\
-						n02882301 & Bowling ball, bowl \\
-						n03134739 & Croquet ball \\
-						n03145719 & Cue ball \\
-						n03267113 & Eight ball \\
-						n03721047 & Marble \\
-						n03742019 & Medicine ball \\
-						n03825442 & Ninepin ball, skittle ball \\
-						n03942813 & Ping-pong ball \\
-						n03982232 & Pool ball \\
-						n04409515 & Tennis ball \\
-						n04540053 & Volleyball \\
-					\bottomrule
-				\end{tabularx}
-			\end{table}
+		Table~\ref{tab:test_set} represents the positive samples used in the test set.
 
-		}
+		\begin{table}
+			\centering
+			\caption{ImageNet synsets used for the positive samples in the test set and their associated WordNet identifiers.}
+			\label{tab:test_set}
+			\begin{tabularx}{\textwidth}{lX}
+				\toprule
+				\textbf{Id} & \textbf{Category} \\
+				\midrule
+					n02778669 & Ball \\
+					n02779435 & Ball \\
+					n02839351 & Billiard ball \\
+					n02778669 & Generic sporting equipment balls \\
+					n03445777 & Golf ball \\
+					n02779435 & Plaything, toy, ball \\
+					n04254680 & Soccer ball \\
+				\bottomrule
+			\end{tabularx}
+		\end{table}
 
-		\subsection{Positive Samples (`Simple')} {
+		Table~\ref{tab:negative_samples} represents the hard negative samples used in the training set.
 
-			Table~\ref{tab:positive_samples_simple}
+		\begin{table}
+			\centering
+			\caption{ImageNet synsets used for the hard negative samples in the training set and their associated WordNet identifiers.}
+			\label{tab:negative_samples}
+			\begin{tabularx}{\textwidth}{lX}
+				\toprule
+				\textbf{Id} & \textbf{Category} \\
+				\midrule
+					n03032811 & Circle, round \\
+					n13873917 & Circle \\
+					n13873502 & Circle \\
+				\bottomrule
+			\end{tabularx}
+		\end{table}
 
-			% \newcommand{\highlight}[1]{\textcolor{red}{#1}}
-			% \newcommand{\highlight}[1]{\emph{#1}}
-			\newcommand{\highlight}[1]{{#1}}
-			\begin{table}
-				\centering
-				\caption{ImageNet synsets used for the simple positive samples in the training set and their associated WordNet \citep{fellbaum1998wordnet} identifiers.}
-				\label{tab:positive_samples_simple}
-				\begin{tabularx}{\textwidth}{lX}
-					\toprule
-					\textbf{Id} & \textbf{Category} \\
-					\midrule
-						\highlight{n02799071} & \highlight{Baseball} \\
-						% n02802426 & Basketball \\
-						% n02882301 & Bowling ball, bowl \\
-						\highlight{n03134739} & \highlight{Croquet ball} \\
-						\highlight{n03145719} & \highlight{Cue ball} \\
-						% n03267113 & Eight ball \\
-						% n03721047 & Marble \\
-						% n03742019 & Medicine ball \\
-						\highlight{n03825442} & \highlight{Ninepin ball, skittle ball} \\
-						\highlight{n03942813} & \highlight{Ping-pong ball} \\
-						\highlight{n03982232} & \highlight{Pool ball} \\
-						% n04409515 & Tennis ball \\
-						% n04540053 & Volleyball \\
-					\bottomrule
-				\end{tabularx}
-			\end{table}
+		Table~\ref{tab:background_samples} represents the background samples used in the test set.
 
-		}
-
-		\subsection{Test Set} {
-
-			Table~\ref{tab:test_set}
-
-			\begin{table}
-				\centering
-				\caption{Additional WordNet identifiers for positive samples in the test set.}
-				\label{tab:test_set}
-				\begin{tabularx}{\textwidth}{lX}
-					\toprule
-					\textbf{Id} & \textbf{Category} \\
-					\midrule
-						n02778669 & Ball \\
-						n02779435 & Ball \\
-						n02839351 & Billiard ball \\
-						n02778669 & Generic sporting equipment balls \\
-						n03445777 & Golf ball \\
-						n02779435 & Plaything, toy, ball \\
-						n04254680 & Soccer ball \\
-					\bottomrule
-				\end{tabularx}
-			\end{table}
-
-		}
-
-		\subsection{Negative Samples} {
-
-			Table~\ref{tab:negative_samples}
-
-			\begin{table}
-				\centering
-				\caption{WordNet identifiers for hard negative samples in the training set.}
-				\label{tab:negative_samples}
-				\begin{tabularx}{\textwidth}{lX}
-					\toprule
-					\textbf{Id} & \textbf{Category} \\
-					\midrule
-						n03032811 & Circle, round \\
-						n13873917 & Circle \\
-						n13873502 & Circle \\
-					\bottomrule
-				\end{tabularx}
-			\end{table}
-
-		}
-
-		\subsection{Background Samples} {
-
-			Table~\ref{tab:background_samples}
-
-			\begin{table}
-				\centering
-				\caption{WordNet identifiers for background samples in the test set.}
-				\label{tab:background_samples}
-				\begin{tabularx}{\textwidth}{lX}
-					\toprule
-					\textbf{Id} & \textbf{Category} \\
-					\midrule
-						n02782778 & Ballpark, park \\
-						n08659446 & Field \\
-						n03841666 & Office, business office \\
-					\bottomrule
-				\end{tabularx}
-			\end{table}
-
-		}
+		\begin{table}
+			\centering
+			\caption{ImageNet synsets used for the background samples in the test set and their associated WordNet identifiers.}
+			\label{tab:background_samples}
+			\begin{tabularx}{\textwidth}{lX}
+				\toprule
+				\textbf{Id} & \textbf{Category} \\
+				\midrule
+					n02782778 & Ballpark, park \\
+					n08659446 & Field \\
+					n03841666 & Office, business office \\
+				\bottomrule
+			\end{tabularx}
+		\end{table}
 
 		\subsection{Samples} {
 
 			Figure~\ref{fig:samples}
 
 			\newcommand{\samplefigurewidth}{0.45\textwidth}
-			\newcommand{\samplewidth}{0.1\textwidth}
+			\newcommand{\samplewidth}{0.14\textwidth}
 			\newcommand{\sampleheight}{1.5cm}
 			\newcommand{\includesample}[1]{\hspace{0.1cm}\includegraphics[width=\samplewidth,height=\sampleheight]{images/training/#1}}
 
@@ -284,15 +231,13 @@
 					% Enclose in shortstack to enable line break.
 					\shortstack{%
 						% Positive
-						\includesample{positive/n02799071_17616}%
-						\includesample{positive/n02802426_6256}%
-						\includesample{positive/n03145719_8658}%
-						\includesample{positive/n04409515_2793} \\%
+						\includesample{positive/positive_1}%
+						\includesample{positive/positive_2}%
+						\includesample{positive/positive_3} \\%
 						% Positive thumbnails
-						\includesample{positive/n02799071_17616_thumbnail.jpg}%
-						\includesample{positive/n02802426_6256_thumbnail.jpg}%
-						\includesample{positive/n03145719_8658_thumbnail.jpg}%
-						\includesample{positive/n04409515_2793_thumbnail.jpg}%
+						\includesample{positive/positive_1_thumbnail}%
+						\includesample{positive/positive_2_thumbnail}%
+						\includesample{positive/positive_3_thumbnail}%
 					}%
 					\label{fig:positive_samples}%
 				}%
@@ -301,15 +246,13 @@
 		        	% Enclose in shortstack to enable line break.
 		        	\shortstack{%
 			        	% Hard negative
-						\includesample{hard_negative/n03208556_9694}%
-						\includesample{hard_negative/n03208556_11973}%
-						\includesample{hard_negative/n03208556_13484}%
-						\includesample{hard_negative/n04019541_26831} \\%
+						\includesample{hard_negative/hard_negative_1}%
+						\includesample{hard_negative/hard_negative_2}%
+						\includesample{hard_negative/hard_negative_3} \\%
 						% Hard negative thumbnails
-						\includesample{hard_negative/n03208556_9694_thumbnail.jpg}%
-						\includesample{hard_negative/n03208556_11973_thumbnail.jpg}%
-						\includesample{hard_negative/n03208556_13484_thumbnail.jpg}%
-						\includesample{hard_negative/n04019541_26831_thumbnail.jpg}%
+						\includesample{hard_negative/hard_negative_1_thumbnail}%
+						\includesample{hard_negative/hard_negative_2_thumbnail}%
+						\includesample{hard_negative/hard_negative_3_thumbnail}%
 					}%
 					\label{fig:hard_negative_samples}%
 		        }%
