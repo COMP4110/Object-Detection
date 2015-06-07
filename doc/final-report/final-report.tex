@@ -298,7 +298,7 @@
 			\label{tab:training_results}
 			\begin{tabularx}{\textwidth}{@{}lccccccc@{}}
 				\toprule
-				\textbf{Name} & \textbf{Number} & \textbf{Pos. \%} & \textbf{Hard Neg. \%} & \textbf{Easy} & \textbf{Type} & \textbf{Precision \%} & \textbf{Recall \%} \\
+				\textbf{Name} & \textbf{Number} & \textbf{Pos. \%} & \textbf{Hard Neg. \%} & \textbf{Simple} & \textbf{Type} & \textbf{Precision \%} & \textbf{Recall \%} \\
 				\midrule
 					\(haar_1\) & 2000 & 0.33 & 0     & Yes & HAAR & 42.857 &  9.091 \\
 					\(haar_2\) & 2000 & 0.33 & 0.25  & Yes & HAAR & 53.571 &  6.494 \\
@@ -402,7 +402,7 @@
 			\item Increasing the proportion of negative images decreased the hit rate.
 		\end{itemize}
 
-		Image preprocessing techniques future work.
+		In our future work, we plan to experiment with image preprocessing techniques, to investigate the effect it has on the precision of our sphere detector. These preprocessing techniques should be applied to both the positive and negative samples prior to training and upon classification. We will consider histogram equalisation, gamma intensity correction and high and low pass filtering \citep{gross2003image} as preprocessing techniques in our future work.
 
 	}
 
