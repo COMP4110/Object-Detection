@@ -378,26 +378,49 @@
 	}
 
 	\section{Discussion} {
-		\todo{Interpret the results and determine whether the hypothesis was correct.
-		Compare the results to other methods.
-		Discuss any additional results not related to the controlled experiment (e.g. performance in practice, the best classifier attained, etc.)
-		}
 
-		It can be seen from Figure~\ref{fig:trial_comparison_chart} that the HAAR feature type ... DID PERFECTLY!
+		\todo{Interpret the results and determine whether the hypothesis was correct. Compare the results to other methods. Discuss any additional results not related to the controlled experiment (e.g. performance in practice, the best classifier attained, etc.)}
+
+		\todo{It can be seen from Figure~\ref{fig:trial_comparison_chart} that the HAAR feature type ... DID PERFECTLY!}
+
+		A smaller informal experiment was conducted alongside this project, which involved using a HD webcam to perform live object detection. The webcam was presented with a number of balls with the intention of observing the robustness of the trained sphere detector. This experiment appeared to perform quite well and detected most of the balls in the scene. The sphere detector, however, did not perform well when presented with a highly textured ball as seen in Figure~\ref{fig:fifa_ball}.
 
 		\begin{figure}
 			\centering
 			\includegraphics[width=0.5\textwidth]{images/fifa_ball}
-			\caption{FIFA ball.}
+			\caption{The FIFA ball that often could not be detected.}
 			\label{fig:fifa_ball}
 		\end{figure}
 
-		A smaller informal experiment was conducted alongside this project, which involved using a HD webcam to perform live object detection. The webcam was presented with a number of balls with the intention of observing the robustness of the trained sphere detector. This experiment appeared to perform quite well and detected most of the balls in the scene. The sphere detector did not perform well when presented with a highly textured ball as seen in Figure~\ref{}. It was also noted that the detector could not detect the balls if the webcam as significantly rotated such that the ball was upside down with respect to the camera. It is hypothesised that this indicates that the detector must be performing shading based detection and not simply circle detection.
+		It was also noted that the detector could not detect the balls when the webcam was significantly rotated such that the ball was upside down with respect to the camera. This observation has been shown in Figure~\ref{fig:rotated_sequence}, we hypothesised that this indicates that the detector must be performing shading based detection and not simply circle detection.
+
+		\newcommand{\includesequence}[1]{\hspace{0.05cm}\includegraphics[width=0.23\textwidth]{images/rotation/#1}}
+
+		\begin{figure}
+			\centering
+			\includesequence{2}
+			\includesequence{25}
+			\includesequence{31}
+			\includesequence{35} \\
+			\vspace{0.1cm}
+			\includesequence{39}
+			\includesequence{43}
+			\includesequence{49}
+			\includesequence{53} \\
+			\vspace{0.1cm}
+			\includesequence{59}
+			\includesequence{64}
+			\includesequence{69}
+			\includesequence{74} \\
+			\caption{The sequence of rotated images.}
+			\label{fig:rotated_sequence}
+		\end{figure}
 
 		\todo{mention disks}
 
 		Based on our observations,
 		This experiment appeared to perform quite well against
+
 	}
 
 	\section{Conclusion} {
@@ -409,7 +432,7 @@
 			\item Increasing the proportion of negative images decreased the hit rate.
 		\end{itemize}
 
-		In our future work, we plan to experiment with image preprocessing techniques, to investigate the effect it has on the precision of our sphere detector. These preprocessing techniques should be applied to both the positive and negative samples prior to training and upon classification. We will consider histogram equalisation, gamma intensity correction and high and low pass filtering \citep{gross2003image} as preprocessing techniques in our future work.
+		In our future work, we plan to experiment with image preprocessing techniques, to investigate the effect they have on the precision of our sphere detector. These preprocessing techniques should be applied to both the positive and negative samples prior to training and upon classification. We will consider histogram equalisation, gamma intensity correction and high and low pass filtering \citep{gross2003image} as preprocessing techniques in our future work.
 
 	}
 
