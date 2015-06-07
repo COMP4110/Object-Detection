@@ -303,18 +303,18 @@
 					\(haar_1\) & 2000 & 0.33 & 0     & Yes & HAAR & 42.857 &  9.091 \\
 					\(haar_2\) & 2000 & 0.33 & 0.25  & Yes & HAAR & 53.571 &  6.494 \\
 					\(haar_3\) & 2000 & 0.33 & 0.25  & Yes & HAAR & 36.538 & 16.450 \\
-					\(haar_4\) & 4000 & 0.5  & 0.2   & No & HAAR & 41.818 & 19.913 \\
-					\(haar_5\) & 3500 & 0.5  & 0     & No & HAAR & 39.831 & 20.346 \\
+					\(haar_4\) & 4000 & 0.5  & 0.2   & No  & HAAR & 41.818 & 19.913 \\
+					\(haar_5\) & 3500 & 0.5  & 0     & No  & HAAR & 39.831 & 20.346 \\
 					\(lbp_1\)  & 2000 & 0.33 & 0     & Yes & LBP  & 26.667 &  1.732 \\
 					\(lbp_2\)  & 2000 & 0.33 & 0.25  & Yes & LBP  & 36.842 &  3.030 \\
 					\(lbp_3\)  & 2000 & 0.33 & 0.25  & Yes & LBP  & 36.667 &  4.762 \\
-					\(lbp_4\)  & 4000 & 0.5  & 0.2   & No & LBP  & 40.000 &  6.061 \\
-					\(lbp_5\)  & 3500 & 0.5  & 0     & No & LBP  & 38.000 &  8.225 \\
+					\(lbp_4\)  & 4000 & 0.5  & 0.2   & No  & LBP  & 40.000 &  6.061 \\
+					\(lbp_5\)  & 3500 & 0.5  & 0     & No  & LBP  & 38.000 &  8.225 \\
 					\(hog_1\)  & 2000 & 0.33 & 0     & Yes & HOG  & 37.500 &  1.299 \\
 					\(hog_2\)  & 2000 & 0.33 & 0.25  & Yes & HOG  & 50.000 &  0.866 \\
 					\(hog_3\)  & 2000 & 0.33 & 0.25  & Yes & HOG  & 33.333 &  2.597 \\
-					\(hog_4\)  & 4000 & 0.5  & 0.2   & No & HOG  & 50.000 &  3.030 \\
-					\(hog_5\)  & 3500 & 0.5  & 0     & No & HOG  & 42.857 &  5.195 \\
+					\(hog_4\)  & 4000 & 0.5  & 0.2   & No  & HOG  & 50.000 &  3.030 \\
+					\(hog_5\)  & 3500 & 0.5  & 0     & No  & HOG  & 42.857 &  5.195 \\
 				\bottomrule
 			\end{tabularx}
 		\end{table}
@@ -351,8 +351,9 @@
 		% \end{table}
 
 		Figure~\ref{fig:trial_comparison_chart}
-
-		\begin{figure}[H]
+		
+		\newcommand{\plotscheme}[5]{\addplot coordinates {(Scheme 1, #1) (Scheme 2, #2) (Scheme 3, #3) (Scheme 4, #4) (Scheme 5, #5)};}
+ 		\begin{figure}[H]
 			\begin{tikzpicture}
 				\begin{axis}[
 					ybar,
@@ -365,9 +366,9 @@
 					nodes near coords*={\pgfmathprintnumber[fixed,precision=1]\pgfplotspointmeta},
 					nodes near coords align={vertical},
 					]
-				\addplot coordinates {(Scheme 1, 1.2987013) (Scheme 2, 0.8658009) (Scheme 3, 2.59740260) (Scheme 4, 3.03030300) (Scheme 5, 5.19480520)};
-				\addplot coordinates {(Scheme 1, 1.7316017) (Scheme 2, 3.0303030) (Scheme 3, 4.76190480) (Scheme 4, 6.06060610) (Scheme 5, 8.22510820)};
-				\addplot coordinates {(Scheme 1, 9.0909091) (Scheme 2, 6.4935065) (Scheme 3, 16.4502165) (Scheme 4, 19.9134199) (Scheme 5, 20.3463203)};
+				\plotscheme{1.299}{0.866}{2.597}{3.030}{5.195}
+				\plotscheme{1.732}{3.030}{4.762}{6.061}{8.225}
+				\plotscheme{9.091}{6.494}{16.450}{19.913}{20.346}
 				\legend{HOG,LBP,HAAR}
 				\end{axis}
 			\end{tikzpicture}
@@ -375,7 +376,37 @@
 			\label{fig:trial_comparison_chart}
 		\end{figure}
 
+		% \todo{sdfdsf}
+		% dfgdfg
+
+		\begin{figure}[H]
+			\begin{tikzpicture}
+				\begin{axis}[
+					ybar,
+					enlargelimits=0.15,
+					legend style={at={(0.5,-0.15)},
+					anchor=north,legend columns=-1},
+					ylabel={Precision (\%)},
+					symbolic x coords={Scheme 1, Scheme 2, Scheme 3, Scheme 4, Scheme 5},
+					xtick=data,
+					nodes near coords*={\pgfmathprintnumber[fixed,precision=1]\pgfplotspointmeta},
+					nodes near coords align={vertical},
+					]
+				\plotscheme{37.500}{50.000}{33.333}{50.000}{42.857}
+				\plotscheme{26.667}{36.842}{36.667}{40.000}{38.000}
+				\plotscheme{42.857}{53.571}{36.538}{41.818}{39.831}
+				\legend{HOG,LBP,HAAR}
+				\end{axis}
+			\end{tikzpicture}
+			\caption{Trial comparison chart.}
+			\label{fig:trial_comparison_chart_2}
+		\end{figure}
+
 	}
+
+
+
+
 
 	\section{Discussion} {
 
