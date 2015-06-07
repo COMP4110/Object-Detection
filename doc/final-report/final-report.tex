@@ -14,7 +14,7 @@
 \usepackage{tabularx}
 
 % References
-\usepackage[numbers]{natbib}
+\usepackage{natbib}
 \makeatletter
 	% Change natbib numbering style from [#] to #.
 	\renewcommand\@biblabel[1]{#1.}
@@ -31,7 +31,10 @@
 \presetkeys{todonotes}{inline}{}
 
 % Other
+\usepackage{hyperref}
 \usepackage{float}
+
+\usepackage{pgfplots}
 
 \begin{document}
 
@@ -58,7 +61,7 @@
 		where spherical objects must be detected under unknown lighting and texturing. Approaches used in face detection literature were applied to the problem, namely boosted-classifiers using Haar, HOGS, and LBP features.
 
 		A controlled experiment was performed to test the hypothesis that training a classifier for sphere detection would produce a more robust ball detector. In particular, a detector that does not mis-classify circular, disk-like objects as spheres.
-		
+
 		% We hypothesised that this approach will produce a more robust ball detector. In particular, a detector that does not mis-classify circular, disk-like objects as spheres.
 
 
@@ -196,7 +199,7 @@
 					\bottomrule
 				\end{tabularx}
 			\end{table}
-		
+
 		}
 
 		\subsection{Test Set} {
@@ -221,7 +224,7 @@
 					\bottomrule
 				\end{tabularx}
 			\end{table}
-		
+
 		}
 
 		\subsection{Negative Samples} {
@@ -274,7 +277,7 @@
 			\newcommand{\samplewidth}{0.1\textwidth}
 			\newcommand{\sampleheight}{1.5cm}
 			\newcommand{\includesample}[1]{\hspace{0.1cm}\includegraphics[width=\samplewidth,height=\sampleheight]{images/training/#1}}
-		
+
 			\begin{figure}
 				\centering
 				\subfigure[Positive samples.]{%
@@ -370,7 +373,25 @@
 		Figure~\ref{fig:trial_comparison_chart}
 
 		\begin{figure}[H]
-			\includegraphics[width=\textwidth]{images/results/comparison_chart}
+			\pgfplotsset{width=\textwidth}
+			\begin{tikzpicture}
+				\begin{axis}[
+				    ybar,
+				    enlargelimits=0.15,
+				    legend style={at={(0.5,-0.15)},
+				      anchor=north,legend columns=-1},
+				    ylabel={Recall (\%)},
+				    symbolic x coords={Scheme 1, Scheme 2, Scheme 3, Scheme 4, Scheme 5},
+				    xtick=data,
+				    nodes near coords,
+				    nodes near coords align={vertical},
+				    ]
+				\addplot coordinates {(Scheme 1, 1.2987013) (Scheme 2, 0.8658009) (Scheme 3, 2.59740260) (Scheme 4, 3.03030300) (Scheme 5, 5.19480520)};
+				\addplot coordinates {(Scheme 1, 1.7316017) (Scheme 2, 3.0303030) (Scheme 3, 4.76190480) (Scheme 4, 6.06060610) (Scheme 5, 8.22510820)};
+				\addplot coordinates {(Scheme 1, 9.0909091) (Scheme 2, 6.4935065) (Scheme 3, 16.4502165) (Scheme 4, 19.9134199) (Scheme 5, 20.3463203)};
+				\legend{HOG,LBP,HAAR}
+				\end{axis}
+			\end{tikzpicture}
 			\caption{Trial comparison chart.}
 			\label{fig:trial_comparison_chart}
 		\end{figure}
@@ -379,7 +400,7 @@
 
 	\section{Conclusion} {
 	\label{sec:conclusion}
-			
+
 		\begin{itemize}
 			\item Haar features performed better than HOGS or LBP.
 			\item LBP features performed better than HOGS.
