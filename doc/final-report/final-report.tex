@@ -122,16 +122,18 @@
 	\section{Experiment} {
 	\label{sec:experiment}
 
-		\todo{Describe the experiment that was performed, including all trials run, all parameters used, and all datasets. Highlight the purpose of the experiment}
+		% \todo{Describe the experiment that was performed, including all trials run, all parameters used, and all datasets. Highlight the purpose of the experiment}
+
+		In order to test the hypothesis using the three chosen feature types, the training schemes presented in Table~\ref{tab:training_schemes} were devised.
 
 		\begin{table}
 			\centering
-			\caption{Training results for all training schemes.}
+			\caption{The training schemes used in the experiment.}
 			\label{tab:training_schemes}
-			% \scalebox{0.8}{
-			\begin{tabularx}{\textwidth}{@{}lcccccc@{}}
+			\scalebox{0.8}{
+			\begin{tabularx}{1.2\textwidth}{@{}lcccccc@{}}
 				\toprule
-				\textbf{Name} & \textbf{Number} & \textbf{Pos. \%} & \textbf{Hard Neg. \%} & \textbf{SkipFrac} & \textbf{Simple} & \textbf{Type}  \\
+				\textbf{Name} & \textbf{Set size} & \textbf{Positive \%} & \textbf{Hard Negative \%} & \textbf{SkipFrac} & \textbf{Simple} & \textbf{Feature type}  \\
 				\midrule
 					\(scheme_1\) & 2000 & 0.33 & 0     & 0.75 & Yes & \{Haar, LBP, HOG\} \\
 					\(scheme_2\) & 2000 & 0.33 & 0.25  & 0.75 & Yes & \{Haar, LBP, HOG\} \\
@@ -140,16 +142,28 @@
 					\(scheme_5\) & 3500 & 0.5  & 0     & 0.75 & No  & \{Haar, LBP, HOG\} \\
 				\bottomrule
 			\end{tabularx}
-			% }
+			}
 		\end{table}
 
+		Each training scheme specified the size and contents of the dataset, and the training parameters, used to train a classifier.
+		The parameter values used in the training schemes were chosen both to test the hypothesis, and to explore the parameter space.
+		Five parameters were chosen for the training schemes, and were defined as follows:
+		
+		\begin{description}
+			\item[Set size:] The total number of samples in the training set.
+			\item[Positive \%:] The percentage of samples in the training set that are positive (i.e. that are images of spheres).
+			\item[Hard Negative \%:] The percentage of negative samples in the training set that are \scarequotes{hard negatives} (i.e. they are images of disk-like objects, as opposed to miscellaneous background images).
+			\item[NumPos:] The number of positive samples shown to each stage of the classifier cascade during training.
+			\item[Simple:] Whether the simple set of positive samples was used instead of the full set.
+		\end{description}
 
 		The dataset used for this project has been described in Section~\ref{sec:dataset}.
+
 
 		\subsection{Image Dataset Compilation} {
 		\label{sec:dataset}
 
-			ImageNet is an image database organised according to the WordNet hierarchy \citep{imagenet_cvpr09, fellbaum1998wordnet} that was used as a source of training and testing data. This resource was chosen because it is widely recognised in computer vision, since it offers a wide range of images and their respective class and bounding box information. The use of ImageNet has facilitated the training of many more samples than would be possible to collect manually within the timeframe of this project.
+			ImageNet is an image database organised according to the WordNet hierarchy \citep{imagenet_cvpr09, fellbaum1998wordnet} that was used as a source of training and testing data. This resource was chosen because it is widely recognised in computer vision, since it offers a wide range of images and their respective class and bounding box information. The use of ImageNet has facilitated the training of many more samples than would be possible to collect manually within the time-frame of this project.
 
 			\todo{Add what wordnet is and a reference to why 24 x 24 is optimised}
 
