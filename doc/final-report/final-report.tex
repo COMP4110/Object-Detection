@@ -35,6 +35,7 @@
 \usepackage{float}
 
 \usepackage{pgfplots}
+\pgfplotsset{width=\textwidth,compat=1.9}
 
 \begin{document}
 
@@ -61,6 +62,8 @@
 		where spherical objects must be detected under unknown lighting and texturing. Approaches used in face detection literature were applied to the problem, namely boosted-classifiers using Haar, HOGS, and LBP features.
 
 		A controlled experiment was performed to test the hypothesis that training a classifier for sphere detection would produce a more robust ball detector. In particular, a detector that does not mis-classify circular, disk-like objects as spheres.
+
+		\todo{discuss results here}
 
 		% We hypothesised that this approach will produce a more robust ball detector. In particular, a detector that does not mis-classify circular, disk-like objects as spheres.
 
@@ -329,17 +332,16 @@
 		Figure~\ref{fig:trial_comparison_chart}
 
 		\begin{figure}[H]
-			\pgfplotsset{width=\textwidth}
 			\begin{tikzpicture}
 				\begin{axis}[
 				    ybar,
 				    enlargelimits=0.15,
 				    legend style={at={(0.5,-0.15)},
-				      anchor=north,legend columns=-1},
+				    anchor=north,legend columns=-1},
 				    ylabel={Recall (\%)},
 				    symbolic x coords={Scheme 1, Scheme 2, Scheme 3, Scheme 4, Scheme 5},
 				    xtick=data,
-				    nodes near coords,
+				    nodes near coords*={\pgfmathprintnumber[fixed,precision=1]\pgfplotspointmeta},
 				    nodes near coords align={vertical},
 				    ]
 				\addplot coordinates {(Scheme 1, 1.2987013) (Scheme 2, 0.8658009) (Scheme 3, 2.59740260) (Scheme 4, 3.03030300) (Scheme 5, 5.19480520)};
@@ -359,6 +361,8 @@
 		Compare the results to other methods.
 		Discuss any additional results not related to the controlled experiment (e.g. performance in practice, the best classifier attained, etc.)
 		}
+
+		It can be seen from Figure~\ref{fig:trial_comparison_chart} that the HAAR feature type ... DID PERFECTLY!
 	}
 
 	\section{Conclusion} {
