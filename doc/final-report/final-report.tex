@@ -50,7 +50,19 @@
 	\maketitle
 
 	\begin{abstract}
-		Many recent approaches to ball detection attempt to simplify the problem by viewing it as a circle detection problem, or by training a classifier to detect specific balls with known surface texture. In this work, we propose a generalisation of the ball detection problem to sphere detection, where spherical objects must be detected under unknown lighting and texturing. Approaches taken from face detection literature will be applied to the problem, namely boosted-classifiers using Haar, HOGS, and LBP features. We hypothesise that this approach will produce a more robust ball detector. In particular, a detector that doesn't mis-classify circular, disk-like objects as spheres. We present preliminary results on applying Haar cascade classifiers to the problem, which indicate that classifier performance is extremely sensitive to the training data and settings used.
+		Many recent approaches to ball detection attempt to simplify the problem by viewing it as a circle detection problem, or by training a classifier to detect specific balls with known surface texture.
+		In this work,
+		% we propose
+		a generalisation of the ball detection problem to sphere detection
+		is proposed,
+		where spherical objects must be detected under unknown lighting and texturing. Approaches used in face detection literature were applied to the problem, namely boosted-classifiers using Haar, HOGS, and LBP features.
+
+		A controlled experiment was performed to test the hypothesis that training a classifier for sphere detection would produce a more robust ball detector. In particular, a detector that does not mis-classify circular, disk-like objects as spheres.
+		
+		% We hypothesised that this approach will produce a more robust ball detector. In particular, a detector that does not mis-classify circular, disk-like objects as spheres.
+
+
+		% We present preliminary results on applying Haar cascade classifiers to the problem, which indicate that classifier performance is extremely sensitive to the training data and settings used.
 		\keywords{computer vision, sphere detection, adaboost}
 	\end{abstract}
 
@@ -157,7 +169,9 @@
 
 			Table~\ref{tab:positive_samples_simple}
 
-			\newcommand{\highlight}[1]{\textcolor{red}{#1}}
+			% \newcommand{\highlight}[1]{\textcolor{red}{#1}}
+			% \newcommand{\highlight}[1]{\emph{#1}}
+			\newcommand{\highlight}[1]{{#1}}
 			\begin{table}
 				\centering
 				\caption{ImageNet synsets used for the simple positive samples in the training set and their associated WordNet \citep{fellbaum1998wordnet} identifiers.}
@@ -167,18 +181,18 @@
 					\textbf{Id} & \textbf{Category} \\
 					\midrule
 						\highlight{n02799071} & \highlight{Baseball} \\
-						n02802426 & Basketball \\
-						n02882301 & Bowling ball, bowl \\
+						% n02802426 & Basketball \\
+						% n02882301 & Bowling ball, bowl \\
 						\highlight{n03134739} & \highlight{Croquet ball} \\
 						\highlight{n03145719} & \highlight{Cue ball} \\
-						n03267113 & Eight ball \\
-						n03721047 & Marble \\
-						n03742019 & Medicine ball \\
+						% n03267113 & Eight ball \\
+						% n03721047 & Marble \\
+						% n03742019 & Medicine ball \\
 						\highlight{n03825442} & \highlight{Ninepin ball, skittle ball} \\
 						\highlight{n03942813} & \highlight{Ping-pong ball} \\
 						\highlight{n03982232} & \highlight{Pool ball} \\
-						n04409515 & Tennis ball \\
-						n04540053 & Volleyball \\
+						% n04409515 & Tennis ball \\
+						% n04540053 & Volleyball \\
 					\bottomrule
 				\end{tabularx}
 			\end{table}
