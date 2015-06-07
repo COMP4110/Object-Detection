@@ -66,15 +66,17 @@
 
 	\begin{abstract}
 		Many recent approaches to ball detection attempt to simplify the problem by viewing it as a circle detection problem, or by training a classifier to detect specific balls with known surface texture.
-		In this work,%
-		% we propose
+		In this work,
 		a generalisation of the ball detection problem to sphere detection
 		is proposed,
-		where spherical objects must be detected under unknown lighting and texturing. Approaches used in face detection literature were applied to the problem, namely boosted-classifiers using Haar, HOGS, and LBP features.
+		where spherical objects must be detected under unknown lighting and texturing. Approaches used in face detection literature were applied to the problem, namely boosted-classifiers using extended Haar features, Histograms of Oriented Gradients (HoG), and Local Binary Patterns (LBPs) as features.
 
-		A controlled experiment was performed to test the hypothesis that training a classifier for sphere detection would produce a more robust ball detector. In particular, a detector that does not mis-classify circular, disk-like objects as spheres.
+		A controlled experiment was performed to test the hypothesis that training a classifier for sphere detection would produce a more robust ball detector. In particular, that including disk-like objects as negative samples in the training set would produce a detector that does not misclassify circular, disk-like objects as spheres.
 
-		\todo{discuss results here}
+		The experimental results supported the hypothesis, and suggested that extended Haar features are more suited to the sphere detection problem than LBPs. However, further experiments would be required to confirm these results.
+
+
+		% \todo{discuss results here}
 
 		% We hypothesised that this approach will produce a more robust ball detector. In particular, a detector that does not mis-classify circular, disk-like objects as spheres.
 
@@ -90,7 +92,7 @@
 
 		Early attempts at ball detection algorithms used in the international robot soccer competition, RoboCup, simply used histogramming techniques targeted at a specific range of colour intensities to find a coloured ball. As the RoboCup playing field has become less structured over the years, competing teams have needed to account for unpredictable colours and have increasingly implemented methods that detect the shape of the ball as well. \citet{schulz2007ball} used a neural network on subsampled luminance images of the ball to detect the shape of the ball. Recent approaches have focused on detecting the approximately circular shape of the ball in typical images. These include clustering, Hough filters \citep{li2013survey}, and RANSAC \citep{annable2013nubots}.
 
-		Many current ball detection methods make assumptions about the ball or the environment that limit their applicability in a more general case. Methods based on colour classification or similarity can suffer from false positive detections due to other objects having similar colours. These methods may also detect both false positives and false negatives due to unexpected changes in lighting. Methods based on circle or ellipse detection can be effected by false positives due to the presence of disk-like objects in the environment, or due to objects that appear circular when viewed from specific angles.
+		Many current ball detection methods make assumptions about the ball or the environment that limit their applicability in a more general case. Methods based on colour classification or similarity can suffer from false positive detections due to other objects having similar colours. These methods may also detect both false positives and false negatives due to unexpected changes in lighting. Methods based on circle or ellipse detection can be prone to false positives due to the presence of disk-like objects in the environment, or due to objects that appear circular when viewed from specific angles.
 
 		To avoid the limitations of methods based on assumptions such as these, we developed a sphere detection method which uses the shading patterns characteristic of spherical objects to classify objects as spheres.
 
@@ -119,7 +121,7 @@
 
 		We hypothesised that including a larger proportion of disk-like negative images in the training set would increase the precision of the resulting sphere detectors.
 
-		To achieve this, we trained Viola-Jones detector cascades~\citep{viola2001rapid} using each of three different feature types. We tested our hypothesis on each of three commonly used, but different feature types. The feature types used were Extended Haar features~\citep{Lienhart2002extended}, Local Binary Patterns (LBPs)~\citep{liao2007learning}, and Histograms of Oriented Gradients (HoG) features~\citep{dalal2005histograms}.
+		To achieve this, we trained Viola-Jones detector cascades~\citep{viola2001rapid} using each of three different feature types. We tested our hypothesis on each of three commonly used, but different feature types. The feature types used were extended Haar features~\citep{Lienhart2002extended}, Local Binary Patterns (LBPs)~\citep{liao2007learning}, and Histograms of Oriented Gradients (HoG) features~\citep{dalal2005histograms}.
 
 		The hypothesis was tested through the experiment outlined in Section~\ref{sec:experiment}.
 
@@ -127,8 +129,6 @@
 
 	\section{Experiment} {
 	\label{sec:experiment}
-
-		% \todo{Describe the experiment that was performed, including all trials run, all parameters used, and all datasets. Highlight the purpose of the experiment}
 
 		In order to test the hypothesis using the three chosen feature types, the training schemes presented in Table~\ref{tab:training_schemes} were devised.
 
@@ -141,11 +141,11 @@
 				\toprule
 				\textbf{Name} & \textbf{Set size} & \textbf{Positive \%} & \textbf{Hard Negative \%} & \textbf{NumPos} & \textbf{Simple} & \textbf{Feature type}  \\
 				\midrule
-					\(scheme_1\) & 2000 & 0.33 & 0     & 138 & Yes & \{Haar, LBP, HOG\} \\ % & 0.75 
-					\(scheme_2\) & 2000 & 0.33 & 0.25  & 138 & Yes & \{Haar, LBP, HOG\} \\ % & 0.75 
-					\(scheme_3\) & 2000 & 0.33 & 0.25  & 277 & Yes & \{Haar, LBP, HOG\} \\ % & 0.5  
-					\(scheme_4\) & 4000 & 0.5  & 0.2   & 420 & No  & \{Haar, LBP, HOG\} \\ % & 0.75 
-					\(scheme_5\) & 3500 & 0.5  & 0     & 367 & No  & \{Haar, LBP, HOG\} \\ % & 0.75 
+					scheme~1 & 2000 & 0.33 & 0     & 138 & Yes & \{Haar, LBP, HoG\} \\ % & 0.75 
+					scheme~2 & 2000 & 0.33 & 0.25  & 138 & Yes & \{Haar, LBP, HoG\} \\ % & 0.75 
+					scheme~3 & 2000 & 0.33 & 0.25  & 277 & Yes & \{Haar, LBP, HoG\} \\ % & 0.5  
+					scheme~4 & 4000 & 0.5  & 0.2   & 420 & No  & \{Haar, LBP, HoG\} \\ % & 0.75 
+					scheme~5 & 3500 & 0.5  & 0     & 367 & No  & \{Haar, LBP, HoG\} \\ % & 0.75 
 				\bottomrule
 			\end{tabularx}
 			}
@@ -160,7 +160,6 @@
 			\item[Positive \%:] The percentage of samples in the training set that are positive (i.e. that are images of spheres).
 			\item[Hard Negative \%:] The percentage of negative samples in the training set that are \scarequotes{hard negatives} (i.e. they are images of disk-like objects, as opposed to miscellaneous background images).
 			\item[NumPos:] The number of positive samples shown to each stage of the classifier cascade during training.
-			% \todo{Describe the way that NumPos prevents most of the training set from being used.}
 			\item[Simple:] 
 				Thirteen categories of spheres were chosen from ImageNet \citep{imagenet_cvpr09}.
 				The full set of positive samples was drawn from these thirteen categories, listed in Table~\ref{tab:positive_samples}.
@@ -177,8 +176,6 @@
 		\label{sec:dataset}
 
 			ImageNet \citep{imagenet_cvpr09} is an image database organised according to the WordNet hierarchy \citep{fellbaum1998wordnet} that was used as a source of training and testing data. This resource was chosen because it is widely recognised in computer vision, and offers a wide range of images along with associated class and bounding box information. The use of ImageNet has facilitated the collection of many more training samples than would be possible to collect manually within the time-frame of this project.
-
-			% \todo{Add what wordnet is and a reference to why \(24\times24\) is optimised}
 
 			Only images that contained bounding box information were extracted from ImageNet for use as positive training samples. Prior to training, each positive sample was cropped from its original image, using the provided bounding box information, before being  resized to \(24\times24\) pixels and converted to grayscale. An example of this process has been demonstrated in Figure~\ref{fig:samples}.
 
@@ -206,7 +203,7 @@
 					\label{fig:positive_samples}%
 				}%
 				\qquad
-				\subfigure[Negative samples.]{%
+				\subfigure[Hard negative samples.]{%
 					% Enclose in shortstack to enable line break.
 					\shortstack{%
 						% Hard negative
@@ -220,11 +217,11 @@
 					}%
 					\label{fig:negative_samples}%
 				}%
-				\caption{Examples of positive (a) and negative (b) samples used for training. The first row represents the original image, while the second row represents the same samples that have been cropped, resized and converted to grayscale prior to training.}
+				\caption{Examples of positive (a) and hard negative (b) samples used for training. The first row represents the original image, while the second row represents the same samples that have been cropped, resized and converted to grayscale prior to training.}
 				\label{fig:samples}
 			\end{figure}
 
-			Several WordNet categories (known as \newterm{synsets}) were used to compile the training and test set for this project. Table~\ref{tab:positive_samples} represents the positive samples used in the training set, while Table~\ref{tab:positive_samples_simple} is a subset of these positive samples that were also used for training. The test set was comprised of the categories listed in Table~\ref{tab:test_set}, along with the positive training set samples previously described in Table~\ref{tab:positive_samples}. The imgages for the negative training were drawn from both the list of categories of disk-like objects in Table~\ref{tab:negative_samples}, and the list of categories of background images given in Table~\ref{tab:background_samples}.
+			Several WordNet categories (known as \newterm{synsets}) were used to compile the training and test set for this project. Table~\ref{tab:positive_samples} represents the positive samples used in the training set, while Table~\ref{tab:positive_samples_simple} is a subset of these positive samples that were also used for training. The test set was comprised of the categories listed in Table~\ref{tab:test_set}, along with the positive training set samples previously described in Table~\ref{tab:positive_samples}. The images for the negative training set were drawn from both the list of categories of disk-like objects in Table~\ref{tab:negative_samples}, and the list of categories of background images given in Table~\ref{tab:background_samples}.
 
 			\begin{table}
 				\centering
@@ -324,8 +321,6 @@
 	\section{Results} {
 	\label{sec:results}
 
-		% \todo{State the results without interpretation, including any basic graphs/tables of the results.}
-
 		% Several Haar cascade classifiers were trained on this datset, using different training parameters, and their performances compared qualatitively by viewing the claissifier output on a small set of test images.
 
 		% The preliminary results obtained are summarised in Table~\ref{tab:results}.
@@ -341,16 +336,6 @@
 
 		The performance of the classifier trained in each trial was evaluated by calculating its \newterm{precision} and \newterm{recall} when run on the test set.
 		The results of the classifier training and testing performed for the experiment are summarized in Table~\ref{tab:training_results}, and have been presented graphically in Figure~\ref{fig:trial_comparison_chart_precision}, and Figure~\ref{fig:trial_comparison_chart_recall}.
-
-
-
-		% \todo{discuss what recall + precision is}
-
-		
-
-		% \todo{expand, it's rushed}
-
-		% LBP features performed better than HOGS. Increasing the proportion of negative images decreased the hit rate.
 
 		\begin{table}
 			\centering
@@ -371,11 +356,11 @@
 						\(lbp_3\)  & 2000 & 0.33 & 0.25  & 277 & Yes & LBP  & 36.667 &  4.762 \\
 						\(lbp_4\)  & 4000 & 0.5  & 0.2   & 420 & No  & LBP  & 40.000 &  6.061 \\
 						\(lbp_5\)  & 3500 & 0.5  & 0     & 367 & No  & LBP  & 38.000 &  8.225 \\
-						\(hog_1\)  & 2000 & 0.33 & 0     & 138 & Yes & HOG  & 37.500 &  1.299 \\
-						\(hog_2\)  & 2000 & 0.33 & 0.25  & 138 & Yes & HOG  & 50.000 &  0.866 \\
-						\(hog_3\)  & 2000 & 0.33 & 0.25  & 277 & Yes & HOG  & 33.333 &  2.597 \\
-						\(hog_4\)  & 4000 & 0.5  & 0.2   & 420 & No  & HOG  & 50.000 &  3.030 \\
-						\(hog_5\)  & 3500 & 0.5  & 0     & 367 & No  & HOG  & 42.857 &  5.195 \\
+						\(hog_1\)  & 2000 & 0.33 & 0     & 138 & Yes & HoG  & 37.500 &  1.299 \\
+						\(hog_2\)  & 2000 & 0.33 & 0.25  & 138 & Yes & HoG  & 50.000 &  0.866 \\
+						\(hog_3\)  & 2000 & 0.33 & 0.25  & 277 & Yes & HoG  & 33.333 &  2.597 \\
+						\(hog_4\)  & 4000 & 0.5  & 0.2   & 420 & No  & HoG  & 50.000 &  3.030 \\
+						\(hog_5\)  & 3500 & 0.5  & 0     & 367 & No  & HoG  & 42.857 &  5.195 \\
 					\bottomrule
 				\end{tabularx}
 			}
@@ -401,7 +386,7 @@
 				\plotscheme{37.500}{50.000}{33.333}{50.000}{42.857}
 				\plotscheme{26.667}{36.842}{36.667}{40.000}{38.000}
 				\plotscheme{42.857}{53.571}{36.538}{41.818}{39.831}
-				\legend{HOG,LBP,HAAR}
+				\legend{HoG,LBP,HAAR}
 				\end{axis}
 			\end{tikzpicture}
 			\caption{A column graph comparing each trial scheme with the resulting rate of precision.}
@@ -424,7 +409,7 @@
 				\plotscheme{1.299}{0.866}{2.597}{3.030}{5.195}
 				\plotscheme{1.732}{3.030}{4.762}{6.061}{8.225}
 				\plotscheme{9.091}{6.494}{16.450}{19.913}{20.346}
-				\legend{HOG,LBP,HAAR}
+				\legend{HoG,LBP,HAAR}
 				\end{axis}
 			\end{tikzpicture}
 			\caption{A column graph comparing each trial scheme with the resulting rate of recall.}
@@ -434,25 +419,30 @@
 
 	\section{Discussion} {
 
-		\todo{Interpret the results and determine whether the hypothesis was correct. Compare the results to other methods. Discuss any additional results not related to the controlled experiment (e.g. performance in practice, the best classifier attained, etc.)}
+		% \todo{Interpret the results and determine whether the hypothesis was correct. Compare the results to other methods. Discuss any additional results not related to the controlled experiment (e.g. performance in practice, the best classifier attained, etc.)}
 
-		A clear trend is visible in Figure~\ref{fig:trial_comparison_chart_recall}, where the recall of the classifiers that used Haar features was much greater than those that used LBPs, which in turn had higher recall than the classifiers using HOG features.
+		A clear trend is visible in Figure~\ref{fig:trial_comparison_chart_recall}, where the recall of the classifiers that used Haar features was much greater than those that used LBPs, which in turn had higher recall than the classifiers using HoG features.
 
-		Figure~\ref{fig:trial_comparison_chart_precision} shows that the Haar classifiers almost always had higher precision than the classifiers using LBP features, although the difference in performance in trials 3--5 may not be significant.
-		The classifiers using HOG features also generally had higher precision than those using LBP features, except in \(scheme_3\).
+		Figure~\ref{fig:trial_comparison_chart_precision} shows that the Haar classifiers almost always had higher precision than the classifiers using LBP features, although the difference in performance in schemes 3--5 may not be significant.
+		The classifiers using HoG features also generally had higher precision than those using LBP features, except in scheme~3.
 
 		Based on these observations, the results suggest that Haar features are more appropriate than LBP features for the sphere detection task, as the Haar classifiers had the same are better precision and recall for every training scheme.
-		We suggest that this may be 
+		We suggest that this may be because the differences of intensity of image regions used in Haar features allow them to better capture the low frequency features that distinguish spheres from disks, i.e. shading due to curvature, whereas LBP patterns mostly describe edges, corners, and points, and so more often classify other rounded objects as spheres.
 
+		We hypothesised that including a greater proportion of images of disk-like objects as negative samples in the training set would increase the precision of the resulting trained classifiers.
+		To test the hypothesis, we compare the results of scheme~1 to scheme~2 and scheme~3, and also compare the results of scheme~4 to scheme~5, as these schemes are similar in most respects other than the hard negative proportion.
 
-		% Additionally, recall rate for classifiers of each feature type generally increased with the scheme number. 
+		Comparing schemes one and two, we see that the precision of all three classifier types is much higher when trained on scheme two. The recall rate of both the classifiers using Haar and LBP features, but not the classifier using HoG features.
+		This difference supports the hypothesis, since scheme~1 used no hard negatives, whereas 25\% of the negative samples in scheme~2 were hard negatives.
+		Comparing schemes one and three reveals the opposite result for classifiers using both Haar and HoG features, as these classifiers had lower recall rate and lower precision in scheme~3 than in scheme~1. We note that this difference must be due to the higher value of NumPos used in scheme~3.
 
-		\todo{Results show that Haar is better than LBP.}
+		We now compare scheme~4 to scheme~5, as they were both trained on the full set of positive images. Scheme~5 included no hard negative samples in its training set, whereas 20\% of the negative samples in scheme~4 were hard negatives. Due to this, and the relatively low number of background images that were available before performing the experiment, scheme~5 has a smaller training set size of 3500 samples, compared to 4000 samples for scheme~4. Scheme~4 also used a higher NumPos parameter than scheme~5.
+		The precision of classifiers of all three feature types was higher in scheme~4 than in scheme~5, and the recall of each classifier was slightly lower in scheme~4 than in scheme~5.
+		This difference supports the hypothesis, and is similar to the difference between the results of schemes one and two. However, the additional changes in the set size and in NumPos make this comparison weaker evidence for the hypothesis than the comparison between schemes one and two.
 
-		\todo{Rephrase:
-			A smaller informal experiment was conducted alongside this project, which involved using a HD webcam to perform live object detection. The webcam was presented with a number of balls with the intention of observing the robustness of the trained sphere detector.
-		}
-		 This experiment appeared to perform quite well and detected most of the balls in the scene. The sphere detector, however, did not perform well when presented with a highly textured ball as seen in Figure~\ref{fig:fifa_ball}.
+		The live classification performance of one of the best performing classifiers from the experiment, \(haar_4\), was tested to qualitatively evaluate the quality of the training process.
+		This test involved the use of a HD webcam to perform live object detection. The webcam was presented with a number of balls with the intention of observing the robustness of the trained sphere detector.
+		This experiment appeared to perform quite well and detected most of the balls in the scene. The sphere detector, however, did not perform well when presented with a highly textured ball as seen in Figure~\ref{fig:fifa_ball}.
 
 		\begin{figure}
 			\centering
@@ -461,9 +451,9 @@
 			\label{fig:fifa_ball}
 		\end{figure}
 
-		It was also noted that the detector could not detect the balls when the webcam was significantly rotated such that the ball was upside down with respect to the camera. This effect is illustrated in Figure~\ref{fig:rotated_sequence}. This may suggest that the detector must be performing shading based detection and not simply circle detection.
+		It was also noted that the detector could not detect the balls when the webcam was significantly rotated such that the ball was upside down with respect to the camera. This effect is illustrated in Figure~\ref{fig:rotated_sequence}. This supports the suggestion that the detectors using Haar features perform shading based detection and not simply circle detection.
 
-		\todo{note that there is no clear relationship between the number of images used and precision}
+		% \todo{note that there is no clear relationship between the number of images used and precision}
 
 % These results indicate that Haar feature-types performed better than HOGS or LBP due to the overall higher precision and recall rate. However, it is clear from this data that HOG has a high precision rate that matches closely to HAAR features. It is interesting to note that using the simple positive training set resulted in a lower rate of recall.
 
@@ -489,16 +479,20 @@
 			\label{fig:rotated_sequence}
 		\end{figure}
 
-		\todo{mention disks}
-
 	}
 
-	\section{Conclusion} {
+	\section{Conclusion and Future Work} {
 	\label{sec:conclusion}
 
-		\todo{Haar features performed better than HOGS or LBP. LBP features performed better than HOGS. Increasing the proportion of negative images decreased the hit rate.}
+		% \todo{Haar features performed better than HOGS or LBP. LBP features performed better than HOGS. Increasing the proportion of negative images decreased the hit rate.}
 
-		In our future work, we plan to experiment with image preprocessing techniques, to investigate the effect they have on the precision of our sphere detector. These preprocessing techniques should be applied to both the positive and negative samples prior to training and upon classification. We will consider histogram equalisation, gamma intensity correction and high and low pass filtering \citep{gross2003image} as preprocessing techniques in our future work.
+		This paper approached the problem of sphere detection using boosted classifiers.
+		We hypothesised that including a larger proportion of disk-like images as negative samples in the training set would increase the precision of the resulting sphere detectors.
+		The hypothesis was tested in a controlled experiment that compared the appropriateness of three different feature types to the problem: extended Haar features, LBPs, and HoGs.
+		The results of the experiment supported the hypothesis, but further testing would be required to have a high confidence that the increase in precision identified can be attributed to the increase in the proportion of disk-like negative images in the training set.
+		Additionally, our results suggested that Haar features are better suited to the problem of sphere detection than LBPs.
+
+		In our future work, we plan to repeat the experiment described in this paper with a greater number and variety of training schemes. We also plan to experiment with image preprocessing techniques, to investigate the effect they have on the precision of our sphere detector. These preprocessing techniques should be applied to both the positive and negative samples prior to training and upon classification. We will consider histogram equalisation, gamma intensity correction and high and low pass filtering \citep{gross2003image} as preprocessing techniques in our future work.
 
 	}
 
