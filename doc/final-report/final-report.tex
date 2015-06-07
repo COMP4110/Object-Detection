@@ -102,126 +102,36 @@
 
 	}
 
-	\section{Image Dataset Compilation} {
-	\label{sec:dataset}
+	\section{Training For Sphere Detection} {
 
-		% The dataset will include approximately 3500 positive samples and 8500 negative samples. There will be a balance of object sizes, patterns, colours and textures between the images.
+		The aim of this project is to create a robust sphere detector that does not detect disk-like objects as false positives. To achieve this, we trained boosted classifiers using weak classifiers based on three different feature-types: Haar, LBP, HOG. We hypothesised that including a larger proportion of disk-like negative images in the training set would increase the precision of the resulting sphere detectors. This hypothesis was tested, which has been described in Section~\ref{sec:experiment}.
 
-		ImageNet is an image database organised according to the WordNet hierarchy \citep{imagenet_cvpr09, fellbaum1998wordnet} that was used as a source of training and testing data. This resource was chosen because it is widely recognised in computer vision, since it offers a wide range of images and their respective class and bounding box information. The use of ImageNet has facilitated the training of many more samples than would be possible to collect manually within the timeframe of this project.
+	}
 
-		Table~\ref{tab:positive_samples} represents the positive samples used in the training set.
+	\section{Experiment} {
+	\label{sec:experiment}
 
-		\begin{table}
-			\centering
-			\caption{ImageNet synsets used for the positive samples in the training set and their associated WordNet identifiers.}
-			\label{tab:positive_samples}
-			\begin{tabularx}{\textwidth}{lX}
-				\toprule
-				\textbf{Id} & \textbf{Category} \\
-				\midrule
-					n02799071 & Baseball \\
-					n02802426 & Basketball \\
-					n02882301 & Bowling ball, bowl \\
-					n03134739 & Croquet ball \\
-					n03145719 & Cue ball \\
-					n03267113 & Eight ball \\
-					n03721047 & Marble \\
-					n03742019 & Medicine ball \\
-					n03825442 & Ninepin ball, skittle ball \\
-					n03942813 & Ping-pong ball \\
-					n03982232 & Pool ball \\
-					n04409515 & Tennis ball \\
-					n04540053 & Volleyball \\
-				\bottomrule
-			\end{tabularx}
-		\end{table}
+		\todo{Describe the experiment that was performed, including all trials run, all parameters used, and all datasets. Highlight the purpose of the experiment}
 
-		Table~\ref{tab:positive_samples_simple} represents the simple positive samples used in the training set.
+		The dataset used for this project has been described in Section~\ref{sec:dataset}.
 
-		\newcommand{\highlight}[1]{\textcolor{red}{#1}}
-		\begin{table}
-			\centering
-			\caption{ImageNet synsets used for the simple positive samples in the training set and their associated WordNet identifiers.}
-			\label{tab:positive_samples_simple}
-			\begin{tabularx}{\textwidth}{lX}
-				\toprule
-				\textbf{Id} & \textbf{Category} \\
-				\midrule
-					\highlight{n02799071} & \highlight{Baseball} \\
-					n02802426 & Basketball \\
-					n02882301 & Bowling ball, bowl \\
-					\highlight{n03134739} & \highlight{Croquet ball} \\
-					\highlight{n03145719} & \highlight{Cue ball} \\
-					n03267113 & Eight ball \\
-					n03721047 & Marble \\
-					n03742019 & Medicine ball \\
-					\highlight{n03825442} & \highlight{Ninepin ball, skittle ball} \\
-					\highlight{n03942813} & \highlight{Ping-pong ball} \\
-					\highlight{n03982232} & \highlight{Pool ball} \\
-					n04409515 & Tennis ball \\
-					n04540053 & Volleyball \\
-				\bottomrule
-			\end{tabularx}
-		\end{table}
+		\subsection{Image Dataset Compilation} {
+		\label{sec:dataset}
 
-		Table~\ref{tab:test_set} represents the positive samples used in the test set.
+			% The dataset will include approximately 3500 positive samples and 8500 negative samples. There will be a balance of object sizes, patterns, colours and textures between the images.
 
-		\begin{table}
-			\centering
-			\caption{ImageNet synsets used for the positive samples in the test set and their associated WordNet identifiers.}
-			\label{tab:test_set}
-			\begin{tabularx}{\textwidth}{lX}
-				\toprule
-				\textbf{Id} & \textbf{Category} \\
-				\midrule
-					n02778669 & Ball \\
-					n02779435 & Ball \\
-					n02839351 & Billiard ball \\
-					n02778669 & Generic sporting equipment balls \\
-					n03445777 & Golf ball \\
-					n02779435 & Plaything, toy, ball \\
-					n04254680 & Soccer ball \\
-				\bottomrule
-			\end{tabularx}
-		\end{table}
+			ImageNet is an image database organised according to the WordNet hierarchy \citep{imagenet_cvpr09, fellbaum1998wordnet} that was used as a source of training and testing data. This resource was chosen because it is widely recognised in computer vision, since it offers a wide range of images and their respective class and bounding box information. The use of ImageNet has facilitated the training of many more samples than would be possible to collect manually within the timeframe of this project.
 
-		Table~\ref{tab:negative_samples} represents the hard negative samples used in the training set.
+			\todo{Add what wordnet is}
 
-		\begin{table}
-			\centering
-			\caption{ImageNet synsets used for the hard negative samples in the training set and their associated WordNet identifiers.}
-			\label{tab:negative_samples}
-			\begin{tabularx}{\textwidth}{lX}
-				\toprule
-				\textbf{Id} & \textbf{Category} \\
-				\midrule
-					n03032811 & Circle, round \\
-					n13873917 & Circle \\
-					n13873502 & Circle \\
-				\bottomrule
-			\end{tabularx}
-		\end{table}
+			Only images that contain bounding box information were extracted from ImageNet. 
 
-		Table~\ref{tab:background_samples} represents the background samples used in the test set.
+			% Once the images were extracted 
 
-		\begin{table}
-			\centering
-			\caption{ImageNet synsets used for the background samples in the test set and their associated WordNet identifiers.}
-			\label{tab:background_samples}
-			\begin{tabularx}{\textwidth}{lX}
-				\toprule
-				\textbf{Id} & \textbf{Category} \\
-				\midrule
-					n02782778 & Ballpark, park \\
-					n08659446 & Field \\
-					n03841666 & Office, business office \\
-				\bottomrule
-			\end{tabularx}
-		\end{table}
+			Only images with  bounding box info were used + all samples were cropped , resized and converted to grayscale 24 x 24 which have been shown in Figure~\ref{fig:samples}.
 
-		\subsection{Samples} {
-
-			Figure~\ref{fig:samples}
+			% compile / extracted
+			% 24 * 24 optimised reference yeah
 
 			\newcommand{\samplefigurewidth}{0.45\textwidth}
 			\newcommand{\samplewidth}{0.14\textwidth}
@@ -263,14 +173,109 @@
 		        \label{fig:samples}
 			\end{figure}
 
+			Table~\ref{tab:positive_samples} represents the positive samples used in the training set.
+
+			\begin{table}
+				\centering
+				\caption{ImageNet synsets used for the positive samples in the training set and their associated WordNet identifiers.}
+				\label{tab:positive_samples}
+				\begin{tabularx}{\textwidth}{lX}
+					\toprule
+					\textbf{Id} & \textbf{Category} \\
+					\midrule
+						n02799071 & Baseball \\
+						n02802426 & Basketball \\
+						n02882301 & Bowling ball, bowl \\
+						n03134739 & Croquet ball \\
+						n03145719 & Cue ball \\
+						n03267113 & Eight ball \\
+						n03721047 & Marble \\
+						n03742019 & Medicine ball \\
+						n03825442 & Ninepin ball, skittle ball \\
+						n03942813 & Ping-pong ball \\
+						n03982232 & Pool ball \\
+						n04409515 & Tennis ball \\
+						n04540053 & Volleyball \\
+					\bottomrule
+				\end{tabularx}
+			\end{table}
+
+			Table~\ref{tab:positive_samples_simple} represents the simple positive samples used in the training set.
+
+			\begin{table}
+				\centering
+				\caption{ImageNet synsets used for the simple positive samples in the training set and their associated WordNet identifiers.}
+				\label{tab:positive_samples_simple}
+				\begin{tabularx}{\textwidth}{lX}
+					\toprule
+					\textbf{Id} & \textbf{Category} \\
+					\midrule
+						n02799071 & Baseball \\
+						n03134739 & Croquet ball \\
+						n03145719 & Cue ball \\
+						n03825442 & Ninepin ball, skittle ball \\
+						n03942813 & Ping-pong ball \\
+						n03982232 & Pool ball \\
+					\bottomrule
+				\end{tabularx}
+			\end{table}
+
+			Table~\ref{tab:test_set} represents the additional positive samples used in the test set.
+
+			\begin{table}
+				\centering
+				\caption{ImageNet synsets used in addition to the positive samples in the test set and their associated WordNet identifiers.}
+				\label{tab:test_set}
+				\begin{tabularx}{\textwidth}{lX}
+					\toprule
+					\textbf{Id} & \textbf{Category} \\
+					\midrule
+						n02778669 & Ball \\
+						n02779435 & Ball \\
+						n02839351 & Billiard ball \\
+						n02778669 & Generic sporting equipment balls \\
+						n03445777 & Golf ball \\
+						n02779435 & Plaything, toy, ball \\
+						n04254680 & Soccer ball \\
+					\bottomrule
+				\end{tabularx}
+			\end{table}
+
+			Table~\ref{tab:negative_samples} represents the hard negative samples used in the training set.
+
+			\begin{table}
+				\centering
+				\caption{ImageNet synsets used for the hard negative samples in the training set and their associated WordNet identifiers.}
+				\label{tab:negative_samples}
+				\begin{tabularx}{\textwidth}{lX}
+					\toprule
+					\textbf{Id} & \textbf{Category} \\
+					\midrule
+						n03032811 & Circle, round \\
+						n13873917 & Circle \\
+						n13873502 & Circle \\
+					\bottomrule
+				\end{tabularx}
+			\end{table}
+
+			Table~\ref{tab:background_samples} represents the background samples used in the training set.
+
+			\begin{table}
+				\centering
+				\caption{ImageNet synsets used for the background samples in the training set and their associated WordNet identifiers.}
+				\label{tab:background_samples}
+				\begin{tabularx}{\textwidth}{lX}
+					\toprule
+					\textbf{Id} & \textbf{Category} \\
+					\midrule
+						n02782778 & Ballpark, park \\
+						n08659446 & Field \\
+						n03841666 & Office, business office \\
+					\bottomrule
+				\end{tabularx}
+			\end{table}
+
 		}
-
-	}
-
-	\section{Experiment} {
-		\todo{Describe the experiment that was performed, including all
-		trials run, all parameters used, and all datasets.
-		Highlight the purpose of the experiment}
 
 
 		\subsection{Trials} {
