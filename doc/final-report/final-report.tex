@@ -13,6 +13,8 @@
 \usepackage{booktabs}
 \usepackage{tabularx}
 
+\newcommand{\scarequotes}[1]{`#1'}
+
 % References
 \usepackage{natbib}
 \makeatletter
@@ -148,13 +150,16 @@
 		Each training scheme specified the size and contents of the dataset, and the training parameters, used to train a classifier.
 		The parameter values used in the training schemes were chosen both to test the hypothesis, and to explore the parameter space.
 		Five parameters were chosen for the training schemes, and were defined as follows:
-		
+
 		\begin{description}
 			\item[Set size:] The total number of samples in the training set.
 			\item[Positive \%:] The percentage of samples in the training set that are positive (i.e. that are images of spheres).
 			\item[Hard Negative \%:] The percentage of negative samples in the training set that are \scarequotes{hard negatives} (i.e. they are images of disk-like objects, as opposed to miscellaneous background images).
 			\item[NumPos:] The number of positive samples shown to each stage of the classifier cascade during training.
-			\item[Simple:] Whether the simple set of positive samples was used instead of the full set.
+			\item[Simple:] 
+				A number of different categories of images of spheres were used to create the set of positive samples.
+				Due to the wide variation in appearance of the spheres in the set, it was considered possible that drawing training samples from the full set while training could cause the 
+				Whether the simple set of positive samples was used instead of the full set.
 		\end{description}
 
 		The dataset used for this project has been described in Section~\ref{sec:dataset}.
