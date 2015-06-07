@@ -307,7 +307,7 @@
 
 		Table~\ref{tab:training_results}
 
-		\begin{table}[H]
+		\begin{table}
 			\centering
 			\caption{Training results for all training schemes.}
 			\label{tab:training_results}
@@ -330,6 +330,37 @@
 					\(hog_3\) & 2000 & 0.33 & 0.25 & 0 & HOG & 2.6\% \\
 					\(hog_4\) & 4000 & 0.5 & 0.2 & 1 & HOG & 3.03\% \\
 					\(hog_5\) & 3500 & 0.5 & 0 & 1 & HOG & 5.19\% \\
+				\bottomrule
+			\end{tabularx}
+		\end{table}
+
+		\begin{table}
+			\centering
+			\caption{Training results for all training schemes.}
+			\label{tab:precisionrecall}
+			\begin{tabularx}{\textwidth}{XXX}
+				\toprule
+				\textbf{Name} & \textbf{Precision} & \textbf{Recall} \\
+				\midrule
+				\(hog_1\)    & 0.37500 & 0.01299 \\
+				\(hog_2\)    & 0.50000 & 0.00866 \\
+				\(hog_3\)    & 0.33333 & 0.02597 \\
+				\(hog_4\)    & 0.50000 & 0.03030 \\
+				\(hog_5\)    & 0.42857 & 0.05195 \\
+				\(lbp_1\)    & 0.26667 & 0.01732 \\
+				\(lbp_2\)    & 0.36842 & 0.03030 \\
+				\(lbp_3\)    & 0.36667 & 0.04762 \\
+				\(lbp_4\)    & 0.40000 & 0.06061 \\
+				\(lbp_5\)    & 0.38000 & 0.08225 \\
+				\(scheme_1\) & 0.42857 & 0.09091 \\
+				\(scheme_2\) & 0.53571 & 0.06494 \\
+				\(scheme_3\) & 0.36538 & 0.16450 \\
+				\(scheme_4\) & 0.41818 & 0.19913 \\
+				\(scheme_5\) & 0.39831 & 0.20346 \\
+				\(scheme_6\) & 0.00405 & 0.18182 \\
+				\(scheme_7\) & 0.00293 & 0.15152 \\
+				\(scheme_8\) & 0.00585 & 0.26840 \\
+				\(template\) & 0.01561 & 0.06494 \\
 				\bottomrule
 			\end{tabularx}
 		\end{table}
