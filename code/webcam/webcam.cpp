@@ -36,11 +36,13 @@ int main(int argc, char* argv[]) {
 	cv::Mat frame;
 	cv::Mat image;
 	cv::Mat down_image;
-	cv::namedWindow("Detections", CV_WINDOW_NORMAL);
+	cv::namedWindow("Detections", CV_WINDOW_AUTOSIZE);
+	//cv::namedWindow("Detections", CV_WINDOW_NORMAL);
 //	cvSetWindowProperty("Detections", CV_WND_PROP_FULLSCREEN, CV_WINDOW_FULLSCREEN);
 
 
 	double scale = 0.50;
+	int x = 0;
 	while (true) {
 		cap >> frame;
 
@@ -71,10 +73,11 @@ int main(int argc, char* argv[]) {
 //			cv::ellipse(down_image, center2, size2, Draw.angle, Draw.startAngle, Draw.endAngle, Draw.color, Draw.thickness, Draw.lineType, Draw.shift);
 		}
 
+		cv::imwrite(std::to_string(x++) + ".jpg", frame);
 		cv::imshow("Detections", frame);
 //		cv::imshow("Detections", down_image);
 
-        cv::waitKey(30);
+        cv::waitKey(1000);
     }
 
 	return 0;
