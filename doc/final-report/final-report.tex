@@ -311,59 +311,59 @@
 			\centering
 			\caption{Training results for all training schemes.}
 			\label{tab:training_results}
-			\begin{tabularx}{\textwidth}{XXllXXX}
+			\begin{tabularx}{\textwidth}{lcccccc}
 				\toprule
-				\textbf{Name} & \textbf{Number} & \textbf{Positive \%} & \textbf{Hard Negative \%} & \textbf{Fullset} & \textbf{Type} & \textbf{Recall} \\
+				\textbf{Name} & \textbf{Number} & \textbf{Pos. \%} & \textbf{Hard Neg. \%} & \textbf{Easy} & \textbf{Type} & \textbf{Precision \%} & \textbf{Recall \%} \\
 				\midrule
-					\(haar_1\) & 2000 & 0.33 & 0 & 0 & HAAR & 9.09\% \\
-					\(haar_2\) & 2000 & 0.33 & 0.25 & 0 & HAAR & 6.49\% \\
-					\(haar_3\) & 2000 & 0.33 & 0.25 & 0 & HAAR & 16.45\% \\
-					\(haar_4\) & 4000 & 0.5 & 0.2 & 1 & HAAR & 19.91\% \\
-					\(haar_5\) & 3500 & 0.5 & 0 & 1 & HAAR & 20.35\% \\
-					\(lbp_1\) & 2000 & 0.33 & 0 & 0 & LBP & 01.73\% \\
-					\(lbp_2\) & 2000 & 0.33 & 0.25 & 0 & LBP & 3.03\% \\
-					\(lbp_3\) & 2000 & 0.33 & 0.25 & 0 & LBP & 4.76\% \\
-					\(lbp_4\) & 4000 & 0.5 & 0.2 & 1 & LBP & 6.06\% \\
-					\(lbp_5\) & 3500 & 0.5 & 0 & 1 & LBP & 8.23\% \\
-					\(hog_1\) & 2000 & 0.33 & 0 & 0 & HOG & 1.3\% \\
-					\(hog_2\) & 2000 & 0.33 & 0.25 & 0 & HOG & 0.87\% \\
-					\(hog_3\) & 2000 & 0.33 & 0.25 & 0 & HOG & 2.6\% \\
-					\(hog_4\) & 4000 & 0.5 & 0.2 & 1 & HOG & 3.03\% \\
-					\(hog_5\) & 3500 & 0.5 & 0 & 1 & HOG & 5.19\% \\
+					\(haar_1\) & 2000 & 0.33 & 0     & Yes & HAAR & 42.857 &  9.091 \\
+					\(haar_2\) & 2000 & 0.33 & 0.25  & Yes & HAAR & 53.571 &  6.494 \\
+					\(haar_3\) & 2000 & 0.33 & 0.25  & Yes & HAAR & 36.538 & 16.450 \\
+					\(haar_4\) & 4000 & 0.5  & 0.2   & No & HAAR & 41.818 & 19.913 \\
+					\(haar_5\) & 3500 & 0.5  & 0     & No & HAAR & 39.831 & 20.346 \\
+					\(lbp_1\)  & 2000 & 0.33 & 0     & Yes & LBP  & 26.667 &  1.732 \\
+					\(lbp_2\)  & 2000 & 0.33 & 0.25  & Yes & LBP  & 36.842 &  3.030 \\
+					\(lbp_3\)  & 2000 & 0.33 & 0.25  & Yes & LBP  & 36.667 &  4.762 \\
+					\(lbp_4\)  & 4000 & 0.5  & 0.2   & No & LBP  & 40.000 &  6.061 \\
+					\(lbp_5\)  & 3500 & 0.5  & 0     & No & LBP  & 38.000 &  8.225 \\
+					\(hog_1\)  & 2000 & 0.33 & 0     & Yes & HOG  & 37.500 &  1.299 \\
+					\(hog_2\)  & 2000 & 0.33 & 0.25  & Yes & HOG  & 50.000 &  0.866 \\
+					\(hog_3\)  & 2000 & 0.33 & 0.25  & Yes & HOG  & 33.333 &  2.597 \\
+					\(hog_4\)  & 4000 & 0.5  & 0.2   & No & HOG  & 50.000 &  3.030 \\
+					\(hog_5\)  & 3500 & 0.5  & 0     & No & HOG  & 42.857 &  5.195 \\
 				\bottomrule
 			\end{tabularx}
 		\end{table}
 
-		\begin{table}
-			\centering
-			\caption{Training results for all training schemes.}
-			\label{tab:precisionrecall}
-			\begin{tabularx}{\textwidth}{XXX}
-				\toprule
-				\textbf{Name} & \textbf{Precision} & \textbf{Recall} \\
-				\midrule
-				\(hog_1\)    & 0.37500 & 0.01299 \\
-				\(hog_2\)    & 0.50000 & 0.00866 \\
-				\(hog_3\)    & 0.33333 & 0.02597 \\
-				\(hog_4\)    & 0.50000 & 0.03030 \\
-				\(hog_5\)    & 0.42857 & 0.05195 \\
-				\(lbp_1\)    & 0.26667 & 0.01732 \\
-				\(lbp_2\)    & 0.36842 & 0.03030 \\
-				\(lbp_3\)    & 0.36667 & 0.04762 \\
-				\(lbp_4\)    & 0.40000 & 0.06061 \\
-				\(lbp_5\)    & 0.38000 & 0.08225 \\
-				\(scheme_1\) & 0.42857 & 0.09091 \\
-				\(scheme_2\) & 0.53571 & 0.06494 \\
-				\(scheme_3\) & 0.36538 & 0.16450 \\
-				\(scheme_4\) & 0.41818 & 0.19913 \\
-				\(scheme_5\) & 0.39831 & 0.20346 \\
-				\(scheme_6\) & 0.00405 & 0.18182 \\
-				\(scheme_7\) & 0.00293 & 0.15152 \\
-				\(scheme_8\) & 0.00585 & 0.26840 \\
-				\(template\) & 0.01561 & 0.06494 \\
-				\bottomrule
-			\end{tabularx}
-		\end{table}
+		% \begin{table}
+		% 	\centering
+		% 	\caption{Training results for all training schemes.}
+		% 	\label{tab:precisionrecall}
+		% 	\begin{tabularx}{\textwidth}{XXX}
+		% 		\toprule
+		% 		\textbf{Name} & \textbf{Precision \%} & \textbf{Recall \%} \\
+		% 		\midrule
+		% 		\(haar_1\)   & 42.857 &  9.091 \\
+		% 		\(haar_2\)   & 53.571 &  6.494 \\
+		% 		\(haar_3\)   & 36.538 & 16.450 \\
+		% 		\(haar_4\)   & 41.818 & 19.913 \\
+		% 		\(haar_5\)   & 39.831 & 20.346 \\
+		% 		\(lbp_1\)    & 26.667 &  1.732 \\
+		% 		\(lbp_2\)    & 36.842 &  3.030 \\
+		% 		\(lbp_3\)    & 36.667 &  4.762 \\
+		% 		\(lbp_4\)    & 40.000 &  6.061 \\
+		% 		\(lbp_5\)    & 38.000 &  8.225 \\
+		% 		\(hog_1\)    & 37.500 &  1.299 \\
+		% 		\(hog_2\)    & 50.000 &  0.866 \\
+		% 		\(hog_3\)    & 33.333 &  2.597 \\
+		% 		\(hog_4\)    & 50.000 &  3.030 \\
+		% 		\(hog_5\)    & 42.857 &  5.195 \\
+		% 		% \(scheme_6\) &  0.405 & 18.182 \\
+		% 		% \(scheme_7\) &  0.293 & 15.152 \\
+		% 		% \(scheme_8\) &  0.585 & 26.840 \\
+		% 		% \(template\) &  1.561 &  6.494 \\
+		% 		\bottomrule
+		% 	\end{tabularx}
+		% \end{table}
 
 		Figure~\ref{fig:trial_comparison_chart}
 
