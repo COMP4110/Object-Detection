@@ -14,6 +14,7 @@
 \usepackage{tabularx}
 
 \newcommand{\scarequotes}[1]{`#1'}
+\newcommand{\newterm}[1]{{\textit{#1}}}
 
 % References
 \usepackage{natbib}
@@ -135,13 +136,13 @@
 			\scalebox{0.8}{
 			\begin{tabularx}{1.2\textwidth}{@{}lcccccc@{}}
 				\toprule
-				\textbf{Name} & \textbf{Set size} & \textbf{Positive \%} & \textbf{Hard Negative \%} & \textbf{SkipFrac} & \textbf{Simple} & \textbf{Feature type}  \\
+				\textbf{Name} & \textbf{Set size} & \textbf{Positive \%} & \textbf{Hard Negative \%} & \textbf{NumPos} & \textbf{Simple} & \textbf{Feature type}  \\
 				\midrule
-					\(scheme_1\) & 2000 & 0.33 & 0     & 0.75 & Yes & \{Haar, LBP, HOG\} \\
-					\(scheme_2\) & 2000 & 0.33 & 0.25  & 0.75 & Yes & \{Haar, LBP, HOG\} \\
-					\(scheme_3\) & 2000 & 0.33 & 0.25  & 0.5  & Yes & \{Haar, LBP, HOG\} \\
-					\(scheme_4\) & 4000 & 0.5  & 0.2   & 0.75 & No  & \{Haar, LBP, HOG\} \\
-					\(scheme_5\) & 3500 & 0.5  & 0     & 0.75 & No  & \{Haar, LBP, HOG\} \\
+					\(scheme_1\) & 2000 & 0.33 & 0     & 138 & Yes & \{Haar, LBP, HOG\} \\ % & 0.75 
+					\(scheme_2\) & 2000 & 0.33 & 0.25  & 138 & Yes & \{Haar, LBP, HOG\} \\ % & 0.75 
+					\(scheme_3\) & 2000 & 0.33 & 0.25  & 277 & Yes & \{Haar, LBP, HOG\} \\ % & 0.5  
+					\(scheme_4\) & 4000 & 0.5  & 0.2   & 420 & No  & \{Haar, LBP, HOG\} \\ % & 0.75 
+					\(scheme_5\) & 3500 & 0.5  & 0     & 367 & No  & \{Haar, LBP, HOG\} \\ % & 0.75 
 				\bottomrule
 			\end{tabularx}
 			}
@@ -156,14 +157,16 @@
 			\item[Positive \%:] The percentage of samples in the training set that are positive (i.e. that are images of spheres).
 			\item[Hard Negative \%:] The percentage of negative samples in the training set that are \scarequotes{hard negatives} (i.e. they are images of disk-like objects, as opposed to miscellaneous background images).
 			\item[NumPos:] The number of positive samples shown to each stage of the classifier cascade during training.
+			\todo{Describe the way that NumPos prevents most of the training set from being used.}
 			\item[Simple:] 
-				A number of different categories of images of spheres were used to create the set of positive samples.
-				Due to the wide variation in appearance of the spheres in the set, it was considered possible that drawing training samples from the full set while training could cause the 
-				Whether the simple set of positive samples was used instead of the full set.
+				Thirteen categories of spheres were chosen from ImageNet \citep{imagenet_cvpr09}.
+				The full set of positive samples was drawn from these thirteen categories, listed in Table~\ref{tab:positive_samples}.
+				Due to the wide variation in appearance of the spheres in the set, it was considered possible that drawing training samples from the full set while training could cause the trained classifiers to fail to classify any category of sphere with reasonable precision, given the small set sizes used.
+				For this reason, a subset of the original thirteen sphere categories were used to create a \newterm{simple training set}.
+				The categories selected for the simple set were those that contained mostly images of plain, non-textured spheres, and are listed in Table~\ref{tab:positive_samples_simple}. The two datasets are described in more detail in Section~\ref{sec:dataset}.
+
+				The \newterm{simple} parameter describes whether the simple set of positive samples was used instead of the full set.
 		\end{description}
-
-		The dataset used for this project has been described in Section~\ref{sec:dataset}.
-
 
 		\subsection{Image Dataset Compilation} {
 		\label{sec:dataset}
