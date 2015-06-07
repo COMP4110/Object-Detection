@@ -104,14 +104,27 @@
 
 	\section{Training For Sphere Detection} {
 
-		The aim of this project is to create a robust sphere detector that does not detect disk-like objects as false positives. To achieve this, we trained boosted classifiers using weak classifiers based on three different feature-types: Haar, LBP and HOG. We hypothesised that including a larger proportion of disk-like negative images in the training set would increase the precision of the resulting sphere detectors. This hypothesis was tested, which has been described in Section~\ref{sec:experiment}.
+		The aim of this project is to create a robust sphere detector that does not detect disk-like objects as false positives.
 
+		We hypothesised that including a larger proportion of disk-like negative images in the training set would increase the precision of the resulting sphere detectors.
+
+		To achieve this, we trained Viola-Jones detector cascades \citep{viola2001rapid}
+		using each of three different feature types.
+		We tested our hypothesis on each of three commonly used, but different feature types.
+		The feature types used were
+		Extended Haar features \citep{Lienhart2002extended},
+		Local Binary Patterns (LBPs) \citep{liao2007learning}, and
+		Histograms of Oriented Gradients (HoG) features \citep{dalal2005histograms}.
+
+		The hypothesis was tested through the experiment outlined in Section~\ref{sec:experiment}.
 	}
 
 	\section{Experiment} {
 	\label{sec:experiment}
 
 		\todo{Describe the experiment that was performed, including all trials run, all parameters used, and all datasets. Highlight the purpose of the experiment}
+
+
 
 		The dataset used for this project has been described in Section~\ref{sec:dataset}.
 
