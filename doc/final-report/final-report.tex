@@ -49,7 +49,7 @@
 				\mailsa \\}
 
 	\toctitle{Sphere Detection using Boosted Classifiers}
-	\tocauthor{B.Annable, M. Metcalfe, and M. Olejniczak}
+	\tocauthor{B. Annable, M. Metcalfe, and M. Olejniczak}
 	\maketitle
 
 	\begin{abstract}
@@ -85,7 +85,7 @@
 
 		To build a detector that is more robust to differently textured spheres, we investigated the application of techniques popularised in the realm of face detection to the task of sphere detection. We consider this a promising approach, because the 3D features of spheres tend to have similar spatial constraints to facial features in many cases.
 
-		For simplicity, the scope of the proposed project is limited to the common and important case of detecting balls that are resting on the ground. We will also assume that the sphere is illuminated primarily from above to constrain the likely positions of shadows and specular highlights.
+		% For simplicity, the scope of this work was limited to the common and important case of detecting balls that are resting on the ground. We also assumed that the sphere is illuminated primarily from above to constrain the likely positions of shadows and specular highlights.
 
 		\citet{masselli2013haar} successfully apply a boosted Haar classifier \citep{viola2001robust} to the problem of ball recognition. They show that the Haar classifier outperformed a more classical approach, based on a Hough transform, in the task of detecting uniformly yellow, green, and white balls.
 
@@ -95,7 +95,7 @@
 
 		\citet{treptow2004filter} achieved a much lower false positive rate using Haar features directly, but only trained and tested their detector on a single ball.
 
-		As a result of targeting our approach toward the 3D features that distinguish spheres from objects such as disks, our method should be particularly robust against detecting false positives.
+		As a result of targeting our approach toward the 3D features that distinguish spheres from objects such as disks, our method is expected to be particularly robust against detecting false positives.
 
 	}
 
