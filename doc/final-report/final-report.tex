@@ -147,11 +147,11 @@
 					}%
 					\label{fig:positive_samples}%
 				}%
-		        \qquad
-		        \subfigure[Negative samples.]{%
-		        	% Enclose in shortstack to enable line break.
-		        	\shortstack{%
-			        	% Hard negative
+				\qquad
+				\subfigure[Negative samples.]{%
+					% Enclose in shortstack to enable line break.
+					\shortstack{%
+						% Hard negative
 						\includesample{hard_negative/hard_negative_1}%
 						\includesample{hard_negative/hard_negative_2}%
 						\includesample{hard_negative/hard_negative_3} \\%
@@ -161,9 +161,9 @@
 						\includesample{hard_negative/hard_negative_3_thumbnail}%
 					}%
 					\label{fig:negative_samples}%
-		        }%
-		        \caption{Examples of positive~\ref{fig:positive_samples} and negative~\ref{fig:negative_samples} samples used for training. The first row represents the original image, while the second row represents the same samples that have been cropped, resized and converted to grayscale prior to training.}
-		        \label{fig:samples}
+				}%
+				\caption{Examples of positive~\ref{fig:positive_samples} and negative~\ref{fig:negative_samples} samples used for training. The first row represents the original image, while the second row represents the same samples that have been cropped, resized and converted to grayscale prior to training.}
+				\label{fig:samples}
 			\end{figure}
 
 			Several WordNet synsets were used to compile the training and test set for this project. Table~\ref{tab:positive_samples} represents the positive samples used in the training set, while Table~\ref{tab:positive_samples_simple} is a subset of these positive samples that were also used for training. The test set comprises the categories listed in Table~\ref{tab:test_set}, along with the positive training set samples previously described in Table~\ref{tab:positive_samples}. The negative training set shown in Table~\ref{tab:negative_samples}, is drawn from both the hard negative training set and the background training set, as shown in Table~\ref{tab:background_samples}.
@@ -172,7 +172,7 @@
 				\centering
 				\caption{ImageNet synsets used for the positive samples in the training set and their associated WordNet identifiers.}
 				\label{tab:positive_samples}
-				\begin{tabularx}{\textwidth}{lX}
+				\begin{tabularx}{\textwidth}{@{}lX@{}}
 					\toprule
 					\textbf{Id} & \textbf{Category} \\
 					\midrule
@@ -197,7 +197,7 @@
 				\centering
 				\caption{ImageNet synsets used for the simple positive samples in the training set and their associated WordNet identifiers.}
 				\label{tab:positive_samples_simple}
-				\begin{tabularx}{\textwidth}{lX}
+				\begin{tabularx}{\textwidth}{@{}lX@{}}
 					\toprule
 					\textbf{Id} & \textbf{Category} \\
 					\midrule
@@ -215,7 +215,7 @@
 				\centering
 				\caption{ImageNet synsets used in addition to the positive samples in the test set and their associated WordNet identifiers.}
 				\label{tab:test_set}
-				\begin{tabularx}{\textwidth}{lX}
+				\begin{tabularx}{\textwidth}{@{}lX@{}}
 					\toprule
 					\textbf{Id} & \textbf{Category} \\
 					\midrule
@@ -234,7 +234,7 @@
 				\centering
 				\caption{ImageNet synsets used for the negative samples in the training set and their associated WordNet identifiers.}
 				\label{tab:negative_samples}
-				\begin{tabularx}{\textwidth}{lX}
+				\begin{tabularx}{\textwidth}{@{}lX@{}}
 					\toprule
 					\textbf{Id} & \textbf{Category} \\
 					\midrule
@@ -249,7 +249,7 @@
 				\centering
 				\caption{ImageNet synsets used for the background samples in the training set and their associated WordNet identifiers.}
 				\label{tab:background_samples}
-				\begin{tabularx}{\textwidth}{lX}
+				\begin{tabularx}{\textwidth}{@{}lX@{}}
 					\toprule
 					\textbf{Id} & \textbf{Category} \\
 					\midrule
@@ -296,7 +296,7 @@
 			\centering
 			\caption{Training results for all training schemes.}
 			\label{tab:training_results}
-			\begin{tabularx}{\textwidth}{lcccccc}
+			\begin{tabularx}{\textwidth}{@{}lccccccc@{}}
 				\toprule
 				\textbf{Name} & \textbf{Number} & \textbf{Pos. \%} & \textbf{Hard Neg. \%} & \textbf{Easy} & \textbf{Type} & \textbf{Precision \%} & \textbf{Recall \%} \\
 				\midrule
@@ -355,16 +355,16 @@
 		\begin{figure}[H]
 			\begin{tikzpicture}
 				\begin{axis}[
-				    ybar,
-				    enlargelimits=0.15,
-				    legend style={at={(0.5,-0.15)},
-				    anchor=north,legend columns=-1},
-				    ylabel={Recall (\%)},
-				    symbolic x coords={Scheme 1, Scheme 2, Scheme 3, Scheme 4, Scheme 5},
-				    xtick=data,
-				    nodes near coords*={\pgfmathprintnumber[fixed,precision=1]\pgfplotspointmeta},
-				    nodes near coords align={vertical},
-				    ]
+					ybar,
+					enlargelimits=0.15,
+					legend style={at={(0.5,-0.15)},
+					anchor=north,legend columns=-1},
+					ylabel={Recall (\%)},
+					symbolic x coords={Scheme 1, Scheme 2, Scheme 3, Scheme 4, Scheme 5},
+					xtick=data,
+					nodes near coords*={\pgfmathprintnumber[fixed,precision=1]\pgfplotspointmeta},
+					nodes near coords align={vertical},
+					]
 				\addplot coordinates {(Scheme 1, 1.2987013) (Scheme 2, 0.8658009) (Scheme 3, 2.59740260) (Scheme 4, 3.03030300) (Scheme 5, 5.19480520)};
 				\addplot coordinates {(Scheme 1, 1.7316017) (Scheme 2, 3.0303030) (Scheme 3, 4.76190480) (Scheme 4, 6.06060610) (Scheme 5, 8.22510820)};
 				\addplot coordinates {(Scheme 1, 9.0909091) (Scheme 2, 6.4935065) (Scheme 3, 16.4502165) (Scheme 4, 19.9134199) (Scheme 5, 20.3463203)};
